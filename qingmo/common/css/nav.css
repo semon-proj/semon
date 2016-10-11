@@ -11,6 +11,9 @@ Version:1.0.2
 */
 
 *{border:0;margin:0;padding:0;}
+#header *{
+    webkit-box-sizing:content-box;box-sizing:content-box;
+}
 ::selection{color:#FFF;background:#000;text-shadow:none;}
 ::-moz-selection{color:#FFF;background:#000;text-shadow:none;}
 html{font-size:medium;}

@@ -9,9 +9,7 @@ body {
     background-color: #ededed;
 }
 
-#header *{
-    webkit-box-sizing:content-box;box-sizing:content-box;
-}
+
 
 /*--正文样式 start--*/
 #content {
