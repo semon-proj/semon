@@ -1,0 +1,358 @@
+button, a {
+    cursor: pointer;
+}
+ins, a {
+    text-decoration: none;
+}
+fieldset, img {
+    border: 0;
+}
+a:hover {
+    text-decoration: none;
+}
+body, button, input, select, textarea {
+    font: 12px/1.0 "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    word-wrap: break-word;
+    color: #000;
+}
+
+.js {
+    background-color: #ededed;
+    color: #000000;
+    background-position: left top;
+}
+.js {
+    color: #000;
+    background: #fff;
+}
+.input, .textarea {
+    margin-top: 3px;
+    line-height: 18px;
+    border: 1px solid #D3D3D3;
+    border-radius: 0;
+}
+.input {
+    height: 30px;
+}
+input, select, textarea {
+    font-size: 12px;
+    padding: 5px;
+    outline: 0 none;
+}
+.input:hover, .textarea:hover, .date:hover {
+    border: 1px solid #A6A6A6;
+    border-top-color: #A2A2A2;
+}
+
+
+.f_wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+    z-index: 30;
+}
+
+/*主体*/
+.fs_main {
+    background-color: #ffffff;
+    color: #000000;
+}
+.f_main {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #FFF;
+    box-shadow: 0 1px 6px rgba(124, 124, 124, 0.42);
+    -moz-box-shadow: 0 1px 6px rgba(124, 124, 124, 0.42);
+    -webkit-box-shadow: 0 1px 6px rgba(124, 124, 124, 0.42);
+    z-index: 3;
+}
+.fs_main {
+    width: 750px;
+}
+/*主体头部*/
+.fs_header {
+    background-color: #ffffff;
+    color: #000000;
+}
+.f_header {
+    padding: 0 20px 10px 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.f_text_no_logo {
+    padding-top: 10px;
+}
+.f_title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.f_text_no_logo .f_describe_none {
+    padding-top: 0;
+}
+.f_text_no_logo .f_describe {
+    padding-top: 10px;
+}
+.f_describe {
+    font-size: 12px;
+    line-height: 18px;
+}
+/*二维码*/
+.f_share_container {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    right: 0;
+    height: 0;
+    text-align: center;
+}
+.f_share_main {
+    width: 640px;
+    background-color: #345;
+    position: relative;
+    margin: 0 auto;
+}
+div.f_share_main {
+    width: 750px;
+}
+.f_share {
+    text-align: right;
+    position: absolute;
+    cursor: pointer;
+    width: 38px;
+    height: 38px;
+    background-color: rgba(255, 255, 255, 0.4);
+    overflow: hidden;
+    left: 640px;
+    top: 0;
+    margin-left: 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    padding: 4px;
+    color: #333;
+    transition:width .3s;
+    -moz-transition:width .3s; /* Firefox 4 */
+    -webkit-transition:width .3s; /* Safari and Chrome */
+    -o-transition:width .3s; /* Opera */
+}
+.f_share:hover{
+    width: 110px;
+}
+div.f_share {
+    left: 750px;
+}
+img.qrcode {
+    margin: 3px;
+    opacity: 0.62;
+    vertical-align: middle;
+}
+.share_info {
+    line-height: 30px;
+    vertical-align: middle;
+    padding: 2px;
+    margin-left: 4px;
+    margin-right: 6px;
+}
+/*主体body*/
+.f_body {
+    width: 100%;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+.f_component {
+    padding: 12px 30px 12px 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-property: background-color;
+    -webkit-transition-duration: 200ms;
+    -webkit-transition-delay: 0s;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-property: background-color;
+    -moz-transition-duration: 200ms;
+    -moz-transition-delay: 0s;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-property: background-color;
+    -o-transition-duration: 200ms;
+    -o-transition-delay: 0s;
+    -o-transition-timing-function: ease-in-out;
+}
+.fs_cTitle {
+    font-size: 16px;
+    line-height: 25PX;
+}
+.f_cTitle {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 4px;
+}
+.f_sectionDescribe {
+    padding: 0 5px;
+    line-height: 20px;
+    color: #444;
+    border-top: 1px solid #7C7C7C;
+}
+.fs_sectionDescribe, .fs_imgDescribe {
+    color: #000111;
+}
+.f_cValidate {
+    font-size: 12px;
+    line-height: 25px;
+    margin-left: 5px;
+    color: #2976A4;
+    white-space: nowrap;
+    font-weight: normal;
+}
+.fs_cValidate {
+    color: #000000;
+}
+.textarea.medium {
+    height: 130px;
+}
+.textarea {
+    resize: none;
+}
+.fs_content {
+    font-size: 14px;
+}
+.medium {
+    width: 82%;
+}
+
+.fs_component {
+    background-color: #FFF8DC;
+    color: #000000;
+}
+.f_cDescribe {
+    padding: 0 5px;
+    line-height: 20px;
+    color: #7C7C7C;
+    border-top: 1px dashed #7C7C7C;
+}
+.fs_cDescribe, .fs_cLink, .fs_cLink:visited {
+    color: #000111;
+}
+.f_submit {
+    margin-top: 20px;
+    padding: 0 30px;
+    text-align: center;
+}
+.f_submitBtn {
+    display: inline-block;
+    line-height: 28px;
+    padding: 2px 24px;
+    font-size: 13px;
+    text-align: center;
+    color: #FFF;
+    background: #3E76A7;
+    border-radius: 2px;
+}
+.f_submitBtn:hover {
+    background: #659CCC;
+    color: #FFF;
+}
+
+/*技术支持商标*/
+.f_copyright {
+    height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.f_copyright .fs_powerby {
+    color: #333;
+}
+.f_powerby, .f_powerby:visited {
+    display: inline-block;
+    line-height: 20px;
+    color: #333;
+}
+
+
+/*二维码点击事件*/
+.tmask {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 983px;
+    background: #000;
+    z-index: 800;
+    opacity: 0.7;
+}
+.tbox {
+    position: fixed;
+    display: none;
+    padding: 14px 17px;
+    z-index: 900;
+    top: 50%;
+    left: 50%;
+    margin-left: -105px;
+    opacity: 0;
+}
+.tinner {
+    border-radius: 3px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    background: #FFFFFF;
+    border: 1px solid #5C5C5C;
+    height: 240px;
+    width: 210px;
+}
+.popwin_content {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    margin-top:0;
+}
+.sharecode {
+    width: 160px;
+}
+.share_des {
+     text-align: center;
+     color: #5A5A5A;
+     margin-top: 4px;
+}
+
+/*响应式*/
+@media screen and (max-width: 1000px) {
+    .f_share {
+        width: 38px;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .f_share {
+        width: 38px;
+    }
+}
+@media screen and (max-width: 985px) {
+    .f_share {
+        display: none;
+    }
+}
+@media screen and (max-width:750px){
+    .fs_main, .tmask{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
