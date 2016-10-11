@@ -13,7 +13,7 @@ body {
 }
 
 /*主体*/
-#container {
+#container,#lunbo {
     width: 98%;
     max-width: 1000px;
     min-width: 300px;
