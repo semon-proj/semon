@@ -1,4 +1,4 @@
-/* 
+/*
 * @Author: kaiye
 * @Date:   2016-10-10 11:00:39
 * @Last Modified by:   kaiye
@@ -9,29 +9,8 @@ body {
     background-color: #ededed;
 }
 
-#header {
-    position: fixed;
-    width: 100%;
-    height: 40px;
-    background: #000;
-    z-index: 999;
-}
-
-#lunbo {
-    width: 98%;
-    height: 255px;
-    max-width: 1000px;
-    min-width: 300px;
-    padding-top: 50px;
-    margin: auto;
-    background: #fff;
-}
-
-#footer {
-    width: 100%;
-    height: 98px;
-    background-color: #2E2E2E;
-    margin-top: 10px;
+#header *{
+    webkit-box-sizing:content-box;box-sizing:content-box;
 }
 
 /*--正文样式 start--*/
@@ -39,8 +18,7 @@ body {
     width: 98%;
     max-width: 1000px;
     min-width: 300px;
-    padding-top: 10px;
-    margin: auto;
+    margin: 10px auto 10px;
     min-height: 500px;
     font: .875em/1.5rem Helvetica, Microsoft Yahei, Hiragino Sans GB, sans-serif;
     color: #555;
@@ -137,7 +115,7 @@ body {
 #content .entry-content {
     word-break: break-all;
     overflow: hidden;
-    font-size: 1.4rem;
+    font-size: .85rem;
     letter-spacing: 2px;
     line-height: 24px;
 }
@@ -168,6 +146,10 @@ body {
     }
     #content .ad-main {
         display: none;
+    }
+    #content {
+        margin-top: 50px;
+        margin-bottom: 0;
     }
 }
 
