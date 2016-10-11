@@ -8,9 +8,9 @@ body{
     color: #666;
     background: #181818;
     padding: 0 0 20px;
-    /*position: absolute;*/
-    bottom:0;
-    z-index:1;
+    /*position: fixed;*/
+    /*bottom:0;*/
+    /*z-index:1;*/
     display: block;
 }
 #footer a{
