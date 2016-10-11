@@ -1,0 +1,1069 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>故事FM | 清沫网</title>
+    <meta name="description" content="故事电台分享每一个有声故事，讲述每个平凡人的情感世界">
+    <meta name="keywords" content="故事FM">
+    <meta charset="UTF-8">
+
+    <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+
+    <script type="text/javascript">
+            // $(function(){
+            //     var resstr = '[';
+            //     $(".center-list a").each(function (i,info){
+            //         resstr += '{';
+            //         resstr += '"href":"'+$(info).attr("href")+'",';
+            //         resstr += '"center-item-title":"'+$(info).find(".slow").text()+'",';
+            //         resstr += '"imgsrc":"'+$(info).find("img").attr("src")+'",';
+            //         resstr += '"alt":"'+$(info).find("img").attr("alt")+'",';
+            //         resstr += '"srcset":"'+$(info).find("img").attr("srcset")+'",';
+            //         resstr += '},';
+            //     } );    
+            //     resstr += ']';
+            //     console.log(resstr);
+            // })
+    </script>
+
+    <script type="text/javascript">
+            $(function(){
+                var resstr = '[';
+                $("#content article").each(function (i,info){
+                    resstr += '{';
+                    resstr += '"thumbnail_url":"'+$(info).find(".thumbnail a").attr("href")+'",';
+                    resstr += '"thumbnail_title":"'+$(info).find(".thumbnail a").attr("title")+'",';
+                    resstr += '"thumbnail_src":"'+$(info).find(".thumbnail a img").attr("src")+'",';
+                    resstr += '"thumbnail_alt":"'+$(info).find(".thumbnail a img").attr("alt")+'",';
+                    resstr += '"sound_url":"'+$(info).find("audio").attr("src")+'",';
+                    resstr += '"donghua_url":"'+$(info).find("embed").attr("src")+'",';
+                    resstr += '"pluginspage":"'+$(info).find("embed").attr("pluginspage")+'",';
+                    resstr += '"soundFile":"'+$(info).find("audio").attr("src")+'",';
+                    resstr += '"title":"'+$(info).find("h2 a").attr("href")+'",';
+                    resstr += '"title":"'+$(info).find("h2 a").text()+'",';
+                    resstr += '"labtime_url":"'+$(info).find(".postlist-info time a").attr("href")+'",';
+                    resstr += '"content":"'+$(info).find(".entry-content").text()+'",';
+                    resstr += '"tag1_url":"'+$(info).find(".tags a").eq(0).attr("href")+'",';
+                    resstr += '"tag1":"'+$(info).find(".tags a").eq(0).text()+'",';
+                    resstr += '"tag2_url":"'+$(info).find(".tags a").eq(1).attr("href")+'",';
+                    resstr += '"tag2":"'+$(info).find(".tags a").eq(1).text()+'",';
+                    resstr += '"tag3_url":"'+$(info).find(".tags a").eq(2).attr("href")+'",';
+                    resstr += '"tag3":"'+$(info).find(".tags a").eq(2).text()+'",';
+                    resstr += '},';
+                } );    
+                resstr += ']';
+                console.log(resstr);
+            })
+        </script>
+
+</head>
+
+<body class="archive category category-chengzhangfm category-224 custom-background" onload="prettyPrint()">
+    <div id="page">
+        <div id="nav">
+            <div class="nav-item">
+                <h1 class="nav-logo">
+                    <a href="http://www.semorn.com" style="background-image:url(http://www.semorn.com/wp-content/uploads/2014/11/weblogo_3.png)">清沫网</a>
+                </h1>
+                <span class="nav-switch btn hide slow">
+                    <li class="icon-caidan"></li>
+                </span>
+                <div class="nav-menu">
+                    <div class="nav-menu-list">
+                        <ul id="menu" class="menu">
+                            <li>
+                                <a title="网络电台" href="http://www.semorn.com">首页</a>
+                            </li>
+                            <li class="current-menu-ancestor menu-item-has-children">
+                                <a href="http://www.semorn.com/listen">情感电台</a>
+                                <ul class="sub-menu">
+                                    <li class="current-menu-ancestor current-menu-parent menu-item-has-children">
+                                        <a href="http://www.semorn.com/listen">在线收听</a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="http://www.semorn.com/listen/aiqingfm">爱情电台节目</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.semorn.com/listen/lizhifm">励志电台节目</a>
+                                            </li>
+                                            <li class="current-menu-item">
+                                                <a href="http://www.semorn.com/listen/chengzhangfm">成长电台节目</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.semorn.com/listen/wennuanfm">温暖电台节目</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.semorn.com/listen/zhiyufm">伤感电台节目</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.semorn.com/listen/gushidiantai">故事电台</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.semorn.com/music-story">音乐电台</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="http://www.semorn.com/read/essay">情感文章</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="http://www.semorn.com/article/tag/成长文字">成长电台稿子</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.semorn.com/article/tag/%E7%88%B1%E6%83%85%E6%96%87%E5%AD%97">爱情电台稿子</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.semorn.com/article/tag/生活文字">生活电台稿子</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="http://www.semorn.com/read/mininovel">故事文章</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="http://www.semorn.com/article/author/lvxing">旅游日记</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.semorn.com/gushi">人物故事</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="http://www.semorn.com/music">电台音乐</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-icon">
+                    <a class="nav-mail icon-mail" href="http://www.semorn.com/tougao" rel="external nofollow"></a>
+                    <a class="nav-point icon-point hide" href="javascript:;" style="display:block"></a>
+                    <a class="nav-rss icon-rss" href="http://www.semorn.com/login?redirect_to=http%3A%2F%2Fwww.semorn.com%2Flisten%2Fchengzhangfm"></a>
+                    <div class="denglu-list hide">
+                        <a href="http://www.semorn.com/article/author/" rel="external nofollow">我的主页</a>
+                        <br>
+                        <a href="http://www.semorn.com/user/setting" rel="external nofollow">设置资料</a>
+                        <br>
+                        <a href="http://www.semorn.com/tougao" rel="external nofollow">提交作品</a>
+                        <br>
+                        <a href="http://www.semorn.com/wp-login.php?action=logout&amp;amp;redirect_to=%2Flisten%2Fchengzhangfm" rel="external nofollow">退出</a>
+                    </div>
+                    <a class="nav-search icon-search hide" href="javascript:;" style="display:block"></a>
+                </div>
+                <div class="nav-point-list hide">
+                    <div class="nav-point-bar">
+                        <a href="http://weibo.com/semorn" rel="external nofollow">新浪官方微博</a>
+                        <br>
+                        <a href="http://user.qzone.qq.com/782680748" rel="external nofollow">官方QQ空间</a>
+                        <br>
+                        关注清沫微信
+                        <img src="http://www.semorn.com/wp-content/uploads/2015/07/qmweixin.png" alt="清沫网微信公众号" style="width:100px;height:100px"></div>
+                </div>
+                <div class="nav-search-bar hide">
+                    <form method="get" action="http://www.semorn.com">
+                        <input type="search" placeholder="Search…" value="" name="s"></form>
+                </div>
+            </div>
+        </div>
+        <div id="container">
+            <div id="metro">
+                <div id="metro-item">
+                    <div class="left bd">
+                        <div class="featured">
+                            <ul style="left: 0px; width: 2580px;">
+                                <li>
+                                    <a href="http://www.semorn.com/article/6455.html">
+                                        <div class="featured-title">
+                                            <span>【一页南夏】不同的角度</span>
+                                        </div>
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/06/10451854856-430x230.jpg" class=" wp-post-image" alt="【一页南夏】不同的角度"></a>
+                                </li>
+                                <li>
+                                    <a href="http://www.semorn.com/article/6432.html">
+                                        <div class="featured-title">
+                                            <span>【倾听时光】我们都忘了</span>
+                                        </div>
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/06/421534720557727560-430x230.jpg" class=" wp-post-image" alt="【倾听时光】我们都忘了"></a>
+                                </li>
+                                <li>
+                                    <a href="http://www.semorn.com/article/6382.html">
+                                        <div class="featured-title">
+                                            <span>【时光FM】你的人生一定马不停蹄</span>
+                                        </div>
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/06/150120103632-430x230.jpg" class=" wp-post-image" alt="【时光FM】你的人生一定马不停蹄"></a>
+                                </li>
+                                <li>
+                                    <a href="http://www.semorn.com/article/6327.html">
+                                        <div class="featured-title">
+                                            <span>再见了曾经的少年们</span>
+                                        </div>
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/06/20130311214320-430x230.jpg" class=" wp-post-image" alt="再见了曾经的少年们"></a>
+                                </li>
+                                <li>
+                                    <a href="http://www.semorn.com/article/6186.html">
+                                        <div class="featured-title">
+                                            <span>我们都曾付出真心 最后败给了年轻</span>
+                                        </div>
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/05/1359872081580-430x230.jpg" class=" wp-post-image" alt="我们都曾付出真心 最后败给了年轻"></a>
+                                </li>
+                                <li>
+                                    <a href="http://www.semorn.com/article/6162.html">
+                                        <div class="featured-title">
+                                            <span>【夏落未落】最后，他们都输给了现实</span>
+                                        </div>
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/05/131-430x230.jpg" class=" wp-post-image" alt="【夏落未落】最后，他们都输给了现实"></a>
+                                </li>
+                            </ul>
+                            <div class="nav-btn btn">
+                                <span style="opacity: 1;"></span>
+                                <span style="opacity: 0.4;"></span>
+                                <span style="opacity: 0.4;"></span>
+                                <span style="opacity: 0.4;"></span>
+                                <span style="opacity: 0.4;"></span>
+                                <span style="opacity: 0.4;"></span>
+                            </div>
+                            <div class="featured-nav prev btn slow">‹</div>
+                            <div class="featured-nav next btn slow">›</div>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <ul class="center-list">
+                            <li class="center-item bd">
+                                <a href="http://www.semorn.com/article/4751.html">
+                                    <span class="center-item-title slow">
+                                        今年春节，你回家吗？
+                                        <br>
+                                        电台网站
+                                        <br>2015-02-18</span>
+                                    <img width="110" height="110" src="http://www.semorn.com/wp-content/uploads/2015/02/96714254-110x110.jpg" class=" wp-post-image" alt="今年春节，你回家吗？" srcset="http://www.semorn.com/wp-content/uploads/2015/02/96714254-150x150.jpg 150w, http://www.semorn.com/wp-content/uploads/2015/02/96714254-110x110.jpg 110w" sizes="(max-width: 110px) 100vw, 110px"></a>
+                            </li>
+                            <li class="center-item bd">
+                                <a href="http://www.semorn.com/article/2070.html">
+                                    <span class="center-item-title slow">
+                                        如何走出失恋的伤痛（一）
+                                        <br>
+                                        晨晨
+                                        <br>2014-06-16</span>
+                                    <img width="110" height="110" src="http://www.semorn.com/wp-content/uploads/2014/06/xlzy1-110x110.jpg" class=" wp-post-image" alt="如何走出失恋的伤痛（一）" srcset="http://www.semorn.com/wp-content/uploads/2014/06/xlzy1-150x150.jpg 150w, http://www.semorn.com/wp-content/uploads/2014/06/xlzy1-110x110.jpg 110w" sizes="(max-width: 110px) 100vw, 110px"></a>
+                            </li>
+                            <li class="center-item bd">
+                                <a href="http://www.semorn.com/article/6675.html">
+                                    <span class="center-item-title slow">
+                                        【旧日时光】理想向左，现实向右
+                                        <br>
+                                        DJ麦雅
+                                        <br>2015-06-23</span>
+                                    <img width="110" height="110" src="http://www.semorn.com/wp-content/uploads/2015/06/635487-110x110.jpg" class=" wp-post-image" alt="【旧日时光】理想向左，现实向右" srcset="http://www.semorn.com/wp-content/uploads/2015/06/635487-150x150.jpg 150w, http://www.semorn.com/wp-content/uploads/2015/06/635487-110x110.jpg 110w" sizes="(max-width: 110px) 100vw, 110px"></a>
+                            </li>
+                            <li class="center-item bd">
+                                <a href="http://www.semorn.com/article/3542.html">
+                                    <span class="center-item-title slow">
+                                        没人在意的爱情
+                                        <br>
+                                        DJ麦雅
+                                        <br>2014-10-05</span>
+                                    <img width="110" height="110" src="http://www.semorn.com/wp-content/uploads/2014/10/jrsg29-110x110.jpg" class=" wp-post-image" alt="没人在意的爱情" srcset="http://www.semorn.com/wp-content/uploads/2014/10/jrsg29-150x150.jpg 150w, http://www.semorn.com/wp-content/uploads/2014/10/jrsg29-110x110.jpg 110w" sizes="(max-width: 110px) 100vw, 110px"></a>
+                            </li>
+                            <li class="center-item bd">
+                                <a href="http://www.semorn.com/article/11617.html">
+                                    <span class="center-item-title slow">
+                                        找到适合自己的交际圈
+                                        <br>
+                                        374 ℃
+                                        <br>2016-07-03</span>
+                                    <img width="110" height="110" src="http://www.semorn.com/wp-content/uploads/2016/07/4630_1370000178802698-110x110.jpg" class=" wp-post-image" alt="找到适合自己的交际圈" srcset="http://www.semorn.com/wp-content/uploads/2016/07/4630_1370000178802698-150x150.jpg 150w, http://www.semorn.com/wp-content/uploads/2016/07/4630_1370000178802698-110x110.jpg 110w" sizes="(max-width: 110px) 100vw, 110px"></a>
+                            </li>
+                            <li class="center-item bd">
+                                <a href="http://www.semorn.com/article/10671.html">
+                                    <span class="center-item-title slow">
+                                        真正的优雅不是端着
+                                        <br>
+                                        450 ℃
+                                        <br>2016-04-19</span>
+                                    <img width="110" height="110" src="http://www.semorn.com/wp-content/uploads/2016/04/4aac47984410930d20965-110x110.jpg" class=" wp-post-image" alt="真正的优雅不是端着" srcset="http://www.semorn.com/wp-content/uploads/2016/04/4aac47984410930d20965-150x150.jpg 150w, http://www.semorn.com/wp-content/uploads/2016/04/4aac47984410930d20965-110x110.jpg 110w" sizes="(max-width: 110px) 100vw, 110px"></a>
+                            </li>
+                            <li class="center-item bd">
+                                <a href="http://www.semorn.com/article/9125.html">
+                                    <span class="center-item-title slow">
+                                        爱情，就该是好了伤疤忘了疼
+                                        <br>
+                                        868 ℃
+                                        <br>2016-01-10</span>
+                                    <img width="110" height="110" src="http://www.semorn.com/wp-content/uploads/2016/01/fe13c8fcc3cec3fd64-110x110.jpg" class=" wp-post-image" alt="爱情，就该是好了伤疤忘了疼" srcset="http://www.semorn.com/wp-content/uploads/2016/01/fe13c8fcc3cec3fd64-150x150.jpg 150w, http://www.semorn.com/wp-content/uploads/2016/01/fe13c8fcc3cec3fd64-110x110.jpg 110w, http://www.semorn.com/wp-content/uploads/2016/01/fe13c8fcc3cec3fd64.jpg 500w" sizes="(max-width: 110px) 100vw, 110px"></a>
+                            </li>
+                            <li class="center-item bd">
+                                <a href="http://www.semorn.com/article/7454.html">
+                                    <span class="center-item-title slow">
+                                        你真以为早起早睡每天跑步能改变你的生活？
+                                        <br>
+                                        735 ℃
+                                        <br>2015-08-28</span>
+                                    <img width="110" height="110" src="http://www.semorn.com/wp-content/uploads/2015/08/587711341936042-110x110.jpg" class=" wp-post-image" alt="你真以为早起早睡每天跑步能改变你的生活？" srcset="http://www.semorn.com/wp-content/uploads/2015/08/587711341936042-150x150.jpg 150w, http://www.semorn.com/wp-content/uploads/2015/08/587711341936042-110x110.jpg 110w" sizes="(max-width: 110px) 100vw, 110px"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <a href="http://www.semorn.com/listen" target="_blank">
+                            <div id="celan-top">
+                                <img src="http://www.semorn.com/wp-content/uploads/2015/07/125469802.jpg" alt="网络电台在线收听" style="width:100%;height:112px"></div>
+                        </a>
+                        <a href="http://www.semorn.com/read/mininovel" target="_blank">
+                            <div id="celan-bottom">
+                                <img src="http://www.semorn.com/wp-content/uploads/2015/07/228201.jpg" alt="情感故事" style="width:100%;height:112px"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="content">
+                <div class="main-media">
+                    <article id="post-12189" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/12189.html" target="_blank">生活是为什么，你是答案</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/tianchu"> <i class="icon-copyright"></i>
+                                        田楚妹纸
+                                    </a> <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/listen/chengzhangfm" rel="category tag">成长FM</a>
+                                    <time datetime="2016-09-13">
+                                        <a href="http://www.semorn.com/article/date/2016/09/13">
+                                            <i class="icon-time"></i>
+                                            2016-09-13
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/12189.html" title="生活是为什么，你是答案">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2016/09/t01578bc3fcc5c3fc4a.jpg" class="attachment-full size-full wp-post-image" alt="生活是为什么，你是答案"></a>
+                                </div>
+                            </div>
+                            <audio controls="" style="width:100%" src="http://cdn1.lizhi.fm/audio/2016/06/11/2539209288764151302_hd.mp3">
+                                <embed src="http://www.semorn.com/wp-content/themes/Initial/includes/player.swf" quality="high" width="100%" height="24" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="animation=no&amp;remaining=yes&amp;noinfo=yes&amp;bg=0xD4E8FF&amp;leftbg=0x0DA4D3&amp;lefticon=0xF2F2F2&amp;rightbg=0x0DA4D3&amp;rightbghover=0x3AB8DF&amp;righticon=0xF2F2F2&amp;righticonhover=0xFFFFFF&amp;text=0x0088DD&amp;slider=0x0088DD&amp;track=0xFFFFFF&amp;border=0xFFFFFF&amp;loader=0x8EC2F4&amp;autostart=no&amp;loop=yes&amp;soundFile=http://cdn1.lizhi.fm/audio/2016/06/11/2539209288764151302_hd.mp3"></audio>
+                            <span class="entry-content">
+                                好像每一个跳跃的日子里。都有一个“为什么我要这样”的问题如鲠在喉。
+为什么我要加班？为什么领导讨厌我？为什么我要读这所大学？为什么我要住这间宿舍？为什么我控制不了现在的生活？... ...
+不是每个人都能在那样的日子里找到答案。但好在，只要你沉下来...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#6CC" href="http://www.semorn.com/article/tag/nj%e7%94%b0%e6%a5%9a" rel="tag">NJ田楚</a>
+                                <a class="bg" style="background:#37A7FF" href="http://www.semorn.com/article/tag/%e6%83%85%e6%84%9f" rel="tag">情感</a>
+                                <a class="bg" style="background:#B0D686" href="http://www.semorn.com/article/tag/fm" rel="tag">有声电台</a>
+                                <a class="bg" style="background:#E6CC6E" href="http://www.semorn.com/article/tag/%e7%94%9f%e6%b4%bb" rel="tag">生活</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-12089" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/12089.html" target="_blank">对不起，我的朋友都很贵</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/jimoshengxian">
+                                        <i class="icon-copyright"></i>
+                                        寂末声线
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/listen/chengzhangfm" rel="category tag">成长FM</a>
+                                    <time datetime="2016-08-23">
+                                        <a href="http://www.semorn.com/article/date/2016/08/23">
+                                            <i class="icon-time"></i>
+                                            2016-08-23
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/12089.html" title="对不起，我的朋友都很贵">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2016/08/ja276.jpg" class="attachment-full size-full wp-post-image" alt="对不起，我的朋友都很贵"></a>
+                                </div>
+                            </div>
+                            <audio controls="" style="width:100%" src="http://cdn1.lizhi.fm/audio/2016/08/15/2551312925468005894_hd.mp3">
+                                <embed src="http://www.semorn.com/wp-content/themes/Initial/includes/player.swf" quality="high" width="100%" height="24" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="animation=no&amp;remaining=yes&amp;noinfo=yes&amp;bg=0xD4E8FF&amp;leftbg=0x0DA4D3&amp;lefticon=0xF2F2F2&amp;rightbg=0x0DA4D3&amp;rightbghover=0x3AB8DF&amp;righticon=0xF2F2F2&amp;righticonhover=0xFFFFFF&amp;text=0x0088DD&amp;slider=0x0088DD&amp;track=0xFFFFFF&amp;border=0xFFFFFF&amp;loader=0x8EC2F4&amp;autostart=no&amp;loop=yes&amp;soundFile=http://cdn1.lizhi.fm/audio/2016/08/15/2551312925468005894_hd.mp3"></audio>
+                            <span class="entry-content">
+                                01
+久不联系的一位同事打来电话，说她朋友的妈妈最近情绪非常低落，她怀疑老人家抑郁了，知道我有位朋友是心理医生，想向那位朋友咨询一下，我在征求朋友的意见后，把电话发给了她，过一会儿她随口又问我：“向你这位朋友咨询，不收费吧？”
+我压根没去想收...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#6C9" href="http://www.semorn.com/article/tag/nj%e6%9c%ab" rel="tag">NJ末</a>
+                                <a class="bg" style="background:#F96" href="http://www.semorn.com/article/tag/%e5%af%82%e6%9c%ab%e5%a3%b0%e7%ba%bf" rel="tag">寂末声线</a>
+                                <a class="bg" style="background:#6CC" href="http://www.semorn.com/article/tag/fm" rel="tag">有声电台</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-10532" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/10532.html" target="_blank">你是你坚强的后盾</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/djmuzi">
+                                        <i class="icon-copyright"></i>
+                                        DJ沐子
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/listen/lizhifm" rel="category tag">励志FM</a>
+                                    |
+                                    <a href="http://www.semorn.com/listen/chengzhangfm" rel="category tag">成长FM</a>
+                                    <time datetime="2016-04-11">
+                                        <a href="http://www.semorn.com/article/date/2016/04/11">
+                                            <i class="icon-time"></i>
+                                            2016-04-11
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/10532.html" title="你是你坚强的后盾">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2016/04/005AtwJ5ty6PHdSLLm59d.jpg" class="attachment-full size-full wp-post-image" alt="你是你坚强的后盾"></a>
+                                </div>
+                            </div>
+                            <audio controls="" style="width:100%" src="http://cdn1.lizhi.fm/audio/2016/03/21/2523984091509121542_hd.mp3">
+                                <embed src="http://www.semorn.com/wp-content/themes/Initial/includes/player.swf" quality="high" width="100%" height="24" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="animation=no&amp;remaining=yes&amp;noinfo=yes&amp;bg=0xD4E8FF&amp;leftbg=0x0DA4D3&amp;lefticon=0xF2F2F2&amp;rightbg=0x0DA4D3&amp;rightbghover=0x3AB8DF&amp;righticon=0xF2F2F2&amp;righticonhover=0xFFFFFF&amp;text=0x0088DD&amp;slider=0x0088DD&amp;track=0xFFFFFF&amp;border=0xFFFFFF&amp;loader=0x8EC2F4&amp;autostart=no&amp;loop=yes&amp;soundFile=http://cdn1.lizhi.fm/audio/2016/03/21/2523984091509121542_hd.mp3"></audio>
+                            <span class="entry-content">
+                                我们常常和一大群朋友在一起时，敢做很多事情，但是一个人时，会小心低调很多。这是在小时候过马路时发现的真理。
+小时候我特别害怕过马路，因为有一年家里一个保姆带着我过马路去公园玩，结果她看到一辆面包车疾驰而来，她一紧张，就甩开我那正紧握着她的...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#E6CC6E" href="http://www.semorn.com/article/tag/dj%e6%b2%90%e5%ad%90" rel="tag">DJ沐子</a>
+                                <a class="bg" style="background:#E6CC6E" href="http://www.semorn.com/article/tag/%e6%99%9a%e5%ae%89%e6%b2%90%e8%af%ad" rel="tag">晚安沐语</a>
+                                <a class="bg" style="background:#6CC" href="http://www.semorn.com/article/tag/fm" rel="tag">有声电台</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-10418" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/10418.html" target="_blank">你愿不愿意从头再来</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/qingmeiguniang">
+                                        <i class="icon-copyright"></i>
+                                        青梅姑娘
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/listen/lizhifm" rel="category tag">励志FM</a>
+                                    |
+                                    <a href="http://www.semorn.com/listen/chengzhangfm" rel="category tag">成长FM</a>
+                                    <time datetime="2016-04-02">
+                                        <a href="http://www.semorn.com/article/date/2016/04/02">
+                                            <i class="icon-time"></i>
+                                            2016-04-02
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/10418.html" title="你愿不愿意从头再来">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2016/04/83a00002ba.jpg" class="attachment-full size-full wp-post-image" alt="你愿不愿意从头再来"></a>
+                                </div>
+                            </div>
+                            <audio controls="" style="width:100%" src="http://cdn1.lizhi.fm/audio/2016/03/23/2524390784111137798_hd.mp3">
+                                <embed src="http://www.semorn.com/wp-content/themes/Initial/includes/player.swf" quality="high" width="100%" height="24" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="animation=no&amp;remaining=yes&amp;noinfo=yes&amp;bg=0xD4E8FF&amp;leftbg=0x0DA4D3&amp;lefticon=0xF2F2F2&amp;rightbg=0x0DA4D3&amp;rightbghover=0x3AB8DF&amp;righticon=0xF2F2F2&amp;righticonhover=0xFFFFFF&amp;text=0x0088DD&amp;slider=0x0088DD&amp;track=0xFFFFFF&amp;border=0xFFFFFF&amp;loader=0x8EC2F4&amp;autostart=no&amp;loop=yes&amp;soundFile=http://cdn1.lizhi.fm/audio/2016/03/23/2524390784111137798_hd.mp3"></audio>
+                            <span class="entry-content">
+                                一
+明明不喜欢自己的本科专业，考研的时候，为什么没有换一个专业？
+明明不喜欢自己待的城市，找工作的时候，为什么没有下决心去一个新的城市？
+明明嫌自己手上的工作内容重复，生活单调，为什么不愿意尝试换一个新的工作？
+可是，我本科专业直接考研究生...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#F99" href="http://www.semorn.com/article/tag/%e6%83%85%e6%84%9f%e6%a0%91%e6%b4%9e" rel="tag">情感树洞</a>
+                                <a class="bg" style="background:#37A7FF" href="http://www.semorn.com/article/tag/fm" rel="tag">有声电台</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-9075" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/9075.html" target="_blank">【梦田之音】别在适合谈恋爱的年纪，忙着结婚</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/nanzhuguniang">
+                                        <i class="icon-copyright"></i>
+                                        南烛姑娘
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/listen/chengzhangfm" rel="category tag">成长FM</a>
+                                    |
+                                    <a href="http://www.semorn.com/listen/aiqingfm" rel="category tag">爱情FM</a>
+                                    <time datetime="2016-01-07">
+                                        <a href="http://www.semorn.com/article/date/2016/01/07">
+                                            <i class="icon-time"></i>
+                                            2016-01-07
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/9075.html" title="【梦田之音】别在适合谈恋爱的年纪，忙着结婚">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2016/01/3947686548383762034.jpg" class="attachment-full size-full wp-post-image" alt="【梦田之音】别在适合谈恋爱的年纪，忙着结婚"></a>
+                                </div>
+                            </div>
+                            <audio controls="" style="width:100%" src="http://cdn1.lizhi.fm/audio/2016/01/05/2509908130765455366_hd.mp3">
+                                <embed src="http://www.semorn.com/wp-content/themes/Initial/includes/player.swf" quality="high" width="100%" height="24" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="animation=no&amp;remaining=yes&amp;noinfo=yes&amp;bg=0xD4E8FF&amp;leftbg=0x0DA4D3&amp;lefticon=0xF2F2F2&amp;rightbg=0x0DA4D3&amp;rightbghover=0x3AB8DF&amp;righticon=0xF2F2F2&amp;righticonhover=0xFFFFFF&amp;text=0x0088DD&amp;slider=0x0088DD&amp;track=0xFFFFFF&amp;border=0xFFFFFF&amp;loader=0x8EC2F4&amp;autostart=no&amp;loop=yes&amp;soundFile=http://cdn1.lizhi.fm/audio/2016/01/05/2509908130765455366_hd.mp3"></audio>
+                            <span class="entry-content">
+                                活该你生青春痘，谁叫你不结婚；
+活该你一个人无聊，谁叫你不结婚；
+活该你日子过得压抑，谁叫你不结婚；
+活该你生病没人照顾，谁叫你不结婚；
+“活该你……谁叫你不结婚”这种句式，我奶奶常对我说。她每每这样说时，我家亲戚轮番上阵对我发起进攻，正所谓兵...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#37A7FF" href="http://www.semorn.com/article/tag/%e5%8d%97%e7%83%9b%e5%a7%91%e5%a8%98" rel="tag">南烛姑娘</a>
+                                <a class="bg" style="background:#E6CC6E" href="http://www.semorn.com/article/tag/fm" rel="tag">有声电台</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-6545" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/6545.html" target="_blank">【夏落未落】你认识我的时候已是待嫁的年龄</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/xialuoweiluo">
+                                        <i class="icon-copyright"></i>
+                                        夏落未落电台
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/listen/chengzhangfm" rel="category tag">成长FM</a>
+                                    |
+                                    <a href="http://www.semorn.com/listen/wennuanfm" rel="category tag">温暖FM</a>
+                                    <time datetime="2015-06-18">
+                                        <a href="http://www.semorn.com/article/date/2015/06/18">
+                                            <i class="icon-time"></i>
+                                            2015-06-18
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/6545.html" title="【夏落未落】你认识我的时候已是待嫁的年龄">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/06/20130815094944262.jpg" class="attachment-full size-full wp-post-image" alt="【夏落未落】你认识我的时候已是待嫁的年龄"></a>
+                                </div>
+                            </div>
+                            <audio controls="" style="width:100%" src="http://cdn.lizhi.fm/audio/2015/06/18/20848672722828806_hd.mp3">
+                                <embed src="http://www.semorn.com/wp-content/themes/Initial/includes/player.swf" quality="high" width="100%" height="24" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="animation=no&amp;remaining=yes&amp;noinfo=yes&amp;bg=0xD4E8FF&amp;leftbg=0x0DA4D3&amp;lefticon=0xF2F2F2&amp;rightbg=0x0DA4D3&amp;rightbghover=0x3AB8DF&amp;righticon=0xF2F2F2&amp;righticonhover=0xFFFFFF&amp;text=0x0088DD&amp;slider=0x0088DD&amp;track=0xFFFFFF&amp;border=0xFFFFFF&amp;loader=0x8EC2F4&amp;autostart=no&amp;loop=yes&amp;soundFile=http://cdn.lizhi.fm/audio/2015/06/18/20848672722828806_hd.mp3"></audio>
+                            <span class="entry-content">
+                                你认识我的时候，我已是待嫁的年龄，你没有见过我在课堂上跟老师愤然吵架的样子；
+你认识我的时候，我已经蓄了很久的长发，你没有见过我剪成短短的头发，在学校让大家目瞪口呆的样子；
+你认识我的时候，我已经可以照顾自己，心情不好就做家务，手洗各种衣...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#F99" href="http://www.semorn.com/article/tag/nj%e7%af%b1%e7%ac%99" rel="tag">NJ篱笙</a>
+                                <a class="bg" style="background:#37A7FF" href="http://www.semorn.com/article/tag/%e5%a4%8f%e8%90%bd%e6%9c%aa%e8%90%bd" rel="tag">夏落未落</a>
+                                <a class="bg" style="background:#6C9" href="http://www.semorn.com/article/tag/fm" rel="tag">有声电台</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-6529" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/6529.html" target="_blank">【心灵遇见】别拿别人的尺子丈量自己的爱情</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/xinran">
+                                        <i class="icon-copyright"></i>
+                                        欣然
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/listen/chengzhangfm" rel="category tag">成长FM</a>
+                                    |
+                                    <a href="http://www.semorn.com/listen/aiqingfm" rel="category tag">爱情FM</a>
+                                    <time datetime="2015-06-17">
+                                        <a href="http://www.semorn.com/article/date/2015/06/17">
+                                            <i class="icon-time"></i>
+                                            2015-06-17
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/6529.html" title="【心灵遇见】别拿别人的尺子丈量自己的爱情">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/06/150617130642.jpg" class="attachment-full size-full wp-post-image" alt="【心灵遇见】别拿别人的尺子丈量自己的爱情"></a>
+                                </div>
+                            </div>
+                            <audio controls="" style="width:100%" src="http://cdn.lizhi.fm/audio/2015/05/29/20382076602297606_hd.mp3">
+                                <embed src="http://www.semorn.com/wp-content/themes/Initial/includes/player.swf" quality="high" width="100%" height="24" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="animation=no&amp;remaining=yes&amp;noinfo=yes&amp;bg=0xD4E8FF&amp;leftbg=0x0DA4D3&amp;lefticon=0xF2F2F2&amp;rightbg=0x0DA4D3&amp;rightbghover=0x3AB8DF&amp;righticon=0xF2F2F2&amp;righticonhover=0xFFFFFF&amp;text=0x0088DD&amp;slider=0x0088DD&amp;track=0xFFFFFF&amp;border=0xFFFFFF&amp;loader=0x8EC2F4&amp;autostart=no&amp;loop=yes&amp;soundFile=http://cdn.lizhi.fm/audio/2015/05/29/20382076602297606_hd.mp3"></audio>
+                            <span class="entry-content">
+                                我们常常活在比较中，每个人都有一把衡量人和事的尺子。所以，每个人眼中的世界也是不尽相同的，接下来的这篇文章就让我们看看当你把自己的爱情跟别人进行比较的时候会发生什么，别拿别人的尺子丈量自己的爱情。
+有姑娘问：一个男人跟女友吵架吵得很厉害，...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#E6CC6E" href="http://www.semorn.com/article/tag/nj%e6%ac%a3%e7%84%b6" rel="tag">NJ欣然</a>
+                                <a class="bg" style="background:#6C9" href="http://www.semorn.com/article/tag/%e5%bf%83%e7%81%b5%e9%81%87%e8%a7%81" rel="tag">心灵遇见</a>
+                                <a class="bg" style="background:#E6CC6E" href="http://www.semorn.com/article/tag/fm" rel="tag">有声电台</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-6482" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/6482.html" target="_blank">你不必害怕，岁月有的是时间让你遇见更好的人</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/yiyuan">
+                                        <i class="icon-copyright"></i>
+                                        一媛
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/listen/lizhifm" rel="category tag">励志FM</a>
+                                    |
+                                    <a href="http://www.semorn.com/listen/chengzhangfm" rel="category tag">成长FM</a>
+                                    <time datetime="2015-06-15">
+                                        <a href="http://www.semorn.com/article/date/2015/06/15">
+                                            <i class="icon-time"></i>
+                                            2015-06-15
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/6482.html" title="你不必害怕，岁月有的是时间让你遇见更好的人">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/06/76c7f1cc8b9b2.jpg" class="attachment-full size-full wp-post-image" alt="你不必害怕，岁月有的是时间让你遇见更好的人"></a>
+                                </div>
+                            </div>
+                            <audio controls="" style="width:100%" src="http://cdn.lizhi.fm/audio/2015/05/12/19991306190952582_hd.mp3">
+                                <embed src="http://www.semorn.com/wp-content/themes/Initial/includes/player.swf" quality="high" width="100%" height="24" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="animation=no&amp;remaining=yes&amp;noinfo=yes&amp;bg=0xD4E8FF&amp;leftbg=0x0DA4D3&amp;lefticon=0xF2F2F2&amp;rightbg=0x0DA4D3&amp;rightbghover=0x3AB8DF&amp;righticon=0xF2F2F2&amp;righticonhover=0xFFFFFF&amp;text=0x0088DD&amp;slider=0x0088DD&amp;track=0xFFFFFF&amp;border=0xFFFFFF&amp;loader=0x8EC2F4&amp;autostart=no&amp;loop=yes&amp;soundFile=http://cdn.lizhi.fm/audio/2015/05/12/19991306190952582_hd.mp3"></audio>
+                            <span class="entry-content">
+                                这是我单身生活的第四年。一个人的生活里，总会羡慕别人的爱情。时间久了，我就慢慢告诉自己，其实也不必羡慕别人的爱情，我也可以轰轰烈烈，只是上辈子欠了岁月一个人情，岁月要让我多等待，磨练我的心性。我知道，好事多磨。越是迟来的幸福越能让我知道...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#E6CC6E" href="http://www.semorn.com/article/tag/nj%e4%b8%80%e5%aa%9b" rel="tag">NJ一媛</a>
+                                <a class="bg" style="background:#6CC" href="http://www.semorn.com/article/tag/fm" rel="tag">有声电台</a>
+                                <a class="bg" style="background:#F96" href="http://www.semorn.com/article/tag/%e7%9d%a1%e5%89%8d%e9%9d%99%e5%90%ac" rel="tag">睡前静听</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-6432" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/6432.html" target="_blank">【倾听时光】我们都忘了</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/kezi">
+                                        <i class="icon-copyright"></i>
+                                        珂孜
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/listen/lizhifm" rel="category tag">励志FM</a>
+                                    |
+                                    <a href="http://www.semorn.com/listen/chengzhangfm" rel="category tag">成长FM</a>
+                                    <time datetime="2015-06-12">
+                                        <a href="http://www.semorn.com/article/date/2015/06/12">
+                                            <i class="icon-time"></i>
+                                            2015-06-12
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/6432.html" title="【倾听时光】我们都忘了">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/06/421534720557727560.jpg" class="attachment-full size-full wp-post-image" alt="【倾听时光】我们都忘了"></a>
+                                </div>
+                            </div>
+                            <audio controls="" style="width:100%" src="http://cdn.lizhi.fm/audio/2014/09/16/14462174947655430_hd.mp3">
+                                <embed src="http://www.semorn.com/wp-content/themes/Initial/includes/player.swf" quality="high" width="100%" height="24" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="animation=no&amp;remaining=yes&amp;noinfo=yes&amp;bg=0xD4E8FF&amp;leftbg=0x0DA4D3&amp;lefticon=0xF2F2F2&amp;rightbg=0x0DA4D3&amp;rightbghover=0x3AB8DF&amp;righticon=0xF2F2F2&amp;righticonhover=0xFFFFFF&amp;text=0x0088DD&amp;slider=0x0088DD&amp;track=0xFFFFFF&amp;border=0xFFFFFF&amp;loader=0x8EC2F4&amp;autostart=no&amp;loop=yes&amp;soundFile=http://cdn.lizhi.fm/audio/2014/09/16/14462174947655430_hd.mp3"></audio>
+                            <span class="entry-content">
+                                总有那么一个人，一直守在我们的心底，可是却消失在生活里。
+我们每天都生活在无数的选择中，我们选择一切能保护自己的东西，选择一切对自己有利的情况。选择前进的方向，选择撤退的路线，选择能让自己对得起良心的理由，选择让别人觉得自己无可奈何的方式...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#E6CC6E" href="http://www.semorn.com/article/tag/nj%e7%8f%82%e5%ad%9c" rel="tag">NJ珂孜</a>
+                                <a class="bg" style="background:#37A7FF" href="http://www.semorn.com/article/tag/%e5%80%be%e5%90%ac%e6%97%b6%e5%85%89" rel="tag">倾听时光</a>
+                                <a class="bg" style="background:#F96" href="http://www.semorn.com/article/tag/fm" rel="tag">有声电台</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-6356" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/6356.html" target="_blank">我们总是突然就长大</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/lillian">
+                                        <i class="icon-copyright"></i>
+                                        等一棵开花的树
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/listen/chengzhangfm" rel="category tag">成长FM</a>
+                                    <time datetime="2015-06-08">
+                                        <a href="http://www.semorn.com/article/date/2015/06/08">
+                                            <i class="icon-time"></i>
+                                            2015-06-08
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/6356.html" title="我们总是突然就长大">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/06/c84e44ce3237.jpg" class="attachment-full size-full wp-post-image" alt="我们总是突然就长大"></a>
+                                </div>
+                            </div>
+                            <audio controls="" style="width:100%" src="http://cdn.lizhi.fm/audio/2015/06/05/20545718823329158_hd.mp3">
+                                <embed src="http://www.semorn.com/wp-content/themes/Initial/includes/player.swf" quality="high" width="100%" height="24" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="animation=no&amp;remaining=yes&amp;noinfo=yes&amp;bg=0xD4E8FF&amp;leftbg=0x0DA4D3&amp;lefticon=0xF2F2F2&amp;rightbg=0x0DA4D3&amp;rightbghover=0x3AB8DF&amp;righticon=0xF2F2F2&amp;righticonhover=0xFFFFFF&amp;text=0x0088DD&amp;slider=0x0088DD&amp;track=0xFFFFFF&amp;border=0xFFFFFF&amp;loader=0x8EC2F4&amp;autostart=no&amp;loop=yes&amp;soundFile=http://cdn.lizhi.fm/audio/2015/06/05/20545718823329158_hd.mp3"></audio>
+                            <span class="entry-content">
+                                有的人会失眠,有的人会喝醉,有的要嚎哭整晚,有的人会去街上独自走一夜,有的要在自己身上划一刀烟头烫个疤,还有的必须自甘堕落把自己当块抹布一段时间
+有的打了无数通电话给一个永远不接电话的人打通了却马上挂掉,也有人会独自旅行,不会游泳的人开始学潜水,...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#B0D686" href="http://www.semorn.com/article/tag/nj-lillian" rel="tag">NJ Lillian</a>
+                                <a class="bg" style="background:#C9C" href="http://www.semorn.com/article/tag/fm" rel="tag">有声电台</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-6327" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/6327.html" target="_blank">再见了曾经的少年们</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/muzi">
+                                        <i class="icon-copyright"></i>
+                                        沐梓
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/listen/chengzhangfm" rel="category tag">成长FM</a>
+                                    <time datetime="2015-06-06">
+                                        <a href="http://www.semorn.com/article/date/2015/06/06">
+                                            <i class="icon-time"></i>
+                                            2015-06-06
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/6327.html" title="再见了曾经的少年们">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/06/20130311214320.jpg" class="attachment-full size-full wp-post-image" alt="再见了曾经的少年们"></a>
+                                </div>
+                            </div>
+                            <audio controls="" style="width:100%" src="http://cdn.lizhi.fm/audio/2014/05/06/11365067318627078_hd.mp3">
+                                <embed src="http://www.semorn.com/wp-content/themes/Initial/includes/player.swf" quality="high" width="100%" height="24" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="animation=no&amp;remaining=yes&amp;noinfo=yes&amp;bg=0xD4E8FF&amp;leftbg=0x0DA4D3&amp;lefticon=0xF2F2F2&amp;rightbg=0x0DA4D3&amp;rightbghover=0x3AB8DF&amp;righticon=0xF2F2F2&amp;righticonhover=0xFFFFFF&amp;text=0x0088DD&amp;slider=0x0088DD&amp;track=0xFFFFFF&amp;border=0xFFFFFF&amp;loader=0x8EC2F4&amp;autostart=no&amp;loop=yes&amp;soundFile=http://cdn.lizhi.fm/audio/2014/05/06/11365067318627078_hd.mp3"></audio>
+                            <span class="entry-content">
+                                你从一节觉得没有什么意义的课上睡醒，窗户外是蓝天白云和热烈的阳光，老师依然在讲台上自娱自乐，喋喋不休地讲课。习以为常的是依然无聊枯燥的一个下午。看看手机上的时间距离下课还有很长时间，你惯性的解锁手机，登空间，上朋友圈，借以打发掉剩下的时...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#E6CC6E" href="http://www.semorn.com/article/tag/nj%e6%b2%90%e6%a2%93" rel="tag">NJ沐梓</a>
+                                <a class="bg" style="background:#B0D686" href="http://www.semorn.com/article/tag/%e5%bd%93%e4%bd%a0%e9%80%94%e7%bb%8f%e6%88%91%e7%9a%84%e7%9b%9b%e6%94%be" rel="tag">当你途经我的盛放</a>
+                                <a class="bg" style="background:#6CC" href="http://www.semorn.com/article/tag/fm" rel="tag">有声电台</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-6306" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/6306.html" target="_blank">【旧日时光】感谢你陪我走过青春最美的一程</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/maiya">
+                                        <i class="icon-copyright"></i>
+                                        DJ麦雅
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/listen/chengzhangfm" rel="category tag">成长FM</a>
+                                    <time datetime="2015-06-05">
+                                        <a href="http://www.semorn.com/article/date/2015/06/05">
+                                            <i class="icon-time"></i>
+                                            2015-06-05
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/6306.html" title="【旧日时光】感谢你陪我走过青春最美的一程">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/06/5239448a37b1d.jpg" class="attachment-full size-full wp-post-image" alt="【旧日时光】感谢你陪我走过青春最美的一程"></a>
+                                </div>
+                            </div>
+                            <audio controls="" style="width:100%" src="http://cdn.lizhi.fm/audio/2015/06/05/20542724485851782_hd.mp3">
+                                <embed src="http://www.semorn.com/wp-content/themes/Initial/includes/player.swf" quality="high" width="100%" height="24" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="animation=no&amp;remaining=yes&amp;noinfo=yes&amp;bg=0xD4E8FF&amp;leftbg=0x0DA4D3&amp;lefticon=0xF2F2F2&amp;rightbg=0x0DA4D3&amp;rightbghover=0x3AB8DF&amp;righticon=0xF2F2F2&amp;righticonhover=0xFFFFFF&amp;text=0x0088DD&amp;slider=0x0088DD&amp;track=0xFFFFFF&amp;border=0xFFFFFF&amp;loader=0x8EC2F4&amp;autostart=no&amp;loop=yes&amp;soundFile=http://cdn.lizhi.fm/audio/2015/06/05/20542724485851782_hd.mp3"></audio>
+                            <span class="entry-content">
+                                用四年的时间认识你，爱上你，却不知要用余生的多少个四年怀念你。在我记忆中，你依然是我刚认识你时的模样，笑容明媚，眼神明亮，一点都没变。我还记得你给我送伞的下雨天，我多么希望那条路可以没有尽头的和你走下去。我最怀念我在美国时我们的时光，距...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#F96" href="http://www.semorn.com/article/tag/nj%e9%ba%a6%e9%9b%85" rel="tag">NJ麦雅</a>
+                                <a class="bg" style="background:#6CC" href="http://www.semorn.com/article/tag/%e6%97%a7%e6%97%a5%e6%97%b6%e5%85%89" rel="tag">旧日时光</a>
+                                <a class="bg" style="background:#F96" href="http://www.semorn.com/article/tag/fm" rel="tag">有声电台</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-6273" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/6273.html" target="_blank">你是我故事里的主角</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/morning">
+                                        <i class="icon-copyright"></i>
+                                        墨宁
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/listen/chengzhangfm" rel="category tag">成长FM</a>
+                                    |
+                                    <a href="http://www.semorn.com/listen/gushidiantai" rel="category tag">故事FM</a>
+                                    <time datetime="2015-06-04">
+                                        <a href="http://www.semorn.com/article/date/2015/06/04">
+                                            <i class="icon-time"></i>
+                                            2015-06-04
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/6273.html" title="你是我故事里的主角">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/06/3768271330.jpg" class="attachment-full size-full wp-post-image" alt="你是我故事里的主角"></a>
+                                </div>
+                            </div>
+                            <audio controls="" style="width:100%" src="http://cdn.lizhi.fm/audio/2015/05/26/20314863317276038_hd.mp3">
+                                <embed src="http://www.semorn.com/wp-content/themes/Initial/includes/player.swf" quality="high" width="100%" height="24" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="animation=no&amp;remaining=yes&amp;noinfo=yes&amp;bg=0xD4E8FF&amp;leftbg=0x0DA4D3&amp;lefticon=0xF2F2F2&amp;rightbg=0x0DA4D3&amp;rightbghover=0x3AB8DF&amp;righticon=0xF2F2F2&amp;righticonhover=0xFFFFFF&amp;text=0x0088DD&amp;slider=0x0088DD&amp;track=0xFFFFFF&amp;border=0xFFFFFF&amp;loader=0x8EC2F4&amp;autostart=no&amp;loop=yes&amp;soundFile=http://cdn.lizhi.fm/audio/2015/05/26/20314863317276038_hd.mp3"></audio>
+                            <span class="entry-content">
+                                这里是墨宁说光阴的故事，我是主播墨宁，文/芈十四（知乎）
+有过十几任同桌，但好像一直以来，这个名词，在我的世界里，仅仅属于他。
+小学搞素质教育，每个人都得报一门兴趣班。我本打算去写作班，可听到他和前座的男生说要报奥数班，我就悄悄改成了奥数班...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#F96" href="http://www.semorn.com/article/tag/nj%e5%a2%a8%e5%ae%81" rel="tag">NJ墨宁</a>
+                                <a class="bg" style="background:#E6CC6E" href="http://www.semorn.com/article/tag/%e5%a2%a8%e5%ae%81%e8%af%b4%e5%85%89%e9%98%b4%e7%9a%84%e6%95%85%e4%ba%8b" rel="tag">墨宁说光阴的故事</a>
+                                <a class="bg" style="background:#6C9" href="http://www.semorn.com/article/tag/fm" rel="tag">有声电台</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-6256" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/6256.html" target="_blank">【心灵遇见】白岩松：没有哪一代的青春是容易的</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/xinran">
+                                        <i class="icon-copyright"></i>
+                                        欣然
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/listen/lizhifm" rel="category tag">励志FM</a>
+                                    |
+                                    <a href="http://www.semorn.com/listen/chengzhangfm" rel="category tag">成长FM</a>
+                                    <time datetime="2015-06-02">
+                                        <a href="http://www.semorn.com/article/date/2015/06/02">
+                                            <i class="icon-time"></i>
+                                            2015-06-02
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/6256.html" title="【心灵遇见】白岩松：没有哪一代的青春是容易的">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/06/13022G02314.jpg" class="attachment-full size-full wp-post-image" alt="【心灵遇见】白岩松：没有哪一代的青春是容易的"></a>
+                                </div>
+                            </div>
+                            <audio controls="" style="width:100%" src="http://cdn.lizhi.fm/audio/2015/05/25/20280191925492614_hd.mp3">
+                                <embed src="http://www.semorn.com/wp-content/themes/Initial/includes/player.swf" quality="high" width="100%" height="24" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="animation=no&amp;remaining=yes&amp;noinfo=yes&amp;bg=0xD4E8FF&amp;leftbg=0x0DA4D3&amp;lefticon=0xF2F2F2&amp;rightbg=0x0DA4D3&amp;rightbghover=0x3AB8DF&amp;righticon=0xF2F2F2&amp;righticonhover=0xFFFFFF&amp;text=0x0088DD&amp;slider=0x0088DD&amp;track=0xFFFFFF&amp;border=0xFFFFFF&amp;loader=0x8EC2F4&amp;autostart=no&amp;loop=yes&amp;soundFile=http://cdn.lizhi.fm/audio/2015/05/25/20280191925492614_hd.mp3"></audio>
+                            <span class="entry-content">
+                                前年有赵薇执导的《致青春》是勾起了很多人关于青春的记忆，再后来很多青春剧大卖，像奔跑吧兄弟，万物生长，以及今年开拍的《致青春2》，为什么关于青春的话题能受到如此之多的关注呢？原来青春往往能让观众、读者产生共鸣，勾起大家的怀旧情绪。而这样的...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#B0D686" href="http://www.semorn.com/article/tag/nj%e6%ac%a3%e7%84%b6" rel="tag">NJ欣然</a>
+                                <a class="bg" style="background:#E6CC6E" href="http://www.semorn.com/article/tag/%e5%bf%83%e7%81%b5%e9%81%87%e8%a7%81" rel="tag">心灵遇见</a>
+                                <a class="bg" style="background:#6C9" href="http://www.semorn.com/article/tag/fm" rel="tag">有声电台</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-6238" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/6238.html" target="_blank">【风的物语】假如一切重来</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/nazhenfeng">
+                                        <i class="icon-copyright"></i>
+                                        娜阵风
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/listen/chengzhangfm" rel="category tag">成长FM</a>
+                                    |
+                                    <a href="http://www.semorn.com/listen/aiqingfm" rel="category tag">爱情FM</a>
+                                    <time datetime="2015-06-02">
+                                        <a href="http://www.semorn.com/article/date/2015/06/02">
+                                            <i class="icon-time"></i>
+                                            2015-06-02
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/6238.html" title="【风的物语】假如一切重来">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/06/t01adc0901305135d9e.jpg" class="attachment-full size-full wp-post-image" alt="【风的物语】假如一切重来"></a>
+                                </div>
+                            </div>
+                            <audio controls="" style="width:100%" src="http://cdn.lizhi.fm/audio/2015/05/24/20261198714881158_hd.mp3">
+                                <embed src="http://www.semorn.com/wp-content/themes/Initial/includes/player.swf" quality="high" width="100%" height="24" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="animation=no&amp;remaining=yes&amp;noinfo=yes&amp;bg=0xD4E8FF&amp;leftbg=0x0DA4D3&amp;lefticon=0xF2F2F2&amp;rightbg=0x0DA4D3&amp;rightbghover=0x3AB8DF&amp;righticon=0xF2F2F2&amp;righticonhover=0xFFFFFF&amp;text=0x0088DD&amp;slider=0x0088DD&amp;track=0xFFFFFF&amp;border=0xFFFFFF&amp;loader=0x8EC2F4&amp;autostart=no&amp;loop=yes&amp;soundFile=http://cdn.lizhi.fm/audio/2015/05/24/20261198714881158_hd.mp3"></audio>
+                            <span class="entry-content">
+                                终于你还是来了，来到这里，要知道我一直在等你，我是娜阵风，我在想你。
+有些人一转身就是陌路，留下的只有斑驳的记忆，虽然伤感，但也是曾经的美好回忆，虽然遗憾，但也要感谢能有这么一个人出现在自己的生命里，带来了不一样的色彩。对吗？
+每个人的青...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#C9C" href="http://www.semorn.com/article/tag/%e5%a8%9c%e9%98%b5%e9%a3%8e" rel="tag">娜阵风</a>
+                                <a class="bg" style="background:#F99" href="http://www.semorn.com/article/tag/fm" rel="tag">有声电台</a>
+                                <a class="bg" style="background:#C9C" href="http://www.semorn.com/article/tag/%e9%a3%8e%e7%9a%84%e7%89%a9%e8%af%ad" rel="tag">风的物语</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div style="margin-bottom:10px;clear:both">
+                <div class="pagination">
+                    <span class="current">1</span>
+                    <a href="http://www.semorn.com/listen/chengzhangfm/page/2">2</a>
+                    <a href="http://www.semorn.com/listen/chengzhangfm/page/3">3</a>
+                    <a href="http://www.semorn.com/listen/chengzhangfm/page/4">4</a>
+                    <a href="http://www.semorn.com/listen/chengzhangfm/page/5">5</a>
+                    <a href="http://www.semorn.com/listen/chengzhangfm/page/6">6</a>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div id="footer">
+            <div id="footer-one">
+                <a href="http://www.semorn.com">网络电台</a>
+                |
+                <a href="http://www.semorn.com">情感电台</a>
+                |
+                <a href="http://www.semorn.com/read">情感电台广播稿</a>
+                |
+                <a href="http://www.semorn.com/listen">情感电台在线收听</a>
+                |
+                <a href="http://www.semorn.com/listen">网络电台在线收听</a>
+                |
+                <a href="http://www.semorn.com">讲故事的电台</a>
+                |
+                <a href="http://www.semorn.com/article/tag/fm">有声电台</a>
+                |
+                <a href="http://www.semorn.com/read">电台稿子</a>
+                |
+                <a href="http://www.semorn.com/yingping">影评范文</a>
+                |
+                <a href="http://www.semorn.com/news">电台指南</a>
+                |
+                <a href="http://www.semorn.com/boyinzhuchi">播音主持</a>
+                |
+                <a href="http://www.semorn.com/read">电台播音稿子</a>
+                |
+                <a href="http://www.semorn.com/ximalayafm.html">喜马拉雅FM电台官网</a>
+                |
+                <a href="http://www.semorn.com/lizhifm.html">荔枝fm电台官网</a>
+                |
+                <a href="http://www.semorn.com/article/6508.html">播音主持自备稿件</a>
+                <a rel="nofollow" href="http://www.semorn.com/links" target="”_blank”">查看更多友链</a>
+            </div>
+            <div id="footer-two">
+                <img src="http://www.semorn.com/wp-content/themes/Initial/images/img/foot_logo.png" alt="清沫音乐电台在线收听网">
+                Copyright © 2014
+                <a href="http://www.semorn.com/">清沫网</a>
+                湘ICP备14002542号 .     
+（
+                <a rel="nofollow" href="http://www.semorn.com/link" target="”_blank”">申请友链</a>
+                |
+                <a rel="nofollow" href="http://www.semorn.com/mzsm" target="”_blank”">免责声明</a>
+                |
+                <a rel="nofollow" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=admin@semorn.com">联系我们</a>
+                |
+                <a rel="nofollow" href="http://www.semorn.com/feedback" target="”_blank”">意见反馈</a>
+                |
+                <a href="http://www.semorn.com/music">电台背景音乐</a>
+                |
+                <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000281055'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1000281055' type='text/javascript'%3E%3C/script%3E"));</script>
+                <span id="cnzz_stat_icon_1000281055">
+                    <a href="http://www.cnzz.com/stat/website.php?web_id=1000281055" target="_blank" title="站长统计">站长统计</a>
+                </span>
+                <script src=" http://s23.cnzz.com/z_stat.php?id=1000281055" type="text/javascript"></script>
+                <script src="http://c.cnzz.com/core.php?web_id=1000281055&amp;t=z" charset="utf-8" type="text/javascript"></script>
+                ）
+            </div>
+            <div id="gotop" class="icon-nav btn bg slow hide"></div>
+            <div id="cmt" class="icon-nav  btn bg slow hide"></div>
+        </div>
+        <div id="message">
+            <div id="message-body">
+                <div id="close">×</div>
+                <div id="bulletin">
+                    <ul>
+                        <li>
+                            <a href="http://www.semorn.com/tougao">电台节目投稿</a>
+                            【
+                            <a href="http://www.semorn.com/read">电台稿子</a>
+                            】
+                        </li>
+                        <li>
+                            <a href="http://www.semorn.com/article/9441.html" target="_blank">荔枝FM下载的文件在哪个文件夹？</a>
+                        </li>
+                        <li>
+                            <a href="http://www.semorn.com/article/7754.html" target="_blank">荔枝FM怎么添加音乐？教你用WIFI导入背景音乐</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="http://www.semorn.com/wp-includes/js/wp-embed.min.js?ver=4.4.5"></script>
+        <script type="text/javascript">var duoshuoQuery = {"short_name":"semorn","sso":{"login":"http:\/\/www.semorn.com\/wp-login.php?action=duoshuo_login","logout":"http:\/\/www.semorn.com\/login?action=logout&_wpnonce=5d1600428a"},"theme":"bluebox","stylePatch":"wordpress\/Freedom"};
+duoshuoQuery.sso.login += '&redirect_to=' + encodeURIComponent(window.location.href);
+duoshuoQuery.sso.logout += '&redirect_to=' + encodeURIComponent(window.location.href);</script>
+        <script type="text/javascript" src="http://static.duoshuo.com/embed.js" charset="UTF-8" async="async"></script>
+        <script type="text/Javascript"><!--
+document.oncontextmenu=function(e){return   false;};
+//--></script>
+        <script language="javascript"><!--
+if (top.location != self.location)top.location=self.location;
+// --></script>
+        <noscript>&lt;iframe src=*.html&gt;&lt;/iframe&gt;</noscript>
+        <!-- Dynamic page generated in 0.973 seconds. -->
+        <!-- Cached page generated by WP-Super-Cache on 2016-10-09 11:07:45 -->
+
+        <!-- super cache --> </div>
+</body>
+
+</html>

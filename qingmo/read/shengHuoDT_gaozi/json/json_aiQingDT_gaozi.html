@@ -1,0 +1,760 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>情感故事 | 清沫网</title>
+    <meta name="description" content="情感故事大全精选最新网络情感故事文章，分享关于爱情、校园、生活、成长、励志的广播电台故事稿子">
+    <meta name="keywords" content="情感故事">
+    <meta charset="UTF-8"></head>
+    <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+
+    <script type="text/javascript">
+            $(function(){
+                var resstr = '[';
+                $(".center-list a").each(function (i,info){
+                    resstr += '{';
+                    resstr += '"href":"'+$(info).attr("href")+'",';
+                    resstr += '"center-item-title":"'+$(info).find(".slow").text()+'",';
+                    resstr += '"imgsrc":"'+$(info).find("img").attr("src")+'",';
+                    resstr += '"alt":"'+$(info).find("img").attr("alt")+'",';
+                    resstr += '"srcset":"'+$(info).find("img").attr("srcset")+'",';
+                    resstr += '},';
+                } );    
+                resstr += ']';
+                console.log(resstr);
+            })
+        </script>
+
+    <script type="text/javascript">
+            // $(function(){
+            //     var resstr = '[';
+            //     $("#content article").each(function (i,info){
+            //         resstr += '{';
+            //         resstr += '"thumbnail_url":"'+$(info).find(".thumbnail a").attr("href")+'",';
+            //         resstr += '"thumbnail_title":"'+$(info).find(".thumbnail a").attr("title")+'",';
+            //         resstr += '"thumbnail_src":"'+$(info).find(".thumbnail a img").attr("src")+'",';
+            //         resstr += '"thumbnail_alt":"'+$(info).find(".thumbnail a img").attr("alt")+'",';
+            //         resstr += '"title":"'+$(info).find("h2 a").attr("href")+'",';
+            //         resstr += '"title":"'+$(info).find("h2 a").text()+'",';
+            //         resstr += '"labtime_url":"'+$(info).find(".postlist-info time a").attr("href")+'",';
+            //         resstr += '"content":"'+$(info).find(".entry-content").text()+'",';
+            //         resstr += '"tag1_url":"'+$(info).find(".tags a").eq(0).attr("href")+'",';
+            //         resstr += '"tag1":"'+$(info).find(".tags a").eq(0).text()+'",';
+            //         resstr += '"tag2_url":"'+$(info).find(".tags a").eq(1).attr("href")+'",';
+            //         resstr += '"tag2":"'+$(info).find(".tags a").eq(1).text()+'",';
+            //         resstr += '"tag3_url":"'+$(info).find(".tags a").eq(2).attr("href")+'",';
+            //         resstr += '"tag3":"'+$(info).find(".tags a").eq(2).text()+'",';
+            //         resstr += '},';
+            //     } );    
+            //     resstr += ']';
+            //     console.log(resstr);
+            // })
+        </script>
+
+<body class="archive tag tag-443 custom-background" onload="prettyPrint()">
+    <div id="page">
+        <div id="nav">
+            <div class="nav-item">
+                <h1 class="nav-logo">
+                    <a href="http://www.semorn.com" style="background-image:url(http://www.semorn.com/wp-content/uploads/2014/11/weblogo_3.png)">清沫网</a>
+                </h1>
+                <span class="nav-switch btn hide slow">
+                    <li class="icon-caidan"></li>
+                </span>
+                <div class="nav-menu">
+                    <div class="nav-menu-list">
+                        <ul id="menu" class="menu">
+                            <li>
+                                <a title="网络电台" href="http://www.semorn.com">首页</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="http://www.semorn.com/listen">情感电台</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item-has-children">
+                                        <a href="http://www.semorn.com/listen">在线收听</a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="http://www.semorn.com/listen/aiqingfm">爱情电台节目</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.semorn.com/listen/lizhifm">励志电台节目</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.semorn.com/listen/chengzhangfm">成长电台节目</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.semorn.com/listen/wennuanfm">温暖电台节目</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.semorn.com/listen/zhiyufm">伤感电台节目</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.semorn.com/listen/gushidiantai">故事电台</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.semorn.com/music-story">音乐电台</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="http://www.semorn.com/read/essay">情感文章</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="http://www.semorn.com/article/tag/成长文字">成长电台稿子</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.semorn.com/article/tag/%E7%88%B1%E6%83%85%E6%96%87%E5%AD%97">爱情电台稿子</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.semorn.com/article/tag/生活文字">生活电台稿子</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="http://www.semorn.com/read/mininovel">故事文章</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="http://www.semorn.com/article/author/lvxing">旅游日记</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.semorn.com/gushi">人物故事</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="http://www.semorn.com/music">电台音乐</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-icon">
+                    <a class="nav-mail icon-mail" href="http://www.semorn.com/tougao" rel="external nofollow"></a>
+                    <a class="nav-point icon-point hide" href="javascript:;" style="display:block"></a>
+                    <a class="nav-rss icon-rss" href="http://www.semorn.com/login?redirect_to=http%3A%2F%2Fwww.semorn.com%2Farticle%2Ftag%2F%25E7%2594%259F%25E6%25B4%25BB%25E6%2596%2587%25E5%25AD%2597"></a>
+                    <div class="denglu-list hide">
+                        <a href="http://www.semorn.com/article/author/" rel="external nofollow">我的主页</a>
+                        <br>
+                        <a href="http://www.semorn.com/user/setting" rel="external nofollow">设置资料</a>
+                        <br>
+                        <a href="http://www.semorn.com/tougao" rel="external nofollow">提交作品</a>
+                        <br>
+                        <a href="http://www.semorn.com/wp-login.php?action=logout&amp;amp;redirect_to=%2Farticle%2Ftag%2F%25E7%2594%259F%25E6%25B4%25BB%25E6%2596%2587%25E5%25AD%2597" rel="external nofollow">退出</a>
+                    </div>
+                    <a class="nav-search icon-search hide" href="javascript:;" style="display:block"></a>
+                </div>
+                <div class="nav-point-list hide">
+                    <div class="nav-point-bar">
+                        <a href="http://weibo.com/semorn" rel="external nofollow">新浪官方微博</a>
+                        <br>
+                        <a href="http://user.qzone.qq.com/782680748" rel="external nofollow">官方QQ空间</a>
+                        <br>
+                        关注清沫微信
+                        <img src="http://www.semorn.com/wp-content/uploads/2015/07/qmweixin.png" alt="清沫网微信公众号" style="width:100px;height:100px"></div>
+                </div>
+                <div class="nav-search-bar hide">
+                    <form method="get" action="http://www.semorn.com">
+                        <input type="search" placeholder="Search…" value="" name="s"></form>
+                </div>
+            </div>
+        </div>
+        <div id="container">
+            <div id="content">
+                <div class="main-media">
+                    <article id="post-12351" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/12351.html" target="_blank">有趣的姑娘都单身？</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/chendali"> <i class="icon-copyright"></i>
+                                        陈大力
+                                    </a> <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/read/essay" rel="category tag">情感文章</a>
+                                    <time datetime="2016-10-09">
+                                        <a href="http://www.semorn.com/article/date/2016/10/09">
+                                            <i class="icon-time"></i>
+                                            2016-10-09
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/12351.html" title="有趣的姑娘都单身？">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2016/04/12919886327846-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="有趣的姑娘都单身？"></a>
+                                </div>
+                            </div>
+                            <span class="entry-content">
+                                01
+朋友相亲去了。
+她跟男生约在咖啡厅，没聊几句，我朋友就开始咬吸管敲手指。
+我们几个人一问，她翻白眼，你们别骂我不礼貌，我差点都想刷微博来着。不怪我，怪男生太没趣。
+哪种没趣法呢？男生大学时巴不得四年不要出寝室，每天瘫床上看点七荤八素的新...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#C9C" href="http://www.semorn.com/article/tag/%e6%83%85%e6%84%9f%e6%96%87%e5%ad%97" rel="tag">情感文字</a>
+                                <a class="bg" style="background:#B0D686" href="http://www.semorn.com/article/tag/%e7%94%9f%e6%b4%bb%e6%96%87%e5%ad%97" rel="tag">生活文字</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-12343" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/12343.html" target="_blank">你连自律都做不到，还奢谈什么自由？</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/qingganwenzhang">
+                                        <i class="icon-copyright"></i>
+                                        情感文章
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/read/essay" rel="category tag">情感文章</a>
+                                    <time datetime="2016-10-07">
+                                        <a href="http://www.semorn.com/article/date/2016/10/07">
+                                            <i class="icon-time"></i>
+                                            2016-10-07
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/12343.html" title="你连自律都做不到，还奢谈什么自由？">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2016/04/120401104031-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="你连自律都做不到，还奢谈什么自由？"></a>
+                                </div>
+                            </div>
+                            <span class="entry-content">
+                                据说史蒂夫·乔布斯年轻时每天凌晨四点起床，九点前把一天工作做完。乔帮主说：自由从何而来？从自信来，而自信则是从自律来。
+自律是对自我的控制，自信是对事情的控制。先学会克制自己，用严格的日程表控制生活，才能在这种自律中不断磨练出自信。
+都是成...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#B0D686" href="http://www.semorn.com/article/tag/%e6%83%85%e6%84%9f%e6%96%87%e5%ad%97" rel="tag">情感文字</a>
+                                <a class="bg" style="background:#F96" href="http://www.semorn.com/article/tag/%e7%94%9f%e6%b4%bb%e6%96%87%e5%ad%97" rel="tag">生活文字</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-12338" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/12338.html" target="_blank">你怎么总是忍不住发朋友圈</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/qingganwenzhang">
+                                        <i class="icon-copyright"></i>
+                                        情感文章
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/read/essay" rel="category tag">情感文章</a>
+                                    <time datetime="2016-10-06">
+                                        <a href="http://www.semorn.com/article/date/2016/10/06">
+                                            <i class="icon-time"></i>
+                                            2016-10-06
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/12338.html" title="你怎么总是忍不住发朋友圈">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2016/04/1-16030R03G2-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="你怎么总是忍不住发朋友圈"></a>
+                                </div>
+                            </div>
+                            <span class="entry-content">
+                                01
+最近国庆我好多朋友旅行都不发朋友圈了，因为太多微信爆文说
+真正有品位的人不需要在朋友圈展示自己
+凡事都发朋友圈炫耀是最低级的行为
+发没营养的朋友圈简直 low 爆了
+所以现在的朋友圈流行清汤寡水，有人干脆空空白白，俨然大方告诉大家「我跟这个世...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#C9C" href="http://www.semorn.com/article/tag/%e6%83%85%e6%84%9f%e6%96%87%e5%ad%97" rel="tag">情感文字</a>
+                                <a class="bg" style="background:#37A7FF" href="http://www.semorn.com/article/tag/%e7%94%9f%e6%b4%bb%e6%96%87%e5%ad%97" rel="tag">生活文字</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-12336" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/12336.html" target="_blank">懂得富养自己，到底有多重要</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/qingganwenzhang">
+                                        <i class="icon-copyright"></i>
+                                        情感文章
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/read/essay" rel="category tag">情感文章</a>
+                                    <time datetime="2016-10-05">
+                                        <a href="http://www.semorn.com/article/date/2016/10/05">
+                                            <i class="icon-time"></i>
+                                            2016-10-05
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/12336.html" title="懂得富养自己，到底有多重要">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2016/04/a006962c6f9cb-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="懂得富养自己，到底有多重要"></a>
+                                </div>
+                            </div>
+                            <span class="entry-content">
+                                1
+我妈一直说我是个折腾的主，除了上班、还要挤出时间旅游、健身、各种学习把自己搞得像个陀螺。
+在我妈眼中，我也不是个过日子的主，平时各种买买买，借我亲妈的话说，我就一败家娘们。
+她经常会跟我说你看谁家孩子多会持家，连衣服都舍不得买，你看你……
+...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#F99" href="http://www.semorn.com/article/tag/%e6%83%85%e6%84%9f%e6%96%87%e5%ad%97" rel="tag">情感文字</a>
+                                <a class="bg" style="background:#6C9" href="http://www.semorn.com/article/tag/%e7%94%9f%e6%b4%bb%e6%96%87%e5%ad%97" rel="tag">生活文字</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-12327" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/12327.html" target="_blank">忙，是治愈矫情的良药</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/qingganwenzhang">
+                                        <i class="icon-copyright"></i>
+                                        情感文章
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/read/essay" rel="category tag">情感文章</a>
+                                    <time datetime="2016-10-02">
+                                        <a href="http://www.semorn.com/article/date/2016/10/02">
+                                            <i class="icon-time"></i>
+                                            2016-10-02
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/12327.html" title="忙，是治愈矫情的良药">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2016/04/1173187702947256648-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="忙，是治愈矫情的良药"></a>
+                                </div>
+                            </div>
+                            <span class="entry-content">
+                                如果说生孩子能治好一种叫“文艺女青年“的病，那么，让自己忙起来，则是根治“矫情”病的最佳良药。
+2008年认识小Z时，我们租住在市中心一间老公房里，平摊房租。 她兄弟姐妹多，小时候的生活饥一顿饱一顿，用她的话说，“穷怕了”，银行卡里无论何时都必须有些...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#B0D686" href="http://www.semorn.com/article/tag/%e6%83%85%e6%84%9f%e6%96%87%e5%ad%97" rel="tag">情感文字</a>
+                                <a class="bg" style="background:#37A7FF" href="http://www.semorn.com/article/tag/%e7%94%9f%e6%b4%bb%e6%96%87%e5%ad%97" rel="tag">生活文字</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-12319" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/12319.html" target="_blank">多少黑名单，曾互道晚安</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/qingganwenzhang">
+                                        <i class="icon-copyright"></i>
+                                        情感文章
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/read/essay" rel="category tag">情感文章</a>
+                                    <time datetime="2016-10-02">
+                                        <a href="http://www.semorn.com/article/date/2016/10/02">
+                                            <i class="icon-time"></i>
+                                            2016-10-02
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/12319.html" title="多少黑名单，曾互道晚安">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2016/10/healthyrelat-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="多少黑名单，曾互道晚安"></a>
+                                </div>
+                            </div>
+                            <span class="entry-content">
+                                01
+讲一个故事。
+有一天，羊一个人在山坡上玩，突然来了一只狼，羊用角拼死抵抗的同时，大声向朋友们求救，它知道，它的朋友牛、马、驴、猪、兔子都在周围。
+但听到羊叫声的朋友们知道是狼来了，都立刻撒腿跑了。只有山下的狗听到声音后奔上坡来，咬住了狼...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#B0D686" href="http://www.semorn.com/article/tag/%e5%93%b2%e7%90%86%e6%96%87%e5%ad%97" rel="tag">哲理文字</a>
+                                <a class="bg" style="background:#E6CC6E" href="http://www.semorn.com/article/tag/%e6%83%85%e6%84%9f%e6%96%87%e5%ad%97" rel="tag">情感文字</a>
+                                <a class="bg" style="background:#C9C" href="http://www.semorn.com/article/tag/%e7%94%9f%e6%b4%bb%e6%96%87%e5%ad%97" rel="tag">生活文字</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-12284" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/12284.html" target="_blank">生活从未容易，不过是有人在替你承担不易</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/qingganwenzhang">
+                                        <i class="icon-copyright"></i>
+                                        情感文章
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/read/essay" rel="category tag">情感文章</a>
+                                    <time datetime="2016-09-28">
+                                        <a href="http://www.semorn.com/article/date/2016/09/28">
+                                            <i class="icon-time"></i>
+                                            2016-09-28
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/12284.html" title="生活从未容易，不过是有人在替你承担不易">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2016/03/cbf6c81810a4cc1-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="生活从未容易，不过是有人在替你承担不易"></a>
+                                </div>
+                            </div>
+                            <span class="entry-content">
+                                1、
+李萧是我班上的学生，长相帅气，一身名牌，出手阔绰，用的最新款的苹果手机，常常晚上查寝时不在宿舍，室友说他出去潇洒了。
+很多同学都羡慕他，觉得他的生活太容易、太舒适了。
+这么一个公子哥，我第一次见他时，就隐约觉得他在我班上将来会带给我麻...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#6CC" href="http://www.semorn.com/article/tag/%e6%83%85%e6%84%9f%e6%96%87%e5%ad%97" rel="tag">情感文字</a>
+                                <a class="bg" style="background:#F99" href="http://www.semorn.com/article/tag/%e7%94%9f%e6%b4%bb%e6%96%87%e5%ad%97" rel="tag">生活文字</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-12272" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/12272.html" target="_blank">万人撩你，不如一人懂你</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/qingganwenzhang">
+                                        <i class="icon-copyright"></i>
+                                        情感文章
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/read/essay" rel="category tag">情感文章</a>
+                                    <time datetime="2016-09-26">
+                                        <a href="http://www.semorn.com/article/date/2016/09/26">
+                                            <i class="icon-time"></i>
+                                            2016-09-26
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/12272.html" title="万人撩你，不如一人懂你">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2016/09/967456-8e6c81b8b4d287c4-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="万人撩你，不如一人懂你"></a>
+                                </div>
+                            </div>
+                            <span class="entry-content">
+                                01
+单身的那些年，我有一个很要好的朋友叫落落，我们常常一起吃饭逛街，吐槽奇葩相亲男。
+落落是个白富美。我第一次逛银泰，围着星光熠熠的蒂芙尼柜台做花痴梦就是和她一起；第一次买博柏利的羊绒围巾，海蓝之谜的神奇面霜也是她开车带我去采购。拜她所赐...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#37A7FF" href="http://www.semorn.com/article/tag/%e5%93%b2%e7%90%86%e6%96%87%e5%ad%97" rel="tag">哲理文字</a>
+                                <a class="bg" style="background:#C9C" href="http://www.semorn.com/article/tag/%e6%83%85%e6%84%9f%e6%96%87%e5%ad%97" rel="tag">情感文字</a>
+                                <a class="bg" style="background:#E6CC6E" href="http://www.semorn.com/article/tag/%e7%94%9f%e6%b4%bb%e6%96%87%e5%ad%97" rel="tag">生活文字</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-12263" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/12263.html" target="_blank">离太闲的人远点</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/qingganwenzhang">
+                                        <i class="icon-copyright"></i>
+                                        情感文章
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/read/essay" rel="category tag">情感文章</a>
+                                    <time datetime="2016-09-25">
+                                        <a href="http://www.semorn.com/article/date/2016/09/25">
+                                            <i class="icon-time"></i>
+                                            2016-09-25
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/12263.html" title="离太闲的人远点">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2016/03/164654654-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="离太闲的人远点"></a>
+                                </div>
+                            </div>
+                            <span class="entry-content">
+                                01
+我妹两年前谋得一份好职，收入不错，又稳定清闲，当时是101分的满意。
+但是上周她辞职了，因为太稳定太清闲。
+她说，自己闲还好，利用时间看看专业书，把以前想考的证都考下来，再学点别的技能，也不算荒废时光。但所有同事都很闲，麻烦就大了。他们整...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#C9C" href="http://www.semorn.com/article/tag/%e6%83%85%e6%84%9f%e6%96%87%e5%ad%97" rel="tag">情感文字</a>
+                                <a class="bg" style="background:#E6CC6E" href="http://www.semorn.com/article/tag/%e7%94%9f%e6%b4%bb%e6%96%87%e5%ad%97" rel="tag">生活文字</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-12256" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/12256.html" target="_blank">二十岁后的每一年，都很重要</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/qingganwenzhang">
+                                        <i class="icon-copyright"></i>
+                                        情感文章
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/read/essay" rel="category tag">情感文章</a>
+                                    <time datetime="2016-09-24">
+                                        <a href="http://www.semorn.com/article/date/2016/09/24">
+                                            <i class="icon-time"></i>
+                                            2016-09-24
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/12256.html" title="二十岁后的每一年，都很重要">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2016/03/3755213208899308677-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="二十岁后的每一年，都很重要"></a>
+                                </div>
+                            </div>
+                            <span class="entry-content">
+                                有一些成长的心得，在二十七岁这一年，想和女孩子们分享。
+成人的世界很残酷，作为一个平凡的女孩，经历过挣扎，更加懂得，不负时间，才能不负自己。
+二十岁之后的每一年，都很重要，重要到，你不知道哪一点努力，也许就可以成就你。
+培养阅读的习惯
+托马...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#F99" href="http://www.semorn.com/article/tag/%e5%93%b2%e7%90%86%e6%96%87%e5%ad%97" rel="tag">哲理文字</a>
+                                <a class="bg" style="background:#F99" href="http://www.semorn.com/article/tag/%e6%83%85%e6%84%9f%e6%96%87%e5%ad%97" rel="tag">情感文字</a>
+                                <a class="bg" style="background:#6CC" href="http://www.semorn.com/article/tag/%e7%94%9f%e6%b4%bb%e6%96%87%e5%ad%97" rel="tag">生活文字</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-12226" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/12226.html" target="_blank">不将就，是对自己最大的尊重</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/qingganwenzhang">
+                                        <i class="icon-copyright"></i>
+                                        情感文章
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/read/essay" rel="category tag">情感文章</a>
+                                    <time datetime="2016-09-19">
+                                        <a href="http://www.semorn.com/article/date/2016/09/19">
+                                            <i class="icon-time"></i>
+                                            2016-09-19
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/12226.html" title="不将就，是对自己最大的尊重">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2016/09/711555-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="不将就，是对自己最大的尊重"></a>
+                                </div>
+                            </div>
+                            <span class="entry-content">
+                                01
+我有一件很喜欢的衣服，是一件夏天穿的小衫，样子即大方得体，又很有设计感。这件衣服我穿了7年。直到今夏，我仍将它放在衣柜最显眼的位置，常穿常新，爱不释身。
+不妨讲讲7年前我把它买到手的那一天。
+7年前我刚读大一。和很多刚读大学的孩子一样，那...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#F99" href="http://www.semorn.com/article/tag/%e5%93%b2%e7%90%86%e6%96%87%e5%ad%97" rel="tag">哲理文字</a>
+                                <a class="bg" style="background:#C9C" href="http://www.semorn.com/article/tag/%e6%83%85%e6%84%9f%e6%96%87%e5%ad%97" rel="tag">情感文字</a>
+                                <a class="bg" style="background:#6CC" href="http://www.semorn.com/article/tag/%e7%94%9f%e6%b4%bb%e6%96%87%e5%ad%97" rel="tag">生活文字</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-12222" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/12222.html" target="_blank">单身上瘾，是一种什么样的体验</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/qingganwenzhang">
+                                        <i class="icon-copyright"></i>
+                                        情感文章
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/read/essay" rel="category tag">情感文章</a>
+                                    <time datetime="2016-09-18">
+                                        <a href="http://www.semorn.com/article/date/2016/09/18">
+                                            <i class="icon-time"></i>
+                                            2016-09-18
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/12222.html" title="单身上瘾，是一种什么样的体验">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2016/03/5_102346_3-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="单身上瘾，是一种什么样的体验"></a>
+                                </div>
+                            </div>
+                            <span class="entry-content">
+                                01
+清晨去河边散步的时候，路遇一个锻炼身体的阿姨，她掏出手机拜托我给她拍照。
+在这期间，我们有一搭没一搭的聊着。突然那个阿姨问我说：“那你一个人在这走啊。”“对啊”说完后我有一丝无奈的尴尬。
+想来大多数人都和我一样吧，一个人久了之后就会越来越迁...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#F99" href="http://www.semorn.com/article/tag/%e6%83%85%e6%84%9f%e6%96%87%e5%ad%97" rel="tag">情感文字</a>
+                                <a class="bg" style="background:#37A7FF" href="http://www.semorn.com/article/tag/%e7%94%9f%e6%b4%bb%e6%96%87%e5%ad%97" rel="tag">生活文字</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div style="margin-bottom:10px;clear:both">
+                <div class="pagination">
+                    <span class="current">1</span>
+                    <a href="http://www.semorn.com/article/tag/%E7%94%9F%E6%B4%BB%E6%96%87%E5%AD%97/page/2">2</a>
+                    <a href="http://www.semorn.com/article/tag/%E7%94%9F%E6%B4%BB%E6%96%87%E5%AD%97/page/3">3</a>
+                    <a href="http://www.semorn.com/article/tag/%E7%94%9F%E6%B4%BB%E6%96%87%E5%AD%97/page/4">4</a>
+                    <a title="Next Page" href="http://www.semorn.com/article/tag/%E7%94%9F%E6%B4%BB%E6%96%87%E5%AD%97/page/2" class="page_next">下一页</a>
+                    <a title="Last Page" href="http://www.semorn.com/article/tag/%E7%94%9F%E6%B4%BB%E6%96%87%E5%AD%97/page/31" class="fir_las">尾页</a>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div id="footer">
+            <div id="footer-one">
+                <a href="http://www.semorn.com">网络电台</a>
+                |
+                <a href="http://www.semorn.com">情感电台</a>
+                |
+                <a href="http://www.semorn.com/read">情感电台广播稿</a>
+                |
+                <a href="http://www.semorn.com/listen">情感电台在线收听</a>
+                |
+                <a href="http://www.semorn.com/listen">网络电台在线收听</a>
+                |
+                <a href="http://www.semorn.com">讲故事的电台</a>
+                |
+                <a href="http://www.semorn.com/article/tag/fm">有声电台</a>
+                |
+                <a href="http://www.semorn.com/read">电台稿子</a>
+                |
+                <a href="http://www.semorn.com/yingping">影评范文</a>
+                |
+                <a href="http://www.semorn.com/news">电台指南</a>
+                |
+                <a href="http://www.semorn.com/boyinzhuchi">播音主持</a>
+                |
+                <a href="http://www.semorn.com/read">电台播音稿子</a>
+                |
+                <a href="http://www.semorn.com/ximalayafm.html">喜马拉雅FM电台官网</a>
+                |
+                <a href="http://www.semorn.com/lizhifm.html">荔枝fm电台官网</a>
+                |
+                <a href="http://www.semorn.com/article/6508.html">播音主持自备稿件</a>
+                <a rel="nofollow" href="http://www.semorn.com/links" target="”_blank”">查看更多友链</a>
+            </div>
+            <div id="footer-two">
+                <img src="http://www.semorn.com/wp-content/themes/Initial/images/img/foot_logo.png" alt="清沫音乐电台在线收听网">
+                Copyright © 2014
+                <a href="http://www.semorn.com/">清沫网</a>
+                湘ICP备14002542号 .     
+（
+                <a rel="nofollow" href="http://www.semorn.com/link" target="”_blank”">申请友链</a>
+                |
+                <a rel="nofollow" href="http://www.semorn.com/mzsm" target="”_blank”">免责声明</a>
+                |
+                <a rel="nofollow" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=admin@semorn.com">联系我们</a>
+                |
+                <a rel="nofollow" href="http://www.semorn.com/feedback" target="”_blank”">意见反馈</a>
+                |
+                <a href="http://www.semorn.com/music">电台背景音乐</a>
+                |
+                <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000281055'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1000281055' type='text/javascript'%3E%3C/script%3E"));</script>
+                <span id="cnzz_stat_icon_1000281055">
+                    <a href="http://www.cnzz.com/stat/website.php?web_id=1000281055" target="_blank" title="站长统计">站长统计</a>
+                </span>
+                <script src=" http://s23.cnzz.com/z_stat.php?id=1000281055" type="text/javascript"></script>
+                <script src="http://c.cnzz.com/core.php?web_id=1000281055&amp;t=z" charset="utf-8" type="text/javascript"></script>
+                ）
+            </div>
+            <div id="gotop" class="icon-nav btn bg slow hide"></div>
+            <div id="cmt" class="icon-nav  btn bg slow hide"></div>
+        </div>
+        <div id="message">
+            <div id="message-body">
+                <div id="close">×</div>
+                <div id="bulletin">
+                    <ul>
+                        <li>
+                            <a href="http://www.semorn.com/tougao">电台节目投稿</a>
+                            【
+                            <a href="http://www.semorn.com/read">电台稿子</a>
+                            】
+                        </li>
+                        <li>
+                            <a href="http://www.semorn.com/article/9441.html" target="_blank">荔枝FM下载的文件在哪个文件夹？</a>
+                        </li>
+                        <li>
+                            <a href="http://www.semorn.com/article/7754.html" target="_blank">荔枝FM怎么添加音乐？教你用WIFI导入背景音乐</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="http://www.semorn.com/wp-includes/js/wp-embed.min.js?ver=4.4.5"></script>
+        <script type="text/javascript">var duoshuoQuery = {"short_name":"semorn","sso":{"login":"http:\/\/www.semorn.com\/wp-login.php?action=duoshuo_login","logout":"http:\/\/www.semorn.com\/login?action=logout&_wpnonce=5d1600428a"},"theme":"bluebox","stylePatch":"wordpress\/Freedom"};
+duoshuoQuery.sso.login += '&redirect_to=' + encodeURIComponent(window.location.href);
+duoshuoQuery.sso.logout += '&redirect_to=' + encodeURIComponent(window.location.href);</script>
+        <script type="text/javascript" src="http://static.duoshuo.com/embed.js" charset="UTF-8" async="async"></script>
+        <script type="text/Javascript"><!--
+document.oncontextmenu=function(e){return   false;};
+//--></script>
+        <script language="javascript"><!--
+if (top.location != self.location)top.location=self.location;
+// --></script>
+        <noscript>&lt;iframe src=*.html&gt;&lt;/iframe&gt;</noscript>
+        <!-- Dynamic page generated in 1.487 seconds. -->
+        <!-- Cached page generated by WP-Super-Cache on 2016-10-09 11:27:07 -->
+
+        <!-- super cache --> </div>
+</body>
+
+</body>
+</html>

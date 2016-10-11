@@ -1,0 +1,1011 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>旅游日记 | 清沫网</title>
+    <meta name="description" content="上学的时候，我没怎么听说过迪拜。">
+    <meta name="keywords" content="旅行文字,生活文字">
+    <meta charset="UTF-8"></head>
+
+    <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+
+    <script type="text/javascript">
+        // $(function(){
+        //     var resstr = '[';
+        //     $(".center-list a").each(function (i,info){
+        //         resstr += '{';
+        //         resstr += '"href":"'+$(info).attr("href")+'",';
+        //         resstr += '"center-item-title":"'+$(info).find(".slow").text()+'",';
+        //         resstr += '"imgsrc":"'+$(info).find("img").attr("src")+'",';
+        //         resstr += '"alt":"'+$(info).find("img").attr("alt")+'",';
+        //         resstr += '"srcset":"'+$(info).find("img").attr("srcset")+'",';
+        //         resstr += '},';
+        //     } );    
+        //     resstr += ']';
+        //     console.log(resstr);
+        // })
+    </script>
+
+    <script type="text/javascript">
+        $(function(){
+            var resstr = '[';
+            $("#content article").each(function (i,info){
+                resstr += '{';
+                resstr += '"thumbnail_url":"'+$(info).find(".thumbnail a").attr("href")+'",';
+                resstr += '"thumbnail_title":"'+$(info).find(".thumbnail a").attr("title")+'",';
+                resstr += '"thumbnail_src":"'+$(info).find(".thumbnail a img").attr("src")+'",';
+                resstr += '"thumbnail_alt":"'+$(info).find(".thumbnail a img").attr("alt")+'",';
+                resstr += '"title":"'+$(info).find("h2 a").attr("href")+'",';
+                resstr += '"title":"'+$(info).find("h2 a").text()+'",';
+                resstr += '"labtime_url":"'+$(info).find(".postlist-info time a").attr("href")+'",';
+                resstr += '"content":"'+$(info).find(".entry-content").text()+'",';
+                resstr += '"tag1_url":"'+$(info).find(".tags a").eq(0).attr("href")+'",';
+                resstr += '"tag1":"'+$(info).find(".tags a").eq(0).text()+'",';
+                resstr += '"tag2_url":"'+$(info).find(".tags a").eq(1).attr("href")+'",';
+                resstr += '"tag2":"'+$(info).find(".tags a").eq(1).text()+'",';
+                resstr += '"tag3_url":"'+$(info).find(".tags a").eq(2).attr("href")+'",';
+                resstr += '"tag3":"'+$(info).find(".tags a").eq(2).text()+'",';
+                resstr += '},';
+            } );    
+            resstr += ']';
+            console.log(resstr);
+        })
+     </script>
+
+<body class="archive category category-gushi category-440 custom-background" onload="prettyPrint()">
+    <div id="page">
+        <div id="nav">
+            <div class="nav-item">
+                <h1 class="nav-logo">
+                    <a href="http://www.semorn.com" style="background-image:url(http://www.semorn.com/wp-content/uploads/2014/11/weblogo_3.png)">清沫网</a>
+                </h1>
+                <span class="nav-switch btn hide slow">
+                    <li class="icon-caidan"></li>
+                </span>
+                <div class="nav-menu">
+                    <div class="nav-menu-list">
+                        <ul id="menu" class="menu">
+                            <li>
+                                <a title="网络电台" href="http://www.semorn.com">首页</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="http://www.semorn.com/listen">情感电台</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item-has-children">
+                                        <a href="http://www.semorn.com/listen">在线收听</a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="http://www.semorn.com/listen/aiqingfm">爱情电台节目</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.semorn.com/listen/lizhifm">励志电台节目</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.semorn.com/listen/chengzhangfm">成长电台节目</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.semorn.com/listen/wennuanfm">温暖电台节目</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.semorn.com/listen/zhiyufm">伤感电台节目</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.semorn.com/listen/gushidiantai">故事电台</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.semorn.com/music-story">音乐电台</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="http://www.semorn.com/read/essay">情感文章</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="http://www.semorn.com/article/tag/成长文字">成长电台稿子</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.semorn.com/article/tag/%E7%88%B1%E6%83%85%E6%96%87%E5%AD%97">爱情电台稿子</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.semorn.com/article/tag/生活文字">生活电台稿子</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="current-menu-ancestor current-menu-parent menu-item-has-children">
+                                <a href="http://www.semorn.com/read/mininovel">故事文章</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="http://www.semorn.com/article/author/lvxing">旅游日记</a>
+                                    </li>
+                                    <li class="current-menu-item">
+                                        <a href="http://www.semorn.com/gushi">人物故事</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="http://www.semorn.com/music">电台音乐</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-icon">
+                    <a class="nav-mail icon-mail" href="http://www.semorn.com/tougao" rel="external nofollow"></a>
+                    <a class="nav-point icon-point hide" href="javascript:;" style="display:block"></a>
+                    <a class="nav-rss icon-rss" href="http://www.semorn.com/login?redirect_to=http%3A%2F%2Fwww.semorn.com%2Fgushi"></a>
+                    <div class="denglu-list hide">
+                        <a href="http://www.semorn.com/article/author/" rel="external nofollow">我的主页</a>
+                        <br>
+                        <a href="http://www.semorn.com/user/setting" rel="external nofollow">设置资料</a>
+                        <br>
+                        <a href="http://www.semorn.com/tougao" rel="external nofollow">提交作品</a>
+                        <br>
+                        <a href="http://www.semorn.com/wp-login.php?action=logout&amp;amp;redirect_to=%2Fgushi" rel="external nofollow">退出</a>
+                    </div>
+                    <a class="nav-search icon-search hide" href="javascript:;" style="display:block"></a>
+                </div>
+                <div class="nav-point-list hide">
+                    <div class="nav-point-bar">
+                        <a href="http://weibo.com/semorn" rel="external nofollow">新浪官方微博</a>
+                        <br>
+                        <a href="http://user.qzone.qq.com/782680748" rel="external nofollow">官方QQ空间</a>
+                        <br>
+                        关注清沫微信
+                        <img src="http://www.semorn.com/wp-content/uploads/2015/07/qmweixin.png" alt="清沫网微信公众号" style="width:100px;height:100px"></div>
+                </div>
+                <div class="nav-search-bar hide">
+                    <form method="get" action="http://www.semorn.com">
+                        <input type="search" placeholder="Search…" value="" name="s"></form>
+                </div>
+            </div>
+        </div>
+        <div id="container">
+            <div id="metro">
+                <div id="metro-item">
+                    <div class="left bd">
+                        <div class="featured">
+                            <ul style="left: 0px; width: 2580px;">
+                                <li>
+                                    <a href="http://www.semorn.com/article/6455.html">
+                                        <div class="featured-title">
+                                            <span>【一页南夏】不同的角度</span>
+                                        </div>
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/06/10451854856-430x230.jpg" class=" wp-post-image" alt="【一页南夏】不同的角度"></a>
+                                </li>
+                                <li>
+                                    <a href="http://www.semorn.com/article/6432.html">
+                                        <div class="featured-title">
+                                            <span>【倾听时光】我们都忘了</span>
+                                        </div>
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/06/421534720557727560-430x230.jpg" class=" wp-post-image" alt="【倾听时光】我们都忘了"></a>
+                                </li>
+                                <li>
+                                    <a href="http://www.semorn.com/article/6382.html">
+                                        <div class="featured-title">
+                                            <span>【时光FM】你的人生一定马不停蹄</span>
+                                        </div>
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/06/150120103632-430x230.jpg" class=" wp-post-image" alt="【时光FM】你的人生一定马不停蹄"></a>
+                                </li>
+                                <li>
+                                    <a href="http://www.semorn.com/article/6327.html">
+                                        <div class="featured-title">
+                                            <span>再见了曾经的少年们</span>
+                                        </div>
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/06/20130311214320-430x230.jpg" class=" wp-post-image" alt="再见了曾经的少年们"></a>
+                                </li>
+                                <li>
+                                    <a href="http://www.semorn.com/article/6186.html">
+                                        <div class="featured-title">
+                                            <span>我们都曾付出真心 最后败给了年轻</span>
+                                        </div>
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/05/1359872081580-430x230.jpg" class=" wp-post-image" alt="我们都曾付出真心 最后败给了年轻"></a>
+                                </li>
+                                <li>
+                                    <a href="http://www.semorn.com/article/6162.html">
+                                        <div class="featured-title">
+                                            <span>【夏落未落】最后，他们都输给了现实</span>
+                                        </div>
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/05/131-430x230.jpg" class=" wp-post-image" alt="【夏落未落】最后，他们都输给了现实"></a>
+                                </li>
+                            </ul>
+                            <div class="nav-btn btn">
+                                <span style="opacity: 1;"></span>
+                                <span style="opacity: 0.4;"></span>
+                                <span style="opacity: 0.4;"></span>
+                                <span style="opacity: 0.4;"></span>
+                                <span style="opacity: 0.4;"></span>
+                                <span style="opacity: 0.4;"></span>
+                            </div>
+                            <div class="featured-nav prev btn slow">‹</div>
+                            <div class="featured-nav next btn slow">›</div>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <ul class="center-list">
+                            <li class="center-item bd">
+                                <a href="http://www.semorn.com/article/4058.html">
+                                    <span class="center-item-title slow">
+                                        如果我爱你
+                                        <br>
+                                        夏落未落电台
+                                        <br>2014-11-30</span>
+                                    <img width="110" height="110" src="http://www.semorn.com/wp-content/uploads/2014/11/xlwl_5-110x110.jpg" class=" wp-post-image" alt="如果我爱你" srcset="http://www.semorn.com/wp-content/uploads/2014/11/xlwl_5-150x150.jpg 150w, http://www.semorn.com/wp-content/uploads/2014/11/xlwl_5-110x110.jpg 110w" sizes="(max-width: 110px) 100vw, 110px"></a>
+                            </li>
+                            <li class="center-item bd">
+                                <a href="http://www.semorn.com/article/4156.html">
+                                    <span class="center-item-title slow">
+                                        放荡在水瓶里的暗恋
+                                        <br>
+                                        小音
+                                        <br>2014-12-10</span>
+                                    <img width="110" height="110" src="http://www.semorn.com/wp-content/uploads/2014/12/xiaoyin_2-110x110.jpg" class=" wp-post-image" alt="放荡在水瓶里的暗恋" srcset="http://www.semorn.com/wp-content/uploads/2014/12/xiaoyin_2-150x150.jpg 150w, http://www.semorn.com/wp-content/uploads/2014/12/xiaoyin_2-110x110.jpg 110w" sizes="(max-width: 110px) 100vw, 110px"></a>
+                            </li>
+                            <li class="center-item bd">
+                                <a href="http://www.semorn.com/article/5966.html">
+                                    <span class="center-item-title slow">
+                                        【旧日时光】我和你，终成陌路
+                                        <br>
+                                        DJ麦雅
+                                        <br>2015-05-18</span>
+                                    <img width="110" height="110" src="http://www.semorn.com/wp-content/uploads/2015/05/p9128843-110x110.jpg" class=" wp-post-image" alt="【旧日时光】我和你，终成陌路" srcset="http://www.semorn.com/wp-content/uploads/2015/05/p9128843-150x150.jpg 150w, http://www.semorn.com/wp-content/uploads/2015/05/p9128843-110x110.jpg 110w" sizes="(max-width: 110px) 100vw, 110px"></a>
+                            </li>
+                            <li class="center-item bd">
+                                <a href="http://www.semorn.com/article/2292.html">
+                                    <span class="center-item-title slow">
+                                        一个人的节奏,一个人的力量
+                                        <br>
+                                        晨晨
+                                        <br>2014-07-10</span>
+                                    <img width="110" height="110" src="http://www.semorn.com/wp-content/uploads/2014/07/xlzy6-110x110.jpg" class=" wp-post-image" alt="一个人的节奏,一个人的力量" srcset="http://www.semorn.com/wp-content/uploads/2014/07/xlzy6-150x150.jpg 150w, http://www.semorn.com/wp-content/uploads/2014/07/xlzy6-110x110.jpg 110w" sizes="(max-width: 110px) 100vw, 110px"></a>
+                            </li>
+                            <li class="center-item bd">
+                                <a href="http://www.semorn.com/article/7568.html">
+                                    <span class="center-item-title slow">
+                                        不能恋爱的理由
+                                        <br>
+                                        945 ℃
+                                        <br>2015-09-11</span>
+                                    <img width="110" height="110" src="http://www.semorn.com/wp-content/uploads/2015/09/1188292505255c120-110x110.jpg" class=" wp-post-image" alt="不能恋爱的理由" srcset="http://www.semorn.com/wp-content/uploads/2015/09/1188292505255c120-150x150.jpg 150w, http://www.semorn.com/wp-content/uploads/2015/09/1188292505255c120-110x110.jpg 110w" sizes="(max-width: 110px) 100vw, 110px"></a>
+                            </li>
+                            <li class="center-item bd">
+                                <a href="http://www.semorn.com/article/7888.html">
+                                    <span class="center-item-title slow">
+                                        姑娘别担心，我俩还在一起
+                                        <br>
+                                        879 ℃
+                                        <br>2015-10-15</span>
+                                    <img width="110" height="110" src="http://www.semorn.com/wp-content/uploads/2015/10/1021507501782-110x110.jpg" class=" wp-post-image" alt="姑娘别担心，我俩还在一起" srcset="http://www.semorn.com/wp-content/uploads/2015/10/1021507501782-150x150.jpg 150w, http://www.semorn.com/wp-content/uploads/2015/10/1021507501782-110x110.jpg 110w" sizes="(max-width: 110px) 100vw, 110px"></a>
+                            </li>
+                            <li class="center-item bd">
+                                <a href="http://www.semorn.com/article/7087.html">
+                                    <span class="center-item-title slow">
+                                        愿我们都走过耳听爱情的年纪
+                                        <br>
+                                        1,690 ℃
+                                        <br>2015-07-25</span>
+                                    <img width="110" height="110" src="http://www.semorn.com/wp-content/uploads/2015/07/3deb48f8d5464e7-110x110.jpg" class=" wp-post-image" alt="愿我们都走过耳听爱情的年纪" srcset="http://www.semorn.com/wp-content/uploads/2015/07/3deb48f8d5464e7-150x150.jpg 150w, http://www.semorn.com/wp-content/uploads/2015/07/3deb48f8d5464e7-110x110.jpg 110w" sizes="(max-width: 110px) 100vw, 110px"></a>
+                            </li>
+                            <li class="center-item bd">
+                                <a href="http://www.semorn.com/article/5999.html">
+                                    <span class="center-item-title slow">
+                                        一次刻骨铭心的感情
+                                        <br>
+                                        674 ℃
+                                        <br>2015-05-20</span>
+                                    <img width="110" height="110" src="http://www.semorn.com/wp-content/uploads/2015/05/t018bbbf77fc2a8945-110x110.jpg" class=" wp-post-image" alt="一次刻骨铭心的感情" srcset="http://www.semorn.com/wp-content/uploads/2015/05/t018bbbf77fc2a8945-150x150.jpg 150w, http://www.semorn.com/wp-content/uploads/2015/05/t018bbbf77fc2a8945-110x110.jpg 110w" sizes="(max-width: 110px) 100vw, 110px"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <a href="http://www.semorn.com/listen" target="_blank">
+                            <div id="celan-top">
+                                <img src="http://www.semorn.com/wp-content/uploads/2015/07/125469802.jpg" alt="网络电台在线收听" style="width:100%;height:112px"></div>
+                        </a>
+                        <a href="http://www.semorn.com/read/mininovel" target="_blank">
+                            <div id="celan-bottom">
+                                <img src="http://www.semorn.com/wp-content/uploads/2015/07/228201.jpg" alt="情感故事" style="width:100%;height:112px"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="content">
+                <div class="main-media">
+                    <article id="post-12062" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/12062.html" target="_blank">汤唯：不争，也有属于你的世界</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/renwugushi"> <i class="icon-copyright"></i>
+                                        人物故事
+                                    </a> <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/gushi" rel="category tag">人物故事</a>
+                                    <time datetime="2016-08-18">
+                                        <a href="http://www.semorn.com/article/date/2016/08/18">
+                                            <i class="icon-time"></i>
+                                            2016-08-18
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/12062.html" title="汤唯：不争，也有属于你的世界">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2016/08/c5c0005b529bb566c09-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="汤唯：不争，也有属于你的世界"></a>
+                                </div>
+                            </div>
+                            <span class="entry-content">
+                                01
+     《色戒》之后，汤唯火了。有人预言她会是“张曼玉第二”。在接受采访时，记者问:“你希望成为张曼玉那样的艺人吗？”
+     汤唯答：“Maggie永远只有一个。每个人只能做自己，谁也重复不了别人。”
+     她向来是坚持自我的人，内心有定海神针，外界不太能影响得了她。
+     ...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#6CC" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e5%91%a8%e5%88%8a" rel="tag">人物周刊</a>
+                                <a class="bg" style="background:#37A7FF" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e6%95%85%e4%ba%8b" rel="tag">人物故事</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-11914" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/11914.html" target="_blank">林心如：有底气才能不将就</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/renwugushi">
+                                        <i class="icon-copyright"></i>
+                                        人物故事
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/gushi" rel="category tag">人物故事</a>
+                                    <time datetime="2016-08-04">
+                                        <a href="http://www.semorn.com/article/date/2016/08/04">
+                                            <i class="icon-time"></i>
+                                            2016-08-04
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/11914.html" title="林心如：有底气才能不将就">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2016/08/W020160730580369347227-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="林心如：有底气才能不将就"></a>
+                                </div>
+                            </div>
+                            <span class="entry-content">
+                                01
+     40岁的大龄女神，林心如在前几天正式结束单身，步入婚姻殿堂，对象是让无数少女“舔屏”且小她三岁的“老干部”霍建华。对于一直坚持颜控到底的心如，终于得偿所愿。估计半夜都会偷偷笑醒。
+     在几年前，就有朋友笑称她是“大龄剩女”。林心如一本正经地说：“我...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#F96" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e5%91%a8%e5%88%8a" rel="tag">人物周刊</a>
+                                <a class="bg" style="background:#37A7FF" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e6%95%85%e4%ba%8b" rel="tag">人物故事</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-10211" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/10211.html" target="_blank">余秀华离婚了，我很高兴</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/renwugushi">
+                                        <i class="icon-copyright"></i>
+                                        人物故事
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/gushi" rel="category tag">人物故事</a>
+                                    <time datetime="2016-03-19">
+                                        <a href="http://www.semorn.com/article/date/2016/03/19">
+                                            <i class="icon-time"></i>
+                                            2016-03-19
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/10211.html" title="余秀华离婚了，我很高兴">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2016/03/f8bc1280cb741674b89640-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="余秀华离婚了，我很高兴"></a>
+                                </div>
+                            </div>
+                            <span class="entry-content">
+                                小陌说：余秀华，生于1976年，出生时因难产缺氧造成先天性脑瘫，行动不便，口齿不清。1995年上到高二时辍学归家，在父亲安排下，招婿结婚——19岁的余秀华嫁给了流浪到本村比自己大十几岁的男人，婚后育有一子。
+     2015年初，余秀华的诗《穿过大半个中国去睡你...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#F96" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e5%91%a8%e5%88%8a" rel="tag">人物周刊</a>
+                                <a class="bg" style="background:#F99" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e6%95%85%e4%ba%8b" rel="tag">人物故事</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-9582" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/9582.html" target="_blank">陆小曼：成长的代价是从任性到克制的距离</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/renwugushi">
+                                        <i class="icon-copyright"></i>
+                                        人物故事
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/gushi" rel="category tag">人物故事</a>
+                                    <time datetime="2016-02-16">
+                                        <a href="http://www.semorn.com/article/date/2016/02/16">
+                                            <i class="icon-time"></i>
+                                            2016-02-16
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/9582.html" title="陆小曼：成长的代价是从任性到克制的距离">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2016/02/12278374-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="陆小曼：成长的代价是从任性到克制的距离"></a>
+                                </div>
+                            </div>
+                            <span class="entry-content">
+                                一辈子有多久？
+     爱情有多久？
+     对于杨绛和钱钟书来说，爱情是一辈子。对于陆小曼和徐志摩来说，一辈子是爱情。
+     前者，珍惜着，照顾着对方的感受，将陪伴进行到底；后者，憧憬着，追求着爱情的状态，将“爱情”进行到底。
+     然而经历过后，才会懂得：重要的不是...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#37A7FF" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e6%95%85%e4%ba%8b" rel="tag">人物故事</a>
+                                <a class="bg" style="background:#B0D686" href="http://www.semorn.com/article/tag/%e6%83%85%e6%84%9f%e6%96%87%e5%ad%97" rel="tag">情感文字</a>
+                                <a class="bg" style="background:#C9C" href="http://www.semorn.com/article/tag/%e6%88%90%e9%95%bf%e6%96%87%e5%ad%97" rel="tag">成长文字</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-9386" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/9386.html" target="_blank">赵四小姐：世间本无传奇</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/qingganwenzhang">
+                                        <i class="icon-copyright"></i>
+                                        情感文章
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/gushi" rel="category tag">人物故事</a>
+                                    <time datetime="2016-01-31">
+                                        <a href="http://www.semorn.com/article/date/2016/01/31">
+                                            <i class="icon-time"></i>
+                                            2016-01-31
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/9386.html" title="赵四小姐：世间本无传奇">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2016/01/c03fd543ecb01814ec9912-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="赵四小姐：世间本无传奇"></a>
+                                </div>
+                            </div>
+                            <span class="entry-content">
+                                时光倒流回八十多年前的某一天，落日西沉，夜幕降临，世界本应归于沉寂，但坐落在海河之滨的蔡公馆舞厅，却觥筹交错。
+     一位十六岁的窈窕少女，静静托腮坐在大厅角落休息，忽然一阵喧闹：“少帅来了！”来客自动闪出一条通道，一名英气男子身着白色西装颈系深...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#6C9" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e5%91%a8%e5%88%8a" rel="tag">人物周刊</a>
+                                <a class="bg" style="background:#37A7FF" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e6%95%85%e4%ba%8b" rel="tag">人物故事</a>
+                                <a class="bg" style="background:#E6CC6E" href="http://www.semorn.com/article/tag/%e6%83%85%e6%84%9f%e6%96%87%e5%ad%97" rel="tag">情感文字</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-9376" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/9376.html" target="_blank">李娜：对我而言，姜山是这个世界上最重要的人</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/renwugushi">
+                                        <i class="icon-copyright"></i>
+                                        人物故事
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/gushi" rel="category tag">人物故事</a>
+                                    <time datetime="2016-01-30">
+                                        <a href="http://www.semorn.com/article/date/2016/01/30">
+                                            <i class="icon-time"></i>
+                                            2016-01-30
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/9376.html" title="李娜：对我而言，姜山是这个世界上最重要的人">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2016/01/621f577ctce57c7b6e627690-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="李娜：对我而言，姜山是这个世界上最重要的人"></a>
+                                </div>
+                            </div>
+                            <span class="entry-content">
+                                他比我聪明，比我通晓事理，当我遇到烦恼时，他是我唯一能够放下顾忌、倾诉心事的人，他是我生命中不可或缺的人。——李娜
+     不是每个女孩子都有成为公主的命运。因为爸爸离世早，我一直告诉自己要强大，要能够保护自己和妈妈。后来大家看到我时，都觉得我是个...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#37A7FF" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9" rel="tag">人物</a>
+                                <a class="bg" style="background:#C9C" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e5%91%a8%e5%88%8a" rel="tag">人物周刊</a>
+                                <a class="bg" style="background:#6C9" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e6%95%85%e4%ba%8b" rel="tag">人物故事</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-8884" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/8884.html" target="_blank">蒋勤勤：不做女神演村妇</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/renwugushi">
+                                        <i class="icon-copyright"></i>
+                                        人物故事
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/gushi" rel="category tag">人物故事</a>
+                                    <time datetime="2015-12-26">
+                                        <a href="http://www.semorn.com/article/date/2015/12/26">
+                                            <i class="icon-time"></i>
+                                            2015-12-26
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/8884.html" title="蒋勤勤：不做女神演村妇">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/12/7272875-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="蒋勤勤：不做女神演村妇"></a>
+                                </div>
+                            </div>
+                            <span class="entry-content">
+                                实在太被眷顾了！”谈到电影《一个勺子》得到的诸多荣誉和肯定，采访时蒋勤勤不禁感叹。临时上阵只为全力支持丈夫的导演处女作，作为女主角的蒋勤勤在去年金马奖颁奖典礼当晚激动得泪流不止，采访当天依然难掩激动之情。
+     勺子，在西北方言里是“傻子”的意思...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#6CC" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e5%91%a8%e5%88%8a" rel="tag">人物周刊</a>
+                                <a class="bg" style="background:#6CC" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e6%95%85%e4%ba%8b" rel="tag">人物故事</a>
+                                <a class="bg" style="background:#6C9" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e8%ae%bf%e8%b0%88" rel="tag">人物访谈</a>
+                                <a class="bg" style="background:#E6CC6E" href="http://www.semorn.com/article/tag/%e8%92%8b%e5%8b%a4%e5%8b%a4" rel="tag">蒋勤勤</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-8750" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/8750.html" target="_blank">胡蝶：大不了从头再来</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/renwugushi">
+                                        <i class="icon-copyright"></i>
+                                        人物故事
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/gushi" rel="category tag">人物故事</a>
+                                    <time datetime="2015-12-18">
+                                        <a href="http://www.semorn.com/article/date/2015/12/18">
+                                            <i class="icon-time"></i>
+                                            2015-12-18
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/8750.html" title="胡蝶：大不了从头再来">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/12/li20140218ao28-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="胡蝶：大不了从头再来"></a>
+                                </div>
+                            </div>
+                            <span class="entry-content">
+                                “大家好，欢迎收看《朝闻天下》，我是主持人胡蝶。”2009年7月27日，亮相央视新闻频道早间新闻节目《朝闻天下》主播台的，是一张青春靓丽的新面孔——年仅26岁的胡蝶就此登上中国主持界的最高舞台，靓丽“赛过范冰冰”，音色甜美如溪流，仪态端庄如闺秀... ...
+     ...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#E6CC6E" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e5%91%a8%e5%88%8a" rel="tag">人物周刊</a>
+                                <a class="bg" style="background:#F99" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e6%95%85%e4%ba%8b" rel="tag">人物故事</a>
+                                <a class="bg" style="background:#F96" href="http://www.semorn.com/article/tag/%e8%83%a1%e8%9d%b6" rel="tag">胡蝶</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-8746" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/8746.html" target="_blank">叫兽易小星叫板大电影：五毛特效也是一种审美</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/renwugushi">
+                                        <i class="icon-copyright"></i>
+                                        人物故事
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/gushi" rel="category tag">人物故事</a>
+                                    <time datetime="2015-12-18">
+                                        <a href="http://www.semorn.com/article/date/2015/12/18">
+                                            <i class="icon-time"></i>
+                                            2015-12-18
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/8746.html" title="叫兽易小星叫板大电影：五毛特效也是一种审美">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/12/5ddfd8772d2-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="叫兽易小星叫板大电影：五毛特效也是一种审美"></a>
+                                </div>
+                            </div>
+                            <span class="entry-content">
+                                由易小星导演的《万万没想到》大电影即将上映，路演时现场热情的粉丝和激情澎湃的大合唱，“万万没想到，啦啦啦啦啦！”
+     让他心里的大石头落了地：“我们的群众基础还是不错的！” 但他内心仍存焦虑，一部分原因是怕从来没有看过《万万没想到》的观众不买账，...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#37A7FF" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e5%91%a8%e5%88%8a" rel="tag">人物周刊</a>
+                                <a class="bg" style="background:#6CC" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e6%95%85%e4%ba%8b" rel="tag">人物故事</a>
+                                <a class="bg" style="background:#6CC" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e8%ae%bf%e8%b0%88" rel="tag">人物访谈</a>
+                                <a class="bg" style="background:#37A7FF" href="http://www.semorn.com/article/tag/%e6%98%93%e5%b0%8f%e6%98%9f" rel="tag">易小星</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-8587" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/8587.html" target="_blank">湖南卫视主持人汪涵被增补为民进中央委员</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/renwugushi">
+                                        <i class="icon-copyright"></i>
+                                        人物故事
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/gushi" rel="category tag">人物故事</a>
+                                    <time datetime="2015-12-07">
+                                        <a href="http://www.semorn.com/article/date/2015/12/07">
+                                            <i class="icon-time"></i>
+                                            2015-12-07
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/8587.html" title="湖南卫视主持人汪涵被增补为民进中央委员">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/12/wanghan1207-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="湖南卫视主持人汪涵被增补为民进中央委员"></a>
+                                </div>
+                            </div>
+                            <span class="entry-content">
+                                12月6日上午，中国 民 主 促进会第十三届中央委员会第四次全体会议在京闭幕。孙春兰同志莅临大会并代表中共中央致贺词。会议决定，王佐书同志不再担任中央委员会副主席、常务委员、委员职务，增补冯志刚、贡森、汪涵、沈开举、赵士林、赵秀玲、徐丽桥等7人...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#37A7FF" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e5%91%a8%e5%88%8a" rel="tag">人物周刊</a>
+                                <a class="bg" style="background:#C9C" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e6%95%85%e4%ba%8b" rel="tag">人物故事</a>
+                                <a class="bg" style="background:#37A7FF" href="http://www.semorn.com/article/tag/%e6%b1%aa%e6%b6%b5" rel="tag">汪涵</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-8539" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/8539.html" target="_blank">黄真真：“普普通通的爱情是浪费生命”</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/renwugushi">
+                                        <i class="icon-copyright"></i>
+                                        人物故事
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/gushi" rel="category tag">人物故事</a>
+                                    <time datetime="2015-12-05">
+                                        <a href="http://www.semorn.com/article/date/2015/12/05">
+                                            <i class="icon-time"></i>
+                                            2015-12-05
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/8539.html" title="黄真真：“普普通通的爱情是浪费生命”">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/12/1203191104351-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="黄真真：“普普通通的爱情是浪费生命”"></a>
+                                </div>
+                            </div>
+                            <span class="entry-content">
+                                说起黄真真就不得不提到她的代表作《女人那话儿》，电影用纪录片手法让几十位不同身份的女性畅聊她们的性经验和性观念，制作班底也全部是女性，这样的题材与形式在1999年是颇大胆和先锋的。
+     白色短发、黑皮裤、金属首饰，面前的黄真真也给人时尚前卫的感觉...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#B0D686" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e5%91%a8%e5%88%8a" rel="tag">人物周刊</a>
+                                <a class="bg" style="background:#F99" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e6%95%85%e4%ba%8b" rel="tag">人物故事</a>
+                                <a class="bg" style="background:#F99" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e8%ae%bf%e8%b0%88" rel="tag">人物访谈</a>
+                                <a class="bg" style="background:#6CC" href="http://www.semorn.com/article/tag/%e9%bb%84%e7%9c%9f%e7%9c%9f" rel="tag">黄真真</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-8506" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/8506.html" target="_blank">丁薇十年 你是你自己的零零后</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/renwugushi">
+                                        <i class="icon-copyright"></i>
+                                        人物故事
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/gushi" rel="category tag">人物故事</a>
+                                    <time datetime="2015-12-02">
+                                        <a href="http://www.semorn.com/article/date/2015/12/02">
+                                            <i class="icon-time"></i>
+                                            2015-12-02
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/8506.html" title="丁薇十年 你是你自己的零零后">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/12/dingwei-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="丁薇十年 你是你自己的零零后"></a>
+                                </div>
+                            </div>
+                            <span class="entry-content">
+                                十年前，丁薇像是内地原创音乐土壤生长出的一支野百合。她所创作的《女孩与四重奏》、《冬天来了》等歌曲成为电台原创榜单的榜首，这些作品也为她插上了创作才女的标签。
+     然而作为歌手，丁薇淡定自知的个性，却让她与娱乐圈保持着若即若离的游离感。从唱作...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#6CC" href="http://www.semorn.com/article/tag/%e4%b8%81%e8%96%87" rel="tag">丁薇</a>
+                                <a class="bg" style="background:#37A7FF" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e5%91%a8%e5%88%8a" rel="tag">人物周刊</a>
+                                <a class="bg" style="background:#B0D686" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e6%95%85%e4%ba%8b" rel="tag">人物故事</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-8463" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/8463.html" target="_blank">赵薇：自己挣的是应得，他给的是惊喜</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/renwugushi">
+                                        <i class="icon-copyright"></i>
+                                        人物故事
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/gushi" rel="category tag">人物故事</a>
+                                    <time datetime="2015-11-28">
+                                        <a href="http://www.semorn.com/article/date/2015/11/28">
+                                            <i class="icon-time"></i>
+                                            2015-11-28
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/8463.html" title="赵薇：自己挣的是应得，他给的是惊喜">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/11/175555552-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="赵薇：自己挣的是应得，他给的是惊喜"></a>
+                                </div>
+                            </div>
+                            <span class="entry-content">
+                                赵薇的人生已经敲了第二次上市钟，然而你还在关心她穿得好不好看。
+     好吧，这个段子已经红遍朋友圈了。
+     22岁以《还珠格格》红透亚洲，又出演《情深深雨蒙蒙》等琼瑶剧奠定地位；偶像演员出道，此后成功转型演技派，出演《京华烟云》、《亲爱的》、《虎妈猫...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#6CC" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e5%91%a8%e5%88%8a" rel="tag">人物周刊</a>
+                                <a class="bg" style="background:#6CC" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e6%95%85%e4%ba%8b" rel="tag">人物故事</a>
+                                <a class="bg" style="background:#37A7FF" href="http://www.semorn.com/article/tag/%e8%b5%b5%e8%96%87" rel="tag">赵薇</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-8306" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/8306.html" target="_blank">赵又廷：骨子里是段誉，不是英雄</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/renwugushi">
+                                        <i class="icon-copyright"></i>
+                                        人物故事
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/gushi" rel="category tag">人物故事</a>
+                                    <time datetime="2015-11-16">
+                                        <a href="http://www.semorn.com/article/date/2015/11/16">
+                                            <i class="icon-time"></i>
+                                            2015-11-16
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/8306.html" title="赵又廷：骨子里是段誉，不是英雄">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/11/jiucengyaota-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="赵又廷：骨子里是段誉，不是英雄"></a>
+                                </div>
+                            </div>
+                            <span class="entry-content">
+                                赵又廷的人生步伐不紧不慢地顺应了“三十而立”的古训。30岁这一年，爱情修成正果——与相恋3年的女友高圆圆喜结连理。“成家”之后的他，继续马不停蹄地在“立业”的成绩单上留下作品。眼前的一部，就是翻拍自网络小说《鬼吹灯》的电影《九层妖塔》。和赵又廷的谈...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#37A7FF" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e5%91%a8%e5%88%8a" rel="tag">人物周刊</a>
+                                <a class="bg" style="background:#E6CC6E" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e6%95%85%e4%ba%8b" rel="tag">人物故事</a>
+                                <a class="bg" style="background:#F96" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e8%ae%bf%e8%b0%88" rel="tag">人物访谈</a>
+                                <a class="bg" style="background:#6C9" href="http://www.semorn.com/article/tag/%e8%b5%b5%e5%8f%88%e5%bb%b7" rel="tag">赵又廷</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="post-8230" class="post-list">
+                        <div class="post-content">
+                            <h2>
+                                <a href="http://www.semorn.com/article/8230.html" target="_blank">亦夫：不认为人人都该去读纯文学</a>
+                            </h2>
+                            <div class="postlist-info">
+                                <div class="postlist-info">
+                                    <a class="fn" href="http://www.semorn.com/article/author/renwugushi">
+                                        <i class="icon-copyright"></i>
+                                        人物故事
+                                    </a>
+                                    <i class="icon-cat"></i>
+                                    <a href="http://www.semorn.com/gushi" rel="category tag">人物故事</a>
+                                    <time datetime="2015-11-10">
+                                        <a href="http://www.semorn.com/article/date/2015/11/10">
+                                            <i class="icon-time"></i>
+                                            2015-11-10
+                                        </a>
+                                    </time>
+                                </div>
+                            </div>
+                            <div class="thumbnail_box bd">
+                                <div class="thumbnail">
+                                    <a href="http://www.semorn.com/article/8230.html" title="亦夫：不认为人人都该去读纯文学">
+                                        <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/11/20151105628595-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="亦夫：不认为人人都该去读纯文学"></a>
+                                </div>
+                            </div>
+                            <span class="entry-content">
+                                亦夫是当今文坛里的独行侠，他游历日本、北京、陕西，按照自己的路数在行走，仿佛不在某个圈子，独行之外，还有独特，他的写作就被诸多评论家喻为带有相当的民间状态，最新的小说作品《吕镇》 ，在写乡村，却与我们熟悉的乡土作品不同，在现实之外有诡异和...
+                            </span>
+                            <div class="clear"></div>
+                            <div class="tags">
+                                <a class="bg" style="background:#6C9" href="http://www.semorn.com/article/tag/%e4%ba%a6%e5%a4%ab" rel="tag">亦夫</a>
+                                <a class="bg" style="background:#6CC" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e5%91%a8%e5%88%8a" rel="tag">人物周刊</a>
+                                <a class="bg" style="background:#C9C" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e6%95%85%e4%ba%8b" rel="tag">人物故事</a>
+                                <a class="bg" style="background:#F99" href="http://www.semorn.com/article/tag/%e4%ba%ba%e7%89%a9%e8%ae%bf%e8%b0%88" rel="tag">人物访谈</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div style="margin-bottom:10px;clear:both">
+                <div class="pagination">
+                    <span class="current">1</span>
+                    <a href="http://www.semorn.com/gushi/page/2">2</a>
+                    <a href="http://www.semorn.com/gushi/page/3">3</a>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div id="footer">
+            <div id="footer-one">
+                <a href="http://www.semorn.com">网络电台</a>
+                |
+                <a href="http://www.semorn.com">情感电台</a>
+                |
+                <a href="http://www.semorn.com/read">情感电台广播稿</a>
+                |
+                <a href="http://www.semorn.com/listen">情感电台在线收听</a>
+                |
+                <a href="http://www.semorn.com/listen">网络电台在线收听</a>
+                |
+                <a href="http://www.semorn.com">讲故事的电台</a>
+                |
+                <a href="http://www.semorn.com/article/tag/fm">有声电台</a>
+                |
+                <a href="http://www.semorn.com/read">电台稿子</a>
+                |
+                <a href="http://www.semorn.com/yingping">影评范文</a>
+                |
+                <a href="http://www.semorn.com/news">电台指南</a>
+                |
+                <a href="http://www.semorn.com/boyinzhuchi">播音主持</a>
+                |
+                <a href="http://www.semorn.com/read">电台播音稿子</a>
+                |
+                <a href="http://www.semorn.com/ximalayafm.html">喜马拉雅FM电台官网</a>
+                |
+                <a href="http://www.semorn.com/lizhifm.html">荔枝fm电台官网</a>
+                |
+                <a href="http://www.semorn.com/article/6508.html">播音主持自备稿件</a>
+                <a rel="nofollow" href="http://www.semorn.com/links" target="”_blank”">查看更多友链</a>
+            </div>
+            <div id="footer-two">
+                <img src="http://www.semorn.com/wp-content/themes/Initial/images/img/foot_logo.png" alt="清沫音乐电台在线收听网">
+                Copyright © 2014
+                <a href="http://www.semorn.com/">清沫网</a>
+                湘ICP备14002542号 .     
+     （
+                <a rel="nofollow" href="http://www.semorn.com/link" target="”_blank”">申请友链</a>
+                |
+                <a rel="nofollow" href="http://www.semorn.com/mzsm" target="”_blank”">免责声明</a>
+                |
+                <a rel="nofollow" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=admin@semorn.com">联系我们</a>
+                |
+                <a rel="nofollow" href="http://www.semorn.com/feedback" target="”_blank”">意见反馈</a>
+                |
+                <a href="http://www.semorn.com/music">电台背景音乐</a>
+                |
+                <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000281055'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1000281055' type='text/javascript'%3E%3C/script%3E"));</script>
+                <span id="cnzz_stat_icon_1000281055">
+                    <a href="http://www.cnzz.com/stat/website.php?web_id=1000281055" target="_blank" title="站长统计">站长统计</a>
+                </span>
+                <script src=" http://s23.cnzz.com/z_stat.php?id=1000281055" type="text/javascript"></script>
+                <script src="http://c.cnzz.com/core.php?web_id=1000281055&amp;t=z" charset="utf-8" type="text/javascript"></script>
+                ）
+            </div>
+            <div id="gotop" class="icon-nav btn bg slow hide"></div>
+            <div id="cmt" class="icon-nav  btn bg slow hide"></div>
+        </div>
+        <div id="message">
+            <div id="message-body">
+                <div id="close">×</div>
+                <div id="bulletin">
+                    <ul>
+                        <li>
+                            <a href="http://www.semorn.com/tougao">电台节目投稿</a>
+                            【
+                            <a href="http://www.semorn.com/read">电台稿子</a>
+                            】
+                        </li>
+                        <li>
+                            <a href="http://www.semorn.com/article/9441.html" target="_blank">荔枝FM下载的文件在哪个文件夹？</a>
+                        </li>
+                        <li>
+                            <a href="http://www.semorn.com/article/7754.html" target="_blank">荔枝FM怎么添加音乐？教你用WIFI导入背景音乐</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="http://www.semorn.com/wp-includes/js/wp-embed.min.js?ver=4.4.5"></script>
+        <script type="text/javascript">var duoshuoQuery = {"short_name":"semorn","sso":{"login":"http:\/\/www.semorn.com\/wp-login.php?action=duoshuo_login","logout":"http:\/\/www.semorn.com\/login?action=logout&_wpnonce=5d1600428a"},"theme":"bluebox","stylePatch":"wordpress\/Freedom"};
+     duoshuoQuery.sso.login += '&redirect_to=' + encodeURIComponent(window.location.href);
+     duoshuoQuery.sso.logout += '&redirect_to=' + encodeURIComponent(window.location.href);</script>
+        <script type="text/javascript" src="http://static.duoshuo.com/embed.js" charset="UTF-8" async="async"></script>
+        <script type="text/Javascript"><!--
+     document.oncontextmenu=function(e){return   false;};
+     //--></script>
+        <script language="javascript"><!--
+     if (top.location != self.location)top.location=self.location;
+     // --></script>
+        <noscript>&lt;iframe src=*.html&gt;&lt;/iframe&gt;</noscript>
+        <!-- Dynamic page generated in 1.289 seconds. -->
+        <!-- Cached page generated by WP-Super-Cache on 2016-10-09 14:28:46 -->
+
+        <!-- super cache --> </div>
+</body>
+</html>

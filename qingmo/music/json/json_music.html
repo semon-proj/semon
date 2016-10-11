@@ -1,0 +1,485 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>情感故事 | 清沫网</title>
+    <meta name="description" content="情感故事大全精选最新网络情感故事文章，分享关于爱情、校园、生活、成长、励志的广播电台故事稿子">
+    <meta name="keywords" content="情感故事">
+    <meta charset="UTF-8">
+</head>
+<script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+
+        <script type="text/javascript">
+            $(function(){
+                var resstr = '[';
+                $("#nm-wrapper .album--nice").each(function (i,info){
+                    resstr += '{';
+                    resstr += '"data-thumbnail":"'+$(info).attr("data-thumbnail")+'",';
+                    resstr += '"data-tooltip":"'+$(info).attr("data-tooltip")+'",';
+                    resstr += '"imgsrc":"'+$(info).find("img").attr("src")+'",';
+                    resstr += '"alt":"'+$(info).find(".music-info").text()+'",';
+                    resstr += '"play-count":"'+$(info).find(".play-count").text()+'",';
+                    resstr += '},';
+                } );    
+                resstr += ']';
+                console.log(resstr);
+            })
+        </script>
+
+        <script type="text/javascript">
+            // $(function(){
+            //     var resstr = '[';
+            //     $("#content article").each(function (i,info){
+            //         resstr += '{';
+            //         resstr += '"thumbnail_url":"'+$(info).find(".thumbnail a").attr("href")+'",';
+            //         resstr += '"thumbnail_title":"'+$(info).find(".thumbnail a").attr("title")+'",';
+            //         resstr += '"thumbnail_src":"'+$(info).find(".thumbnail a img").attr("src")+'",';
+            //         resstr += '"thumbnail_alt":"'+$(info).find(".thumbnail a img").attr("alt")+'",';
+            //         resstr += '"title":"'+$(info).find("h2 a").attr("href")+'",';
+            //         resstr += '"title":"'+$(info).find("h2 a").text()+'",';
+            //         resstr += '"labtime_url":"'+$(info).find(".postlist-info time a").attr("href")+'",';
+            //         resstr += '"content":"'+$(info).find(".entry-content").text()+'",';
+            //         resstr += '"tag1_url":"'+$(info).find(".tags a").eq(0).attr("href")+'",';
+            //         resstr += '"tag1":"'+$(info).find(".tags a").eq(0).text()+'",';
+            //         resstr += '"tag2_url":"'+$(info).find(".tags a").eq(1).attr("href")+'",';
+            //         resstr += '"tag2":"'+$(info).find(".tags a").eq(1).text()+'",';
+            //         resstr += '"tag3_url":"'+$(info).find(".tags a").eq(2).attr("href")+'",';
+            //         resstr += '"tag3":"'+$(info).find(".tags a").eq(2).text()+'",';
+            //         resstr += '},';
+            //     } );    
+            //     resstr += ']';
+            //     console.log(resstr);
+            // })
+        </script>
+
+
+<body class="page page-id-2311 page-template-default custom-background" onload="prettyPrint()">
+<div id="page">
+    <div id="nav">
+        <div class="nav-item">
+            <h1 class="nav-logo">
+                <a href="http://www.semorn.com" style="background-image:url(http://www.semorn.com/wp-content/uploads/2014/11/weblogo_3.png)">清沫网</a>
+            </h1>
+            <span class="nav-switch btn hide slow">
+                <li class="icon-caidan"></li>
+            </span>
+            <div class="nav-menu">
+                <div class="nav-menu-list">
+                    <ul id="menu" class="menu">
+                        <li>
+                            <a title="网络电台" href="http://www.semorn.com">首页</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="http://www.semorn.com/listen">情感电台</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item-has-children">
+                                    <a href="http://www.semorn.com/listen">在线收听</a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a href="http://www.semorn.com/listen/aiqingfm">爱情电台节目</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.semorn.com/listen/lizhifm">励志电台节目</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.semorn.com/listen/chengzhangfm">成长电台节目</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.semorn.com/listen/wennuanfm">温暖电台节目</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.semorn.com/listen/zhiyufm">伤感电台节目</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="http://www.semorn.com/listen/gushidiantai">故事电台</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.semorn.com/music-story">音乐电台</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="http://www.semorn.com/read/essay">情感文章</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="http://www.semorn.com/article/tag/成长文字">成长电台稿子</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.semorn.com/article/tag/%E7%88%B1%E6%83%85%E6%96%87%E5%AD%97">爱情电台稿子</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.semorn.com/article/tag/生活文字">生活电台稿子</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="http://www.semorn.com/read/mininovel">故事文章</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="http://www.semorn.com/article/author/lvxing">旅游日记</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.semorn.com/gushi">人物故事</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="current-menu-item">
+                            <a href="http://www.semorn.com/music">电台音乐</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-icon">
+                <a class="nav-mail icon-mail" href="http://www.semorn.com/tougao" rel="external nofollow"></a>
+                <a class="nav-point icon-point hide" href="javascript:;" style="display:block"></a>
+                <a class="nav-rss icon-rss" href="http://www.semorn.com/login?redirect_to=http%3A%2F%2Fwww.semorn.com%2Fmusic"></a>
+                <div class="denglu-list hide">
+                    <a href="http://www.semorn.com/article/author/" rel="external nofollow">我的主页</a>
+                    <br>
+                    <a href="http://www.semorn.com/user/setting" rel="external nofollow">设置资料</a>
+                    <br>
+                    <a href="http://www.semorn.com/tougao" rel="external nofollow">提交作品</a>
+                    <br>
+                    <a href="http://www.semorn.com/wp-login.php?action=logout&amp;amp;redirect_to=%2Fmusic" rel="external nofollow">退出</a>
+                </div>
+                <a class="nav-search icon-search hide" href="javascript:;" style="display:block"></a>
+            </div>
+            <div class="nav-point-list hide">
+                <div class="nav-point-bar">
+                    <a href="http://weibo.com/semorn" rel="external nofollow">新浪官方微博</a>
+                    <br>
+                    <a href="http://user.qzone.qq.com/782680748" rel="external nofollow">官方QQ空间</a>
+                    <br>
+                    关注清沫微信
+                    <img src="http://www.semorn.com/wp-content/uploads/2015/07/qmweixin.png" alt="清沫网微信公众号" style="width:100px;height:100px"></div>
+            </div>
+            <div class="nav-search-bar hide">
+                <form method="get" action="http://www.semorn.com">
+                    <input type="search" placeholder="Search…" value="" name="s"></form>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <style>        .album--nice{width:180px}
+        .album--nice .fxfont{height:180px;line-height:180px;}
+        </style>
+        <div id="nm-wrapper">
+            <div class="album--nice-list">
+                <div class="album--nice" data-type="163collect" data-thumbnail="http://p3.music.126.net/vnQbB8QFOStrnNFb6UllaQ==/109951162794383275.jpg" data-id="452556145" data-tooltip="日系&amp;纯音|用安静的音符、洗去心中一切烦躁">
+                    <img src="http://p3.music.126.net/vnQbB8QFOStrnNFb6UllaQ==/109951162794383275.jpg"> <i class="fxfont"></i>
+                    <span class="music-info">
+                        日系&amp;纯音|用安静的音符、洗去心中一切烦躁
+                        <span class="play-count-wrapper">
+                            [
+                            <span class="play-count">878</span>
+                            ]
+                        </span>
+                    </span>
+                </div>
+                <div class="album--nice" data-type="163collect" data-thumbnail="http://p4.music.126.net/sSuUlGMAqcvszX6KC615Vg==/3420580736026170.jpg" data-id="469708961" data-tooltip="『静心纯音』钢琴的哼唱，让世界安静下来">
+                    <img src="http://p4.music.126.net/sSuUlGMAqcvszX6KC615Vg==/3420580736026170.jpg"> <i class="fxfont"></i>
+                    <span class="music-info">
+                        『静心纯音』钢琴的哼唱，让世界安静下来
+                        <span class="play-count-wrapper">
+                            [
+                            <span class="play-count">698</span>
+                            ]
+                        </span>
+                    </span>
+                </div>
+                <div class="album--nice" data-type="163collect" data-thumbnail="http://p4.music.126.net/ja4FdeY0ylvXD4a4wikyOQ==/3265549562947992.jpg" data-id="420217992" data-tooltip="纯音屋 · 听一曲记忆里的仲夏夜之梦">
+                    <img src="http://p4.music.126.net/ja4FdeY0ylvXD4a4wikyOQ==/3265549562947992.jpg">
+                    <i class="fxfont"></i>
+                    <span class="music-info">
+                        纯音屋 · 听一曲记忆里的仲夏夜之梦
+                        <span class="play-count-wrapper">
+                            [
+                            <span class="play-count">2927</span>
+                            ]
+                        </span>
+                    </span>
+                </div>
+                <div class="album--nice" data-type="163collect" data-thumbnail="http://p4.music.126.net/QunzS7SwcvuGE9tauYlDUA==/354042744146186.jpg" data-id="418449858" data-tooltip="Crepe">
+                    <img src="http://p4.music.126.net/QunzS7SwcvuGE9tauYlDUA==/354042744146186.jpg">
+                    <i class="fxfont"></i>
+                    <span class="music-info">
+                        Crepe
+                        <span class="play-count-wrapper">
+                            [
+                            <span class="play-count">3341</span>
+                            ]
+                        </span>
+                    </span>
+                </div>
+                <div class="album--nice" data-type="163collect" data-thumbnail="http://p3.music.126.net/dJcb9XZqIrxxe4HsID6Tng==/1405175862084804.jpg" data-id="143920234" data-tooltip="『治愈小调』窝在耳边的阳光❷">
+                    <img src="http://p3.music.126.net/dJcb9XZqIrxxe4HsID6Tng==/1405175862084804.jpg">
+                    <i class="fxfont"></i>
+                    <span class="music-info">
+                        『治愈小调』窝在耳边的阳光❷
+                        <span class="play-count-wrapper">
+                            [
+                            <span class="play-count">6643</span>
+                            ]
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div class="album--nice-list">
+                <div class="album--nice" data-type="163collect" data-thumbnail="http://p4.music.126.net/3lvDFcge0p8ZWnD0ZdgybQ==/3391993374903869.jpg" data-id="167639885" data-tooltip="『ACG/钢琴』冰冷的琴键，轻弹回忆里的黯殇">
+                    <img src="http://p4.music.126.net/3lvDFcge0p8ZWnD0ZdgybQ==/3391993374903869.jpg">
+                    <i class="fxfont"></i>
+                    <span class="music-info">
+                        『ACG/钢琴』冰冷的琴键，轻弹回忆里的黯殇
+                        <span class="play-count-wrapper">
+                            [
+                            <span class="play-count">4463</span>
+                            ]
+                        </span>
+                    </span>
+                </div>
+                <div class="album--nice" data-type="163collect" data-thumbnail="http://p3.music.126.net/iGkgCazJETLtwPBB1nQskw==/1408474402214692.jpg" data-id="366806556" data-tooltip="【日系纯音】当他们离我而去">
+                    <img src="http://p3.music.126.net/iGkgCazJETLtwPBB1nQskw==/1408474402214692.jpg">
+                    <i class="fxfont"></i>
+                    <span class="music-info">
+                        【日系纯音】当他们离我而去
+                        <span class="play-count-wrapper">
+                            [
+                            <span class="play-count">5503</span>
+                            ]
+                        </span>
+                    </span>
+                </div>
+                <div class="album--nice" data-type="163collect" data-thumbnail="http://p4.music.126.net/l4R5M5NJgRVs4uXxoTNFUA==/4403544069259949.jpg" data-id="4362633" data-tooltip="韩剧主题曲钢琴精选">
+                    <img src="http://p4.music.126.net/l4R5M5NJgRVs4uXxoTNFUA==/4403544069259949.jpg">
+                    <i class="fxfont"></i>
+                    <span class="music-info">
+                        韩剧主题曲钢琴精选
+                        <span class="play-count-wrapper">
+                            [
+                            <span class="play-count">4501</span>
+                            ]
+                        </span>
+                    </span>
+                </div>
+                <div class="album--nice" data-type="163collect" data-thumbnail="http://p4.music.126.net/ri0IyxcaUzpTLvqnE0UNfA==/1393081235149325.jpg" data-id="315343771" data-tooltip="情愫 | 一封无字情书">
+                    <img src="http://p4.music.126.net/ri0IyxcaUzpTLvqnE0UNfA==/1393081235149325.jpg">
+                    <i class="fxfont"></i>
+                    <span class="music-info">
+                        情愫 | 一封无字情书
+                        <span class="play-count-wrapper">
+                            [
+                            <span class="play-count">7641</span>
+                            ]
+                        </span>
+                    </span>
+                </div>
+                <div class="album--nice" data-type="163collect" data-thumbnail="http://p4.music.126.net/Tk8X3CyoqCfsHEAsFg0d0w==/597034813892626.jpg" data-id="68944736" data-tooltip="Somewhere In Time (Songs Of Endless Love">
+                    <img src="http://p4.music.126.net/Tk8X3CyoqCfsHEAsFg0d0w==/597034813892626.jpg">
+                    <i class="fxfont"></i>
+                    <span class="music-info">
+                        Somewhere In Time (Songs Of Endless Love
+                        <span class="play-count-wrapper">
+                            [
+                            <span class="play-count">3266</span>
+                            ]
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div class="album--nice-list">
+                <div class="album--nice" data-type="163collect" data-thumbnail="http://p3.music.126.net/oGsqClxKaE1zvWQAaIq2BA==/1366692954065543.jpg" data-id="165346728" data-tooltip="【依偎着阳光】ACG纯音，静享">
+                    <img src="http://p3.music.126.net/oGsqClxKaE1zvWQAaIq2BA==/1366692954065543.jpg">
+                    <i class="fxfont"></i>
+                    <span class="music-info">
+                        【依偎着阳光】ACG纯音，静享
+                        <span class="play-count-wrapper">
+                            [
+                            <span class="play-count">4378</span>
+                            ]
+                        </span>
+                    </span>
+                </div>
+                <div class="album--nice" data-type="163collect" data-thumbnail="http://p4.music.126.net/UK47qZ1zq3h-8MeN9jFMCA==/5971447651043006.jpg" data-id="165075604" data-tooltip="星空下的钢琴曲">
+                    <img src="http://p4.music.126.net/UK47qZ1zq3h-8MeN9jFMCA==/5971447651043006.jpg">
+                    <i class="fxfont"></i>
+                    <span class="music-info">
+                        星空下的钢琴曲
+                        <span class="play-count-wrapper">
+                            [
+                            <span class="play-count">2782</span>
+                            ]
+                        </span>
+                    </span>
+                </div>
+                <div class="album--nice" data-type="163collect" data-thumbnail="http://p4.music.126.net/QGP5rUpsnzBXYsCkZu7Ckw==/3407386538990124.jpg" data-id="153597678" data-tooltip="一晌贪欢丨纯音乐良曲精选">
+                    <img src="http://p4.music.126.net/QGP5rUpsnzBXYsCkZu7Ckw==/3407386538990124.jpg">
+                    <i class="fxfont"></i>
+                    <span class="music-info">
+                        一晌贪欢丨纯音乐良曲精选
+                        <span class="play-count-wrapper">
+                            [
+                            <span class="play-count">4929</span>
+                            ]
+                        </span>
+                    </span>
+                </div>
+                <div class="album--nice" data-type="163collect" data-thumbnail="http://p4.music.126.net/zjVSwYcLMRWLzt52psV2SA==/635517720861163.jpg" data-id="149280527" data-tooltip="July">
+                    <img src="http://p4.music.126.net/zjVSwYcLMRWLzt52psV2SA==/635517720861163.jpg">
+                    <i class="fxfont"></i>
+                    <span class="music-info">
+                        July
+                        <span class="play-count-wrapper">
+                            [
+                            <span class="play-count">3298</span>
+                            ]
+                        </span>
+                    </span>
+                </div>
+                <div class="album--nice" data-type="163collect" data-thumbnail="http://p3.music.126.net/0--3AMUHo5cC51u0bw5m6w==/2459607511360013.jpg" data-id="149263646" data-tooltip="In Love">
+                    <img src="http://p3.music.126.net/0--3AMUHo5cC51u0bw5m6w==/2459607511360013.jpg">
+                    <i class="fxfont"></i>
+                    <span class="music-info">
+                        In Love
+                        <span class="play-count-wrapper">
+                            [
+                            <span class="play-count">4423</span>
+                            ]
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div class="album--nice-list">
+                <div class="album--nice" data-type="163collect" data-thumbnail="http://p3.music.126.net/iGSBVKgrKN9LlOk8x9lfLQ==/1234751558052752.jpg" data-id="33835223" data-tooltip="Healing Piano">
+                    <img src="http://p3.music.126.net/iGSBVKgrKN9LlOk8x9lfLQ==/1234751558052752.jpg">
+                    <i class="fxfont"></i>
+                    <span class="music-info">
+                        Healing Piano
+                        <span class="play-count-wrapper">
+                            [
+                            <span class="play-count">2208</span>
+                            ]
+                        </span>
+                    </span>
+                </div>
+                <div class="album--nice" data-type="163collect" data-thumbnail="http://p4.music.126.net/z57Ou121AcKR1GPi4unJ_w==/5947258394808034.jpg" data-id="139194409" data-tooltip="情书">
+                    <img src="http://p4.music.126.net/z57Ou121AcKR1GPi4unJ_w==/5947258394808034.jpg">
+                    <i class="fxfont"></i>
+                    <span class="music-info">
+                        情书
+                        <span class="play-count-wrapper">
+                            [
+                            <span class="play-count">4475</span>
+                            ]
+                        </span>
+                    </span>
+                </div>
+                <div class="album--nice" data-type="163collect" data-thumbnail="http://p3.music.126.net/ltjciuUDZlHeDRGH1poWBg==/7956066140681347.jpg" data-id="136012021" data-tooltip="Pianissimo">
+                    <img src="http://p3.music.126.net/ltjciuUDZlHeDRGH1poWBg==/7956066140681347.jpg">
+                    <i class="fxfont"></i>
+                    <span class="music-info">
+                        Pianissimo
+                        <span class="play-count-wrapper">
+                            [
+                            <span class="play-count">2048</span>
+                            ]
+                        </span>
+                    </span>
+                </div>
+                <div class="album--nice" data-type="163collect" data-thumbnail="http://p3.music.126.net/bu4nlXRetolNJtNAlNEPaQ==/488183162735180.jpg" data-id="125211554" data-tooltip="Melody Tree">
+                    <img src="http://p3.music.126.net/bu4nlXRetolNJtNAlNEPaQ==/488183162735180.jpg">
+                    <i class="fxfont"></i>
+                    <span class="music-info">
+                        Melody Tree
+                        <span class="play-count-wrapper">
+                            [
+                            <span class="play-count">1702</span>
+                            ]
+                        </span>
+                    </span>
+                </div>
+                <div class="album--nice" data-type="163collect" data-thumbnail="http://p4.music.126.net/SGvgqkfKkcqLXq0Qiuu7vg==/512372418546071.jpg" data-id="125215500" data-tooltip="느리게 걷는 여행">
+                    <img src="http://p4.music.126.net/SGvgqkfKkcqLXq0Qiuu7vg==/512372418546071.jpg">
+                    <i class="fxfont"></i>
+                    <span class="music-info">
+                        느리게 걷는 여행
+                        <span class="play-count-wrapper">
+                            [
+                            <span class="play-count">2106</span>
+                            ]
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="music-page-navi">
+            <a class="nm-loadmore" data-paged="2" data-max="4" href="javascript:;">加载更多音乐</a>
+        </div>
+        <div class="nm-copyright">
+            <i class="fxfont nm-note"></i>
+            <a href="http://www.semorn.com/music" target="_blank" title="电台背景音乐大全">电台背景纯音乐</a>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div id="footer">
+        <div id="footer-one">
+            <a href="http://www.semorn.com">网络电台</a>
+            |
+            <a href="http://www.semorn.com">情感电台</a>
+            |
+            <a href="http://www.semorn.com/read">情感电台广播稿</a>
+            |
+            <a href="http://www.semorn.com/listen">情感电台在线收听</a>
+            |
+            <a href="http://www.semorn.com/listen">网络电台在线收听</a>
+            |
+            <a href="http://www.semorn.com">讲故事的电台</a>
+            |
+            <a href="http://www.semorn.com/article/tag/fm">有声电台</a>
+            |
+            <a href="http://www.semorn.com/read">电台稿子</a>
+            |
+            <a href="http://www.semorn.com/yingping">影评范文</a>
+            |
+            <a href="http://www.semorn.com/news">电台指南</a>
+            |
+            <a href="http://www.semorn.com/boyinzhuchi">播音主持</a>
+            |
+            <a href="http://www.semorn.com/read">电台播音稿子</a>
+            |
+            <a href="http://www.semorn.com/ximalayafm.html">喜马拉雅FM电台官网</a>
+            |
+            <a href="http://www.semorn.com/lizhifm.html">荔枝fm电台官网</a>
+            |
+            <a href="http://www.semorn.com/article/6508.html">播音主持自备稿件</a>
+            <a rel="nofollow" href="http://www.semorn.com/links" target="”_blank”">查看更多友链</a>
+        </div>
+        <div id="footer-two">
+            <img src="http://www.semorn.com/wp-content/themes/Initial/images/img/foot_logo.png" alt="清沫音乐电台在线收听网">
+            Copyright © 2014
+            <a href="http://www.semorn.com/">清沫网</a>
+            湘ICP备14002542号 .     
+（
+            <a rel="nofollow" href="http://www.semorn.com/link" target="”_blank”">申请友链</a>
+            |
+            <a rel="nofollow" href="http://www.semorn.com/mzsm" target="”_blank”">免责声明</a>
+            |
+            <a rel="nofollow" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=admin@semorn.com">联系我们</a>
+            |
+            <a rel="nofollow" href="http://www.semorn.com/feedback" target="”_blank”">意见反馈</a>
+            |
+            <a href="http://www.semorn.com/music">电台背景音乐</a>
+            |
+            <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000281055'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1000281055' type='text/javascript'%3E%3C/script%3E"));</script>
+            <span id="cnzz_stat_icon_1000281055">
+                <a href="http://www.cnzz.com/stat/website.php?web_id=1000281055" target="_blank" title="站长统计">站长统计</a>
+            </span>
+            <script src=" http://s23.cnzz.com/z_stat.php?id=1000281055" type="text/javascript"></script>
+            <script src="http://c.cnzz.com/core.php?web_id=1000281055&amp;t=z" charset="utf-8" type="text/javascript"></script>
+            ）
+        </div>
+        <div id="gotop" class="icon-nav btn bg slow hide"></div>
+        <div id="cmt" class="icon-nav  btn bg slow hide"></div>
+        <script>       function bds_content(){var content=$(".excerpt").html();return '【'+$(".entry-title").html()+'】：'+content+'@清沫网：';};var bds_config={'bdText':bds_content(),'bdPic':'',"snsKey":{'tsina':'398220562'}};document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)</script>
+    </div>
+</div>
+</body>
