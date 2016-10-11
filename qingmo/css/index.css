@@ -116,7 +116,7 @@ body {
     word-break: break-all;
     overflow: hidden;
     font-size: .85rem;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: 24px;
 }
 
