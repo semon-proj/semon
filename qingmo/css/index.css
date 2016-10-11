@@ -101,7 +101,8 @@ body {
 }
 
 #content #aTip{
-    position: fixed;
+    /*position: fixed;*/
+    position: absolute;
     display: none;
     padding: 12px;
     font-size: .85rem;
@@ -109,7 +110,7 @@ body {
     border: 2px solid #dedede;
     background-color: #f6f6f6;
     color: #333;
-    z-index: 99;
+    /*z-index: 999;*/
 }
 
 #content .entry-content {
