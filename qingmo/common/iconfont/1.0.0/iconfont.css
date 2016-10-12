@@ -19,3 +19,8 @@
 .icon-wodeshi01:before { content: "\e601"; }
 .icon-fankui:before { content: "\e602"; }
 .icon-suibadaohang:before { content: "\e603"; }
+
+
+.icon{
+  color: #fff;
+}
