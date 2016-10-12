@@ -59,4 +59,4 @@ $(document).ready(function(){
            clearInterval(timer)
            timer=setInterval(rightBtnfunc,setTimer)
         });
-        })();
+        });
