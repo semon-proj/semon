@@ -9,9 +9,11 @@
         <link rel="stylesheet" type="text/css" href="../common/css/lunbo.css">
         <link rel="stylesheet" type="text/css" href="../common/css/footer.css">
         <link rel="stylesheet" type="text/css" href="css/qingGanWenZhang.css">
+        <link rel="stylesheet" type="text/css" href="../common/iconfont/1.0.0/iconfont.css" />
 
 
         <script type="text/javascript" src="../common/js/jquery-3.0.0.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="../common/js/bootstrap.min.js"></script>
         <script src="../common/js/artTemplate.js"></script>
         <script src="../common/js/nav.js"></script>
@@ -25,11 +27,10 @@
             <div id="nav">
                 <div class="nav-item">
                     <h1 class="nav-logo">
-                        <a href="http://www.semorn.com"
-                           style="background-image:url(http://www.semorn.com/wp-content/uploads/2014/11/weblogo_3.png)">清沫网</a>
+                        <a href="http://www.semorn.com" style="background-image:url(http://www.semorn.com/wp-content/uploads/2014/11/weblogo_3.png)">清沫网</a>
                     </h1>
                     <span class="nav-switch butn hided slow">
-                    <li class="icon-caidan"></li>
+                    <li class="icon-caidan"><i class="icon iconfont">&#xe603;</i></li>
                 </span>
                     <div class="nav-menu">
                         <div class="nav-menu-list">
@@ -100,11 +101,9 @@
                         </div>
                     </div>
                     <div class="nav-icon">
-                        <a class="nav-mail icon-mail" href="http://www.semorn.com/tougao" rel="external nofollow"></a>
-                        <a class="nav-point icon-point hided" href="javascript:;" style="display:block"></a>
-                        <a class="denglu" href="javascript:;">
-                            <img src="https://secure.gravatar.com/avatar/c5aef6473016c374f2ca8a19d3432958?s=36"
-                                 class="avatar avatar-36" height="36" width="36"></a>
+                        <a class="nav-mail" href="http://www.semorn.com/tougao" rel="external nofollow"><i class="icon iconfont">&#xe602;</i></a>
+                        <a class="nav-point hided" href="javascript:;" style="display:block"><i class="icon iconfont">&#xe603;</i></a>
+                        <a class="denglu nav-rss" href="javascript:;"><i class="icon iconfont">&#xe601;</i></a>
                         <div class="denglu-list hided" style="display: none;">
                             <a href="http://www.semorn.com/article/author/kaixiong" rel="external nofollow">我的主页</a>
                             <br>
@@ -112,10 +111,9 @@
                             <br>
                             <a href="http://www.semorn.com/tougao" rel="external nofollow">提交作品</a>
                             <br>
-                            <a href="http://www.semorn.com/wp-login.php?action=logout&amp;amp;redirect_to=%2F"
-                               rel="external nofollow">退出</a>
+                            <a href="http://www.semorn.com/wp-login.php?action=logout&amp;amp;redirect_to=%2F" rel="external nofollow">退出</a>
                         </div>
-                        <a class="nav-search icon-search hided" href="javascript:;" style="display:block"></a>
+                        <a class="nav-search hided" href="javascript:;" style="display:block"><i class="icon iconfont">&#xe600;</i></a>
                     </div>
                     <div class="nav-point-list hided">
                         <div class="nav-point-bar">
@@ -124,8 +122,7 @@
                             <a href="http://user.qzone.qq.com/782680748" rel="external nofollow">官方QQ空间</a>
                             <br>
                             关注清沫微信
-                            <img src="http://www.semorn.com/wp-content/uploads/2015/07/qmweixin.png" alt="清沫网微信公众号"
-                                 style="width:100px;height:100px"></div>
+                            <img src="http://www.semorn.com/wp-content/uploads/2015/07/qmweixin.png" alt="清沫网微信公众号" style="width:100px;height:100px"></div>
                     </div>
                     <div class="nav-search-bar hided">
                         <form method="get" action="http://www.semorn.com">
@@ -245,6 +242,7 @@
             </script>
         </div>
 
+
         <!-- 正文 -->
         <div id="content">
             <!--<article class="main">-->
@@ -326,12 +324,12 @@
                     </h2>
                     <div class="postlist-info">
                         <!--链接没有处理-->
-                        <a class="fn" href="#"><i class="icon-copyright fa fa-home"></i>情感文章</a>
-                        <i class="icon-cat fa fa-list-ul"></i>
+                        <a class="fn" href="#"><i class="iconfont icon-home small"></i>情感文章</a>
+                        <i class="iconfont icon-suibadaohang small"></i>
                         <a href="#">情感文章</a>
                         <time datetime="{{ time }}">
                             <!--图标引入-->
-                            <a href="{{ labtime_url }}"><i class=""></i>{{ time }}</a>
+                            <a href="{{ labtime_url }}"><i class="iconfont icon-time small"></i>{{ time }}</a>
                         </time>
                     </div>
                     <div class="entry-content">{{ content }}</div>
