@@ -99,7 +99,7 @@ $(function () {
         }
 
         //设置间距
-        console.log(valpLstMg);
+        // console.log(valpLstMg);
         ptListWrp.find('li').css('margin-left', valpLstMg + 'px');
     }
 
