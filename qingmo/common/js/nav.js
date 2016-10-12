@@ -39,7 +39,7 @@ jQuery(document).ready(function ($){
     $(window).resize(function(){widthJudge();})
     function widthJudge(){var winWidth = $(window).width();if (winWidth>750){ $('.nav-menu').fadeIn('normal'); }}
 
-    $("a,.tip").not("a.detail").each(function() {
+    $(".current-menu-item a").each(function() {
         function c(a) {
             var c = document.body.clientWidth - a.pageX,
                 d = $(".mtitle").outerWidth();

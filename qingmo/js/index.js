@@ -31,31 +31,31 @@ $(function () {
                 }
                 $article.appendTo($div);
             });
-            var x = 30;
-            $(".thumbnail a").mouseenter(function (e) {
-//                            console.log(e);
-//                            $(".thumbnail a img").css();
-
-                aTip = this.title;
-                this.title = "";
-//                            console.log(aTip);
-                $aTip = $("<div class='clear'></div> <div id='aTip'>" + aTip + "</div> <div class='clear'></div> ");
-//                            console.log($aTip);
-                $aTip.appendTo(this);
-                $("#aTip").css({
-//                                距离计算问题,弹出的框显示的位置
-                    top: (e.pageY - 300) + "px",
-                    left: (e.pageX - 200) + "px"
-                }).show();
-            }).mouseleave(function () {
-                this.title = aTip;
-                $aTip.remove();
-            }).mousemove(function (e) {
-                $("#aTip").css({
-                    top: (e.pageY - 300) + "px",
-                    left: (e.pageX - 200) + "px"
-                });
-            })
+//             var x = 30;
+//             $(".thumbnail a").mouseenter(function (e) {
+// //                            console.log(e);
+// //                            $(".thumbnail a img").css();
+//
+//                 aTip = this.title;
+//                 this.title = "";
+// //                            console.log(aTip);
+//                 $aTip = $("<div class='clear'></div> <div id='aTip'>" + aTip + "</div> <div class='clear'></div> ");
+// //                            console.log($aTip);
+//                 $aTip.appendTo(this);
+//                 $("#aTip").css({
+// //                                距离计算问题,弹出的框显示的位置
+//                     top: (e.pageY - 300) + "px",
+//                     left: (e.pageX - 200) + "px"
+//                 }).show();
+//             }).mouseleave(function () {
+//                 this.title = aTip;
+//                 $aTip.remove();
+//             }).mousemove(function (e) {
+//                 $("#aTip").css({
+//                     top: (e.pageY - 300) + "px",
+//                     left: (e.pageX - 200) + "px"
+//                 });
+//             })
         }
     });
 
@@ -156,3 +156,33 @@ $(function () {
     });
 
 });
+
+$(document).ready(function () {
+    var x = 30;
+    $(".thumbnail a").each(function () {
+        mouseenter(function (e) {
+//                            console.log(e);
+//                            $(".thumbnail a img").css();
+
+            aTip = this.title;
+            this.title = "";
+//                            console.log(aTip);
+            $aTip = $("<div class='clear'></div> <div id='aTip'>" + aTip + "</div> <div class='clear'></div> ");
+//                            console.log($aTip);
+            $aTip.appendTo(this);
+            $("#aTip").css({
+//                                距离计算问题,弹出的框显示的位置
+                top: (e.pageY - 300) + "px",
+                left: (e.pageX - 200) + "px"
+            }).show();
+        }).mouseleave(function () {
+            this.title = aTip;
+            $aTip.remove();
+        }).mousemove(function (e) {
+            $("#aTip").css({
+                top: (e.pageY - 300) + "px",
+                left: (e.pageX - 200) + "px"
+            });
+        })
+    })
+})
