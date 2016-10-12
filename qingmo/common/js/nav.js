@@ -11,7 +11,7 @@ jQuery(document).ready(function ($){
     $('.nav-search').click(function (){
         $('.nav-search-bar').toggle('fast');
         $('body').one('click', function (){$('.nav-search-bar').hide('fast');});
-        // return false;
+        return false;
     });   
     $('.nav-point').click(function (){
         $('.nav-point-list').toggle('fast');
