@@ -67,4 +67,9 @@ jQuery(document).ready(function ($){
         }))
     });
 
+    $('#nav .nav-menu li').click(function () {
+        $(this).addClass('current-menu-item').siblings().removeClass("current-menu-item");
+    })
+    
+    
 })
