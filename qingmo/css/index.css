@@ -241,6 +241,9 @@ body {
 #content .croll-list li p a {
     color: #fff;
 }
+#content .croll-list li p a:hover {
+    color: #000;
+}
 
 #content .clear {
     clear: both;
