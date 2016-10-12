@@ -116,8 +116,15 @@ body {
 }
 
 #content .postlist-info [class*="icon-"]:before {
-    margin-left: .2rem;
-    margin-right: .1rem;
+    font-size: 10px;
+}
+
+#content .postlist-info i[class*="icon-home"]:before {
+    font-size: 14px;
+}
+
+#content .postlist-info > i[class*="icon-suibadaohang"]:before {
+    font-size: 16px;
 }
 
 #content .entry-content {
