@@ -58,17 +58,17 @@ img{ vertical-align: baseline; }
 #nav .nav-icon{float:right;width:176px;}
 .denglu img,#nav .nav-icon [class*=nav-]{width:24px;height:24px;line-height:24px;text-align:center;float:right;margin:4px 0 0 12px;border:4px solid #333;border-radius:16px;}
 .denglu img:hover{border:4px solid #666}
-#nav .nav-icon [class*=nav-]:before{width:24px;color:#FFF;opacity:.7;}
+/*#nav .nav-icon [class*=nav-]:before{width:24px;color:#FFF;opacity:.7;}*/
 #nav .nav-rss{background:#aaa;}
 #nav .nav-mail{background:#046CCC;}
 #nav .nav-weibo{background:#fff;}
 #nav .nav-point{background:#e03d85;}
 #nav .nav-search{background:#2A882A;}
-#nav .nav-rss:before{content:"\e002";}
-#nav .nav-mail:before{content:"\e013";}
-#nav .nav-point:before{content:"\e004";}
-#nav .nav-weibo:before{content:"\e00e";}
-#nav .nav-search:before{content:"?";}
+#nav .nav-rss:before{content:"";}
+#nav .nav-mail:before{content:"";}
+#nav .nav-point:before{content:"";}
+/*#nav .nav-weibo:before{content:"";}*/
+#nav .nav-search:before{content:"";}
 #nav .nav-menu .menu li{width:96px;height:40px;float:left;}
 #nav .nav-menu .menu > li > ul{float:left;}
 #nav .nav-menu .menu .menu-item-has-children{position:relative;}
