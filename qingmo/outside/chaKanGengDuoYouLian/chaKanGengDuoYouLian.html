@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chaKanGengDuoYouLian</title>
+    <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css" />
+    <script type="text/javascript" src="../../common/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../common/js/jquery-3.0.0.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../common/css/nav.css">
+    <script src="../../common/js/nav.js"></script>
+    <style>
+        * {
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            color: #555;
+            font: .875em/1.5rem Helvetica,Microsoft Yahei,Hiragino Sans GB,sans-serif;
+            -webkit-text-size-adjust: 100%;
+        }
+        h2, h2 a {
+            font-size: 20px;
+            font-weight: normal;
+            text-transform: uppercase;
+            color: #000 !important;
+        }
+        .slow {
+            transition: all .24s ease-out;
+            -moz-transition: all .24s ease-out;
+            -webkit-transition: all .24s ease-out;
+        }
+
+        #container {
+            width: 98%;
+            max-width: 1000px;
+            min-width: 300px;
+            padding-top: 50px;
+            margin: auto;
+            float: none;
+        }
+        #content {
+            width: 100%;
+            margin: auto;
+            float: left;
+            min-height: 500px;
+        }
+        #content .main {
+            padding: 19px;
+            margin: 0 0 10px 0;
+        }
+        .main {
+            background: #FFF;
+            box-shadow: 0 1px 3px rgba(0,0,0,.2);
+        }
+        .article {
+            margin-bottom: 30px;
+        }
+        .flink{
+            margin: 20px -1% 20px 0;
+        }
+        .flink li div {
+            padding: 10px;
+            background: #F2F2F2;
+        }
+        .flink li div:hover {
+            background: #AE9;
+        }
+        .flink li{
+            width: 24%;
+            float: left;
+            margin: 0 1% 1% 0;
+        }
+        .flink a {
+            height: 90px;
+            color: #666;
+            display: block;
+            overflow: hidden;
+        }
+        .flink i {
+            font-style: normal;
+            font-size: .875rem;
+            font-weight: 800;
+            color: #333;
+            display: block;
+        }
+        .clear {
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+<!-- 导航 -->
+<div id="header">
+    <div id="nav">
+        <div class="nav-item">
+            <h1 class="nav-logo">
+                <a href="http://www.semorn.com" style="background-image:url(http://www.semorn.com/wp-content/uploads/2014/11/weblogo_3.png)">清沫网</a>
+            </h1>
+                <span class="nav-switch butn hided slow">
+                    <li class="icon-caidan"></li>
+                </span>
+            <div class="nav-menu">
+                <div class="nav-menu-list">
+                    <ul id="menu" class="menu">
+                        <li class="current-menu-item">
+                            <a title="网络电台" href="http://www.semorn.com">首页</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="http://www.semorn.com/listen">情感电台</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item-has-children">
+                                    <a href="http://www.semorn.com/listen">在线收听</a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a href="http://www.semorn.com/listen/aiqingfm">爱情电台节目</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.semorn.com/listen/lizhifm">励志电台节目</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.semorn.com/listen/chengzhangfm">成长电台节目</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.semorn.com/listen/wennuanfm">温暖电台节目</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.semorn.com/listen/zhiyufm">伤感电台节目</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="http://www.semorn.com/listen/gushidiantai">故事电台</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.semorn.com/music-story">音乐电台</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="http://www.semorn.com/read/essay">情感文章</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="http://www.semorn.com/article/tag/成长文字">成长电台稿子</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.semorn.com/article/tag/%E7%88%B1%E6%83%85%E6%96%87%E5%AD%97">爱情电台稿子</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.semorn.com/article/tag/生活文字">生活电台稿子</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="http://www.semorn.com/read/mininovel">故事文章</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="http://www.semorn.com/article/author/lvxing">旅游日记</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.semorn.com/gushi">人物故事</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="http://www.semorn.com/music">电台音乐</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-icon">
+                <a class="nav-mail icon-mail" href="http://www.semorn.com/tougao" rel="external nofollow"></a>
+                <a class="nav-point icon-point hided" href="javascript:;" style="display:block"></a>
+                <a class="denglu" href="javascript:;">
+                    <img src="https://secure.gravatar.com/avatar/c5aef6473016c374f2ca8a19d3432958?s=36" class="avatar avatar-36" height="36" width="36"></a>
+                <div class="denglu-list hided" style="display: none;">
+                    <a href="http://www.semorn.com/article/author/kaixiong" rel="external nofollow">我的主页</a>
+                    <br>
+                    <a href="http://www.semorn.com/user/setting" rel="external nofollow">设置资料</a>
+                    <br>
+                    <a href="http://www.semorn.com/tougao" rel="external nofollow">提交作品</a>
+                    <br>
+                    <a href="http://www.semorn.com/wp-login.php?action=logout&amp;amp;redirect_to=%2F" rel="external nofollow">退出</a>
+                </div>
+                <a class="nav-search icon-search hided" href="javascript:;" style="display:block"></a>
+            </div>
+            <div class="nav-point-list hided">
+                <div class="nav-point-bar">
+                    <a href="http://weibo.com/semorn" rel="external nofollow">新浪官方微博</a>
+                    <br>
+                    <a href="http://user.qzone.qq.com/782680748" rel="external nofollow">官方QQ空间</a>
+                    <br>
+                    关注清沫微信
+                    <img src="http://www.semorn.com/wp-content/uploads/2015/07/qmweixin.png" alt="清沫网微信公众号" style="width:100px;height:100px"></div>
+            </div>
+            <div class="nav-search-bar hided">
+                <form method="get" action="http://www.semorn.com">
+                    <input type="search" placeholder="Search…" value="" name="s"></form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 正文 -->
+<div id="container">
+        <div id="content">
+            <div class="main">
+                <h2 property="v:title" style="text-align:center;margin: 20px 0;">友情链接</h2>
+                <div class="article" property="v:description">
+                    <ul class="flink">
+                        <li>
+                        <div class="slow">
+                            <a href="http://www.waasaa.com/" title="">
+                                <img src="http://www.google.com/s2/favicons?domain=www.waasaa.com" alt="favicon" style="float:left;padding:3px 8px 0 0">
+                                <i>挖沙网</i>
+                                <span></span>
+                            </a>
+                        </div>
+                    </li>
+                        <li>
+                            <div class="slow">
+                                <a href="http://www.lababa.net" title="啦芭芭网站分享是一个提供小伙伴分享酷站名站的平台。">
+                                    <img src="http://www.google.com/s2/favicons?domain=www.lababa.net" alt="favicon" style="float:left;padding:3px 8px 0 0">
+                                    <i>啦芭芭网址分享</i>
+                                    <span>啦芭芭网站分享是一个提供小伙伴分享酷站名站的平台。</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="slow">
+                                <a href="http://qng.im/" title="收录APP青果驻站作者的美文">
+                                    <img src="http://www.google.com/s2/favicons?domain=qng.im" alt="favicon" style="float:left;padding:3px 8px 0 0">
+                                    <i>青果QNGOO</i>
+                                    <span>收录APP青果驻站作者的美文</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="slow">
+                                <a href="http://www.kaolafm.com/" title="考拉FM是车语传媒开发的一款音频客户端，是移动互联网时代的个性化手机电台、全球华语优秀节目平台">
+                                    <img src="http://www.google.com/s2/favicons?domain=www.kaolafm.com" alt="favicon" style="float:left;padding:3px 8px 0 0">
+                                    <i>考拉FM电台</i>
+                                    <span>考拉FM是车语传媒开发的一款音频客户端，是移动互联网时代的个性化手机电台、全球华语优秀节目平台</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="slow">
+                                <a href="http://www.idupan.com/" title="">
+                                    <img src="http://www.google.com/s2/favicons?domain=www.idupan.com" alt="favicon" style="float:left;padding:3px 8px 0 0">
+                                    <i>爱度盘</i>
+                                    <span></span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
