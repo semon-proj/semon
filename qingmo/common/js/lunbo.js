@@ -1,4 +1,4 @@
-(function(){
+$(document).ready(function(){
     var nowimg=0;
         
         var $rightBtn= $(".rightBtn")
