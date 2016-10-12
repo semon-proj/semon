@@ -86,6 +86,7 @@ body {
 #content .thumbnail a {
     display: block;
     line-height: 0;
+    position: relative;
 }
 
 #content .thumbnail img {
@@ -100,7 +101,7 @@ body {
 
 #content #aTip{
     /*position: fixed;*/
-    position: absolute;
+    /*position: absolute;*/
     display: none;
     padding: 12px;
     font-size: .85rem;
