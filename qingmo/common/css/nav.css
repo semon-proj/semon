@@ -96,7 +96,6 @@ img{ vertical-align: baseline; }
 
 @media screen and (max-width:1240px){#metro-item .center{width:480px;}}
 @media screen and (max-width:1120px){
-.main-media .post-list{width:32.333%;}
 .flink li,.v_comment li{width:32.333%;}
 }
 @media screen and (max-width:1010px){.single-content{width:100%!important}
@@ -118,7 +117,6 @@ img{ vertical-align: baseline; }
 #article-index{display:none;}
 #content .entry-post .thumbnail{max-height:230px;}
 #article-index{display:none!important;}
-.main-media .post-list,.postone{width:49%;}
 .post-nav .post-prev,.post-nav .post-next{width:100%;text-align:left;margin-bottom:10px;}
 body.single .main .tags{text-align:left;}
 .main #bdshare{float:left;}
@@ -169,7 +167,6 @@ body.single .main .tags{text-align:left;}
 #content .entry-post .thumbnail_box{float:none;width:100%;margin:6px auto;}
 .postlist .entry-post{padding:0;}
 .main .post-list{width:100%;}
-.main-media .post-list,.postone{width:99%;}
 .single-listen_san .avatar,.shareCount{display:none!important;}
 .flink li,.v_comment li{width:100%;}
 .d-link{display:none!important}
