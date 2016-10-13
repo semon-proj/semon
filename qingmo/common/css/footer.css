@@ -39,7 +39,7 @@ a:link, a:visited, a:hover{
 .footer-2 img{
     vertical-align: baseline;
 }
-.footer-1 a:hover, .footer-2 a:hover{
+#footer .footer-1 a:hover, #footer .footer-2 a:hover{
     color: #fff;
 }
 
