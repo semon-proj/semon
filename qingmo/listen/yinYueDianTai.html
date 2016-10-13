@@ -1,10 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" type="text/css" href="../common/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="../common/iconfont/1.0.0/iconfont.css"/>
+        <link rel="stylesheet" type="text/css" href="../common/css/nav.css">
+        <link rel="stylesheet" type="text/css" href="../common/css/lunbo.css">
+        <link rel="stylesheet" type="text/css" href="../common/css/footer.css">
+        <link rel="stylesheet" type="text/css" href="css/listen.css">
 
-</body>
+        <script type="text/javascript" src="../common/js/jquery-3.0.0.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="../common/js/bootstrap.min.js"></script>
+        <script src="../common/js/artTemplate.js"></script>
+        <script src="../common/js/nav.js"></script>
+        <script type="text/javascript" src="../common/js/lunbo.js"></script>
+        <script type="text/javascript" src="js/yinYueDianTai.js"></script>
+    </head>
+
+    <body>
+        <!-- 导航 -->
+        <div id="header">
+            <div id="nav">
+                <div class="nav-item">
+                    <h1 class="nav-logo">
+                        <a href="http://www.semorn.com"
+                           style="background-image:url(http://www.semorn.com/wp-content/uploads/2014/11/weblogo_3.png)">清沫网</a>
+                    </h1>
+                    <span class="nav-switch butn hided slow">
+                    <li class="icon-caidan"><i class="icon iconfont">&#xe603;</i></li>
+                </span>
+                    <div class="nav-menu">
+                        <div class="nav-menu-list">
+                            <ul id="menu" class="menu">
+                                <li>
+                                    <a title="网络电台" href="../index.html">首页</a>
+                                </li>
+                                <li class="menu-item-has-children current-menu-item">
+                                    <a href="#">情感电台</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item-has-children">
+                                            <a href="qingGanDianTai.html">在线收听</a>
+                                            <ul class="sub-menu">
+                                                <li>
+                                                    <a href="aiQingDianTai/aiqingdiantai.html">爱情电台节目</a>
+                                                </li>
+                                                <li>
+                                                    <a href="liZhiDianTai/lizhidiantai.html">励志电台节目</a>
+                                                </li>
+                                                <li>
+                                                    <a href="chengZhangDianTai/chengzhangdiantai.html">成长电台节目</a>
+                                                </li>
+                                                <li>
+                                                    <a href="wenNuanDianTai/wennuandiantai.html">温暖电台节目</a>
+                                                </li>
+                                                <li>
+                                                    <a href="shangGanDianTai/shanggandiantai.html">伤感电台节目</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="guShiDianTai.html">故事电台</a>
+                                        </li>
+                                        <li>
+                                            <a href="yinYueDianTai.html">音乐电台</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="../read/qingGanWenZhang.html">情感文章</a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a href="http://www.semorn.com/article/tag/成长文字">成长电台稿子</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.semorn.com/article/tag/%E7%88%B1%E6%83%85%E6%96%87%E5%AD%97">爱情电台稿子</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.semorn.com/article/tag/生活文字">生活电台稿子</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="../story/guShiWenZhang.html">故事文章</a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a href="http://www.semorn.com/article/author/lvxing">旅游日记</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.semorn.com/gushi">人物故事</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">电台音乐</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-icon">
+                        <a class="nav-mail" href="http://www.semorn.com/tougao" rel="external nofollow"><i
+                                class="icon iconfont">&#xe602;</i></a>
+                        <a class="nav-point hided" href="javascript:;" style="display:block"><i class="icon iconfont">
+                            &#xe603;</i></a>
+                        <a class="denglu nav-rss" href="javascript:;"><i class="icon iconfont">&#xe601;</i></a>
+                        <div class="denglu-list hided" style="display: none;">
+                            <a href="http://www.semorn.com/article/author/kaixiong" rel="external nofollow">我的主页</a>
+                            <br>
+                            <a href="http://www.semorn.com/user/setting" rel="external nofollow">设置资料</a>
+                            <br>
+                            <a href="http://www.semorn.com/tougao" rel="external nofollow">提交作品</a>
+                            <br>
+                            <a href="http://www.semorn.com/wp-login.php?action=logout&amp;amp;redirect_to=%2F"
+                               rel="external nofollow">退出</a>
+                        </div>
+                        <a class="nav-search hided" href="javascript:;" style="display:block"><i class="icon iconfont">
+                            &#xe600;</i></a>
+                    </div>
+                    <div class="nav-point-list hided">
+                        <div class="nav-point-bar">
+                            <a href="http://weibo.com/semorn" rel="external nofollow">新浪官方微博</a>
+                            <br>
+                            <a href="http://user.qzone.qq.com/782680748" rel="external nofollow">官方QQ空间</a>
+                            <br>
+                            关注清沫微信
+                            <img src="http://www.semorn.com/wp-content/uploads/2015/07/qmweixin.png" alt="清沫网微信公众号"
+                                 style="width:100px;height:100px"></div>
+                    </div>
+                    <div class="nav-search-bar hided">
+                        <form method="get" action="http://www.semorn.com">
+                            <input type="search" placeholder="Search…" value="" name="s"></form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 轮播 -->
+        <div id="lunbo">
+            <div id="metro">
+                <div id="metro-item">
+                    <div class="left bd banner">
+                        <ul class="banner-in">
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="featured-title"><span>【一页南夏】不同的角度</span></div>
+                                    <img src="http://www.semorn.com/wp-content/uploads/2015/06/10451854856-430x230.jpg"
+                                         alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="featured-title"><span>【倾听时光】我们都忘了</span></div>
+                                    <img src="http://www.semorn.com/wp-content/uploads/2015/06/421534720557727560-430x230.jpg"
+                                         alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="featured-title"><span>【时光FM】你的人生一定马不停蹄</span></div>
+                                    <img src="http://www.semorn.com/wp-content/uploads/2015/06/150120103632-430x230.jpg"
+                                         alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="featured-title"><span>再见了曾经的少年们</span></div>
+                                    <img src="http://www.semorn.com/wp-content/uploads/2015/06/20130311214320-430x230.jpg"
+                                         alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="featured-title"><span>我们都曾付出真心 最后败给了年轻</span></div>
+                                    <img src="http://www.semorn.com/wp-content/uploads/2015/05/1359872081580-430x230.jpg"
+                                         alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="featured-title"><span>【夏落未落】最后，他们都输给了现实</span></div>
+                                    <img src="http://www.semorn.com/wp-content/uploads/2015/05/131-430x230.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="javascript:;" class="featured-nav slow leftBtn">‹</a>
+                        <a href="javascript:;" class="featured-nav slow rightBtn">›</a>
+                        <div class="circle">
+                            <span class="cur"></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <ul class="center-list" id="centerList">
+
+
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <a href="http://www.semorn.com/listen" target="_blank">
+                            <div id="celan-top">
+                                <img src="http://www.semorn.com/wp-content/uploads/2015/07/125469802.jpg" alt="网络电台在线收听"
+                                     style="width:100%;height:112px">
+                            </div>
+                        </a>
+                        <a href="http://www.semorn.com/read/mininovel" target="_blank">
+                            <div id="celan-bottom">
+                                <img src="http://www.semorn.com/wp-content/uploads/2015/07/228201.jpg" alt="情感故事"
+                                     style="width:100%;height:112px">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Muban-->
+            <script id="center-List" type="text/html">
+                <li class="center-item bd">
+                    <a href="{{href}}">
+                        <span class="center-item-title slow">{{center}}</span>
+                        <img class=" wp-post-image" src="{{imgsrc}}" alt="{{alt}}" srcset="{{srcset}}">
+                    </a>
+                </li>
+            </script>
+            <script>
+                $.ajax({
+                    url: 'json/qingGanDianTai/navimg.json',
+                    dataType: 'json',
+                    method: 'get',
+                    success: function (data) {
+                        $.each(data, function (i, value) {
+                            var $li = $(template('center-List', value));
+                            $li.appendTo("#centerList");
+                        });
+                    },
+                    error: function () {
+                        alert("服务器错误");
+                    }
+                })
+            </script>
+        </div>
+
+        <!-- 正文 -->
+        <div id="content">
+            <div class="main-media"></div>
+
+            <!--正文内容模板-->
+            <script type="text/html" id="yinyueTemp">
+                <article class="post-list">
+                    <div class="post-content">
+                        <h2>
+                            <a href="{{ thumbnail_url }}" target="_blank">{{ title }}</a>
+                        </h2>
+                        <div class="postlist-info">
+                            <a href="{{ lab1_url }}"><i class="iconfont icon-home"></i>{{ lab1 }}</a>
+                            <i class="iconfont icon-suibadaohang"></i>
+                            <a href="{{ lab2_url }}">{{ lab2 }}</a>
+                            <time datetime="{{ time }}">
+                                <a href="{{ lab3_url }}"><i
+                                        class="iconfont icon-time"></i>{{ lab3 }}</a>
+                            </time>
+                        </div>
+                        <div class="thumbnail_box">
+                            <div class="thumbnail">
+                                <a href="{{ thumbnail_url }}" title="{{ thumbnail_title }}">
+                                    <img class="wp-post-image" alt="{{ thumbnail_alt }}"
+                                         width="430px" height="230px"
+                                         src="{{ thumbnail_src }}">
+                                </a>
+                            </div>
+                        </div>
+                        <audio controls style="width: 100%"
+                               src="{{ sound_url }}">
+                            <embed src="{{ donghua_url }}"
+                                   quality="high" width="100%" height="24" wmode="transparent"
+                                   type="application/x-shockwave-flash"
+                                   pluginspage="{{ pluginspage }}"
+                                   flashvars="animation=no&amp;
+                                              remaining=yes&amp;
+                                              noinfo=yes&amp;
+                                              bg=0xD4E8FF&amp;
+                                              leftbg=0x0DA4D3&amp;
+                                              lefticon=0xF2F2F2&amp;
+                                              rightbg=0x0DA4D3&amp;
+                                              rightbghover=0x3AB8DF&amp;
+                                              righticon=0xF2F2F2&amp;
+                                              righticonhover=0xFFFFFF&amp;
+                                              text=0x0088DD&amp;
+                                              slider=0x0088DD&amp;
+                                              track=0xFFFFFF&amp;
+                                              border=0xFFFFFF&amp;
+                                              loader=0x8EC2F4&amp;
+                                              autostart=no&amp;
+                                              loop=yes&amp;
+                                              soundFile={{ soundFile }}">
+                            </embed>
+                        </audio>
+                        <span class="entry-content">{{ content }}</span>
+                        <div class="clear"></div>
+                        <div class="tags">
+                            <a class="tag1" rel="tag" href="{{ tag1_url }}">{{ tag1 }}</a>
+                            <a class="tag2" rel="tag" href="{{ tag2_url }}">{{ tag2 }}</a>
+                            <a class="tag3" rel="tag" href="{{ tag3_url }}">{{ tag3 }}</a>
+                        </div>
+                    </div>
+                </article>
+            </script>
+        </div>
+
+        <div class="clear"></div>
+
+        <!-- 尾部 -->
+        <div id="footer">
+            <div class="yqlj">
+                友情链接：
+                <a target="_blank" href="http://www.boting.co">有声小说</a> |
+                <a target="_blank" href="http://missever.com">思念往昔</a> |
+                <a target="_blank" href="http://www.wufafuwu.com">ONE一个</a> |
+                <a target="_blank" href="http://www.ruoxia.com">若夏文学网</a> |
+                <a target="_blank" href="http://www.listenfog.com">听雾读书</a> |
+                <a target="_blank" href="http://www.v2read.com">美文网</a> |
+                <a target="_blank" href="http://www.hahabao.net">文字控</a> |
+                <a target="_blank" href="http://www.wowenxue.com">文学杂志</a> |
+                <a target="_blank" href="http://www.gexingzhao.com">个性照</a> |
+                <a target="_blank" href="http://www.mengtu.me/">萌图</a> |
+                <a target="_blank" href="http://liunianbanxia.com">流年伴夏</a> |
+                <a target="_blank" href="http://www.390ys.com">390影视</a> |
+                <a target="_blank" href="http://www.icchen.com/">凉晨美文</a>
+            </div>
+            <div class="footer-1">
+                <a href="#">网络电台</a> |
+                <a href="#">情感电台</a> |
+                <a href="javascript:;">情感电台广播稿</a> |
+                <a href="javascript:;">情感电台在线收听</a> |
+                <a href="javascript:;">网络电台在线收听</a> |
+                <a href="#">讲故事的电台</a> |
+                <a href="javascript:;">有声电台</a> |
+                <a href="javascript:;">电台稿子</a> |
+                <a href="javascript:;">影评范文</a> |
+                <a href="javascript:;">电台指南</a> |
+                <a href="javascript:;">播音主持</a> |
+                <a href="javascript:;">电台播音稿子</a> |
+                <a href="http://www.semorn.com/ximalayafm.html">喜马拉雅FM电台官网</a> |
+                <a href="http://www.semorn.com/lizhifm.html">荔枝fm电台官网</a> |
+                <a href="http://www.semorn.com/article/6508.html">播音主持自备稿件</a>
+                <a href="outside/chaKanGengDuoYouLian/chaKanGengDuoYouLian.html">查看更多友链</a>
+            </div>
+            <div class="footer-2">
+                <img src="http://www.semorn.com/wp-content/themes/Initial/images/img/foot_logo.png" alt="清沫音乐电台在线收听网">
+                Copyright © 2014
+                <a href="#">清沫网</a>
+                湘ICP备14002542号 .（
+                <a href="outside/shenQingYouLian/shenQingYouLian.html" target="_blank">申请友链</a> |
+                <a href="outside/mianZeShengMing/mianZeShengMing.html" target="_blank">免责声明</a> |
+                <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=admin@semorn.com"
+                   target="_blank">联系我们</a> |
+                <a href="outside/yiJianFanKui/yiJianFanKui.html" target="_blank">意见反馈</a> |
+                <a href="javascript:;">电台背景音乐</a> |
+                <a href="http://www.cnzz.com/stat/website.php?web_id=1000281055" target="_blank">站长统计</a> ）
+            </div>
+        </div>
+
+    </body>
 </html>
