@@ -22,7 +22,7 @@ $(document).ready(function () {
                 // console.log("----");
                 // console.log(typeof(data_info));
                 $.each(data_info, function (i, val) {
-                    $tpl = $(template("music-content", val));
+                    $tpl = $(template("music-content", val[0]));
                     console.log( val);
                     // console.log( $tpl);
                     // console.log( j);

@@ -1,0 +1,192 @@
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 98%;
+    max-width: 1000px;
+    min-width: 300px;
+    padding-top: 50px;
+    margin: auto;
+    float: none;
+}
+#content {
+    width: 100%;
+    margin: auto;
+    float: left;
+    min-height: 500px;
+}
+input, textarea, select, iframe, .bd, .context img {
+    border: 1px solid #E6E6E6;
+}
+a, a img, input, .slow, .download, .u-download {
+    transition: all .24s ease-out;
+    -moz-transition: all .24s ease-out;
+    -webkit-transition: all .24s ease-out;
+}
+.bg:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+    color: #FFF;
+    background: #181818 !important;
+}
+.clear {
+    clear: both;
+}
+
+#nav .nav-logo a:hover, #nav .nav-icon [class*="nav-"]:hover, .thumbnail img:hover {
+    opacity: .7;
+}
+.main-media .thumbnail img:hover, .main .post-list .thumbnail a img:hover {
+    opacity: 1;
+    transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    -moz-transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1);
+}
+
+/*图标*/
+[class*="icon-"], .download::before, .u-download::before {
+    font-style: normal;
+    font-family:"iconfont" !important;
+}
+.postlist-info [class*="icon-"]::before {
+    margin-left: .2rem;
+    margin-right: .1rem;
+}
+
+#aTip{
+    /*position: fixed;*/
+    /*position: absolute;*/
+    display: none;
+    padding: 12px;
+    font-size: .85rem;
+    line-height: .85rem;
+    border: 2px solid #dedede;
+    background-color: #f6f6f6;
+    color: #333;
+    /*z-index: 999;*/
+}
+
+.main-media {
+    margin-right: -1%;
+}
+.main-media .post-list {
+    width: 32.33%;
+    height: 430px;
+    float: left;
+    margin: 0 1% 1% 0;
+    background: #FFF;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+.main-media .post-content {
+    height: 400px;
+    padding: 15px;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+.main-media .post-content {
+    height: 400px;
+    padding: 15px;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+/*标题*/
+.main-media h2 {
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #CCC;
+    margin: 0;
+}
+/*图标文字*/
+#content .postlist-info {
+    color: #999;
+    font-size: .75rem;
+}
+#content .postlist-info a {
+    color: #999;
+}
+/*图片*/
+.main-media .thumbnail_box {
+    margin: 0 auto;
+}
+.thumbnail_box {
+    width: 100%;
+    margin: 0 auto 8px;
+}
+.thumbnail {
+    height: auto;
+    max-height: 220px;
+    margin: 3px;
+    overflow: hidden;
+    padding: 0;
+    border-radius: 0;
+}
+.thumbnail a {
+    line-height: 0;
+    display: block;
+}
+.thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+.main-media .tags {
+    padding-bottom: 14px;
+    bottom: 0;
+}
+.main-media .tags {
+    width: 100%;
+    line-height: 32px;
+    padding-bottom: 12px;
+    background: #FFF;
+    box-shadow: 0 -3px 10px 6px #FFF;
+    position: absolute;
+}
+#content .tags {
+    height: 26px;
+    overflow: hidden;
+}
+#content .tags a {
+    padding: 3px 6px;
+    color: #FFF;
+    font-size: .75rem;
+}
+
+
+@media screen and (max-width: 870px) {
+    #content .post-list {
+        width: 49%;
+    }
+}
+@media screen and (max-width: 480px) {
+    #content .post-list {
+        width: 99%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
