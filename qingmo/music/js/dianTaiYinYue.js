@@ -8,6 +8,7 @@ $(document).ready(function () {
         method: "get",
         success: function (data) {
             var data_len = data.length;
+            console.log(data_len);
             var album_list_len = $(".album-list").length;
             var data_info = new Array();
             for(var j = 0; j < album_list_len; j++){
@@ -18,15 +19,13 @@ $(document).ready(function () {
                         // console.log(m%5);
                     }
                 }
-                // console.log(data_info);
-                // console.log("----");
-                // console.log(typeof(data_info));
                 $.each(data_info, function (i, val) {
                     $tpl = $(template("music-content", val[0]));
+
                     console.log( val);
                     // console.log( $tpl);
                     // console.log( j);
-                    switch (j) {
+                    switch (i) {
                         case 0:
                             $tpl.appendTo(".album-list:eq(0)");
                             break;
@@ -44,6 +43,7 @@ $(document).ready(function () {
                 // console.log("----");
                 data_info = [];
             }
+
         }
 
     })
