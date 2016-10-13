@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>chaKanGengDuoYouLian</title>
+    <title>友情链接 | 清沫网</title>
     <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css" />
     <script type="text/javascript" src="../../common/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../../common/js/jquery-3.0.0.js"></script>
@@ -24,6 +24,18 @@
             font-weight: normal;
             text-transform: uppercase;
             color: #000 !important;
+        }
+        #aTip{
+            /*position: fixed;*/
+            /*position: absolute;*/
+            display: none;
+            padding: 12px;
+            font-size: .85rem;
+            line-height: .85rem;
+            border: 2px solid #dedede;
+            background-color: #f6f6f6;
+            color: #333;
+            /*z-index: 999;*/
         }
         .slow {
             transition: all .24s ease-out;
@@ -88,6 +100,22 @@
             clear: both;
         }
 
+        @media screen and (max-width: 983px) {
+            #content .flink li{
+                width: 32%;
+            }
+        }
+        @media screen and (max-width: 870px) {
+            #content .flink li{
+                width: 49%;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            #content .flink li{
+                width: 99%;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -104,11 +132,11 @@
             <div class="nav-menu">
                 <div class="nav-menu-list">
                     <ul id="menu" class="menu">
-                        <li class="current-menu-item">
-                            <a title="网络电台" href="http://www.semorn.com">首页</a>
+                        <li>
+                            <a title="网络电台" href="../../index.html">首页</a>
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="http://www.semorn.com/listen">情感电台</a>
+                            <a href="../../listen/qingGanDianTai.html">情感电台</a>
                             <ul class="sub-menu">
                                 <li class="menu-item-has-children">
                                     <a href="http://www.semorn.com/listen">在线收听</a>
@@ -139,10 +167,10 @@
                             </ul>
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="http://www.semorn.com/read/essay">情感文章</a>
+                            <a href="../../read/qingGanWenZhang.html">情感文章</a>
                             <ul class="sub-menu">
                                 <li>
-                                    <a href="http://www.semorn.com/article/tag/成长文字">成长电台稿子</a>
+                                    <a href="../../read/chengZhangDT_gaozi/czdt_gaozi.html">成长电台稿子</a>
                                 </li>
                                 <li>
                                     <a href="http://www.semorn.com/article/tag/%E7%88%B1%E6%83%85%E6%96%87%E5%AD%97">爱情电台稿子</a>
@@ -153,7 +181,7 @@
                             </ul>
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="http://www.semorn.com/read/mininovel">故事文章</a>
+                            <a href="../../story/guShiWenZhang.html">故事文章</a>
                             <ul class="sub-menu">
                                 <li>
                                     <a href="http://www.semorn.com/article/author/lvxing">旅游日记</a>
@@ -259,6 +287,34 @@
             </div>
         </div>
     </div>
+<script>
+    $(".slow a").each(function () {
 
+        $(this).mouseenter(function (e) {
+            // alert(e.offsetX);
+            // alert(e.offsetY);
+            aTip = this.title;
+            this.title = "";
+//                            console.log(aTip);
+            $aTip = $("<div class='clear'></div> <div id='aTip'>" + aTip + "</div> <div class='clear'></div> ");
+//                            console.log($aTip);
+            $aTip.appendTo("body");
+            $("#aTip").css({
+//                                距离计算问题,弹出的框显示的位置
+                top: (e.pageY+20) + "px",
+                left: (e.pageX+30) + "px"
+            }).show();
+        }).mouseleave(function () {
+            this.title = aTip;
+            $aTip.remove();
+        }).mousemove(function (e) {
+            $("#aTip").css({
+                position: "absolute",
+                top: (e.pageY+20) + "px",
+                left: (e.pageX+30) + "px"
+            });
+        })
+    });
+</script>
 </body>
 </html>
