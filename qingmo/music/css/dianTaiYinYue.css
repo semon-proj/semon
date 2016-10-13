@@ -1,0 +1,38 @@
+body {
+    background-color: #ededed;
+}
+
+#content {
+    width: 98%;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 10px auto 10px;
+    min-height: 500px;
+    font: .875em/1.5rem Helvetica, Microsoft Yahei, Hiragino Sans GB, sans-serif;
+    color: #555;
+    margin-top: 40px;
+}
+
+.album-list {
+    width: 100%;
+}
+
+.album-item {
+    float: left;
+    width: 20%;
+    margin-top: 10px;
+}
+
+.album-item img {
+    width: 180px;
+    height: 180px;
+    border: 5px solid #fff;
+}
+
+.album-item .music-info {
+    color: #333;
+    display: block;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-right: 15px;
+}
