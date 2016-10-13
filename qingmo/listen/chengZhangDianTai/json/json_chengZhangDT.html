@@ -5,8 +5,6 @@
     <meta name="keywords" content="故事FM">
     <meta charset="UTF-8">
 
-    <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
-
     <script type="text/javascript">
             // $(function(){
             //     var resstr = '[';
@@ -24,35 +22,43 @@
             // })
     </script>
 
+    <script type="text/javascript" src="../../../common/js/jquery-3.0.0.js"></script>
     <script type="text/javascript">
-            $(function(){
-                var resstr = '[';
-                $("#content article").each(function (i,info){
-                    resstr += '{';
-                    resstr += '"thumbnail_url":"'+$(info).find(".thumbnail a").attr("href")+'",';
-                    resstr += '"thumbnail_title":"'+$(info).find(".thumbnail a").attr("title")+'",';
-                    resstr += '"thumbnail_src":"'+$(info).find(".thumbnail a img").attr("src")+'",';
-                    resstr += '"thumbnail_alt":"'+$(info).find(".thumbnail a img").attr("alt")+'",';
-                    resstr += '"sound_url":"'+$(info).find("audio").attr("src")+'",';
-                    resstr += '"donghua_url":"'+$(info).find("embed").attr("src")+'",';
-                    resstr += '"pluginspage":"'+$(info).find("embed").attr("pluginspage")+'",';
-                    resstr += '"soundFile":"'+$(info).find("audio").attr("src")+'",';
-                    resstr += '"title":"'+$(info).find("h2 a").attr("href")+'",';
-                    resstr += '"title":"'+$(info).find("h2 a").text()+'",';
-                    resstr += '"labtime_url":"'+$(info).find(".postlist-info time a").attr("href")+'",';
-                    resstr += '"content":"'+$(info).find(".entry-content").text()+'",';
-                    resstr += '"tag1_url":"'+$(info).find(".tags a").eq(0).attr("href")+'",';
-                    resstr += '"tag1":"'+$(info).find(".tags a").eq(0).text()+'",';
-                    resstr += '"tag2_url":"'+$(info).find(".tags a").eq(1).attr("href")+'",';
-                    resstr += '"tag2":"'+$(info).find(".tags a").eq(1).text()+'",';
-                    resstr += '"tag3_url":"'+$(info).find(".tags a").eq(2).attr("href")+'",';
-                    resstr += '"tag3":"'+$(info).find(".tags a").eq(2).text()+'",';
-                    resstr += '},';
-                } );    
-                resstr += ']';
-                console.log(resstr);
-            })
-        </script>
+        $(function(){
+            var resstr = '[';
+            $("#content article").each(function (i,info){
+                resstr += '{';
+                resstr += '"thumbnail_url":"'+$(info).find(".thumbnail a").attr("href")+'",';
+                resstr += '"thumbnail_title":"'+$(info).find(".thumbnail a").attr("title")+'",';
+                resstr += '"thumbnail_src":"'+$(info).find(".thumbnail a img").attr("src")+'",';
+                resstr += '"thumbnail_alt":"'+$(info).find(".thumbnail a img").attr("alt")+'",';
+                resstr += '"sound_url":"'+$(info).find("audio").attr("src")+'",';
+                resstr += '"donghua_url":"'+$(info).find("embed").attr("src")+'",';
+                resstr += '"pluginspage":"'+$(info).find("embed").attr("pluginspage")+'",';
+                resstr += '"soundFile":"'+$(info).find("audio").attr("src")+'",';
+                resstr += '"title":"'+$(info).find("h2 a").attr("href")+'",';
+                resstr += '"title":"'+$(info).find("h2 a").text()+'",';
+                resstr += '"labtime_url":"'+$(info).find(".postlist-info time a").attr("href")+'",';
+                resstr += '"time":"'+$(info).find(".postlist-info time a").text()+'",';
+                resstr += '"lab1_url":"'+$(info).find(".postlist-info a").eq(0).attr("href")+'",';
+                resstr += '"lab1":"'+$(info).find(".postlist-info a").eq(0).text()+'",';
+                resstr += '"lab2_url":"'+$(info).find(".postlist-info a").eq(1).attr("href")+'",';
+                resstr += '"lab2":"'+$(info).find(".postlist-info a").eq(1).text()+'",';
+                resstr += '"lab3_url":"'+$(info).find(".postlist-info a").eq(2).attr("href")+'",';
+                resstr += '"lab3":"'+$(info).find(".postlist-info a").eq(2).text()+'",';
+                resstr += '"content":"'+$(info).find(".entry-content").text()+'",';
+                resstr += '"tag1_url":"'+$(info).find(".tags a").eq(0).attr("href")+'",';
+                resstr += '"tag1":"'+$(info).find(".tags a").eq(0).text()+'",';
+                resstr += '"tag2_url":"'+$(info).find(".tags a").eq(1).attr("href")+'",';
+                resstr += '"tag2":"'+$(info).find(".tags a").eq(1).text()+'",';
+                resstr += '"tag3_url":"'+$(info).find(".tags a").eq(2).attr("href")+'",';
+                resstr += '"tag3":"'+$(info).find(".tags a").eq(2).text()+'",';
+                resstr += '},';
+            } );
+            resstr += ']';
+            console.log(resstr);
+        })
+    </script>
 
 </head>
 
