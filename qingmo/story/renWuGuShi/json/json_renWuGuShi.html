@@ -5,7 +5,7 @@
     <meta name="keywords" content="旅行文字,生活文字">
     <meta charset="UTF-8"></head>
 
-    <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="../../../common/js/jquery-3.0.0.js"></script>
 
     <script type="text/javascript">
         // $(function(){
@@ -36,6 +36,13 @@
                 resstr += '"title":"'+$(info).find("h2 a").attr("href")+'",';
                 resstr += '"title":"'+$(info).find("h2 a").text()+'",';
                 resstr += '"labtime_url":"'+$(info).find(".postlist-info time a").attr("href")+'",';
+                resstr += '"time":"'+$(info).find(".postlist-info time a").text()+'",';
+                resstr += '"lab1_url":"'+$(info).find(".postlist-info a").eq(0).attr("href")+'",';
+                resstr += '"lab1":"'+$(info).find(".postlist-info a").eq(0).text()+'",';
+                resstr += '"lab2_url":"'+$(info).find(".postlist-info a").eq(1).attr("href")+'",';
+                resstr += '"lab2":"'+$(info).find(".postlist-info a").eq(1).text()+'",';
+                resstr += '"lab3_url":"'+$(info).find(".postlist-info a").eq(2).attr("href")+'",';
+                resstr += '"lab3":"'+$(info).find(".postlist-info a").eq(2).text()+'",';
                 resstr += '"content":"'+$(info).find(".entry-content").text()+'",';
                 resstr += '"tag1_url":"'+$(info).find(".tags a").eq(0).attr("href")+'",';
                 resstr += '"tag1":"'+$(info).find(".tags a").eq(0).text()+'",';
