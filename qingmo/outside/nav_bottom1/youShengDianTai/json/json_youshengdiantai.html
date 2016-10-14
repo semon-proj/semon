@@ -26,6 +26,9 @@
             resstr += '"lab3_url":"'+$(info).find(".postlist-info a").eq(2).attr("href")+'",';
             resstr += '"lab3":"'+$(info).find(".postlist-info a").eq(2).text()+'",';
             resstr += '"content":"'+$(info).find(".entry-content").text()+'",';
+            resstr += '"audio_src":"'+$(info).find("audio").attr("src")+'",';
+            resstr += '"embed_src":"'+$(info).find("embed").attr("src")+'",';
+            resstr += '"embed_fileurl":"'+$(info).find("audio").attr("src")+'",';
             resstr += '"tag1_url":"'+$(info).find(".tags a").eq(0).attr("href")+'",';
             resstr += '"tag1":"'+$(info).find(".tags a").eq(0).text()+'",';
             resstr += '"tag1_style":"'+$(info).find(".tags .bg").eq(0).attr("style")+'",';

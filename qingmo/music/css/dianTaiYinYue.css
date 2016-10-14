@@ -3,7 +3,7 @@ body {
 }
 
 #content {
-    width: 98%;
+    width: 100%;
     max-width: 1000px;
     min-width: 300px;
     margin: 10px auto 10px;
@@ -21,6 +21,8 @@ body {
     float: left;
     width: 20%;
     margin-top: 10px;
+    height: 250px;
+    position: relative;
 }
 
 .album-item img {

@@ -1,14 +1,14 @@
 /**
  * Created by Administrator on 2016/10/11.
  */
-$(document).ready(function () {
+$(function () {
     $.ajax({
         url: "json/content.json",
         dataType: "json",
         method: "get",
         success: function (data) {
             var data_len = data.length;
-            console.log(data_len);
+            // console.log(data_len);
             var album_list_len = $(".album-list").length;
             var data_info = new Array();
             for(var j = 0; j < album_list_len; j++){
@@ -22,8 +22,8 @@ $(document).ready(function () {
                 $.each(data_info, function (i, val) {
                     $tpl = $(template("music-content", val[0]));
 
-                    console.log( val);
-                    // console.log( $tpl);j
+                    // console.log( val);
+                    // console.log( $tpl);
                     // console.log( j);
                     switch (j) {
                         case 0:
@@ -44,7 +44,20 @@ $(document).ready(function () {
                 data_info = [];
             }
 
+            $(".album-item img").click(function () {
+                alert("bbb");
+            });
         }
 
+    });
+
+    // alert("dddd");
+    $(".album-item img").click(function () {
+        alert("bbb");
+    });
+    $(".album-item span").on("hover", function () {
+        alert("ok");
+        // $('<i class="icon iconfont">&#xe607;</i>').appendTo(this);
+            // .css()
     })
 });
