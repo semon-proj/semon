@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+</head>
+
+<script type="text/javascript" src="../../../../common/js/jquery-3.0.0.js"></script>
+
+<script type="text/javascript">
+    $(function(){
+        var resstr = '[';
+        $("#content article").each(function (i,info){
+            resstr += '{';
+            resstr += '"thumbnail_url":"'+$(info).find(".thumbnail a").attr("href")+'",';
+            resstr += '"thumbnail_title":"'+$(info).find(".thumbnail a").attr("title")+'",';
+            resstr += '"thumbnail_src":"'+$(info).find(".thumbnail a img").attr("src")+'",';
+            resstr += '"thumbnail_alt":"'+$(info).find(".thumbnail a img").attr("alt")+'",';
+            resstr += '"title":"'+$(info).find("h2 a").attr("href")+'",';
+            resstr += '"title":"'+$(info).find("h2 a").text()+'",';
+            resstr += '"labtime_url":"'+$(info).find(".postlist-info time a").attr("href")+'",';
+            resstr += '"time":"'+$(info).find(".postlist-info time a").text()+'",';
+            resstr += '"lab1_url":"'+$(info).find(".postlist-info a").eq(0).attr("href")+'",';
+            resstr += '"lab1":"'+$(info).find(".postlist-info a").eq(0).text()+'",';
+            resstr += '"lab2_url":"'+$(info).find(".postlist-info a").eq(1).attr("href")+'",';
+            resstr += '"lab2":"'+$(info).find(".postlist-info a").eq(1).text()+'",';
+            resstr += '"lab3_url":"'+$(info).find(".postlist-info a").eq(2).attr("href")+'",';
+            resstr += '"lab3":"'+$(info).find(".postlist-info a").eq(2).text()+'",';
+            resstr += '"content":"'+$(info).find(".entry-content").text()+'",';
+            resstr += '"tag1_url":"'+$(info).find(".tags a").eq(0).attr("href")+'",';
+            resstr += '"tag1":"'+$(info).find(".tags a").eq(0).text()+'",';
+            resstr += '"tag1_style":"'+$(info).find(".tags .bg").eq(0).attr("style")+'",';
+            resstr += '"tag2_url":"'+$(info).find(".tags a").eq(1).attr("href")+'",';
+            resstr += '"tag2":"'+$(info).find(".tags a").eq(1).text()+'",';
+            resstr += '"tag2_style":"'+$(info).find(".tags .bg").eq(1).attr("style")+'",';
+            resstr += '"tag3_url":"'+$(info).find(".tags a").eq(2).attr("href")+'",';
+            resstr += '"tag3":"'+$(info).find(".tags a").eq(2).text()+'",';
+            resstr += '"tag3_style":"'+$(info).find(".tags .bg").eq(2).attr("style")+'",';
+            resstr += '},';
+        } );
+        resstr += ']';
+        console.log(resstr);
+    })
+</script>
+
+<body class="archive category category-yingping category-540 custom-background">
+<div id="page">
+    <div id="nav">
+        <div class="nav-item">
+            <h1 class="nav-logo">
+                <a href="http://www.semorn.com" style="background-image:url(http://www.semorn.com/wp-content/uploads/2014/11/weblogo_3.png)">清沫网</a>
+            </h1>
+            <span class="nav-switch btn hide slow">
+                <li class="icon-caidan"></li>
+            </span>
+            <div class="nav-menu">
+                <div class="nav-menu-list">
+                    <ul id="menu" class="menu">
+                        <li>
+                            <a title="网络电台" href="http://www.semorn.com">首页</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="http://www.semorn.com/listen">情感电台</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item-has-children">
+                                    <a href="http://www.semorn.com/listen">在线收听</a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a href="http://www.semorn.com/listen/aiqingfm">爱情电台节目</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.semorn.com/listen/lizhifm">励志电台节目</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.semorn.com/listen/chengzhangfm">成长电台节目</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.semorn.com/listen/wennuanfm">温暖电台节目</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.semorn.com/listen/zhiyufm">伤感电台节目</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="http://www.semorn.com/listen/gushidiantai">故事电台</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.semorn.com/music-story">音乐电台</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="http://www.semorn.com/read/essay">情感文章</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="http://www.semorn.com/article/tag/成长文字">成长电台稿子</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.semorn.com/article/tag/%E7%88%B1%E6%83%85%E6%96%87%E5%AD%97">爱情电台稿子</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.semorn.com/article/tag/生活文字">生活电台稿子</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="http://www.semorn.com/read/mininovel">故事文章</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="http://www.semorn.com/article/author/lvxing">旅游日记</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.semorn.com/gushi">人物故事</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="http://www.semorn.com/music">电台音乐</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-icon">
+                <a class="nav-mail icon-mail" href="http://www.semorn.com/tougao" rel="external nofollow"></a>
+                <a class="nav-point icon-point hide" href="javascript:;" style="display:block"></a>
+                <a class="nav-rss icon-rss" href="http://www.semorn.com/login?redirect_to=http%3A%2F%2Fwww.semorn.com%2Fyingping"></a>
+                <div class="denglu-list hide">
+                    <a href="http://www.semorn.com/article/author/" rel="external nofollow">我的主页</a>
+                    <br>
+                    <a href="http://www.semorn.com/user/setting" rel="external nofollow">设置资料</a>
+                    <br>
+                    <a href="http://www.semorn.com/tougao" rel="external nofollow">提交作品</a>
+                    <br>
+                    <a href="http://www.semorn.com/wp-login.php?action=logout&amp;amp;redirect_to=%2Fyingping" rel="external nofollow">退出</a>
+                </div>
+                <a class="nav-search icon-search hide" href="javascript:;" style="display:block"></a>
+            </div>
+            <div class="nav-point-list hide">
+                <div class="nav-point-bar">
+                    <a href="http://weibo.com/semorn" rel="external nofollow">新浪官方微博</a>
+                    <br>
+                    <a href="http://user.qzone.qq.com/782680748" rel="external nofollow">官方QQ空间</a>
+                    <br>
+                    关注清沫微信
+                    <img src="http://www.semorn.com/wp-content/uploads/2015/07/qmweixin.png" alt="清沫网微信公众号" style="width:100px;height:100px"></div>
+            </div>
+            <div class="nav-search-bar hide">
+                <form method="get" action="http://www.semorn.com">
+                    <input type="search" placeholder="Search…" value="" name="s"></form>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div id="metro">
+            <div id="metro-item">
+                <div class="left bd">
+                    <div class="featured">
+                        <ul style="left: -2150px; width: 2580px;">
+                            <li>
+                                <a href="http://www.semorn.com/article/6850.html">
+                                    <div class="featured-title">
+                                        <span>【倾听时光】你愿意做我的蘑菇吗</span>
+                                    </div>
+                                    <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/07/495c61641ba0bb2655c-430x230.jpg" class=" wp-post-image" alt="【倾听时光】你愿意做我的蘑菇吗"></a>
+                            </li>
+                            <li>
+                                <a href="http://www.semorn.com/article/6455.html">
+                                    <div class="featured-title">
+                                        <span>【一页南夏】不同的角度</span>
+                                    </div>
+                                    <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/06/10451854856-430x230.jpg" class=" wp-post-image" alt="【一页南夏】不同的角度"></a>
+                            </li>
+                            <li>
+                                <a href="http://www.semorn.com/article/6432.html">
+                                    <div class="featured-title">
+                                        <span>【倾听时光】我们都忘了</span>
+                                    </div>
+                                    <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/06/421534720557727560-430x230.jpg" class=" wp-post-image" alt="【倾听时光】我们都忘了"></a>
+                            </li>
+                            <li>
+                                <a href="http://www.semorn.com/article/6382.html">
+                                    <div class="featured-title">
+                                        <span>【时光FM】你的人生一定马不停蹄</span>
+                                    </div>
+                                    <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/06/150120103632-430x230.jpg" class=" wp-post-image" alt="【时光FM】你的人生一定马不停蹄"></a>
+                            </li>
+                            <li>
+                                <a href="http://www.semorn.com/article/6327.html">
+                                    <div class="featured-title">
+                                        <span>再见了曾经的少年们</span>
+                                    </div>
+                                    <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/06/20130311214320-430x230.jpg" class=" wp-post-image" alt="再见了曾经的少年们"></a>
+                            </li>
+                            <li>
+                                <a href="http://www.semorn.com/article/6186.html">
+                                    <div class="featured-title">
+                                        <span>我们都曾付出真心 最后败给了年轻</span>
+                                    </div>
+                                    <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/05/1359872081580-430x230.jpg" class=" wp-post-image" alt="我们都曾付出真心 最后败给了年轻"></a>
+                            </li>
+                        </ul>
+                        <div class="nav-btn btn">
+                            <span style="opacity: 0.4;"></span>
+                            <span style="opacity: 0.4;"></span>
+                            <span style="opacity: 0.4;"></span>
+                            <span style="opacity: 0.4;"></span>
+                            <span style="opacity: 0.4;"></span>
+                            <span style="opacity: 1;"></span>
+                        </div>
+                        <div class="featured-nav prev btn slow">‹</div>
+                        <div class="featured-nav next btn slow">›</div>
+                    </div>
+                </div>
+                <div class="center">
+                    <ul class="center-list">
+                        <li class="center-item bd">
+                            <a href="http://www.semorn.com/article/2579.html">
+                                <span class="center-item-title slow">
+                                    晚安城市
+                                    <br>
+                                    小贤
+                                    <br>2014-08-14</span>
+                                <img width="110" height="110" src="http://www.semorn.com/wp-content/uploads/2014/08/hqzs4-110x110.jpg" class=" wp-post-image" alt="晚安城市" srcset="http://www.semorn.com/wp-content/uploads/2014/08/hqzs4-150x150.jpg 150w, http://www.semorn.com/wp-content/uploads/2014/08/hqzs4-110x110.jpg 110w" sizes="(max-width: 110px) 100vw, 110px"></a>
+                        </li>
+                        <li class="center-item bd">
+                            <a href="http://www.semorn.com/article/5456.html">
+                                <span class="center-item-title slow">
+                                    【美文聆听】你不需要活在别人的认可里
+                                    <br>
+                                    孤雪
+                                    <br>2015-04-20</span>
+                                <img width="110" height="110" src="http://www.semorn.com/wp-content/uploads/2015/04/meiwenfm_1-110x110.jpg" class=" wp-post-image" alt="【美文聆听】你不需要活在别人的认可里" srcset="http://www.semorn.com/wp-content/uploads/2015/04/meiwenfm_1-150x150.jpg 150w, http://www.semorn.com/wp-content/uploads/2015/04/meiwenfm_1-110x110.jpg 110w" sizes="(max-width: 110px) 100vw, 110px"></a>
+                        </li>
+                        <li class="center-item bd">
+                            <a href="http://www.semorn.com/article/6402.html">
+                                <span class="center-item-title slow">
+                                    【触动心弦】爱，不需要解释
+                                    <br>
+                                    心怡
+                                    <br>2015-06-10</span>
+                                <img width="110" height="110" src="http://www.semorn.com/wp-content/uploads/2015/06/aixinweimeiyijing-110x110.jpg" class=" wp-post-image" alt="【触动心弦】爱，不需要解释" srcset="http://www.semorn.com/wp-content/uploads/2015/06/aixinweimeiyijing-150x150.jpg 150w, http://www.semorn.com/wp-content/uploads/2015/06/aixinweimeiyijing-110x110.jpg 110w" sizes="(max-width: 110px) 100vw, 110px"></a>
+                        </li>
+                        <li class="center-item bd">
+                            <a href="http://www.semorn.com/article/4361.html">
+                                <span class="center-item-title slow">
+                                    恋上一座城
+                                    <br>
+                                    寂末声线
+                                    <br>2015-01-07</span>
+                                <img width="110" height="110" src="http://www.semorn.com/wp-content/uploads/2015/01/jmsx_13-110x110.jpg" class=" wp-post-image" alt="恋上一座城" srcset="http://www.semorn.com/wp-content/uploads/2015/01/jmsx_13-150x150.jpg 150w, http://www.semorn.com/wp-content/uploads/2015/01/jmsx_13-110x110.jpg 110w" sizes="(max-width: 110px) 100vw, 110px"></a>
+                        </li>
+                        <li class="center-item bd">
+                            <a href="http://www.semorn.com/article/11631.html">
+                                <span class="center-item-title slow">
+                                    你说爱我,我都信了
+                                    <br>
+                                    900℃
+                                    <br>2016-07-05</span>
+                                <img width="110" height="110" src="http://www.semorn.com/wp-content/uploads/2016/07/22b2OOOPIC07-1-110x110.jpg" class=" wp-post-image" alt="你说爱我,我都信了" srcset="http://www.semorn.com/wp-content/uploads/2016/07/22b2OOOPIC07-1-150x150.jpg 150w, http://www.semorn.com/wp-content/uploads/2016/07/22b2OOOPIC07-1-110x110.jpg 110w" sizes="(max-width: 110px) 100vw, 110px"></a>
+                        </li>
+                        <li class="center-item bd">
+                            <a href="http://www.semorn.com/article/9881.html">
+                                <span class="center-item-title slow">
+                                    早点离开打着友情牌和你谈情说爱的人
+                                    <br>
+                                    822℃
+                                    <br>2016-03-03</span>
+                                <img width="110" height="110" src="http://www.semorn.com/wp-content/uploads/2016/03/mp23602204-110x110.jpg" class=" wp-post-image" alt="早点离开打着友情牌和你谈情说爱的人" srcset="http://www.semorn.com/wp-content/uploads/2016/03/mp23602204-150x150.jpg 150w, http://www.semorn.com/wp-content/uploads/2016/03/mp23602204-110x110.jpg 110w" sizes="(max-width: 110px) 100vw, 110px"></a>
+                        </li>
+                        <li class="center-item bd">
+                            <a href="http://www.semorn.com/article/12081.html">
+                                <span class="center-item-title slow">
+                                    只要最后是你，等多久都没关系
+                                    <br>
+                                    846℃
+                                    <br>2016-08-22</span>
+                                <img width="110" height="110" src="http://www.semorn.com/wp-content/uploads/2015/08/503b228c083-110x110.jpg" class=" wp-post-image" alt="只要最后是你，等多久都没关系" srcset="http://www.semorn.com/wp-content/uploads/2015/08/503b228c083-150x150.jpg 150w, http://www.semorn.com/wp-content/uploads/2015/08/503b228c083-110x110.jpg 110w" sizes="(max-width: 110px) 100vw, 110px"></a>
+                        </li>
+                        <li class="center-item bd">
+                            <a href="http://www.semorn.com/article/7074.html">
+                                <span class="center-item-title slow">
+                                    他们只是嫉妒你一个人也过得很好
+                                    <br>
+                                    774℃
+                                    <br>2015-07-24</span>
+                                <img width="110" height="110" src="http://www.semorn.com/wp-content/uploads/2015/07/2012092914434577324-110x110.jpg" class=" wp-post-image" alt="他们只是嫉妒你一个人也过得很好" srcset="http://www.semorn.com/wp-content/uploads/2015/07/2012092914434577324-150x150.jpg 150w, http://www.semorn.com/wp-content/uploads/2015/07/2012092914434577324-110x110.jpg 110w" sizes="(max-width: 110px) 100vw, 110px"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <a href="http://www.semorn.com/listen" target="_blank">
+                        <div id="celan-top">
+                            <img src="http://www.semorn.com/wp-content/uploads/2015/07/125469802.jpg" alt="网络电台在线收听" style="width:100%;height:112px"></div>
+                    </a>
+                    <a href="http://www.semorn.com/read/mininovel" target="_blank">
+                        <div id="celan-bottom">
+                            <img src="http://www.semorn.com/wp-content/uploads/2015/07/228201.jpg" alt="情感故事" style="width:100%;height:112px"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div class="main-media">
+                <article id="post-10778" class="post-list">
+                    <div class="post-content">
+                        <h2>
+                            <a href="http://www.semorn.com/article/10778.html" target="_blank">《谁的青春不迷茫》：只怕爱得太早，不能与你终老</a>
+                        </h2>
+                        <div class="postlist-info">
+                            <div class="postlist-info">
+                                <a class="fn" href="http://www.semorn.com/article/author/idgnol"> <i class="icon-copyright"></i>
+                                    布衣悦呼
+                                </a> <i class="icon-cat"></i>
+                                <a href="http://www.semorn.com/yingping" rel="category tag">影评范文</a>
+                                <time datetime="2016-04-27">
+                                    <a href="http://www.semorn.com/article/date/2016/04/27">
+                                        <i class="icon-time"></i>
+                                        2016-04-27
+                                    </a>
+                                </time>
+                            </div>
+                        </div>
+                        <div class="thumbnail_box bd">
+                            <div class="thumbnail">
+                                <a href="http://www.semorn.com/article/10778.html" title="《谁的青春不迷茫》：只怕爱得太早，不能与你终老">
+                                    <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2016/04/1442902-b6e2e27b5ddb94f-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="《谁的青春不迷茫》：只怕爱得太早，不能与你终老"></a>
+                            </div>
+                        </div>
+                        <span class="entry-content">
+                            01
+青春是什么？恐怕，每个人心中都有一个答案。
+青春是没有彩排的一场剧，你被花花世界所渲染的心，看得到摸不着，够得到不想要，享受挣扎，渴望认同。
+青春是错的时间遇到对的人，她在那里没完没了地讲，你在这边津津有味地听，但你永远不敢凑上前去，亲...
+                        </span>
+                        <div class="clear"></div>
+                        <div class="tags">
+                            <a class="bg" style="background:#F96" href="http://www.semorn.com/article/tag/%e5%bd%b1%e8%af%84%e8%8c%83%e6%96%87" rel="tag">影评范文</a>
+                            <a class="bg" style="background:#6CC" href="http://www.semorn.com/article/tag/%e7%94%b5%e5%bd%b1%e8%af%84%e8%ae%ba" rel="tag">电影评论</a>
+                            <a class="bg" style="background:#B0D686" href="http://www.semorn.com/article/tag/%e8%b0%81%e7%9a%84%e9%9d%92%e6%98%a5%e4%b8%8d%e8%bf%b7%e8%8c%ab" rel="tag">谁的青春不迷茫</a>
+                        </div>
+                    </div>
+                </article>
+                <article id="post-9926" class="post-list">
+                    <div class="post-content">
+                        <h2>
+                            <a href="http://www.semorn.com/article/9926.html" target="_blank">《山河故人》：贾樟柯镜头中那个变迁的中国</a>
+                        </h2>
+                        <div class="postlist-info">
+                            <div class="postlist-info">
+                                <a class="fn" href="http://www.semorn.com/article/author/idgnol">
+                                    <i class="icon-copyright"></i>
+                                    布衣悦呼
+                                </a>
+                                <i class="icon-cat"></i>
+                                <a href="http://www.semorn.com/yingping" rel="category tag">影评范文</a>
+                                <time datetime="2016-03-05">
+                                    <a href="http://www.semorn.com/article/date/2016/03/05">
+                                        <i class="icon-time"></i>
+                                        2016-03-05
+                                    </a>
+                                </time>
+                            </div>
+                        </div>
+                        <div class="thumbnail_box bd">
+                            <div class="thumbnail">
+                                <a href="http://www.semorn.com/article/9926.html" title="《山河故人》：贾樟柯镜头中那个变迁的中国">
+                                    <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2016/03/17084-160304235PV02-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="《山河故人》：贾樟柯镜头中那个变迁的中国"></a>
+                            </div>
+                        </div>
+                        <span class="entry-content">
+                            《山河故人》是革命性中国导演贾樟柯的新作，剧中出现了三次人们站在一条如长蛇般蜿蜒而过的河流旁边的情景。在第一幕戏里，三个朋友放起了烟火，不大不小的火花升起来。在第二幕里，只有两个人回到河边，点起了一捆炸药。到了第三次，三人中只剩下一个人...
+                        </span>
+                        <div class="clear"></div>
+                        <div class="tags">
+                            <a class="bg" style="background:#F96" href="http://www.semorn.com/article/tag/%e5%b1%b1%e6%b2%b3%e6%95%85%e4%ba%ba" rel="tag">山河故人</a>
+                            <a class="bg" style="background:#37A7FF" href="http://www.semorn.com/article/tag/%e7%94%b5%e5%bd%b1%e6%95%85%e4%ba%8b" rel="tag">电影故事</a>
+                        </div>
+                    </div>
+                </article>
+                <article id="post-9542" class="post-list">
+                    <div class="post-content">
+                        <h2>
+                            <a href="http://www.semorn.com/article/9542.html" target="_blank">《美人鱼》：越是看似简单的爱，越不简单</a>
+                        </h2>
+                        <div class="postlist-info">
+                            <div class="postlist-info">
+                                <a class="fn" href="http://www.semorn.com/article/author/yingping">
+                                    <i class="icon-copyright"></i>
+                                    影评范文
+                                </a>
+                                <i class="icon-cat"></i>
+                                <a href="http://www.semorn.com/yingping" rel="category tag">影评范文</a>
+                                <time datetime="2016-02-14">
+                                    <a href="http://www.semorn.com/article/date/2016/02/14">
+                                        <i class="icon-time"></i>
+                                        2016-02-14
+                                    </a>
+                                </time>
+                            </div>
+                        </div>
+                        <div class="thumbnail_box bd">
+                            <div class="thumbnail">
+                                <a href="http://www.semorn.com/article/9542.html" title="《美人鱼》：越是看似简单的爱，越不简单">
+                                    <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2016/02/2016282125243578-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="《美人鱼》：越是看似简单的爱，越不简单"></a>
+                            </div>
+                        </div>
+                        <span class="entry-content">
+                            不是星爷的脑残粉，但我是从看周星驰演的电影，过渡到看周星驰导的电影的。要把周星驰奉为神一样的人物，我是打心底里不认同的，但你无法否认的是，周星驰实实在在地代表了一种精神符号。
+在《美人鱼》上映之前铺天盖地的宣传里，饥饿营销宣传被玩得透彻，...
+                        </span>
+                        <div class="clear"></div>
+                        <div class="tags">
+                            <a class="bg" style="background:#B0D686" href="http://www.semorn.com/article/tag/%e5%bd%b1%e8%af%84%e8%8c%83%e6%96%87" rel="tag">影评范文</a>
+                            <a class="bg" style="background:#C9C" href="http://www.semorn.com/article/tag/%e7%94%b5%e5%bd%b1%e8%af%84%e8%ae%ba" rel="tag">电影评论</a>
+                            <a class="bg" style="background:#F99" href="http://www.semorn.com/article/tag/%e7%be%8e%e4%ba%ba%e9%b1%bc" rel="tag">美人鱼</a>
+                        </div>
+                    </div>
+                </article>
+                <article id="post-8704" class="post-list">
+                    <div class="post-content">
+                        <h2>
+                            <a href="http://www.semorn.com/article/8704.html" target="_blank">《杜拉拉追婚记》影评：三十岁，如果你也站在人生的岔路口</a>
+                        </h2>
+                        <div class="postlist-info">
+                            <div class="postlist-info">
+                                <a class="fn" href="http://www.semorn.com/article/author/idgnol">
+                                    <i class="icon-copyright"></i>
+                                    布衣悦呼
+                                </a>
+                                <i class="icon-cat"></i>
+                                <a href="http://www.semorn.com/yingping" rel="category tag">影评范文</a>
+                                <time datetime="2015-12-15">
+                                    <a href="http://www.semorn.com/article/date/2015/12/15">
+                                        <i class="icon-time"></i>
+                                        2015-12-15
+                                    </a>
+                                </time>
+                            </div>
+                        </div>
+                        <div class="thumbnail_box bd">
+                            <div class="thumbnail">
+                                <a href="http://www.semorn.com/article/8704.html" title="《杜拉拉追婚记》影评：三十岁，如果你也站在人生的岔路口">
+                                    <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/12/dulala-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="《杜拉拉追婚记》影评：三十岁，如果你也站在人生的岔路口"></a>
+                            </div>
+                        </div>
+                        <span class="entry-content">
+                            《杜拉拉追婚记》是“杜拉拉”系列电影的第二部。由安竹间执导，周渝民、林依晨、陈柏霖、李佳航主演的都市爱情片。该片讲述了33岁的杜拉拉陷入职场和情场双重危机，如何找回自我、追求真爱的故事。影片于2015年12月4日全国上映
+                        </span>
+                        <div class="clear"></div>
+                        <div class="tags">
+                            <a class="bg" style="background:#E6CC6E" href="http://www.semorn.com/article/tag/%e5%bd%b1%e8%af%84%e8%8c%83%e6%96%87" rel="tag">影评范文</a>
+                            <a class="bg" style="background:#37A7FF" href="http://www.semorn.com/article/tag/%e6%9d%9c%e6%8b%89%e6%8b%89%e8%bf%bd%e5%a9%9a%e8%ae%b0" rel="tag">杜拉拉追婚记</a>
+                            <a class="bg" style="background:#6CC" href="http://www.semorn.com/article/tag/%e7%94%b5%e5%bd%b1%e8%af%84%e8%ae%ba" rel="tag">电影评论</a>
+                        </div>
+                    </div>
+                </article>
+                <article id="post-8650" class="post-list">
+                    <div class="post-content">
+                        <h2>
+                            <a href="http://www.semorn.com/article/8650.html" target="_blank">《坏蛋必须死》影评：充满黑色幽默的惊险之旅</a>
+                        </h2>
+                        <div class="postlist-info">
+                            <div class="postlist-info">
+                                <a class="fn" href="http://www.semorn.com/article/author/idgnol">
+                                    <i class="icon-copyright"></i>
+                                    布衣悦呼
+                                </a>
+                                <i class="icon-cat"></i>
+                                <a href="http://www.semorn.com/yingping" rel="category tag">影评范文</a>
+                                <time datetime="2015-12-12">
+                                    <a href="http://www.semorn.com/article/date/2015/12/12">
+                                        <i class="icon-time"></i>
+                                        2015-12-12
+                                    </a>
+                                </time>
+                            </div>
+                        </div>
+                        <div class="thumbnail_box bd">
+                            <div class="thumbnail">
+                                <a href="http://www.semorn.com/article/8650.html" title="《坏蛋必须死》影评：充满黑色幽默的惊险之旅">
+                                    <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/12/huaidanbixusi-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="《坏蛋必须死》影评：充满黑色幽默的惊险之旅"></a>
+                            </div>
+                        </div>
+                        <span class="entry-content">
+                            《坏蛋必须死》是2015年中国制作的喜剧电影，由冯小刚与姜帝圭联合监制，孙皓执导，陈柏霖、孙艺珍、乔振宇、申贤俊出演，影片讲述四个逗比“坏蛋团”在济州岛偶遇神秘韩国女子，从而引发了一系列轻快浪漫的惊险故事。同时入围第20届釜山电影节“亚洲之窗”单元展映
+                        </span>
+                        <div class="clear"></div>
+                        <div class="tags">
+                            <a class="bg" style="background:#C9C" href="http://www.semorn.com/article/tag/%e5%9d%8f%e8%9b%8b%e5%bf%85%e9%a1%bb%e6%ad%bb" rel="tag">坏蛋必须死</a>
+                            <a class="bg" style="background:#F96" href="http://www.semorn.com/article/tag/%e5%bd%b1%e8%af%84%e8%8c%83%e6%96%87" rel="tag">影评范文</a>
+                            <a class="bg" style="background:#C9C" href="http://www.semorn.com/article/tag/%e7%94%b5%e5%bd%b1%e8%af%84%e8%ae%ba" rel="tag">电影评论</a>
+                        </div>
+                    </div>
+                </article>
+                <article id="post-8525" class="post-list">
+                    <div class="post-content">
+                        <h2>
+                            <a href="http://www.semorn.com/article/8525.html" target="_blank">《火星救援》影评：简单不孤单的火星人</a>
+                        </h2>
+                        <div class="postlist-info">
+                            <div class="postlist-info">
+                                <a class="fn" href="http://www.semorn.com/article/author/idgnol">
+                                    <i class="icon-copyright"></i>
+                                    布衣悦呼
+                                </a>
+                                <i class="icon-cat"></i>
+                                <a href="http://www.semorn.com/yingping" rel="category tag">影评范文</a>
+                                <time datetime="2015-12-04">
+                                    <a href="http://www.semorn.com/article/date/2015/12/04">
+                                        <i class="icon-time"></i>
+                                        2015-12-04
+                                    </a>
+                                </time>
+                            </div>
+                        </div>
+                        <div class="thumbnail_box bd">
+                            <div class="thumbnail">
+                                <a href="http://www.semorn.com/article/8525.html" title="《火星救援》影评：简单不孤单的火星人">
+                                    <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/12/huoxingjiuyuan-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="《火星救援》影评：简单不孤单的火星人"></a>
+                            </div>
+                        </div>
+                        <span class="entry-content">
+                            《火星救援》是由二十世纪福斯电影公司出品，由雷德利·斯科特执导，马特·达蒙、杰西卡·查斯坦、塞巴斯蒂安·斯坦、阿卡塞尔·亨涅联袂出演的科幻片。该片根据安迪·威尔的同名小说改编，讲述了由于一场沙尘暴，马克与他的团队失联，孤身一人置身于火星面临着飞船损毁，想方设法回地球的故事
+                        </span>
+                        <div class="clear"></div>
+                        <div class="tags">
+                            <a class="bg" style="background:#C9C" href="http://www.semorn.com/article/tag/%e5%bd%b1%e8%af%84%e8%8c%83%e6%96%87" rel="tag">影评范文</a>
+                            <a class="bg" style="background:#E6CC6E" href="http://www.semorn.com/article/tag/%e7%81%ab%e6%98%9f%e6%95%91%e6%8f%b4" rel="tag">火星救援</a>
+                            <a class="bg" style="background:#C9C" href="http://www.semorn.com/article/tag/%e7%94%b5%e5%bd%b1%e8%af%84%e8%ae%ba" rel="tag">电影评论</a>
+                        </div>
+                    </div>
+                </article>
+                <article id="post-8519" class="post-list">
+                    <div class="post-content">
+                        <h2>
+                            <a href="http://www.semorn.com/article/8519.html" target="_blank">《陪安东尼度过漫长岁月》影评：也曾陪伴我度过漫长岁月</a>
+                        </h2>
+                        <div class="postlist-info">
+                            <div class="postlist-info">
+                                <a class="fn" href="http://www.semorn.com/article/author/idgnol">
+                                    <i class="icon-copyright"></i>
+                                    布衣悦呼
+                                </a>
+                                <i class="icon-cat"></i>
+                                <a href="http://www.semorn.com/yingping" rel="category tag">影评范文</a>
+                                <time datetime="2015-12-03">
+                                    <a href="http://www.semorn.com/article/date/2015/12/03">
+                                        <i class="icon-time"></i>
+                                        2015-12-03
+                                    </a>
+                                </time>
+                            </div>
+                        </div>
+                        <div class="thumbnail_box bd">
+                            <div class="thumbnail">
+                                <a href="http://www.semorn.com/article/8519.html" title="《陪安东尼度过漫长岁月》影评：也曾陪伴我度过漫长岁月">
+                                    <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/12/andongni-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="《陪安东尼度过漫长岁月》影评：也曾陪伴我度过漫长岁月"></a>
+                            </div>
+                        </div>
+                        <span class="entry-content">
+                            《陪安东尼度过漫长岁月》是根据安东尼同名小说《陪安东尼度过漫长岁月》改编的都市爱情电影。由周迅、钱小蕙监制、钱小蕙编剧、秦小珍执导，刘畅、白百何、唐艺昕、金世佳、白举纲主演。该片讲述了一个男生从20岁到23岁、从大学到工作、从国内到国外的生活片段和真诚感悟
+                        </span>
+                        <div class="clear"></div>
+                        <div class="tags">
+                            <a class="bg" style="background:#F99" href="http://www.semorn.com/article/tag/%e5%bd%b1%e8%af%84%e8%8c%83%e6%96%87" rel="tag">影评范文</a>
+                            <a class="bg" style="background:#F96" href="http://www.semorn.com/article/tag/%e7%94%b5%e5%bd%b1%e8%af%84%e8%ae%ba" rel="tag">电影评论</a>
+                            <a class="bg" style="background:#6CC" href="http://www.semorn.com/article/tag/%e9%99%aa%e5%ae%89%e4%b8%9c%e5%b0%bc%e5%ba%a6%e8%bf%87%e6%bc%ab%e9%95%bf%e5%b2%81%e6%9c%88" rel="tag">陪安东尼度过漫长岁月</a>
+                        </div>
+                    </div>
+                </article>
+                <article id="post-8492" class="post-list">
+                    <div class="post-content">
+                        <h2>
+                            <a href="http://www.semorn.com/article/8492.html" target="_blank">《移动迷宫2：烧痕审判》影评：迷宫外大战丧尸之逃逃逃</a>
+                        </h2>
+                        <div class="postlist-info">
+                            <div class="postlist-info">
+                                <a class="fn" href="http://www.semorn.com/article/author/idgnol">
+                                    <i class="icon-copyright"></i>
+                                    布衣悦呼
+                                </a>
+                                <i class="icon-cat"></i>
+                                <a href="http://www.semorn.com/yingping" rel="category tag">影评范文</a>
+                                <time datetime="2015-12-01">
+                                    <a href="http://www.semorn.com/article/date/2015/12/01">
+                                        <i class="icon-time"></i>
+                                        2015-12-01
+                                    </a>
+                                </time>
+                            </div>
+                        </div>
+                        <div class="thumbnail_box bd">
+                            <div class="thumbnail">
+                                <a href="http://www.semorn.com/article/8492.html" title="《移动迷宫2：烧痕审判》影评：迷宫外大战丧尸之逃逃逃">
+                                    <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/03/baiduyunpan-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="《移动迷宫2：烧痕审判》影评：迷宫外大战丧尸之逃逃逃"></a>
+                            </div>
+                        </div>
+                        <span class="entry-content">
+                            《移动迷宫2》是移动迷宫系列影片的第二部，是由韦斯·波尔执导，迪伦·奥布莱恩、李起弘、卡雅·斯考达里奥、托马斯·桑斯特领衔主演的科幻冒险片。该片根据詹姆斯·达什纳的小说改编，讲述了托马斯带领的林间斗士团队又遇到了新的挑战，等待是一个被病毒肆掠的末日世界，他们需要在智慧和逃亡中继续寻找真相的故事
+                        </span>
+                        <div class="clear"></div>
+                        <div class="tags">
+                            <a class="bg" style="background:#6C9" href="http://www.semorn.com/article/tag/%e5%bd%b1%e8%af%84%e8%8c%83%e6%96%87" rel="tag">影评范文</a>
+                            <a class="bg" style="background:#C9C" href="http://www.semorn.com/article/tag/%e7%94%b5%e5%bd%b1%e8%af%84%e8%ae%ba" rel="tag">电影评论</a>
+                            <a class="bg" style="background:#B0D686" href="http://www.semorn.com/article/tag/%e7%a7%bb%e5%8a%a8%e8%bf%b7%e5%ae%ab" rel="tag">移动迷宫</a>
+                        </div>
+                    </div>
+                </article>
+                <article id="post-8468" class="post-list">
+                    <div class="post-content">
+                        <h2>
+                            <a href="http://www.semorn.com/article/8468.html" target="_blank">《精灵旅社2》影评：誓将搞笑进行到底</a>
+                        </h2>
+                        <div class="postlist-info">
+                            <div class="postlist-info">
+                                <a class="fn" href="http://www.semorn.com/article/author/idgnol">
+                                    <i class="icon-copyright"></i>
+                                    布衣悦呼
+                                </a>
+                                <i class="icon-cat"></i>
+                                <a href="http://www.semorn.com/yingping" rel="category tag">影评范文</a>
+                                <time datetime="2015-11-29">
+                                    <a href="http://www.semorn.com/article/date/2015/11/29">
+                                        <i class="icon-time"></i>
+                                        2015-11-29
+                                    </a>
+                                </time>
+                            </div>
+                        </div>
+                        <div class="thumbnail_box bd">
+                            <div class="thumbnail">
+                                <a href="http://www.semorn.com/article/8468.html" title="《精灵旅社2》影评：誓将搞笑进行到底">
+                                    <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/11/jinglinglvshe-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="《精灵旅社2》影评：誓将搞笑进行到底"></a>
+                            </div>
+                        </div>
+                        <span class="entry-content">
+                            《精灵旅社2》[1]  是2015年由索尼影视动画公司和哥伦比亚影业公司共同出品的一部动画电影。由格恩迪·塔塔科夫斯基执导，丹·哈格曼担任编剧，亚当·桑德勒、赛琳娜·戈麦斯、安迪·萨姆伯格和阿什·布林克奥夫等共同献声配音。
+                        </span>
+                        <div class="clear"></div>
+                        <div class="tags">
+                            <a class="bg" style="background:#F99" href="http://www.semorn.com/article/tag/%e5%bd%b1%e8%af%84%e8%8c%83%e6%96%87" rel="tag">影评范文</a>
+                            <a class="bg" style="background:#37A7FF" href="http://www.semorn.com/article/tag/%e7%94%b5%e5%bd%b1%e8%af%84%e8%ae%ba" rel="tag">电影评论</a>
+                            <a class="bg" style="background:#F99" href="http://www.semorn.com/article/tag/%e7%b2%be%e7%81%b5%e6%97%85%e7%a4%be" rel="tag">精灵旅社</a>
+                        </div>
+                    </div>
+                </article>
+                <article id="post-8454" class="post-list">
+                    <div class="post-content">
+                        <h2>
+                            <a href="http://www.semorn.com/article/8454.html" target="_blank">《我的少女时代》影评：你的青春是一个仙境</a>
+                        </h2>
+                        <div class="postlist-info">
+                            <div class="postlist-info">
+                                <a class="fn" href="http://www.semorn.com/article/author/idgnol">
+                                    <i class="icon-copyright"></i>
+                                    布衣悦呼
+                                </a>
+                                <i class="icon-cat"></i>
+                                <a href="http://www.semorn.com/yingping" rel="category tag">影评范文</a>
+                                <time datetime="2015-11-27">
+                                    <a href="http://www.semorn.com/article/date/2015/11/27">
+                                        <i class="icon-time"></i>
+                                        2015-11-27
+                                    </a>
+                                </time>
+                            </div>
+                        </div>
+                        <div class="thumbnail_box bd">
+                            <div class="thumbnail">
+                                <a href="http://www.semorn.com/article/8454.html" title="《我的少女时代》影评：你的青春是一个仙境">
+                                    <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/11/wodeshaonvshidai-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="《我的少女时代》影评：你的青春是一个仙境"></a>
+                            </div>
+                        </div>
+                        <span class="entry-content">
+                            《我的少女时代》是由陈玉珊执导，宋芸桦、王大陆、李玉玺、简廷芮主演的青春校园爱情电影。该片以90年代的台湾高中为背景，讲述了平凡少女林真心和校园老大徐太宇的初恋故事。
+                        </span>
+                        <div class="clear"></div>
+                        <div class="tags">
+                            <a class="bg" style="background:#E6CC6E" href="http://www.semorn.com/article/tag/%e5%bd%b1%e8%af%84%e8%8c%83%e6%96%87" rel="tag">影评范文</a>
+                            <a class="bg" style="background:#F96" href="http://www.semorn.com/article/tag/%e6%88%91%e7%9a%84%e5%b0%91%e5%a5%b3%e6%97%b6%e4%bb%a3" rel="tag">我的少女时代</a>
+                            <a class="bg" style="background:#6CC" href="http://www.semorn.com/article/tag/%e7%94%b5%e5%bd%b1%e8%af%84%e8%ae%ba" rel="tag">电影评论</a>
+                        </div>
+                    </div>
+                </article>
+                <article id="post-8389" class="post-list">
+                    <div class="post-content">
+                        <h2>
+                            <a href="http://www.semorn.com/article/8389.html" target="_blank">《007：幽灵党》影评：愿无岁月可回头，且余深情到白首</a>
+                        </h2>
+                        <div class="postlist-info">
+                            <div class="postlist-info">
+                                <a class="fn" href="http://www.semorn.com/article/author/idgnol">
+                                    <i class="icon-copyright"></i>
+                                    布衣悦呼
+                                </a>
+                                <i class="icon-cat"></i>
+                                <a href="http://www.semorn.com/yingping" rel="category tag">影评范文</a>
+                                <time datetime="2015-11-21">
+                                    <a href="http://www.semorn.com/article/date/2015/11/21">
+                                        <i class="icon-time"></i>
+                                        2015-11-21
+                                    </a>
+                                </time>
+                            </div>
+                        </div>
+                        <div class="thumbnail_box bd">
+                            <div class="thumbnail">
+                                <a href="http://www.semorn.com/article/8389.html" title="《007：幽灵党》影评：愿无岁月可回头，且余深情到白首">
+                                    <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/11/007-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="《007：幽灵党》影评：愿无岁月可回头，且余深情到白首"></a>
+                            </div>
+                        </div>
+                        <span class="entry-content">
+                            《007：幽灵党》是《007》系列第24部电影，是由萨姆·门德斯执导，丹尼尔·克雷格、蕾雅·赛杜、克里斯托弗·瓦尔兹、莫妮卡·贝鲁奇联袂主演的动作片。该片讲述了因为一条来自过去的加密信息，邦德逐步揭开了一个邪恶组织的神秘面纱。为了保全安全机构的正常运转，邦德的上司M与政治势力展开一番争斗的故事
+                        </span>
+                        <div class="clear"></div>
+                        <div class="tags">
+                            <a class="bg" style="background:#E6CC6E" href="http://www.semorn.com/article/tag/007" rel="tag">007</a>
+                            <a class="bg" style="background:#C9C" href="http://www.semorn.com/article/tag/%e5%bd%b1%e8%af%84%e8%8c%83%e6%96%87" rel="tag">影评范文</a>
+                            <a class="bg" style="background:#B0D686" href="http://www.semorn.com/article/tag/%e7%94%b5%e5%bd%b1%e8%af%84%e8%ae%ba" rel="tag">电影评论</a>
+                        </div>
+                    </div>
+                </article>
+                <article id="post-8386" class="post-list">
+                    <div class="post-content">
+                        <h2>
+                            <a href="http://www.semorn.com/article/8386.html" target="_blank">《前任攻略2：备胎反击战》影评：爱情是绝症 电影才能治</a>
+                        </h2>
+                        <div class="postlist-info">
+                            <div class="postlist-info">
+                                <a class="fn" href="http://www.semorn.com/article/author/idgnol">
+                                    <i class="icon-copyright"></i>
+                                    布衣悦呼
+                                </a>
+                                <i class="icon-cat"></i>
+                                <a href="http://www.semorn.com/yingping" rel="category tag">影评范文</a>
+                                <time datetime="2015-11-21">
+                                    <a href="http://www.semorn.com/article/date/2015/11/21">
+                                        <i class="icon-time"></i>
+                                        2015-11-21
+                                    </a>
+                                </time>
+                            </div>
+                        </div>
+                        <div class="thumbnail_box bd">
+                            <div class="thumbnail">
+                                <a href="http://www.semorn.com/article/8386.html" title="《前任攻略2：备胎反击战》影评：爱情是绝症 电影才能治">
+                                    <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/11/qianren2-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="《前任攻略2：备胎反击战》影评：爱情是绝症 电影才能治"></a>
+                            </div>
+                        </div>
+                        <span class="entry-content">
+                            《前任2：备胎反击战》是由华谊兄弟传媒股份有限公司、新圣堂影业联合出品，田羽生执导，郑恺、郭采洁、张艺兴、王传君主演的一部爱情喜剧片。影片讲述了节目编导伊泽与多年前邂逅的明星余飞在重遇后发生的一系列爱情故事
+                        </span>
+                        <div class="clear"></div>
+                        <div class="tags">
+                            <a class="bg" style="background:#F96" href="http://www.semorn.com/article/tag/%e5%89%8d%e4%bb%bb%e6%94%bb%e7%95%a5" rel="tag">前任攻略</a>
+                            <a class="bg" style="background:#E6CC6E" href="http://www.semorn.com/article/tag/%e5%bd%b1%e8%af%84%e8%8c%83%e6%96%87" rel="tag">影评范文</a>
+                            <a class="bg" style="background:#C9C" href="http://www.semorn.com/article/tag/%e7%94%b5%e5%bd%b1%e8%af%84%e8%ae%ba" rel="tag">电影评论</a>
+                        </div>
+                    </div>
+                </article>
+                <article id="post-8347" class="post-list">
+                    <div class="post-content">
+                        <h2>
+                            <a href="http://www.semorn.com/article/8347.html" target="_blank">《小王子》影评：你距离曾经的自己有多远？</a>
+                        </h2>
+                        <div class="postlist-info">
+                            <div class="postlist-info">
+                                <a class="fn" href="http://www.semorn.com/article/author/idgnol">
+                                    <i class="icon-copyright"></i>
+                                    布衣悦呼
+                                </a>
+                                <i class="icon-cat"></i>
+                                <a href="http://www.semorn.com/yingping" rel="category tag">影评范文</a>
+                                <time datetime="2015-11-19">
+                                    <a href="http://www.semorn.com/article/date/2015/11/19">
+                                        <i class="icon-time"></i>
+                                        2015-11-19
+                                    </a>
+                                </time>
+                            </div>
+                        </div>
+                        <div class="thumbnail_box bd">
+                            <div class="thumbnail">
+                                <a href="http://www.semorn.com/article/8347.html" title="《小王子》影评：你距离曾经的自己有多远？">
+                                    <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/11/xiaowangzi-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="《小王子》影评：你距离曾经的自己有多远？"></a>
+                            </div>
+                        </div>
+                        <span class="entry-content">
+                            《小王子》是法国2015年出品的3D动画奇幻电影，改编自安东尼·德·圣-埃克苏佩里同名文学作品《小王子》，由马克·奥斯本执导，杰夫·布里吉斯、麦肯基·弗依等担任主要配音。该片讲述一个小女孩偶然结识了年老的飞行员，根据他回忆的指引开启了探索小王子世界的旅程
+                        </span>
+                        <div class="clear"></div>
+                        <div class="tags">
+                            <a class="bg" style="background:#F99" href="http://www.semorn.com/article/tag/%e5%b0%8f%e7%8e%8b%e5%ad%90" rel="tag">小王子</a>
+                            <a class="bg" style="background:#B0D686" href="http://www.semorn.com/article/tag/%e5%bd%b1%e8%af%84%e8%8c%83%e6%96%87" rel="tag">影评范文</a>
+                            <a class="bg" style="background:#6CC" href="http://www.semorn.com/article/tag/%e7%94%b5%e5%bd%b1%e8%af%84%e8%ae%ba" rel="tag">电影评论</a>
+                        </div>
+                    </div>
+                </article>
+                <article id="post-8281" class="post-list">
+                    <div class="post-content">
+                        <h2>
+                            <a href="http://www.semorn.com/article/8281.html" target="_blank">《我是证人》影评：眼见为实，心触为情</a>
+                        </h2>
+                        <div class="postlist-info">
+                            <div class="postlist-info">
+                                <a class="fn" href="http://www.semorn.com/article/author/idgnol">
+                                    <i class="icon-copyright"></i>
+                                    布衣悦呼
+                                </a>
+                                <i class="icon-cat"></i>
+                                <a href="http://www.semorn.com/yingping" rel="category tag">影评范文</a>
+                                <time datetime="2015-11-14">
+                                    <a href="http://www.semorn.com/article/date/2015/11/14">
+                                        <i class="icon-time"></i>
+                                        2015-11-14
+                                    </a>
+                                </time>
+                            </div>
+                        </div>
+                        <div class="thumbnail_box bd">
+                            <div class="thumbnail">
+                                <a href="http://www.semorn.com/article/8281.html" title="《我是证人》影评：眼见为实，心触为情">
+                                    <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/11/woshizhengren-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="《我是证人》影评：眼见为实，心触为情"></a>
+                            </div>
+                        </div>
+                        <span class="entry-content">
+                            《我是证人》是由安尚勋执导，顾小白编剧，杨幂、鹿晗 、王景春、朱亚文等主演的青春悬疑电影，改编自韩国电影《盲证》，该片讲述一起谋杀案出现了两位证言不同的目击证人，而两人却在之后联合追缉凶手的惊险故事。
+                        </span>
+                        <div class="clear"></div>
+                        <div class="tags">
+                            <a class="bg" style="background:#C9C" href="http://www.semorn.com/article/tag/%e5%bd%b1%e8%af%84%e8%8c%83%e6%96%87" rel="tag">影评范文</a>
+                            <a class="bg" style="background:#B0D686" href="http://www.semorn.com/article/tag/%e6%88%91%e6%98%af%e8%af%81%e4%ba%ba" rel="tag">我是证人</a>
+                            <a class="bg" style="background:#F99" href="http://www.semorn.com/article/tag/%e7%94%b5%e5%bd%b1%e8%af%84%e8%ae%ba" rel="tag">电影评论</a>
+                        </div>
+                    </div>
+                </article>
+                <article id="post-8175" class="post-list">
+                    <div class="post-content">
+                        <h2>
+                            <a href="http://www.semorn.com/article/8175.html" target="_blank">《九层妖塔》影评：神秘文化是对现实世界的背叛</a>
+                        </h2>
+                        <div class="postlist-info">
+                            <div class="postlist-info">
+                                <a class="fn" href="http://www.semorn.com/article/author/idgnol">
+                                    <i class="icon-copyright"></i>
+                                    布衣悦呼
+                                </a>
+                                <i class="icon-cat"></i>
+                                <a href="http://www.semorn.com/yingping" rel="category tag">影评范文</a>
+                                <time datetime="2015-11-05">
+                                    <a href="http://www.semorn.com/article/date/2015/11/05">
+                                        <i class="icon-time"></i>
+                                        2015-11-05
+                                    </a>
+                                </time>
+                            </div>
+                        </div>
+                        <div class="thumbnail_box bd">
+                            <div class="thumbnail">
+                                <a href="http://www.semorn.com/article/8175.html" title="《九层妖塔》影评：神秘文化是对现实世界的背叛">
+                                    <img width="430" height="230" src="http://www.semorn.com/wp-content/uploads/2015/11/jiucengyaota-430x230.jpg" class="attachment-430x230 size-430x230 wp-post-image" alt="《九层妖塔》影评：神秘文化是对现实世界的背叛"></a>
+                            </div>
+                        </div>
+                        <span class="entry-content">
+                            《九层妖塔》是陆川执导的一部3D灾难探险片，由赵又廷、姚晨、唐嫣、凤小岳、李晨、李光洁、王庆祥、冯粒、吴军、王德顺等主演。影片改编自小说《鬼吹灯之精绝古城》，主要讲述探险队成员胡八一和Shirley杨深入昆仑山腹地，在神秘组织749局的介入下，揭开了一段人类与鬼族时隔千年的秘密史。
+                        </span>
+                        <div class="clear"></div>
+                        <div class="tags">
+                            <a class="bg" style="background:#6C9" href="http://www.semorn.com/article/tag/%e4%b9%9d%e5%b1%82%e5%a6%96%e5%a1%94" rel="tag">九层妖塔</a>
+                            <a class="bg" style="background:#F99" href="http://www.semorn.com/article/tag/%e5%bd%b1%e8%af%84%e8%8c%83%e6%96%87" rel="tag">影评范文</a>
+                            <a class="bg" style="background:#6CC" href="http://www.semorn.com/article/tag/%e7%94%b5%e5%bd%b1%e8%af%84%e8%ae%ba" rel="tag">电影评论</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div style="margin-bottom:10px;clear:both">
+            <div class="pagination">
+                <a href="http://www.semorn.com/yingping" class="current">1</a>
+                <a href="http://www.semorn.com/yingping/page/2">2</a>
+                <a href="http://www.semorn.com/yingping/page/3">3</a>
+                <a href="http://www.semorn.com/yingping/page/4">4</a>
+                <a href="http://www.semorn.com/yingping/page/2" class="next">下一页</a>
+                <a href="http://www.semorn.com/yingping/page/5" class="extend" title="跳转到最后一页">尾页</a>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div id="footer">
+        <div id="footer-one">
+            <a href="http://www.semorn.com">网络电台</a>
+            |
+            <a href="http://www.semorn.com">情感电台</a>
+            |
+            <a href="http://www.semorn.com/read">情感电台广播稿</a>
+            |
+            <a href="http://www.semorn.com/listen">情感电台在线收听</a>
+            |
+            <a href="http://www.semorn.com/listen">网络电台在线收听</a>
+            |
+            <a href="http://www.semorn.com">讲故事的电台</a>
+            |
+            <a href="http://www.semorn.com/article/tag/fm">有声电台</a>
+            |
+            <a href="http://www.semorn.com/read">电台稿子</a>
+            |
+            <a href="http://www.semorn.com/yingping">影评范文</a>
+            |
+            <a href="http://www.semorn.com/news">电台指南</a>
+            |
+            <a href="http://www.semorn.com/boyinzhuchi">播音主持</a>
+            |
+            <a href="http://www.semorn.com/read">电台播音稿子</a>
+            |
+            <a href="http://www.semorn.com/ximalayafm.html">喜马拉雅FM电台官网</a>
+            |
+            <a href="http://www.semorn.com/lizhifm.html">荔枝fm电台官网</a>
+            |
+            <a href="http://www.semorn.com/article/6508.html">播音主持自备稿件</a>
+        </div>
+        <div id="footer-two">
+            <img src="http://www.semorn.com/wp-content/themes/Initial/images/img/foot_logo.png" alt="清沫音乐电台在线收听网">
+            Copyright © 2014
+            <a href="http://www.semorn.com/">清沫网</a>
+            湘ICP备14002542号 .
+            （
+            <a rel="nofollow" href="http://www.semorn.com/link" target="”_blank”">申请友链</a>
+            |
+            <a rel="nofollow" href="http://www.semorn.com/mzsm" target="”_blank”">免责声明</a>
+            |
+            <a rel="nofollow" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=admin@semorn.com">联系我们</a>
+            |
+            <a rel="nofollow" href="http://www.semorn.com/feedback" target="”_blank”">意见反馈</a>
+            |
+            <a href="http://www.semorn.com/music">电台背景音乐</a>
+            |
+            <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000281055'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1000281055' type='text/javascript'%3E%3C/script%3E"));</script>
+            <span id="cnzz_stat_icon_1000281055">
+                <a href="http://www.cnzz.com/stat/website.php?web_id=1000281055" target="_blank" title="站长统计">站长统计</a>
+            </span>
+            <script src=" http://s23.cnzz.com/z_stat.php?id=1000281055" type="text/javascript"></script>
+            <script src="http://c.cnzz.com/core.php?web_id=1000281055&amp;t=z" charset="utf-8" type="text/javascript"></script>
+            ）
+        </div>
+        <div id="gotop" class="icon-nav btn bg slow hide" style="display: block;"></div>
+        <div id="cmt" class="icon-nav  btn bg slow hide"></div>
+    </div>
+    <div id="message">
+        <div id="message-body">
+            <div id="close">×</div>
+            <div id="bulletin">
+                <ul>
+                    <li>
+                        <a href="http://www.semorn.com/tougao">电台节目投稿</a>
+                        【
+                        <a href="http://www.semorn.com/read">电台稿子</a>
+                        】
+                    </li>
+                    <li>
+                        <a href="http://www.semorn.com/article/9441.html" target="_blank">荔枝FM下载的文件在哪个文件夹？</a>
+                    </li>
+                    <li>
+                        <a href="http://www.semorn.com/article/7754.html" target="_blank">荔枝FM怎么添加音乐？教你用WIFI导入背景音乐</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="http://www.semorn.com/wp-includes/js/wp-embed.min.js?ver=4.4.5"></script>
+    <script type="text/javascript">var duoshuoQuery = {"short_name":"semorn","sso":{"login":"http:\/\/www.semorn.com\/wp-login.php?action=duoshuo_login","logout":"http:\/\/www.semorn.com\/login?action=logout&_wpnonce=80b2e97e2d"},"theme":"bluebox","stylePatch":"wordpress\/Freedom"};
+    duoshuoQuery.sso.login += '&redirect_to=' + encodeURIComponent(window.location.href);
+    duoshuoQuery.sso.logout += '&redirect_to=' + encodeURIComponent(window.location.href);</script>
+    <script type="text/javascript" src="http://static.duoshuo.com/embed.js" charset="UTF-8" async="async"></script>
+    <script type="text/Javascript"><!--
+    document.oncontextmenu=function(e){return   false;};
+    //--></script>
+    <script language="javascript"><!--
+    if (top.location != self.location)top.location=self.location;
+    // --></script>
+    <noscript>&lt;iframe src=*.html&gt;&lt;/iframe&gt;</noscript>
+    <!-- Dynamic page generated in 1.007 seconds. -->
+    <!-- Cached page generated by WP-Super-Cache on 2016-10-14 14:21:05 -->
+
+    <!-- super cache -->
+</div>
+</body>
+
+
+</html>
