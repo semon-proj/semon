@@ -23,9 +23,9 @@ $(document).ready(function () {
                     $tpl = $(template("music-content", val[0]));
 
                     console.log( val);
-                    // console.log( $tpl);
+                    // console.log( $tpl);j
                     // console.log( j);
-                    switch (i) {
+                    switch (j) {
                         case 0:
                             $tpl.appendTo(".album-list:eq(0)");
                             break;
