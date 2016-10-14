@@ -23,3 +23,7 @@
 .icon-fankui:before { content: "\e602"; }
 .icon-zanting:before { content: "\e607"; }
 .icon-suibadaohang:before { content: "\e603"; }
+
+.icon {
+  color: #fff;
+}
