@@ -44,20 +44,48 @@ $(function () {
                 data_info = [];
             }
 
-            $(".album-item img").click(function () {
-                alert("bbb");
-            });
+            // $(".album-item").on("hover", function () {
+            //     $('<i class="icon iconfont">&#xe606;</i>').appendTo(this)
+            //     .css({
+            //         zIndex: 333,
+            //         position: "absolute",
+            //         top: 85+ 'px',
+            //         left: 70+ 'px',
+            //         fontSize: 50+ 'px',
+            //         opacity: 0.7
+            //     })
+            // })
+
+            // $('.nav-switch').toggle(function(){$(this).css('background', '#6400A6').text('收起菜单');},
+            //     function(){$(this).removeAttr("style").text('导航菜单');});
+
+            $(".album-item").mouseenter(function () {
+                if($(".album-item i").is(".rd")){
+                    return "";
+                }else {
+                    $('<i class="icon iconfont ctl">&#xe606;</i>').appendTo(this)
+                        .addClass("play")
+                }
+
+            }).mouseleave(function () {
+                if($(".album-item i").is(".ky")){
+                    return "";
+                }else {
+                    $(".ctl").remove();
+                }
+            }).toggle(function () {
+                $(".ctl").remove();
+                $(".ky").remove();
+                $('<i class="icon iconfont rd">&#xe607;</i>').appendTo(this)
+                    .addClass("play").css("backgroundColor: red")
+            },
+            function () {
+                $(".rd").remove();
+                $('<i class="icon iconfont ky">&#xe606;</i>').appendTo(this)
+                    .addClass("play")
+            })
         }
 
     });
 
-    // alert("dddd");
-    $(".album-item img").click(function () {
-        alert("bbb");
-    });
-    $(".album-item span").on("hover", function () {
-        alert("ok");
-        // $('<i class="icon iconfont">&#xe607;</i>').appendTo(this);
-            // .css()
-    })
 });

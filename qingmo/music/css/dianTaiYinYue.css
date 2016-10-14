@@ -38,3 +38,12 @@ body {
     line-height: 1.5;
     margin-right: 15px;
 }
+
+.play {
+    z-index: 333;
+    position: absolute;
+    top: 85px;
+    left: 75px;
+    font-size: 50px;
+    opacity: .7;
+}
