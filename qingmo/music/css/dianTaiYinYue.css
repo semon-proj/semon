@@ -43,7 +43,27 @@ body {
     z-index: 333;
     position: absolute;
     top: 85px;
-    left: 75px;
+    left: 70px;
+    font-size: 50px;
+    opacity: .7;
+}
+
+.playR {
+    z-index: 333;
+    color: red;
+    position: absolute;
+    top: 85px;
+    left: 70px;
+    font-size: 50px;
+    opacity: .7;
+}
+
+.pasue_R {
+    z-index: 333;
+    color: red;
+    position: absolute;
+    top: 89px;
+    left: 70px;
     font-size: 50px;
     opacity: .7;
 }

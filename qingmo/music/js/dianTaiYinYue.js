@@ -56,11 +56,9 @@ $(function () {
             //     })
             // })
 
-            // $('.nav-switch').toggle(function(){$(this).css('background', '#6400A6').text('收起菜单');},
-            //     function(){$(this).removeAttr("style").text('导航菜单');});
 
             $(".album-item").mouseenter(function () {
-                if($(".album-item i").is(".rd")){
+                if(($(this).children("i").is(".pauseR"))||($(this).children("i").is(".playR"))){
                     return "";
                 }else {
                     $('<i class="icon iconfont ctl">&#xe606;</i>').appendTo(this)
@@ -68,21 +66,22 @@ $(function () {
                 }
 
             }).mouseleave(function () {
-                if($(".album-item i").is(".ky")){
+                if(($(this).children("i").is(".pauseR"))||($(this).children("i").is(".playR"))){
                     return "";
                 }else {
                     $(".ctl").remove();
                 }
             }).toggle(function () {
-                $(".ctl").remove();
-                $(".ky").remove();
-                $('<i class="icon iconfont rd">&#xe607;</i>').appendTo(this)
-                    .addClass("play").css("backgroundColor: red")
+                $(".album-item .ctl").remove();
+                $(".album-item .playR").remove();
+                $(".album-item .pauseR").remove();
+                $('<i class="icon iconfont pauseR">&#xe607;</i>').appendTo(this)
+                    .addClass("pasue_R")
             },
             function () {
-                $(".rd").remove();
-                $('<i class="icon iconfont ky">&#xe606;</i>').appendTo(this)
-                    .addClass("play")
+                $(".album-item .pauseR").remove();
+                $('<i class="icon iconfont playR">&#xe606;</i>').appendTo(this)
+                    .addClass("play_R")
             })
         }
 
