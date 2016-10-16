@@ -1,28 +1,20 @@
-<div class="nmplaybar">
-    <div class="nmplayer-prosess" style="width: 43.727%;"></div>
-    <div class="nmplayer-wrap">
-        <div class="nmplayer-info"><span class="nmplayer-title">In Love - July</span><span
-                class="nmplayer-time">01:41</span><span class="nmplayer-lrc"></span></div>
-        <div class="nmplayer-control">
-            <ul>
-                <li><a id="nmplayer-prev" href="javascript:;"> <span class="nm-previous fxfont "></span> </a></li>
-                <li><a id="nmplayer-button" href="javascript:;" class=""> <span class="nm-pause fxfont "></span> </a>
-                </li>
-                <li><a id="nmplayer-next" href="javascript:;"> <span class="nm-next fxfont"></span> </a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<audio
-        controls=""
-        style="width:100%"
-        src="http://cdn1.lizhi.fm/audio/2016/06/11/2539209288764151302_hd.mp3">
-    <embed src="http://www.semorn.com/wp-content/themes/Initial/includes/player.swf"
-           quality="high"
-           width="100%"
-           height="24"
-           wmode="transparent"
-           type="application/x-shockwave-flash"
-           pluginspage="http://www.macromedia.com/go/getflashplayer"
-           flashvars="animation=no&amp;remaining=yes&amp;noinfo=yes&amp;bg=0xD4E8FF&amp;leftbg=0x0DA4D3&amp;lefticon=0xF2F2F2&amp;rightbg=0x0DA4D3&amp;rightbghover=0x3AB8DF&amp;righticon=0xF2F2F2&amp;righticonhover=0xFFFFFF&amp;text=0x0088DD&amp;slider=0x0088DD&amp;track=0xFFFFFF&amp;border=0xFFFFFF&amp;loader=0x8EC2F4&amp;autostart=no&amp;loop=yes&amp;soundFile=http://cdn1.lizhi.fm/audio/2016/06/11/2539209288764151302_hd.mp3"></audio>
+[html] view plain copy
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="../common/js/jquery-3.0.0.js"></script>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+<script>
+    var no = 4;
+    $("ul li").eq(no).css("background","red");
+</script>
+</body>
+</html>

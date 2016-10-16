@@ -2,6 +2,7 @@
  * Created by Administrator on 2016/10/11.
  */
 $(function () {
+    // 音乐电台列表项ajax获取
     $.ajax({
         url: "json/content.json",
         dataType: "json",
@@ -15,16 +16,10 @@ $(function () {
                 for(var m = 5*j; m < 5*(j+1); m++){
                     if(5*(j+1) <= data_len){
                         data_info[m%5] = $(data).eq(m);
-                        // console.log(data_info);
-                        // console.log(m%5);
                     }
                 }
                 $.each(data_info, function (i, val) {
                     $tpl = $(template("music-content", val[0]));
-
-                    // console.log( val);
-                    // console.log( $tpl);
-                    // console.log( j);
                     switch (j) {
                         case 0:
                             $tpl.appendTo(".album-list:eq(0)");
@@ -44,19 +39,7 @@ $(function () {
                 data_info = [];
             }
 
-            // $(".album-item").on("hover", function () {
-            //     $('<i class="icon iconfont">&#xe606;</i>').appendTo(this)
-            //     .css({
-            //         zIndex: 333,
-            //         position: "absolute",
-            //         top: 85+ 'px',
-            //         left: 70+ 'px',
-            //         fontSize: 50+ 'px',
-            //         opacity: 0.7
-            //     })
-            // })
-
-
+            //图片上点击与hover对应图标字体切换
             $(".album-item").mouseenter(function () {
                 if(($(this).children("i").is(".pauseR"))||($(this).children("i").is(".playR"))){
                     return "";
@@ -91,6 +74,7 @@ $(function () {
 
     });
 
+    //音乐列表ajax请求
     $.ajax({
         url: "json/json_1.json",
         dataType: "json",
@@ -112,5 +96,34 @@ $(function () {
 
         }
     })
+
+    //点击切换上一首
+    $("#nmplayer-prev").click(function () {
+        var no = $(".mus_ul li").index($(".mus_currentplay"));
+        $(".mus_ul li").removeClass("mus_currentplay");
+        // console.log(no);
+        var numb = no - 1;
+        // console.log(numb);
+        $(".mus_ul li").eq(numb).addClass("mus_currentplay");
+    });
+
+    //点击切换下一首
+    $("#nmplayer-next").click(function () {
+        var no = $(".mus_ul li").index($(".mus_currentplay"));
+        $(".mus_ul li").removeClass("mus_currentplay");
+        // console.log(no);
+        var numb = no + 1;
+        // console.log(numb);
+        $(".mus_ul li").eq(numb).addClass("mus_currentplay");
+    });
+
+    //点击暂停
+    $("#nmplayer-button").toggle(function () {
+        // $("#nmplayer-button").remove("span");
+        // $("#nmplayer-button").append("$(<span class='icon iconfont'>&#xe609;</span>)")
+    },function () {
+        // $("#nmplayer-button span").text("&#xe609;")
+    });
+
 
 });
