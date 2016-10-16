@@ -74,7 +74,8 @@ body {
     width: 98.7%;
     display: block;
     /*border: 1px solid green;*/
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: #f2f4f6;
     position: relative;
 }
@@ -93,6 +94,11 @@ body {
 }
 
 .mus_current {
+    background-color: #888;
+    color: #fff;
+}
+
+.mus_currentplay {
     background-color: #888;
     color: #fff;
 }
@@ -171,4 +177,27 @@ body {
     transition: all .24s ease-out;
     -moz-transition: all .24s ease-out;
     -webkit-transition: all .24s ease-out;
+}
+
+.nmplayer-control li {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.nmplayer-control .fr_li {
+    padding-left: 0;
+}
+
+.mus_loadmore {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.nm-loadmore {
+    display: inline-block;
+    border: 1px #59d solid;
+    padding: 3px 13px;
+    border-radius: 30px;
+    font-size: 14px;
+    color: #ee4d50;
 }

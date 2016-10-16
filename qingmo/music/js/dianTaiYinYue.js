@@ -77,13 +77,15 @@ $(function () {
                 $(".album-item .pauseR").remove();
                 $('<i class="icon iconfont pauseR">&#xe607;</i>').appendTo(this)
                     .addClass("pasue_R");
-                $(".music_list").css("display","block")
+                $(".music_list").css("display","block");
+                $(".nmplaybar").css("display","block")
             },
             function () {
                 $(".album-item .pauseR").remove();
                 $('<i class="icon iconfont playR">&#xe606;</i>').appendTo(this)
                     .addClass("play_R");
-                $(".music_list").css("display","none")
+                $(".music_list").css("display","none");
+                $(".nmplaybar").css("display","none");
             })
         }
 
@@ -98,7 +100,15 @@ $(function () {
                 $mytpl = $(template("music_list", val));
                 $mytpl.appendTo(".mus_ul");
             });
-            $(".mus_ul li:first-child").addClass("mus_current");
+            $(".mus_ul li:first-child").addClass("mus_currentplay");
+            $(".mus_ul li").mouseenter(function () {
+                $(this).addClass("mus_current");
+            }).mouseleave(function () {
+                $(this).removeClass("mus_current");
+            }).click(function () {
+                $(".mus_ul li").removeClass("mus_currentplay");
+                $(this).addClass("mus_currentplay");
+            })
 
         }
     })
