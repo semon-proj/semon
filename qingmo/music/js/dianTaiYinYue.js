@@ -76,15 +76,31 @@ $(function () {
                 $(".album-item .playR").remove();
                 $(".album-item .pauseR").remove();
                 $('<i class="icon iconfont pauseR">&#xe607;</i>').appendTo(this)
-                    .addClass("pasue_R")
+                    .addClass("pasue_R");
+                $(".music_list").css("display","block")
             },
             function () {
                 $(".album-item .pauseR").remove();
                 $('<i class="icon iconfont playR">&#xe606;</i>').appendTo(this)
-                    .addClass("play_R")
+                    .addClass("play_R");
+                $(".music_list").css("display","none")
             })
         }
 
     });
+
+    $.ajax({
+        url: "json/json_1.json",
+        dataType: "json",
+        method: "get",
+        success: function (data) {
+            $.each(data, function (i, val) {
+                $mytpl = $(template("music_list", val));
+                $mytpl.appendTo(".mus_ul");
+            });
+            $(".mus_ul li:first-child").addClass("mus_current");
+
+        }
+    })
 
 });

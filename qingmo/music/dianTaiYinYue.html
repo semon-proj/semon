@@ -135,11 +135,12 @@
 <!-- 正文 -->
 <div id="content">
     <div id="cont_wrapper">
-        <div class="album-list">
-            <!--<div class="album-item">-->
-                <!--<img src="http://p3.music.126.net/vnQbB8QFOStrnNFb6UllaQ==/109951162794383275.jpg" >-->
-                <!--<span class="music-info">日系&纯音|用安静的音符、洗去心中一切烦躁</span>-->
-            <!--</div>-->
+        <div class="album-list"></div>
+        <div class="music_list">
+            <div class="mus_title">
+                日系&amp;纯音|用安静的音符、洗去心中一切烦躁
+            </div>
+            <ul class="mus_ul"></ul>
         </div>
         <div class="album-list"></div>
         <div class="album-list"></div>
@@ -153,6 +154,32 @@
             <span class="music-info">{{data_tooltip}}</span>
         </div>
     </script>
+
+    <!-- 音乐列表模板 -->
+    <script type="text/html" id="music_list">
+        <li class="mus_item">
+            {{mus_name}}
+            <span class="song_time">{{mus_time}}</span>
+        </li>
+    </script>
+
+    <!-- 音乐控制条 -->
+    <div class="nmplaybar appear">
+        <div class="nmplayer-prosess" style="width: 43.727%;"></div>
+        <div class="nmplayer-wrap">
+            <div class="nmplayer-info"><span class="nmplayer-title">In Love - July</span><span
+                    class="nmplayer-time">01:41</span><span class="nmplayer-lrc"></span></div>
+            <div class="nmplayer-control">
+                <ul>
+                    <li><a id="nmplayer-prev" href="javascript:;"> <span class="nm-previous fxfont "></span> </a></li>
+                    <li><a id="nmplayer-button" href="javascript:;" class=""> <span class="nm-pause fxfont "></span> </a>
+                    </li>
+                    <li><a id="nmplayer-next" href="javascript:;"> <span class="nm-next fxfont"></span> </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 <!-- 尾部 -->
