@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20120731 at Fri Oct 14 11:23:00 2016
+Created by FontForge 20120731 at Sun Oct 16 17:27:17 2016
  By admin
 </metadata>
 <defs>
@@ -19,7 +19,7 @@ Created by FontForge 20120731 at Fri Oct 14 11:23:00 2016
     bbox="0 -212 1024 896"
     underline-thickness="50"
     underline-position="-100"
-    unicode-range="U+0078-E607"
+    unicode-range="U+0078-E60B"
   />
 <missing-glyph horiz-adv-x="374" 
 d="M34 0v682h272v-682h-272zM68 34h204v614h-204v-614z" />
@@ -57,5 +57,15 @@ l311 -177q22 -12 22 -29t-22 -29z" />
     <glyph glyph-name="uniE607" unicode="&#xe607;" 
 d="M512 896q-138 0 -256 -69t-187 -187t-69 -256t69 -256t187 -187t256 -69t256 69t187 187t69 256t-69 256t-187 187t-256 69zM454 173q0 -14 -12.5 -23t-32 -9t-32 9t-12.5 23v422q0 14 12.5 23t32 9t32 -9t12.5 -23v-422zM666 173q0 -14 -13 -23t-32.5 -9t-32 9t-12.5 23
 v422q0 14 12.5 23t32 9t32.5 -9t13 -23v-422z" />
+    <glyph glyph-name="uniE608" unicode="&#xe608;" 
+d="M162 -12.5q-34 18.5 -34 56.5v512q0 38 34 56t66 -3l384 -256q28 -19 28 -53t-29 -53l-384 -256q-31 -22 -65 -3.5zM704 -20q-27 0 -45.5 18.5t-18.5 45.5v256v256q0 27 18.5 45.5t45.5 18.5h128q27 0 45.5 -18.5t18.5 -45.5v-512q0 -27 -18.5 -45.5t-45.5 -18.5h-128z
+" />
+    <glyph glyph-name="uniE609" unicode="&#xe609;" 
+d="M768 -20h-128q-27 0 -45.5 18.5t-18.5 45.5v512q0 27 18.5 45.5t45.5 18.5h128q27 0 45.5 -18.5t18.5 -45.5v-512q0 -27 -18.5 -45.5t-45.5 -18.5zM384 -20h-128q-27 0 -45.5 18.5t-18.5 45.5v512q0 27 18.5 45.5t45.5 18.5h128q27 0 45.5 -18.5t18.5 -45.5v-512
+q0 -27 -18.5 -45.5t-45.5 -18.5z" />
+    <glyph glyph-name="uniE60A" unicode="&#xe60a;" 
+d="M862 -12.5q-34 -18.5 -65 3.5l-384 256q-29 19 -29 53t28 53l384 256q32 21 66 3t34 -56v-512q0 -38 -34 -56.5zM320 -20h-128q-27 0 -45.5 18.5t-18.5 45.5v512q0 27 18.5 45.5t45.5 18.5h128q27 0 45.5 -18.5t18.5 -45.5v-256v-256q0 -27 -18.5 -45.5t-45.5 -18.5z" />
+    <glyph glyph-name="uniE60B" unicode="&#xe60b;" 
+d="M161 134zM270 729q-22 12 -44.5 -0.5t-22.5 -38.5v-613q0 -26 23 -38q10 -6 22 -6t22 6l529 306q22 13 22 38.5t-22 38.5zM270 729z" />
   </font>
 </defs></svg>
