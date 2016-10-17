@@ -1,20 +1,30 @@
-[html] view plain copy
 <!DOCTYPE html>
 <html>
 <head>
     <script type="text/javascript" src="../common/js/jquery-3.0.0.js"></script>
+    <link rel="stylesheet" type="text/css" href="../common/iconfont/1.0.0/iconfont.css" />
+    <style type="text/css">
+        .icon {
+            color: red;
+        }
+    </style>
 </head>
 <body>
 <ul>
     <li>1</li>
     <li>2</li>
+    <!--<span class='icon iconfont'>&#xe609;</span>-->
     <li>3</li>
     <li>4</li>
     <li>5</li>
 </ul>
 <script>
     var no = 4;
-    $("ul li").eq(no).css("background","red");
+//    $("ul li").eq(no).css("background","red");
+    $("ul li:eq(2)").remove();
+//    $("ul").children().eq(2).append($("<span class='icon iconfont'>&#xe60b;</span>"));
+//    $("ul").children().eq(2).append($("<li class='icon iconfont'>&#xe60b;</li>"));
+    $("<li class='icon iconfont'>&#xe60b;</li>").appendTo($("ul").children().eq(1));
 </script>
 </body>
 </html>
