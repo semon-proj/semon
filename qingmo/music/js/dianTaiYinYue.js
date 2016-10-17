@@ -85,12 +85,27 @@ $(function () {
 
     //音乐列表ajax请求
     function musicList (z) {
+        var jishu = 1003.136054421769;
         $.ajax({
             url: "json/json_"+z+".json",
             dataType: "json",
             method: "get",
             success: function (data) {
                 $.each(data, function (i, val) {
+                    var seconds = Math.round(val.duration/jishu);
+                    var min = Math.floor(seconds / 60);
+                    if(min <= 9){
+                        min = "0"+min+"";
+                    }else {
+                       min = ""+min;
+                    }
+                    var second = seconds % 60;
+                    if(second <= 9){
+                        second = "0"+second;
+                    }else {
+                        second = ""+second;
+                    }
+                    val.duration = min+':'+second ;
                     $mytpl = $(template("music_list", val));
                     $mytpl.appendTo(".mus_ul");
                 });
@@ -110,8 +125,7 @@ $(function () {
             }
         })
     }
-
-
+    
     //点击切换上一首
     $("#nmplayer-prev").click(function () {
         var no = $(".mus_ul li").index($(".mus_currentplay"));

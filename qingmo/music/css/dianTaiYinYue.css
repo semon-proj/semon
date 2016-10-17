@@ -24,6 +24,7 @@ body {
     /*margin-top: 10px;*/
     height: 250px;
     position: relative;
+    cursor:pointer;
 }
 
 .album-item img {
