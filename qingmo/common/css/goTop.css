@@ -1,0 +1,57 @@
+button, .btn {
+    cursor: pointer;
+    padding:0;
+    border-radius: 0;
+}
+.hided, .sub-menu {
+    display: none;
+}
+.icon-nav {
+    width: 40px;
+    height: 30px;
+    font-size: 40px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFF;
+    background: rgba(0,0,0,.4);
+    margin-bottom: 10%;
+    position: fixed;
+    right: 0;
+    z-index: 1;
+}
+[class*="icon-"], .download::before, .u-download::before {
+    font-family: 'iconfont' !important;
+    font-style: normal;
+}
+.bg:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+    color: #FFF;
+    background: #181818 !important;
+}
+#gotop {
+    bottom: 68px;
+}
+#gotop::before {
+    content: '^';
+}
+
+
+a, a img, input, .slow, .download, .u-download {
+    transition: all .24s ease-out;
+    -moz-transition: all .24s ease-out;
+    -webkit-transition: all .24s ease-out;
+}
+body {
+    color: #555;
+    font: .875em/1.5rem Helvetica,Microsoft Yahei,Hiragino Sans GB,sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+
+
+
+
+
+
+
+

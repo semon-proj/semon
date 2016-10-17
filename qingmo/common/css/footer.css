@@ -43,7 +43,10 @@ a:link, a:visited, a:hover{
     color: #fff;
 }
 
-
+[class*="icon-"], .download::before, .u-download::before {
+    font-family: 'iconfont' !important;
+    font-style: normal;
+}
 
 
 

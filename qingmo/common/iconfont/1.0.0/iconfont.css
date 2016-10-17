@@ -30,3 +30,9 @@
 .icon-zanting:before { content: "\e607"; }
 .icon-message:before { content: "\e60e"; }
 .icon-suibadaohang:before { content: "\e603"; }
+
+
+
+.icon{
+  color: #fff;
+}
