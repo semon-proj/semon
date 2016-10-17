@@ -1,0 +1,39 @@
+#message {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    min-width: 320px;
+    height: 23px;
+    line-height: 23px;
+    color: #ccc;
+    background-color: rgba(0,0,0,.8);
+    overflow: hidden;
+    z-index: 998;
+}
+
+#message #message-body {
+    margin: auto;
+    padding: 0 1%;
+}
+
+#message #close {
+    float: right;
+    width: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#message #bulletin ul {
+    position: absolute;
+    top: 0;
+    list-style: none;
+    z-index: -1;
+}
+
+#message a {
+    color: #ccc;
+}
+
+#message a:hover {
+    color: #fff;
+}
