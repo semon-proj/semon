@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>作者投稿</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="../../../common/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/dianTaiTouGao.css">
+
+        <script type="text/javascript" src="../../../common/js/jquery-3.0.0.js"></script>
+        <script type="text/javascript" src="../../../common/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/dianTaiTouGao.js"></script>
+
+        <style>
+
+        </style>
+    </head>
+    <body  style="background-color: #ededed;">
+        <div class="f_wrapper fs_wrapper">
+            <div class="f_main fs_main">
+                <div class="f_header fs_header">
+                    <div class="f_text_no_logo">
+                        <h2 class="f_title fs_title">投稿</h2>
+                    </div>
+                </div>
+                <div class="f_share_container">
+                    <div class="f_share_main">
+                        <div class="f_share">
+                            <img src="http://asset.mikecrm.com/images/icon/qrcodeIcon.png" class="qrcode">
+                            <span class="share_info">分享-二维码</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="f_body fs_body">
+                    <div class="f_component">
+                        <p class="f_cTitle fs_cTitle">用户名<span class="f_cValidate fs_cValidate">*</span></p>
+                        <p class="f_cDescribe fs_cDescribe">你在本站注册的用户名（非昵称）</p>
+                        <input type="text" class="input small fs_content fs_input">
+                    </div>
+                    <div class="f_component">
+                        <p class="f_cTitle fs_cTitle">作者<span class="f_cValidate fs_cValidate">*</span></p>
+                        <input type="text" class="input small fs_content fs_input">
+                    </div>
+                    <div class="f_component">
+                        <p class="f_cTitle fs_cTitle">标题<span class="f_cValidate fs_cValidate">*</span></p>
+                        <input type="text" class="input large fs_content fs_input">
+                    </div>
+                    <div class="f_component">
+                        <p class="f_cTitle fs_cTitle">标签（可多选）<span class="f_cValidate fs_cValidate">*</span></p>
+                        <ul class="f_optionGarden layout-four">
+                            <li class="f_optionsLi  clearB">
+                                <input type="checkbox" class="f_optionBtn" id="checkbox-id-3-0">
+                                <label class="f_optionVal fs_content" for="checkbox-id-3-0">爱情</label>
+                            </li>
+                            <li class="f_optionsLi">
+                                <input type="checkbox" class="f_optionBtn" id="checkbox-id-3-1">
+                                <label class="f_optionVal fs_content" for="checkbox-id-3-1">成长</label>
+                            </li>
+                            <li class="f_optionsLi">
+                                <input type="checkbox" class="f_optionBtn" id="checkbox-id-3-2">
+                                <label class="f_optionVal fs_content" for="checkbox-id-3-2">励志</label>
+                            </li>
+                            <li class="f_optionsLi">
+                                <input type="checkbox" class="f_optionBtn" id="checkbox-id-3-3">
+                                <label class="f_optionVal fs_content" for="checkbox-id-3-3">哲理</label>
+                            </li>
+                            <li class="f_optionsLi  clearB">
+                                <input type="checkbox" class="f_optionBtn" id="checkbox-id-3-4">
+                                <label class="f_optionVal fs_content" for="checkbox-id-3-4">故事</label>
+                            </li>
+                            <li class="f_optionsLi">
+                                <input type="checkbox" class="f_optionBtn" id="checkbox-id-3-5">
+                                <label class="f_optionVal fs_content" for="checkbox-id-3-5">影视</label>
+                            </li>
+                            <li class="f_optionsLi">
+                                <input type="checkbox" class="f_optionBtn" id="checkbox-id-3-6">
+                                <label class="f_optionVal fs_content" for="checkbox-id-3-6">旅行</label>
+                            </li>
+                            <li class="f_optionsLi">
+                                <input type="checkbox" class="f_optionBtn" id="checkbox-id-3-7">
+                                <label class="f_optionVal fs_content" for="checkbox-id-3-7">亲情</label>
+                            </li>
+                            <li class="f_optionsLi f_otherLi clearB">
+                                <input type="checkbox" class="f_optionBtn" id="checkbox-id-3-8">
+                                <label class="f_optionVal fs_content" for="checkbox-id-3-8">其他:
+                                    <input type="text" class="f_otherinput">
+                                </label>
+                            </li>
+                            <li class="clearB"></li>
+                        </ul>
+                    </div>
+                    <div class="f_component">
+                        <p class="f_cTitle fs_cTitle">
+                            内容
+                            <span class="f_cValidate fs_cValidate">*</span>
+                        </p>
+                        <textarea class="textarea large fs_content fs_input"></textarea>
+                    </div>
+                    <div class="f_component">
+                        <p class="f_cTitle fs_cTitle">图片</p>
+                        <p class="f_cDescribe fs_cDescribe">（建议挑选和文章主题相关的优美壁纸）</p>
+                        <p class="f_cExtraDescribe fs_cExtraDescribe">支持 jpg, png</p>
+                        <div class="f_uploadFile medium">
+                            <input type="file" size="1" class="upload_input fs_content" >
+                            <span class="upload_text fs_content">请选择小于20M文件进行上传</span>
+                            <img src="http://form.mikecrm.com/images/icon/importFileAdd.png" class="upload_img">
+                            <div class="clearB"></div>
+                        </div>
+                    </div>
+                    <div class="f_component">
+                        <p class="f_cTitle fs_cTitle">音频（电台节目）</p>
+                        <p class="f_cExtraDescribe fs_cExtraDescribe">支持 mp3, m4a, wma</p>
+                        <div class="f_uploadFile medium">
+                            <input type="file" size="1" class="upload_input fs_content" >
+                            <span class="upload_text fs_content">请选择小于20M文件进行上传</span>
+                            <img src="http://form.mikecrm.com/images/icon/importFileAdd.png" class="upload_img">
+                            <div class="clearB"></div>
+                        </div>
+                    </div>
+                    <div class="f_submit">
+                        <a class="f_submitBtn fs_submitBtn validate_submit">提交</a>
+                    </div>
+                </div>
+            </div>
+            <div class="f_copyright" id="fCopyright">
+                <a class="f_powerby fs_powerby" href="http://www.mikecrm.com/?ref=form" target="_blank">
+                    <img src="http://asset.mikecrm.com/images/logo_mini_2x.png" width="40px" height="20px"
+                     style="vertical-align: middle;margin-right:3px;">
+                    由麦客提供技术支持
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

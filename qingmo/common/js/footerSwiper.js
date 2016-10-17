@@ -6,7 +6,7 @@ $(function () {
     var $ul = $("#bulletin ul");
     var lis = $("#bulletin ul li");
     var $close = $("#close");
-    var set_timer = 30000;
+    var set_timer = 7000;
     // var timer;
     $("#bulletin ul li:first").clone().appendTo($ul);
     function msgCroll() {

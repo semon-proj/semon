@@ -1,0 +1,302 @@
+body {
+    font: 12px/1.0 "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    word-wrap: break-word;
+    color: #000;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+p {
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.small {
+    width: 70%;
+}
+
+.large {
+    width: 92%;
+}
+
+label {
+    font-weight: 500;
+}
+
+input:hover{
+    border: 1px solid #a6a6a6;
+    border-top-color: #a2a2a2;
+}
+
+.input,
+.textarea {
+    margin-top: 3px;
+    padding: 5px;
+    font-size: 12px;
+    line-height: 18px;
+    border: 1px solid #d3d3d3;
+    border-radius: 0;
+}
+
+.clearB {
+    clear: both;
+}
+
+ul {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+input[type="checkbox"] {
+    border: 0;
+}
+
+.f_wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+    z-index: 30;
+}
+
+.f_wrapper .f_main p {
+    margin: 0;
+}
+
+.f_main {
+    position: relative;
+    margin: 20px auto 0;
+    width: 640px;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 1px 6px rgba(124,124,124,.42);
+    z-index: 3;
+}
+
+.f_header {
+    padding: 0 20px 10px 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.f_text_no_logo {
+    padding-top: 10px;
+}
+
+.f_title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    text-shadow: 0 2px 2px rgba(0,0,0,.2);
+}
+
+.f_share_container {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    right: 0;
+    height: 0;
+    text-align: center;
+}
+
+.f_share_main {
+    position: relative;
+    width: 640px;
+    margin: 0 auto;
+    background-color: #345;
+}
+
+.f_share {
+    position: absolute;
+    top: 0;
+    left: 640px;
+    width: 30px;
+    height: 30px;
+    margin-left: 8px;
+    padding: 4px;
+    border-radius: 4px;
+    text-align: right;
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: rgba(255,255,255,.4);
+    overflow: hidden;
+    color: #333;
+}
+
+img .qrcode {
+    margin: 3px;
+    vertical-align: middle;
+    opacity: .62;
+    border: 0;
+}
+
+.share_info {
+    line-height: 30px;
+    vertical-align: middle;
+    padding: 2px;
+    margin-left: 4px;
+    margin-right: 6px;
+}
+
+.f_body {
+    width: 100%;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+.f_component {
+    padding: 12px 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.f_cTitle {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 4px;
+}
+
+.f_cDescribe {
+    padding: 0 5px;
+    line-height: 20px;
+    border-top: 1px dashed #7c7c7c;
+    color: #7c7c7c;
+}
+
+.fs_content {
+    font-size: 14px;
+}
+
+.f_optionsLi.f_otherLi {
+    width: 80%;
+}
+
+.f_otherinput {
+    width: 50%;
+    padding: 2px 5px;
+}
+
+.f_cValidate {
+  font-size: 12px;
+    line-height: 25px;
+    margin-left: 5px;
+    white-space: nowrap;
+    font-weight: normal;
+    color: #000;
+}
+
+.f_cExtraDescribe {
+    padding: 0 5px;
+    color: #7c7c7c;
+    line-height: 20px;
+}
+
+.f_optionsLi {
+    float: left;
+    width: 24%;
+    margin-top: 8px;
+    margin-left: 5px;
+    line-height: 18px;
+}
+
+.f_optionBtn {
+    float: left;
+    display: inline-block;
+    padding-top: 4px;
+    margin-top: 2px;
+    letter-spacing: 0;
+    vertical-align: top;
+}
+
+.f_optionVal {
+    float: left;
+    display: inline-block;
+    width: 80%;
+    padding-left: 13px;
+}
+
+.textarea.large {
+    height: 204px;
+}
+
+.f_uploadFile {
+    position: relative;
+    top: 3px;
+    left: 0;
+    bottom: 10px;
+    height: 32px;
+    padding: 5px;
+    margin-right: 20px;
+    background-color: #fff;
+    border: 1px solid #D9D9D9;
+    border-top-color: #aaa;
+}
+
+.upload_input {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    right: 0;
+    height: 35px;
+    width: 100%;
+    color: #999;
+    opacity: 0;
+    z-index: 10;
+}
+
+.upload_text {
+    position: absolute;
+    left: 10px;
+    width: 80%;
+    height: 20px;
+    padding-top: 2px;
+    color: #333 !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.upload_img {
+    position: absolute;
+    right: 8px;
+    top: 4px;
+}
+
+.medium {
+    width: 82%;
+}
+
+.f_submit {
+    margin-top: 20px;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.f_submitBtn {
+    display: inline-block;
+    line-height: 28px;
+    padding: 2px 24px;
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+    background-color: #3E76A7;
+    border-radius: 2px;
+}
+
+.f_copyright {
+    height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.f_copyright .f_powerby {
+    color: #333;
+}
