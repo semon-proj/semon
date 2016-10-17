@@ -1,0 +1,847 @@
+#container {
+    width: 98%;
+    max-width: 1000px;
+    min-width: 300px;
+    padding-top: 50px;
+    margin: auto;
+    float: none;
+}
+#content {
+     width: 100%;
+     margin: auto;
+     float: left;
+     min-height: 500px;
+ }
+.single-content {
+    width: 68% !important;
+}
+#content .main {
+    padding: 19px;
+    margin: 0 0 10px 0;
+    word-break: break-word;
+}
+#metro, #map, .main, .widget {
+    background: #FFF;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+.related-post {
+    margin-right: -1%;
+}
+
+.related-post a {
+    width: 49%;
+    margin: 0 1% 6px 0;
+    background: #F6F6F6;
+    float: left;
+}
+.related-post a:hover{
+    background: #AE9;
+}
+.related-post img {
+    width: 50px;
+    height: auto;
+    margin: 5px 10px 5px 5px;
+    float: left;
+}
+a:link, a:visited {
+    color: #39D;
+    text-decoration: none;
+}
+a, a img, input, .slow, .download, .u-download {
+    transition: all .24s ease-out;
+    -moz-transition: all .24s ease-out;
+    -webkit-transition: all .24s ease-out;
+}
+.related-post h2 {
+    font-size: 16px;
+    height: 40px;
+    line-height: 20px;
+    width: 71%;
+    width: calc(100% - 80px);
+    width: -webkit-calc(100% - 80px);
+    color: #555 !important;
+    margin: 10px;
+    overflow: hidden;
+}
+.clear {
+    clear: both;
+}
+
+
+#ds-thread {
+    clear: both;
+    position: relative;
+    overflow: visible;
+    _zoom: 1;
+}
+#ds-reset, #ds-related-reads {
+    font-weight: normal;
+    font-size: 14px;
+    font-size-adjust: none;
+    color: #333;
+    line-height: 1;
+    text-align: left;
+}
+
+#ds-reset *, #ds-related-reads * {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+#ds-reset div, #ds-related-reads div, #ds-reset ul, #ds-related-reads ul, #ds-reset ol, #ds-related-reads ol, #ds-reset li, #ds-related-reads li, #ds-reset ul li, #ds-related-reads ul li, #ds-reset ol li, #ds-related-reads ol li, #ds-reset iframe, #ds-related-reads iframe, #ds-reset h1, #ds-related-reads h1, #ds-reset h2, #ds-related-reads h2, #ds-reset h3, #ds-related-reads h3, #ds-reset h4, #ds-related-reads h4, #ds-reset h5, #ds-related-reads h5, #ds-reset h6, #ds-related-reads h6, #ds-reset p, #ds-related-reads p, #ds-reset img, #ds-related-reads img, #ds-reset blockquote, #ds-related-reads blockquote, #ds-reset a, #ds-related-reads a, #ds-reset span, #ds-related-reads span, #ds-reset pre, #ds-related-reads pre, #ds-reset code, #ds-related-reads code, #ds-reset strong, #ds-related-reads strong, #ds-reset sub, #ds-related-reads sub, #ds-reset sup, #ds-related-reads sup, #ds-reset fieldset, #ds-related-reads fieldset, #ds-reset form, #ds-related-reads form, #ds-reset label, #ds-related-reads label, #ds-reset input, #ds-related-reads input, #ds-reset textarea, #ds-related-reads textarea, #ds-reset select, #ds-related-reads select, #ds-reset header, #ds-related-reads header, #ds-reset section, #ds-related-reads section, #ds-reset article, #ds-related-reads article {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    font: inherit;
+    line-height: inherit;
+    background: none;
+    width: auto;
+    height: auto;
+    float: none;
+    overflow: visible;
+    transition: none;
+}
+#ds-thread #ds-reset .ds-meta {
+    position: relative;
+    padding: 8px 0;
+    line-height: 24px;
+    border-bottom: 0;
+}
+#ds-reset .ds-rounded {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+#ds-thread #ds-reset a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #999;
+    background-color: transparent;
+    -webkit-transition: color .15s linear;
+    -moz-transition: color .15s linear;
+    transition: color .15s linear;
+}
+#ds-thread #ds-reset a.ds-like-thread-button {
+    color: #555;
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-bottom-color: #aaa;
+    box-shadow: inset 0 0 1px #fff;
+    margin-right: 15px;
+    text-shadow: 0 1px 0 #fff;
+    background-color: #e0e0e0;
+    background-repeat: no-repeat;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), color-stop(25%, #fff), to(#e0e0e0));
+    background-image: -webkit-linear-gradient(#fff, #fff 25%, #e0e0e0);
+    background-image: -moz-linear-gradient(top, #fff, #fff 25%, #e0e0e0);
+    background-image: -ms-linear-gradient(#fff, #fff 25%, #e0e0e0);
+    background-image: linear-gradient(#fff, #fff 25%, #e0e0e0);
+}
+[class*="icon-"], .download::before, .u-download::before {
+    font-family: 'icaoyefont' !important;
+    font-style: normal;
+}
+#ds-reset span, #ds-related-reads span, #ds-reset strong, #ds-related-reads strong, #ds-reset label, #ds-related-reads label, #ds-reset input, #ds-related-reads input {
+    display: inline;
+    margin: 0;
+}
+#ds-reset .ds-icon {
+    vertical-align: middle;
+    display: inline-block;
+    overflow: hidden;
+    background: transparent url("//static.duoshuo.com/images/sprites.png") no-repeat;
+    _background-image: url("//static.duoshuo.com/images/sprites.gif");
+}
+#ds-reset a .ds-icon {
+    opacity: .6;
+    -webkit-transition: opacity .15s linear;
+    -moz-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+}
+#ds-thread #ds-reset .ds-icon-heart {
+    width: 14px;
+    height: 13px;
+    background-position: 0 -130px;
+}
+#ds-thread #ds-reset a.ds-like-thread-button span {
+    color: #555;
+}
+#ds-thread #ds-reset a.ds-like-thread-button .ds-icon-heart {
+    position: relative;
+    top: -2px;
+    opacity: 1;
+}
+#ds-thread #ds-reset .ds-thread-cancel-like {
+    display: none;
+}
+#ds-thread #ds-reset a.ds-thread-liked {
+    background: #e9e9e9;
+}
+
+
+#ds-thread #ds-reset .ds-comments-info {
+    width: 100%;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 8px 0;
+    line-height: 25px;
+    position: relative;
+}
+#ds-thread #ds-reset .ds-comments-info {
+    font-size: 12px;
+    padding: 4px 0;
+}
+#ds-thread #ds-reset .ds-sort {
+    position: absolute;
+    right: 0;
+    top: 8px;
+}
+#ds-thread #ds-reset .ds-sort a {
+    color: #999;
+    padding: 0 4px;
+    margin: 0 2px;
+}
+#ds-thread #ds-reset .ds-sort a.ds-current, #ds-thread #ds-reset .ds-sort a:active {
+    color: #017cb9;
+}
+
+#ds-reset ul, #ds-related-reads ul, #ds-reset ol, #ds-related-reads ol, #ds-reset ul li, #ds-related-reads ul li, #ds-reset ol li, #ds-related-reads ol li {
+    list-style: none;
+    display: block;
+}
+#ds-thread #ds-reset ul, #ds-thread #ds-reset ul li {
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+#ds-thread #ds-reset li.ds-tab {
+    display: inline;
+    font-size: 14px;
+    margin: 0 5px 0 0;
+    padding: 0;
+}
+#ds-thread #ds-reset li.ds-tab a {
+    text-shadow: 0 1px 0 #fff;
+    padding: 3px 5px;
+    display: inline;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+#ds-thread #ds-reset li.ds-tab a {
+    background: none;
+    border: 0;
+    font-size: 12px;
+}
+#ds-thread #ds-reset li.ds-tab a.ds-current {
+    border: 1px solid #ccc;
+    background-color: rgba(0,0,0,0.04);
+}
+
+#ds-thread #ds-reset .ds-comments {
+    width: 100%;
+    border-bottom: 0;
+}
+#ds-thread #ds-reset .ds-comments, #ds-thread #ds-reset .ds-paginator {
+    border-bottom: 1px dotted #ddd;
+}
+#ds-thread #ds-reset li.ds-post {
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+    border-top: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#ds-thread #ds-reset li.ds-post-placeholder {
+    text-align: center;
+    color: #999;
+    padding: 1em 0;
+}
+#ds-thread #ds-reset li.ds-post {
+    border-top: 1px dotted #ddd;
+}
+#ds-thread #ds-reset .ds-comments::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#ds-thread #ds-reset .ds-paginator {
+    border-bottom: 0;
+    text-align: right;
+    padding-bottom: 15px;
+    clear: both;
+    line-height: 1em;
+}
+#ds-thread #ds-reset .ds-paginator {
+    text-align: center;
+}
+#ds-thread #ds-reset .ds-paginator div.ds-border {
+    border-top: 1px solid rgba(255,255,255,0.7);
+    margin-bottom: 15px;
+}
+#ds-thread #ds-reset .ds-paginator a {
+    font-size: 12px;
+    margin: 0 3px;
+    padding: 2px 5px;
+    border: 1px solid transparent;
+}
+#ds-thread #ds-reset .ds-paginator a:hover, #ds-thread #ds-reset .ds-paginator a.ds-current {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-color: rgba(0,0,0,0.03);
+}
+#ds-thread #ds-reset .ds-paginator a.ds-current {
+    color: #017cb9;
+    border: 1px solid #ccc;
+}
+#ds-thread #ds-reset .ds-paginator a.ds-current {
+    color: #999;
+}
+
+#ds-thread #ds-reset .ds-login-buttons {
+    width: 100%;
+    position: relative;
+    padding: 10px 0 6px;
+}
+#ds-thread #ds-reset .ds-login-buttons p {
+    float: left;
+    line-height: 24px;
+    margin: 0;
+}
+#ds-reset p, #ds-related-reads p {
+    text-indent: 0;
+    clear: none;
+}
+#ds-thread #ds-reset .ds-login-buttons .ds-social-links {
+    float: left;
+    width: 306px;
+}
+#ds-thread #ds-reset .ds-login-buttons .ds-social-links {
+    width: auto;
+}
+#ds-thread #ds-reset .ds-login-buttons .ds-service-list li {
+    float: left;
+    height: 16px;
+    width: 54px;
+    padding: 4px 0;
+    margin: 0 0 0 6px;
+}
+#ds-reset .ds-service-list a {
+    vertical-align: middle;
+    padding-right: 3px;
+}
+#ds-thread #ds-reset .ds-login-buttons .ds-additional-services {
+    display: none;
+}
+#ds-reset .ds-service-link {
+    height: 16px !important;
+    line-height: 16px;
+    padding-left: 20px;
+    display: block;
+    background: url("//static.duoshuo.com/images/service-icons-color.png?v=2") no-repeat;
+    _background-image: url("//static.duoshuo.com/images/service-icons-color.gif?v=2");
+    overflow: hidden;
+}
+#ds-reset .ds-weixin {
+    background-position: 0 -272px;
+}
+#ds-reset .ds-weibo {
+    background-position: 0 0;
+}
+#ds-reset .ds-qq {
+    background-position: 0 -192px;
+}
+#ds-reset .ds-renren {
+    background-position: 0 -32px;
+}
+#ds-thread #ds-reset .ds-login-buttons .ds-more-services {
+    color: #017cb9 !important;
+    line-height: 16px;
+    display: block;
+}
+#ds-thread #ds-reset a:hover {
+    color: #333;
+}
+#ds-thread #ds-reset .ds-login-buttons .ds-more-services:hover {
+    color: #09acfe !important;
+}
+#ds-wrapper #ds-reset .ds-unread-list li a:hover, #ds-thread #ds-reset .ds-login-buttons .ds-more-services:hover {
+    text-decoration: underline;
+}
+#ds-reset .ds-highlight, #ds-thread #ds-reset .ds-login-buttons .ds-more-services, #ds-thread #ds-reset .ds-login-buttons .ds-more-services:hover {
+    color: #999;
+}
+#ds-reset .ds-douban {
+    background-position: 0 -96px;
+}
+#ds-reset .ds-kaixin {
+    background-position: 0 -80px;
+}
+#ds-reset .ds-baidu {
+    background-position: 0 -208px;
+}
+#ds-reset .ds-google {
+    background-position: 0 -240px;
+}
+#ds-thread #ds-reset .ds-login-buttons::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+
+#ds-thread #ds-reset .ds-replybox {
+    width: auto;
+    font-size: 12px;
+    z-index: 3;
+    margin: 8px 0;
+    padding: 0 0 0 60px;
+    position: relative;
+    _zoom: 1;
+}
+#ds-thread #ds-reset .ds-replybox {
+    padding: 0 0 0 50px;
+    margin: 0;
+}
+#ds-reset .ds-avatar {
+    box-shadow: 0 1px 1px rgba(255,255,255,0.75);
+    position: relative;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-color: #fff;
+    float: left;
+}
+#ds-reset .ds-avatar {
+    background: none;
+    box-shadow: 0 1px 1px rgba(255,255,255,0);
+}
+#ds-thread #ds-reset a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #999;
+    background-color: transparent;
+    -webkit-transition: color .15s linear;
+    -moz-transition: color .15s linear;
+    transition: color .15s linear;
+}
+#ds-thread #ds-reset .ds-replybox .ds-avatar {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#ds-thread #ds-reset .ds-replybox .ds-avatar {
+    margin: 0;
+}
+#ds-reset .ds-avatar img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    max-width: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.22);
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+#ds-reset .ds-avatar img {
+    box-shadow: none;
+}
+#ds-thread #ds-reset .ds-avatar img {
+    width: 54px;
+    height: 54px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    padding: 2px;
+    border: 1px solid #ddd;
+    background: #fff;
+    -moz-border-radius: 27px;
+    box-shadow: inset 0 -1px 0 #3333sf;
+    -webkit-box-shadow: inset 0 -1px 0 #3333sf;
+    -webkit-transition: 0.4s;
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    transition: transform 0.4s ease-out;
+    -moz-transition: -moz-transform 0.4s ease-out;
+}
+#ds-thread #ds-reset .ds-replybox .ds-avatar img {
+    width: 30px;
+    height: 30px;
+    visibility: visible;
+    margin: 0;
+}
+#ds-thread #ds-reset .ds-avatar img:hover{
+    transform: rotate(360deg);
+}
+
+
+#ds-reset .ds-rounded-top {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    -webkit-border-top-left-radius: 0;
+    -webkit-border-top-right-radius: 0;
+}
+#ds-thread #ds-reset .ds-textarea-wrapper {
+    position: relative;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    padding-right: 20px;
+    background: #fff url("//static.duoshuo.com/images/bg_sprites.png") 0 -90px repeat-x;
+    overflow: hidden;
+}
+#ds-thread #ds-reset .ds-textarea-wrapper {
+    background: none;
+}
+#ds-thread #ds-reset .ds-textarea-wrapper textarea {
+    box-shadow: none;
+    -webkit-appearance: none;
+    overflow: auto;
+    padding: 10px;
+    height: 54px;
+    margin: 0;
+    resize: none;
+    color: #999;
+    width: 100%;
+}
+#ds-thread #ds-reset .ds-textarea-wrapper textarea, #ds-thread #ds-reset .ds-textarea-wrapper .ds-hidden-text {
+    display: block;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    border: none;
+}
+#ds-thread #ds-reset .ds-textarea-wrapper .ds-hidden-text {
+    word-wrap: break-word;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    right: 10px;
+}
+#ds-thread #ds-reset .ds-textarea-wrapper textarea, #ds-thread #ds-reset .ds-textarea-wrapper .ds-hidden-text {
+    display: block;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    border: none;
+}
+
+#ds-thread #ds-reset .ds-post-toolbar {
+    position: relative;
+    width: 100%;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.6);
+}
+#ds-reset .ds-gradient-bg {
+    background: url("//static.duoshuo.com/images/bg_sprites.png") 0 -60px repeat-x;
+}
+#ds-reset .ds-gradient-bg {
+    background: #fbfbfb;
+}
+#ds-reset .ds-gradient-bg {
+    background: none;
+}
+#ds-thread #ds-reset .ds-post-options {
+    position: relative;
+    margin-right: 100px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-bottom-color: #aaa;
+    border-bottom-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+}
+#ds-thread #ds-reset .ds-post-options {
+    margin-right: 0;
+    border: 1px solid #ccc;
+}
+
+
+button, .btn {
+    cursor: pointer;
+}
+input, button, textarea {
+    border-radius: 0 !important;
+    max-width: 100%;
+}
+#ds-reset input[type="button"], #ds-related-reads input[type="button"], #ds-reset input[type="submit"], #ds-related-reads input[type="submit"], #ds-reset input[type="reset"], #ds-related-reads input[type="reset"], #ds-reset button, #ds-related-reads button {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#ds-reset input, #ds-related-reads input, #ds-reset button, #ds-related-reads button {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+#ds-thread #ds-reset button {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+}
+#ds-thread #ds-reset .ds-post-button {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 32px;
+    width: 100px;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff;
+    color: #555;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom-color: #aaa;
+    border-bottom-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    background-color: #e6e6e6;
+    background-repeat: no-repeat;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fcfcfc), color-stop(25%, #fcfcfc), to(#e6e6e6));
+    background-image: -webkit-linear-gradient(#fcfcfc, #fcfcfc 25%, #e6e6e6);
+    background-image: -moz-linear-gradient(top, #fcfcfc, #fcfcfc 25%, #e6e6e6);
+    background-image: -ms-linear-gradient(#fcfcfc, #fcfcfc 25%, #e6e6e6);
+    background-image: linear-gradient(#fcfcfc, #fcfcfc 25%, #e6e6e6);
+    -webkit-transition: all .15s linear;
+    -moz-transition: all .15s linear;
+    transition: all .15s linear;
+    box-shadow: inset 0 0 1px #fff;
+}
+#ds-thread #ds-reset .ds-post-button {
+    font-weight: normal;
+    font-size: 12px;
+    text-shadow: none;
+    border: 0;
+    line-height: 23px;
+    width: 57px;
+    background: #00a3cf;
+    color: #fff;
+}
+#ds-thread #ds-reset .ds-toolbar-buttons {
+    position: absolute;
+    top: 5px;
+    left: 6px;
+}
+#ds-thread #ds-reset .ds-replybox::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#ds-thread #ds-reset .ds-sync {
+    font-size: 12px;
+    color: #999;
+    line-height: 30px;
+    position: absolute;
+    right: 5px;
+}
+#ds-thread #ds-reset .ds-post-toolbar span, #ds-thread #ds-reset .ds-post-toolbar input, #ds-thread #ds-reset .ds-post-toolbar label, #ds-thread #ds-reset .ds-post-toolbar a {
+    vertical-align: middle;
+    width: auto;
+}
+#ds-thread #ds-reset .ds-post-options .ds-sync {
+    right: 60px;
+}
+#ds-thread #ds-reset .ds-toolbar-button {
+    display: block;
+    width: 19px !important;
+    height: 19px;
+    float: left;
+    margin-right: 4px;
+    background: transparent url("//static.duoshuo.com/images/sprites.png") no-repeat;
+    _background-image: url("//static.duoshuo.com/images/sprites.gif");
+    vertical-align: middle;
+    opacity: .6;
+    -webkit-transition: opacity .15s linear;
+    -moz-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+}
+#ds-thread #ds-reset .ds-add-emote {
+    background-position: 0 -12px;
+}
+#ds-thread #ds-reset .ds-add-emote:hover {
+    background-position: 0 -30px;
+}
+#ds-thread #ds-reset button:hover, #ds-thread #ds-reset button:active, #ds-thread #ds-reset a.ds-unread-comments-count:hover, #ds-thread #ds-reset .ds-post-button:hover {
+    background: #40c8c9;
+    color: #fff;
+    box-shadow: none;
+}
+
+
+#ds-wrapper {
+    left: 0;
+    right: 0;
+    top: 20%;
+    bottom: 0;
+    width: 100%;
+    margin: auto;
+    z-index: 9999;
+    position: fixed;
+    _position: absolute;
+    text-align: center;
+    color: #777;
+    display: none;
+}
+#ds-reset, #ds-related-reads {
+    font-weight: normal;
+    font-size: 14px;
+    font-size-adjust: none;
+    color: #333;
+    line-height: 1;
+    text-align: left;
+}
+#ds-wrapper .ds-dialog, #ds-wrapper #ds-reset.ds-dialog {
+    margin: 0 auto;
+    text-align: left;
+    _zoom: 1;
+    width: 480px;
+    max-width: 100%;
+}
+#ds-reset .ds-rounded {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+#ds-wrapper #ds-reset .ds-dialog-inner {
+    width: 100%;
+    position: relative;
+    border: 1px solid #aaa;
+    background: #fff url("//static.duoshuo.com/images/bg_sprites.png") 0 -90px repeat-x;
+    text-shadow: 0 1px 0 #fff;
+    box-shadow: inset 0 1px 1px #fff,0 2px 6px rgba(0,0,0,0.4);
+}
+#ds-wrapper #ds-reset .ds-dialog-body {
+    padding: 30px 30px 25px;
+    position: relative;
+    overflow: hidden;
+}
+#ds-wrapper #ds-reset h2 {
+    display: block;
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0 0 15px 0;
+    color: #555;
+}
+#ds-wrapper #ds-reset .ds-icons-32 {
+    height: 32px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.ds-icons-32 a {
+    display: block;
+    cursor: pointer;
+    width: 32px !important;
+    height: 32px !important;
+    background: url("//static.duoshuo.com/images/icons_large.png") no-repeat !important;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+#ds-wrapper #ds-reset .ds-icons-32 a {
+    float: left;
+    margin: 0 5px 0 0;
+}
+.ds-icons-32 a.ds-douban {
+    background-position: -186px 0 !important;
+}
+.ds-icons-32 a.ds-kaixin {
+    background-position: -111px 0 !important;
+}
+.ds-icons-32 a.ds-renren {
+    background-position: -148px 0 !important;
+}
+.ds-icons-32 a.ds-qq {
+    background-position: -488px 0 !important;
+}
+.ds-icons-32 a.ds-weibo {
+    background-position: -37px 0 !important;
+}
+.ds-icons-32 a.ds-weixin {
+    background-position: -224px 0 !important;
+}
+
+#ds-wrapper #ds-reset .ds-dialog-footer {
+    clear: both;
+    border-top: 1px dotted #ccc;
+    padding: 10px 15px 6px;
+}
+#ds-wrapper #ds-reset .ds-logo {
+    display: inline-block;
+    width: 64px;
+    height: 21px;
+    margin-right: 10px;
+    background: url("//static.duoshuo.com/images/logo.png") 0 0 no-repeat;
+}
+#ds-wrapper #ds-reset .ds-dialog-footer span {
+    color: #999;
+    position: relative;
+    top: -6px;
+}
+#ds-wrapper #ds-reset .ds-dialog-close {
+    position: absolute;
+    bottom: 13px;
+    right: 11px;
+    display: block;
+    width: 13px;
+    height: 13px;
+    overflow: hidden;
+    background: transparent url("//static.duoshuo.com/images/sprites.png") 0 -163px no-repeat;
+    _background-image: url("//static.duoshuo.com/images/sprites.gif");
+}
+
+body {
+    background-color: #ededed;
+}
+#aTip{
+    /*position: fixed;*/
+    /*position: absolute;*/
+    width: 360px;
+    display: none;
+    padding: 12px;
+    font-size: 13px;
+    line-height: 20px;
+    border: 2px solid #dedede;
+    background-color: #f6f6f6;
+    color: #333;
+    /*z-index: 999;*/
+}
+@media screen and (max-width: 983px) {
+    #content .related-post a{
+        width: 99%;
+    }
+}
+@media screen and (max-width: 870px) {
+    #content .related-post a{
+        width: 49%;
+    }
+}
+@media screen and (max-width: 650px) {
+    #content .related-post a{
+        width: 99%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
