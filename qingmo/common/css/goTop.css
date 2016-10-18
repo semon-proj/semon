@@ -30,6 +30,16 @@ button, .btn {
 #gotop {
     bottom: 68px;
 }
+#cmt {
+    bottom: 34px;
+    font-size: 25px;
+    line-height: 28px;
+}
+#share {
+    bottom: 0;
+    font-size: 25px;
+    line-height: 22px;
+}
 #gotop::before {
     content: '^';
 }
