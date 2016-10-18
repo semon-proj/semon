@@ -1,12 +1,869 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>123</title>
+    <title>喜欢得慢一点,爱得久一点 | 清沫网</title>
+    <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../common/iconfont/1.0.0/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="../../common/css/nav.css">
+    <link rel="stylesheet" type="text/css" href="../../common/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../../common/css/footerSwiper.css">
+    <link rel="stylesheet" type="text/css" href="../../common/css/goTop.css" />
+    <link rel="stylesheet" href="../../common/css/share.css">
 
+    <script type="text/javascript" src="../../common/js/jquery-3.0.0.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../../common/js/bootstrap.min.js"></script>
+    <script src="../../common/js/nav.js"></script>
+    <script type="text/javascript" src="../../common/js/footerSwiper.js"></script>
+    <script type="text/javascript" src="../../common/js/goTop.js" ></script>
+    <script type="text/javascript" src="../../common/js/share.js"></script>
+
+    <style>
+        h2, h2 a {
+            font-size: 1.25rem;
+            font-weight: normal;
+            text-transform: uppercase;
+            color: #000 !important;
+        }
+        .entry-title, .article-info {
+            text-align: center;
+        }
+        body.single .article-info {
+            color: #999;
+            width: 100%;
+            float: left;
+            font-size: .8125rem;
+        }
+        [class*="icon-"], .download::before, .u-download::before {
+            font-family: 'iconfont' !important;
+            font-style: normal;
+        }
+        body.single .article-info span {
+            margin-right: 1%;
+        }
+        body.single .article-info a {
+            color: #999;
+        }
+        .clear{
+            clear: both;
+        }
+
+        .context p {
+            color: #333;
+            letter-spacing: .25px;
+            margin-top: 10px;
+            line-height: 28px;
+            font-size: 16px;
+        }
+
+        #bdshare {
+            _overflow-x: hidden;
+            z-index: 999999;
+            padding-bottom: 2px;
+            font-size: 12px;
+            float: left;
+            text-align: left !important;
+            zoom: 1;
+        }
+        .main #bdshare {
+            float: right;
+            padding-top: 50px;
+            margin-top: -40px;
+        }
+        .bds_tools_32 a {
+            background: url(../images/is_32.png?cdnversion=20131219) no-repeat;
+            width: 37px;
+            height: 37px;
+            display: block;
+            float: left;
+            margin-right: 3px;
+            text-indent: -100em;
+            cursor: pointer;
+        }
+        #bdshare a, #bdshare_s a, #bdshare_pop a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .main #bdshare a, #bdshare .bds_more {
+            width: 32px !important;
+            height: 32px !important;
+            background: url("../img/bg_icon.png") no-repeat !important;
+            margin-right: 6px;
+        }
+        .main #bdshare a.bds_tqq {
+            background-position: -32px 0 !important;
+        }
+        .main #bdshare a.bds_qzone {
+            background-position: -64px 0 !important;
+        }
+        .main #bdshare a.bds_renren {
+            background-position: -96px 0 !important;
+        }
+        .main #bdshare a.bds_fbook {
+            background-position: -128px 0 !important;
+        }
+        .main #bdshare a.bds_twi {
+            background-position: -160px 0 !important;
+        }
+
+        span.bds_more, .bds_tools a {
+            display: block;
+            font-family: '宋体',Arial;
+            height: 16px;
+            float: left;
+            cursor: pointer;
+            padding-top: 6px;
+            padding-bottom: 3px;
+            padding-left: 22px;
+        }
+        .bds_tools_32 span.bds_more {
+            background: url(../images/is_32.png?cdnversion=20131219) no-repeat 0 5px !important;
+            width: 37px;
+            height: 32px;
+            text-indent: -100em;
+            padding-left: 0;
+        }
+        .main #bdshare a, #bdshare .bds_more {
+            width: 32px !important;
+            height: 32px !important;
+            background: url("../img/bg_icon.png") no-repeat !important;
+            margin-right: 6px;
+        }
+        .main #bdshare .bds_more {
+            background-position: -192px 0 !important;
+            padding: 0;
+        }
+        .bdshare_b a.shareCount, .bds_tools a.shareCount, .bds_tools_32 a.shareCount, .bds_tools_24 a.shareCount {
+            float: left;
+            background: url(../images/sc.png?cdnversion=20120720) no-repeat !important;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            padding-left: 5px;
+            color: #454545;
+            font-family: '宋体' !important;
+        }
+        .bds_tools_32 a.shareCount {
+            width: 43px;
+            height: 32px;
+            background-position: 0 -60px !important;
+            margin-top: 5px;
+            overflow: hidden;
+            font-size: 14px;
+            line-height: 32px;
+            text-indent: 0 !important;
+        }
+        .main #bdshare a.shareCount {
+            width: 52px !important;
+            background-position: -0 -32px !important;
+            padding: 0;
+            margin: 0;
+        }
+        #bdshare a:hover, #bdshare_s a:hover, #bdshare_pop a:hover {
+            color: #333;
+            opacity: .8;
+            filter: alpha(opacity=80);
+        }
+
+        body.single .main .tags {
+            text-align: right;
+        }
+        #content .tags {
+            height: 26px;
+            overflow: hidden;
+        }
+        #content .tags a {
+            padding: 3px 6px;
+            color: #FFF;
+            font-size: .75rem;
+        }
+        .bg:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+            color: #FFF;
+            background: #181818 !important;
+        }
+        .context .bright {
+            background: #f7f7f7;
+            border: 1px solid #ddd;
+            padding: 5px;
+            font-size: 12px;
+        }
+
+
+        .single_right {
+            width: 300px;
+            float: right;
+            border: 5px solid #fff;
+            box-shadow: 0 1px 3px rgba(0,0,0,.2);
+            background: #fff;
+        }
+        input, textarea, select, iframe, .bd, .context img {
+            border: 1px solid #E6E6E6;
+        }
+        .post-info {
+            padding: 10px;
+            line-height: 20px;
+            background: #F6F6F6;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        .post-info .avatar img {
+            float: left;
+            margin-right: 25px;
+            padding: 3px;
+            box-shadow: 1px 1px 3px rgba(0,0,0,.2);
+            border-radius: 100px;
+        }
+        .post-info .post-author-name {
+            font-weight: 800;
+            font-size: 1rem;
+        }
+
+
+        #bdshare_l {
+            width: 212px;
+            position: absolute;
+            top: 0;
+            background: #fff;
+            text-align: left;
+            left: 745.5px;
+            top: 2889.5px;
+            display: none;
+        }
+        #bdshare_l, #bdshare_m {
+            -webkit-box-shadow: 0 0 7px #eee;
+            -moz-box-shadow: 0 0 7px #eee;
+            z-index: 99999;
+        }
+        #bdshare_l_c {
+            width: 210px;
+            float: left;
+            border: 1px solid #e9e9e9;
+            text-align: left;
+        }
+        #bdshare h6, #bdshare_s h6 {
+            width: 100%;
+            font: 14px/22px '宋体';
+            text-indent: .5em;
+            font-weight: 700;
+            border-top: 1px solid #fbfbfb;
+            border-bottom: 1px solid #f2f1f1;
+            background-color: #f6f6f6;
+            float: left;
+            padding: 5px 0;
+            margin: 0;
+        }
+        #bdshare ul, #bdshare_s ul, #bdshare ul li, #bdshare_s ul li, #bdshare_l_c ul li, #bdshare_m_c ul li, #bdshare_pop ul, #bdshare_pop ul li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        #bdshare ul, #bdshare_s ul {
+            width: 98%;
+            float: left;
+            padding: 8px 0;
+            margin-left: 2px;
+            overflow: hidden;
+        }
+        #bdshare ul li, #bdshare_s ul li {
+            width: 47%;
+            _width: 41%;
+            float: left;
+            margin: 4px 2px;
+        }
+        #bdshare_l_c ul li {
+            width: 47%;
+            height: 26px;
+            float: left;
+            margin: 2px;
+        }
+        #bdshare ul li a, #bdshare_s ul li a {
+            color: #565656;
+            font: 12px '宋体';
+            display: block;
+            width: 98%;
+            padding: 6px 0;
+            text-indent: 2.4em;
+            *text-indent: 1.8em;
+            _text-indent: 1.8em;
+            border: 1px solid #fff;
+        }
+        #bdshare_l_c ul li a {
+            background: url(../img/is.png) no-repeat;
+            height: auto !important;
+        }
+        #bdshare p, #bdshare_s p {
+            width: 100%;
+            height: 21px;
+            font: 12px '宋体';
+            border-top: 1px solid #f2f1f1;
+            background-color: #f8f8f8;
+            float: left;
+            padding: 0;
+            margin: 0;
+        }
+        #bdshare p a, #bdshare_s p a {
+            width: auto;
+            text-align: right;
+            float: right;
+            padding: 0 5px;
+        }
+        #bdshare_l_c p a.goWebsite, #bdshare_m_c p a.goWebsite, #bdshare_pop p a.goWebsite {
+            text-align: right;
+            background: url(../img/pi.gif) no-repeat 0 center;
+            line-height: 16px;
+            padding-left: 12px;
+            color: #8c8c8c;
+        }
+        .bds_mshare {
+            background-position: 0 -2070px !important;
+        }
+        .bds_qzone {
+            background-position: 0 -75px !important;
+        }
+        .bds_tsina {
+            background-position: 0 -115px !important;
+        }
+        .bds_bdysc {
+            background-position: 0 -2550px !important;
+        }
+        .bds_renren {
+            background-position: 0 -195px !important;
+        }
+        .bds_tqq {
+            background-position: 0 -235px !important;
+        }
+        .bds_bdxc {
+            background-position: 0 -2190px !important;
+        }
+        .bds_kaixin001 {
+            background-position: 0 -275px !important;
+        }
+        .bds_tqf {
+            background-position: 0 -315px !important;
+        }
+        .bds_tieba {
+            background-position: 0 -595px !important;
+        }
+        .bds_douban {
+            background-position: 0 -395px !important;
+        }
+        .bds_tsohu {
+            background-position: 0 -435px !important;
+        }
+        .bds_bdhome {
+            background-position: 0 -155px !important;
+        }
+        .bds_sqq {
+            background-position: 0 -2230px !important;
+        }
+        .bds_thx {
+            background-position: 0 -1829px !important;
+        }
+        .bds_more {
+            background-image: url(../img/is.png) !important;
+            background-position: 0 4px !important;
+        }
+        #bdshare ul li a:hover, #bdshare_s ul li a:hover {
+            background-color: #f3f3f3;
+            border: 1px solid #eee;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+        }
+
+    </style>
+    <script>
+        $(document).ready(function () {
+            $(".main #bdshare .bds_more").hover(function(){
+                $("#bdshare_l").css("display","block");
+            },function(){
+                $("#bdshare_l").css("display","none");
+            });
+            $("#bdshare_l").hover(function(){
+                $(this).css("display","block");
+            },function(){
+                $(this).css("display","none");
+            });
+        })
+    </script>
 </head>
-<body>
+<body class="single">
 
+<!-- 导航 -->
+<div id="header">
+    <div id="nav">
+        <div class="nav-item">
+            <h1 class="nav-logo">
+                <a href="../../index.html" style="background-image:url(http://www.semorn.com/wp-content/uploads/2014/11/weblogo_3.png)">清沫网</a>
+            </h1>
+                    <span class="nav-switch butn hided slow">
+                        <li class="icon-caidan"><i class="icon iconfont">&#xe603;</i></li>
+                    </span>
+            <div class="nav-menu">
+                <div class="nav-menu-list">
+                    <ul id="menu" class="menu">
+                        <li class="">
+                            <a title="网络电台" href="../../index.html">首页</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="../../listen/qingGanDianTai.html">情感电台</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item-has-children">
+                                    <a href="../../listen/qingGanDianTai.html">在线收听</a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a href="../../listen/aiQingDianTai/aiQingDianTai.html">爱情电台节目</a>
+                                        </li>
+                                        <li>
+                                            <a href="../../listen/liZhiDianTai/liZhiDianTai.html">励志电台节目</a>
+                                        </li>
+                                        <li>
+                                            <a href="../../listen/chengZhangDianTai/chengZhangDianTai.html">成长电台节目</a>
+                                        </li>
+                                        <li>
+                                            <a href="../../listen/wenNuanDianTai/wenNuanDianTai.html">温暖电台节目</a>
+                                        </li>
+                                        <li>
+                                            <a href="../../listen/shangGanDianTai/shangGanDianTai.html">伤感电台节目</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="../../listen/guShiDianTai.html">故事电台</a>
+                                </li>
+                                <li>
+                                    <a href="../../listen/yinYueDianTai.html">音乐电台</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children current-menu-item">
+                            <a href="../../read/qingGanWenZhang.html">情感文章</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="../../read/chengZhangDT_gaozi/czdt_gaozi.html">成长电台稿子</a>
+                                </li>
+                                <li>
+                                    <a href="../../read/aiQingDT_gaozi/aqdt_gaozi.html">爱情电台稿子</a>
+                                </li>
+                                <li>
+                                    <a href="../../read/shengHuoDT_gaozi/shdt_gaozi.html">生活电台稿子</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="../../story/guShiWenZhang.html">故事文章</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="../../story/lvYouRiJi/lvyouriji.html">旅游日记</a>
+                                </li>
+                                <li>
+                                    <a href="../../story/renWuGuShi/renwugushi.html">人物故事</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../../music/dianTaiYinYue.html">电台音乐</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-icon">
+                <a class="nav-mail" href="http://www.semorn.com/tougao" rel="external nofollow"><i class="icon iconfont">&#xe602;</i></a>
+                <a class="nav-point hided" href="javascript:;" style="display:block"><i class="icon iconfont">&#xe603;</i></a>
+                <a class="denglu nav-rss" href="javascript:;"><i class="icon iconfont">&#xe601;</i></a>
+                <div class="denglu-list hided" style="display: none;">
+                    <a href="http://www.semorn.com/article/author/kaixiong" rel="external nofollow">我的主页</a>
+                    <br>
+                    <a href="http://www.semorn.com/user/setting" rel="external nofollow">设置资料</a>
+                    <br>
+                    <a href="http://www.semorn.com/tougao" rel="external nofollow">提交作品</a>
+                    <br>
+                    <a href="http://www.semorn.com/wp-login.php?action=logout&amp;amp;redirect_to=%2F" rel="external nofollow">退出</a>
+                </div>
+                <a class="nav-search hided" href="javascript:;" style="display:block"><i class="icon iconfont">&#xe600;</i></a>
+            </div>
+            <div class="nav-point-list hided">
+                <div class="nav-point-bar">
+                    <a href="http://weibo.com/semorn" rel="external nofollow">新浪官方微博</a>
+                    <br>
+                    <a href="http://user.qzone.qq.com/782680748" rel="external nofollow">官方QQ空间</a>
+                    <br>
+                    关注清沫微信
+                    <img src="http://www.semorn.com/wp-content/uploads/2015/07/qmweixin.png" alt="清沫网微信公众号" style="width:100px;height:100px"></div>
+            </div>
+            <div class="nav-search-bar hided">
+                <form method="get" action="http://www.semorn.com">
+                    <input type="search" placeholder="Search…" value="" name="s"></form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 正文 -->
+<div id="container">
+    <div id="content" class="single-content">
+        <div class="main">
+            <div id="post-12346">
+                <h2 class="entry-title" property="v:title">
+                    <a href="../../article/shouYe_TPLJ/shouYe_TPLJ.html" target="_blank">喜欢得慢一点,爱得久一点</a>
+                </h2>
+                <div class="article-info">
+                    <i class="icon-wodeshi01"></i>
+                    <span>安乔</span>
+                    <i class="icon-time"></i>
+                    <span class="date updated">
+                        <time property="v:datePublished" datetime="2016-10-07">
+                            <abbr class="tip" title="最后更新: 2016年10月7日 23:52" style="cursor:help">2016-10-08</abbr>
+                        </time>
+                    </span>
+                    <i class="icon-suibadaohang"></i>
+                    <span>
+                        <a href="../../read/qingGanWenZhang.html">情感文章</a>
+                    </span>
+                </div>
+                <div class="context" property="v:description">
+                    <p>01</p>
+                    <p>周末，久不露面的阿俊居然特别积极地在群里嚷嚷要搞起聚会。</p>
+                    <p>阿俊是那种见色忘友的家伙，两三个月前他新交了一个女朋友，什么活动他都谢绝参加，说要享受甜蜜的二人世界。</p>
+                    <p>“哟，这是要给我们单身狗秀恩爱撒狗粮的节奏啊。”有人打趣他。</p>
+                    <p>“我分手了，现在也是单身狗。”阿俊回复。<br>这么快。大家一下子不知道要回什么。</p>
+                    <p>过了一会儿，阿俊单独找我聊：“乔乔，为什么热情会冷得那么快呢？明明还是喜欢她，但为什么就是不想和她腻歪了？”</p>
+                    <p>阿俊和女朋友在一个活动上认识，两人都对对方有意，那天活动他俩几乎全程腻在一起，从工作聊到喜欢的歌手和作家，再聊到旅行去过的地方和印象深刻的事……分开时，彼此的眼神里全是依依不舍。</p>
+                    <p>当天晚上，他们还又微信聊到三四点，阿俊在微信里给她唱粤语情歌，她喝着红酒，即兴给他做了一首情诗……</p>
+                    <p>郎有情，妾有意，两个人第三天就确立了男女朋友关系。</p>
+                    <p>热恋时恨不能时时刻刻腻歪在一起，每天约会，吃饭看电影散步，周末去郊外短途旅行；不在一起时，微信滴滴个不停，看到什么都要和对方分享，晚上聊到两三天点，第二天还要上班也不觉得困倦……有人说，爱就是和ta说一堆无聊的话，却觉得甜蜜。</p>
+                    <p>可没过多久，热情就迅速冷下来，争吵和冷战接踵而至。“那种感觉太奇怪了，像一路狂奔的车，突然就减速慢下来。打开微信，不知道说什么，好像什么都聊过，没什么新鲜的；看到她的短信也不再秒回了，宁愿打游戏也不愿意去找她。”“她总说我没有以前爱她了，问我是不是喜欢上别人……起初真的没有不喜欢她，但吵着吵着就真的没感觉了。”</p>
+                    <p>爱情像跑步，如果一开始就冲刺，后面只会越来越慢，等真正要用尽全力的时候，早已没了力气。</p>
+                    <p>有句话说的好“我们可以慢慢来，别爱得太快。”<br>慢一点爱，渐入佳境，才能爱得浓烈，爱得持久。</p>
+                    <p>02</p>
+                    <p>热情像烟花，激烈迅速地一飞冲天，绽放一刻，所有的美好转瞬即逝。</p>
+                    <p>不单是爱情，所有的关系都如此，一开始过于热络，两个人好得仿佛一个人似的，最后都不免渐行渐远。</p>
+                    <p>我曾经有一个特别好的闺蜜，因为工作认识，然后发现彼此有很多相同的兴趣爱好，都喜欢心理学，爱传统音乐，喜欢话剧，也爱去旧市场淘各种小玩意儿。</p>
+                    <p>我们特别投缘，喜欢并欣赏对方。得知我在学习古琴，她也二话不说就报了名，每个周末和我一起上课。上完课后，我们看话剧，逛公园，参观博物馆……她是一个非常活泼外向的姑娘，每天都跟我分享她看到的各种好玩的事，还会热烈地跟我讨论一些想法。</p>
+                    <p>不仅如此，她还把我拉到她的朋友群里，积极地把我介绍给她的朋友们认识，每天她都会跟我聊很多，微信消息一天几百条……刚巧那段时间我不忙，也就乐得每天听她叽叽喳喳说各种好玩的事。</p>
+                    <p>没多久，工作上开启新的项目，我又忙碌起来。她发给我的消息我常常不能及时回，看到时只能简要地回复她一下；周末要去外地考察，古琴课落了许多，跟她碰面也少了……渐渐地，我收到的消息变成“乔乔你不理我了吗？”“乔乔陪我聊聊天吧”“乔乔你不要你的小宝贝了吗？”</p>
+                    <p>我多次跟她解释我变得忙碌起来，请她理解。但似乎越解释，越变成另一种误解。</p>
+                    <p>热情就是这样，热得太快，稍微的疏离就会显得隔膜，然后加速变冷。</p>
+                    <p>后来一次群聊中，我们对某件事的看法不一样，说着说着她开始对我各种抱怨，语气怪异，甚至夹杂着冷嘲热讽，我不善于处理这种场面，便沉默。心想一定要找个时间和她好好地谈一下，把误会解释清楚。</p>
+                    <p>可是第二天，她把我拉黑了。<br>那是我第一次被人拉黑，也让我清楚地意识到，交朋友不能好得太快，走得太近，不然很容易失去她。</p>
+                    <p>03</p>
+                    <p>心理学上说：每个人都有自己的心理舒适区。</p>
+                    <p>人际交往中，大多数人都需要不断的亲密和靠近来获得安全感，可作为独立个体的我们，一下子卷入一段关系中太多，那个人闯入我们的心理舒适区，本能地，我们又会忍不住后退，与之保持一定距离，来守卫自己的心理舒适区。然后，重新调整步调，跟对方保持一种良性互动。</p>
+                    <p>也就是说，所有的关系都不免从热络慢慢降温，节奏慢下来，人们更深入地去认识彼此，用心去交流，而不仅仅凭着一腔热情。</p>
+                    <p>可是，每个人冷热的节奏不一样，对方可能已经变冷，可你还处在热的阶段，很多矛盾误解就是个时候产生的。</p>
+                    <p>越在乎，爆发得越激烈。最怕熟人之间的撕逼，最亲的也最残忍。</p>
+                    <p>我曾亲眼目睹一对特别要好的朋友反目成仇。</p>
+                    <p>因为一个误解，其中一个把对方之前私底下跟她说的秘密、小心思和抱怨情绪，在公开场合宣扬，当成八卦对第三个人说，撕逼的姿态难看且low。</p>
+                    <p>见此情况，那个朋友觉得很受伤，被昔日最亲近的人这样伤害，仿佛一把刀子直插心口。</p>
+                    <p>我看不下去，两边周旋，才化解其中的误会。那个宣扬别人隐私的姑娘，感到无比愧疚，去道歉，把发在朋友圈的话都删了。</p>
+                    <p>那又怎样呢？说出去的话是收不回的，造成的伤害也是无法修复的。</p>
+                    <p>最后，那个被伤害的朋友对我说：“我好后悔对她说了那么多，我从来没有这么信任过一个人，可现实打脸打得我好疼，以后不管是交朋友还是谈恋爱，我再也不会这么快跟一个人好了。”</p>
+                    <p>04</p>
+                    <p>在被人伤害后，我们才慢慢懂得，切莫交浅言深，切莫把喜欢夸张成爱。</p>
+                    <p>熟得太快，多半是因为孤单寂寞冷。太闲了，所以有很多时间聊，轻易地就把什么话都一股脑儿跟对方说。</p>
+                    <p>爱得太快，多半是荷尔蒙作祟。曾听过一个姑娘婉拒一个求爱者：“谢谢你这么快就爱上我，可我好怕，你只是这么快想‘上’我。”</p>
+                    <p>喜欢就会放肆，但爱就会克制。</p>
+                    <p>我是一个慢热的人，有很多龟毛的要求和原则，初相识的人未必能忍受，需要一个慢慢相处的过程，让对方了解我，抑或在这个过程中，渐渐筛选气场不合的人。</p>
+                    <p>所以，我常常说“请慢一点喜欢上我，但喜欢得久一点。”</p>
+                    <p>不管是友情还是爱情，我们都需要跟对方建立一个可进可退的距离，才能做到真正的陪伴与成长。</p>
+                    <p>给彼此一个安全的距离，进可在他孤独无助时，及时伸出安慰的援手；退可在生活安稳时，互不打扰，而在他走错路、狂妄时，可以客观地帮他分析问题，指出他的不足。有的话，关系太亲近是不方便说的。</p>
+                    <p>我始终坚信，一时三刻热烈的吹捧、熬夜聊到三四点的倾诉、嘻嘻哈哈的吃喝玩乐，这些充其量只是一种交流的消耗，无法维持长久且稳固的关系。真正的情谊，需要更深入、更走心地交流，而这需要时间的见证，也需要时间的滋养。</p>
+                    <p>
+                        来日方长，我们不赶时间，慢一点相识与相爱，找到彼此最舒服的状态，慢慢喜欢，长久爱。<br>
+                        <span class="bright">
+                            安乔，专栏作者，脑洞大开讲爱情，不正经说心理学。微信公众号：安乔（anqiaolily ），新浪微博@安乔Lily
+                        </span>
+                    </p>
+                </div>
+                <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+                    <a class="bds_tsina" title="分享到新浪微博" href="#"></a>
+                    <a class="bds_tqq" title="分享到腾讯微博" href="#"></a>
+                    <a class="bds_qzone" title="分享到QQ空间" href="#"></a>
+                    <a class="bds_renren" title="分享到人人网" href="#"></a>
+                    <a class="bds_fbook" title="分享到Facebook" href="#"></a>
+                    <a class="bds_twi" title="分享到Twitter" href="#"></a>
+                    <span class="bds_more"></span>
+                    <a class="shareCount" title="累计分享8次" href="#">8</a>
+                </div>
+                <div class="tags" style="float:left;margin-top:15px">
+                    <a class="bg" style="background:#B0D686" href="http://www.semorn.com/article/tag/%e6%83%85%e6%84%9f%e6%96%87%e5%ad%97">情感文字</a>
+                    <a class="bg" style="background:#6C9" href="http://www.semorn.com/article/tag/%e7%88%b1%e6%83%85%e6%96%87%e5%ad%97">爱情文字</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="related-post">
+                <a href="http://www.semorn.com/article/12396.html"
+                   title="01.内心越自由的人，越有安全感父母是你人生的“审判官”吗？很多已经成年、将近30岁的成年人，当她们面对人生的重大问题时，...">
+                    <img class=" wp-post-image" src="http://www.semorn.com/wp-content/uploads/2016/04/12820548863804-110x110.jpg" alt="女人的终极安全感是什么？">
+                    <h2>女人的终极安全感是什么？</h2>
+                </a>
+                <a href="http://www.semorn.com/article/12390.html"
+                   title="“有些人藏在心里，有些人脱口而出，也许有人曾静静的看着你：可不可以等等我，等我幡然醒悟，等我明辨是非，等我说服自己，等...">
+                    <img class=" wp-post-image" src="http://www.semorn.com/wp-content/uploads/2016/04/ee3d6d55fbda31-110x110.jpg" alt="我不等你了，你也并没有非我不可">
+                    <h2>我不等你了，你也并没有非我不可</h2>
+                </a>
+                <a href="http://www.semorn.com/article/12386.html"
+                   title="01我有一个习惯，每一次去到一个陌生的地方，总爱去当地的乡野转转，感受下当地的风俗民情，看一看陌生的大地带来的亲切感。...">
+                    <img class=" wp-post-image" src="http://www.semorn.com/wp-content/uploads/2016/04/Img393489765-110x110.jpg" alt="好的婚姻，看厨房">
+                    <h2>好的婚姻，看厨房</h2>
+                </a>
+                <a href="http://www.semorn.com/article/12380.html"
+                   title="01半夜醒来，发现女儿卧室的灯还亮着，就过去看。女儿皱着眉，正在抄写英语单词。我问，怎么还不睡？女儿气哼哼地说，我今...">
+                    <img class=" wp-post-image" src="http://www.semorn.com/wp-content/uploads/2016/04/mp31186269-110x110.jpg" alt="不要抱怨读书苦，那是你去看世界的路">
+                    <h2>不要抱怨读书苦，那是你去看世界的路</h2>
+                </a>
+                <a href="http://www.semorn.com/article/12367.html"
+                   title="01深夜的时候，闺蜜突然微信我。我打开一看，发现她的心情似乎并不是很好。唉，这世上大部分的本可以避免，但就是突然冒出...">
+                    <img class=" wp-post-image" src="http://www.semorn.com/wp-content/uploads/2016/04/12787846-110x110.jpg" alt="你越善解人意，就越没人在意">
+                    <h2>你越善解人意，就越没人在意</h2>
+                </a>
+                <a href="http://www.semorn.com/article/12365.html"
+                   title="01上午收到曼曼的短信，想让我陪她去趟医院，我知道她在这个城市举目无亲，无依无靠，便没有任何犹豫的就答应下来。约定好...">
+                    <img class=" wp-post-image" src="http://www.semorn.com/wp-content/uploads/2016/04/4aac47984410930d20965-110x110.jpg" alt="别说你想我，你什么都没有做">
+                    <h2>别说你想我，你什么都没有做</h2>
+                </a>
+                <div class="clear"></div>
+            </div>
+            <div id="comments">
+                <div id="ds-thread" class="ds-thread" data-title="喜欢得慢一点,爱得久一点"
+                     data-url="http://www.semorn.com/article/12346.html">
+                    <div id="ds-reset">
+                        <div class="ds-meta" style="display: none;">
+                            <a class="ds-like-thread-button ds-rounded" href="javascript:void(0)">
+                                <span class="ds-icon ds-icon-heart"></span>
+                                <span class="ds-thread-like-text">喜欢</span>
+                                <span class="ds-thread-cancel-like">取消喜欢</span>
+                            </a>
+                            <span class="ds-like-panel"></span>
+                        </div>
+                        <div class="ds-comments-info">
+                            <div class="ds-sort">
+                                <a class="ds-order-desc">最新</a>
+                                <a class="ds-order-asc ds-current">最早</a>
+                                <a class="ds-order-hot">最热</a>
+                            </div>
+                            <ul class="ds-comments-tabs">
+                                <li class="ds-tab">
+                                    <a class="ds-comments-tab-duoshuo ds-current" href="javascript:void(0);">0条评论</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul id="liuYan" class="ds-comments">
+                            <li class="ds-post ds-post-placeholder">欣赏完之后你有什么感想？快来评论吧！</li>
+                        </ul>
+                        <div class="ds-paginator" style="display: none;">
+                            <div class="ds-border"></div>
+                            <a class="ds-current" data-page="1" href="javascript:void(0);">1</a>
+                        </div>
+                        <div class="ds-login-buttons">
+                            <p>社交帐号登录:</p>
+                            <div class="ds-social-links">
+                                <ul class="ds-service-list">
+                                    <li>
+                                        <a class="ds-service-link ds-weixin"
+                                           href="http://semorn.duoshuo.com/login/weixin/?sso=1&redirect_uri=http%3A%2F%2Fwww.semorn.com%2Fwp-login.php%3Faction%3Dduoshuo_login%26redirect_to%3Dhttp%253A%252F%252Fwww.semorn.com%252Farticle%252F12346.html"
+                                           rel="nofollow">微信</a>
+                                    </li>
+                                    <li>
+                                        <a class="ds-service-link ds-weibo"
+                                           href="http://semorn.duoshuo.com/login/weibo/?sso=1&redirect_uri=http%3A%2F%2Fwww.semorn.com%2Fwp-login.php%3Faction%3Dduoshuo_login%26redirect_to%3Dhttp%253A%252F%252Fwww.semorn.com%252Farticle%252F12346.html"
+                                           rel="nofollow">微博</a>
+                                    </li>
+                                    <li>
+                                        <a class="ds-service-link ds-qq"
+                                           href="http://semorn.duoshuo.com/login/qq/?sso=1&redirect_uri=http%3A%2F%2Fwww.semorn.com%2Fwp-login.php%3Faction%3Dduoshuo_login%26redirect_to%3Dhttp%253A%252F%252Fwww.semorn.com%252Farticle%252F12346.html"
+                                           rel="nofollow">QQ</a>
+                                    </li>
+                                    <li>
+                                        <a class="ds-service-link ds-renren"
+                                           href="http://semorn.duoshuo.com/login/renren/?sso=1&redirect_uri=http%3A%2F%2Fwww.semorn.com%2Fwp-login.php%3Faction%3Dduoshuo_login%26redirect_to%3Dhttp%253A%252F%252Fwww.semorn.com%252Farticle%252F12346.html"
+                                           rel="nofollow">人人</a>
+                                    </li>
+                                    <li>
+                                        <a class="ds-more-services" href="javascript:void(0)">更多»</a>
+                                    </li>
+                                </ul>
+                                <ul class="ds-service-list ds-additional-services">
+                                    <li>
+                                        <a class="ds-service-link ds-douban"
+                                           href="http://semorn.duoshuo.com/login/douban/?sso=1&redirect_uri=http%3A%2F%2Fwww.semorn.com%2Fwp-login.php%3Faction%3Dduoshuo_login%26redirect_to%3Dhttp%253A%252F%252Fwww.semorn.com%252Farticle%252F12346.html"
+                                           rel="nofollow">豆瓣</a>
+                                    </li>
+                                    <li>
+                                        <a class="ds-service-link ds-kaixin"
+                                           href="http://semorn.duoshuo.com/login/kaixin/?sso=1&redirect_uri=http%3A%2F%2Fwww.semorn.com%2Fwp-login.php%3Faction%3Dduoshuo_login%26redirect_to%3Dhttp%253A%252F%252Fwww.semorn.com%252Farticle%252F12346.html"
+                                           rel="nofollow">开心</a>
+                                    </li>
+                                    <li>
+                                        <a class="ds-service-link ds-baidu"
+                                           href="http://semorn.duoshuo.com/login/baidu/?sso=1&redirect_uri=http%3A%2F%2Fwww.semorn.com%2Fwp-login.php%3Faction%3Dduoshuo_login%26redirect_to%3Dhttp%253A%252F%252Fwww.semorn.com%252Farticle%252F12346.html"
+                                           rel="nofollow">百度</a>
+                                    </li>
+                                    <li>
+                                        <a class="ds-service-link ds-google"
+                                           href="http://semorn.duoshuo.com/login/google/?sso=1&redirect_uri=http%3A%2F%2Fwww.semorn.com%2Fwp-login.php%3Faction%3Dduoshuo_login%26redirect_to%3Dhttp%253A%252F%252Fwww.semorn.com%252Farticle%252F12346.html"
+                                           rel="nofollow">谷歌</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ds-replybox">
+                            <a class="ds-avatar" href="javascript:void(0);">
+                                <img src="https://avatar.duoshuo.com/avatar-50/906/247790.jpg" alt="">
+                            </a>
+                            <form method="post">
+                                <div class="ds-textarea-wrapper ds-rounded-top">
+                                    <textarea name="message" title="Ctrl+Enter快捷提交" placeholder="说点什么吧…"></textarea>
+                                    <pre class="ds-hidden-text"></pre>
+                                </div>
+                                <div class="ds-post-toolbar">
+                                    <div class="ds-post-options ds-gradient-bg">
+                                        <span class="ds-sync"></span>
+                                    </div>
+                                    <button class="ds-post-button" type="submit">发布</button>
+                                    <div class="ds-toolbar-buttons">
+                                        <a class="ds-toolbar-button ds-add-emote" title="插入表情"></a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="single_right">
+        <img src="http://www.semorn.com/wp-content/uploads/2016/04/81457434.jpg" alt="喜欢得慢一点,爱得久一点" style="width:100%">
+        <div class="post-info bd" style="margin-bottom:0">
+            <a href="http://www.semorn.com/article/author/qingganwenzhang" title="查看发布者专栏">
+                <span class="avatar">
+                    <img class="avatar avatar-70 photo" height="70" width="70"
+                         src="http://www.semorn.com/wp-content/uploads/2015/05/130122110013-70x70.jpg" alt="海库">
+                </span>
+            </a>
+            <div class="post-author-name">情感文章</div>
+            最新情感文章精选（文章根据转载协议进行转载使用，如有不妥，请联系删除，主播使用请注明出处及作者）
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+
+<div id="bdshare_s" style="display: block;">
+    <div id="bdshare_l">
+        <div id="bdshare_l_c">
+            <h6>分享到</h6>
+            <ul>
+                <li><a class="bds_mshare mshare" href="#">一键分享</a></li>
+                <li><a class="bds_qzone qqkj" href="#">QQ空间</a></li>
+                <li><a class="bds_tsina xlwb" href="#">新浪微博</a></li>
+                <li><a class="bds_bdysc bdysc" href="#">百度云收藏</a></li>
+                <li><a class="bds_renren rrw" href="#">人人网</a></li>
+                <li><a class="bds_tqq txwb" href="#">腾讯微博</a></li>
+                <li><a class="bds_bdxc bdxc" href="#">百度相册</a></li>
+                <li><a class="bds_kaixin001 kxw" href="#">开心网</a></li>
+                <li><a class="bds_tqf txpy" href="#">腾讯朋友</a></li>
+                <li><a class="bds_tieba bdtb" href="#">百度贴吧</a></li>
+                <li><a class="bds_douban db" href="#">豆瓣网</a></li>
+                <li><a class="bds_tsohu shwb" href="#">搜狐微博</a></li>
+                <li><a class="bds_bdhome bdhome" href="#">百度新首页</a></li>
+                <li><a class="bds_sqq sqq" href="#">QQ好友</a></li>
+                <li><a class="bds_thx thx" href="#">和讯微博</a></li>
+                <li><a class="bds_more" href="#">更多...</a></li>
+            </ul>
+            <p>
+                <a class="goWebsite" href="#">百度分享</a>
+            </p>
+        </div>
+    </div>
+</div>
+<div id="ds-wrapper">
+    <div id="ds-reset" class="ds-dialog" style="width: 320px;">
+        <div class="ds-dialog-inner ds-rounded">
+            <div class="ds-dialog-body">
+                <h2>社交帐号登录</h2>
+                <div class="ds-icons-32">
+                    <a class="ds-weixin" href="http://semorn.duoshuo.com/login/weixin/?sso=1&redirect_uri=http%3A%2F%2Fwww.semorn.com%2Fwp-login.php%3Faction%3Dduoshuo_login%26redirect_to%3Dhttp%253A%252F%252Fwww.semorn.com%252Farticle%252F12346.html">微信</a>
+                    <a class="ds-weibo" href="http://semorn.duoshuo.com/login/weibo/?sso=1&redirect_uri=http%3A%2F%2Fwww.semorn.com%2Fwp-login.php%3Faction%3Dduoshuo_login%26redirect_to%3Dhttp%253A%252F%252Fwww.semorn.com%252Farticle%252F12346.html">新浪微博</a>
+                    <a class="ds-qq" href="http://semorn.duoshuo.com/login/qq/?sso=1&redirect_uri=http%3A%2F%2Fwww.semorn.com%2Fwp-login.php%3Faction%3Dduoshuo_login%26redirect_to%3Dhttp%253A%252F%252Fwww.semorn.com%252Farticle%252F12346.html">QQ</a>
+                    <a class="ds-renren" href="http://semorn.duoshuo.com/login/renren/?sso=1&redirect_uri=http%3A%2F%2Fwww.semorn.com%2Fwp-login.php%3Faction%3Dduoshuo_login%26redirect_to%3Dhttp%253A%252F%252Fwww.semorn.com%252Farticle%252F12346.html">人人网</a>
+                    <a class="ds-kaixin" href="http://semorn.duoshuo.com/login/kaixin/?sso=1&redirect_uri=http%3A%2F%2Fwww.semorn.com%2Fwp-login.php%3Faction%3Dduoshuo_login%26redirect_to%3Dhttp%253A%252F%252Fwww.semorn.com%252Farticle%252F12346.html">开心网</a>
+                    <a class="ds-douban" href="http://semorn.duoshuo.com/login/douban/?sso=1&redirect_uri=http%3A%2F%2Fwww.semorn.com%2Fwp-login.php%3Faction%3Dduoshuo_login%26redirect_to%3Dhttp%253A%252F%252Fwww.semorn.com%252Farticle%252F12346.html">豆瓣网</a>
+                </div>
+            </div>
+            <div class="ds-dialog-footer">
+                <a class="ds-logo" href="http://duoshuo.com/" target="_blank"></a>
+                <span>社会化评论框</span>
+            </div>
+            <a class="ds-dialog-close" href="javascript:void(0)" title="关闭"></a>
+        </div>
+    </div>
+</div>
+
+<!-- 尾部 -->
+<div id="footer">
+    <div class="footer-1">
+        <a href="../../index.html">网络电台</a> |
+        <a href="../../index.html">情感电台</a> |
+        <a href="../../read/qingGanWenZhang.html">情感电台广播稿</a> |
+        <a href="../../listen/qingGanDianTai.html">情感电台在线收听</a> |
+        <a href="../../listen/qingGanDianTai.html">网络电台在线收听</a> |
+        <a href="../../index.html">讲故事的电台</a> |
+        <a href="../../outside/nav_bottom1/youShengDianTai/youShengDianTai.html">有声电台</a> |
+        <a href="../../read/qingGanWenZhang.html">电台稿子</a> |
+        <a href="../../outside/nav_bottom1/yingPingFanWen/yingPingFanWen.html">影评范文</a> |
+        <a href="../../outside/nav_bottom1/dianTaiZhiNan/dianTaiZhiNan.html">电台指南</a> |
+        <a href="../../outside/nav_bottom1/boYinZhuChi/boYinZhuChi.html">播音主持</a> |
+        <a href="../../read/qingGanWenZhang.html">电台播音稿子</a> |
+        <a href="http://www.semorn.com/ximalayafm.html">喜马拉雅FM电台官网</a> |
+        <a href="http://www.semorn.com/lizhifm.html">荔枝fm电台官网</a> |
+        <a href="http://www.semorn.com/article/6508.html">播音主持自备稿件</a>
+        <a href="../../outside/nav_bottom2/chaKanGengDuoYouLian/chaKanGengDuoYouLian.html">查看更多友链</a>
+    </div>
+    <div class="footer-2">
+        <img src="http://www.semorn.com/wp-content/themes/Initial/images/img/foot_logo.png" alt="清沫音乐电台在线收听网">
+        Copyright © 2014
+        <a href="../../index.html">清沫网</a>
+        湘ICP备14002542号 .（
+        <a href="../../outside/nav_bottom2/shenQingYouLian/shenQingYouLian.html" target="_blank">申请友链</a> |
+        <a href="../../outside/nav_bottom2/mianZeShengMing/mianZeShengMing.html" target="_blank">免责声明</a> |
+        <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=admin@semorn.com" target="_blank">联系我们</a> |
+        <a href="../../outside/nav_bottom2/yiJianFanKui/yiJianFanKui.html" target="_blank">意见反馈</a> |
+        <a href="../../music/dianTaiYinYue.html">电台背景音乐</a> |
+        <a href="http://www.cnzz.com/stat/website.php?web_id=1000281055" target="_blank">站长统计</a> ）
+    </div>
+</div>
+
+<!--回到顶部-->
+<div id="gotop" class="icon-nav btn bg slow hided"></div>
+<!--以下为点击图片链接跳转的页面时采用-->
+<a id="cmt" class="icon-nav icon-message btn bg slow hided" href="#liuYan"></a>
+<a id="share" class="icon-nav icon-fenxiang btn bg slow hided" href="#bdshare"></a>
+
+<!--底部滚动文字-->
+<div id="message">
+    <div id="message-body">
+        <div id="close">x</div>
+        <div id="bulletin">
+            <ul>
+                <li>
+                    <a href="../../outside/footerSwiper/liZhiFM/liZhiYinYue.html" target="_blank">荔枝FM怎么添加音乐？教你用WIFI导入背景音乐</a>
+                </li>
+                <li>
+                    <a href="../../outside/footerSwiper/liZhiFM/liZhiXiaZai.html" target="_blank">荔枝FM下载的文件在哪个文件夹？</a>
+                </li>
+                <li>
+                    <a href="../../outside/footerSwiper/dianTaiTouGao/dianTaiTouGao.html">电台节目投稿</a>
+                    【
+                    <a href="../../read/qingGanWenZhang.html">电台稿子</a>
+                    】
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
 
 
 </body>

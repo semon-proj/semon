@@ -1,7 +1,5 @@
 
 
-
-
 $(function(){
     var $topBtn = $('#gotop');
     var $cmtBtn = $('#cmt');
@@ -31,5 +29,6 @@ $(function(){
         return false;
 
     });
+
 
 });

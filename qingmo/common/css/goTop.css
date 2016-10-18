@@ -34,16 +34,21 @@ button, .btn {
     bottom: 34px;
     font-size: 25px;
     line-height: 28px;
+    color: #fff;
 }
 #share {
     bottom: 0;
     font-size: 25px;
     line-height: 22px;
+    color: #fff;
 }
 #gotop::before {
     content: '^';
 }
-
+a{
+    color: #fff;
+    text-decoration: none;
+}
 
 a, a img, input, .slow, .download, .u-download {
     transition: all .24s ease-out;
