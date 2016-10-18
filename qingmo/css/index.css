@@ -139,6 +139,9 @@ body {
     color: #fff;
     background-color: #f96;
 }
+#content .tags a:hover{
+    background-color: #181818 !important;
+}
 
 @media screen and (max-width: 986px) {
     #lunbo {
