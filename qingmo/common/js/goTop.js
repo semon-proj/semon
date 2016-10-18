@@ -22,11 +22,11 @@ $(function(){
             isTopBtnShow = false;
         }
     }
-    //点击id为go_top的元素时网页回到顶部
+    //点击id为gotop的元素时网页回到顶部
 
     $("#gotop").click(function(){
 
-        $('html,body').animate({scrollTop:0},1000);//回到顶端
+        $('html,body').animate({scrollTop:0},500);//回到顶端
 
         return false;
 
