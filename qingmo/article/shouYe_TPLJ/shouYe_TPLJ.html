@@ -191,7 +191,7 @@
 
 
         .single_right {
-            width: 300px;
+            width: 310px;
             float: right;
             border: 5px solid #fff;
             box-shadow: 0 1px 3px rgba(0,0,0,.2);
@@ -231,7 +231,7 @@
             top: 2889.5px;
             display: none;
         }
-        #bdshare_l, #bdshare_m {
+        #bdshare_l {
             -webkit-box-shadow: 0 0 7px #eee;
             -moz-box-shadow: 0 0 7px #eee;
             z-index: 99999;
@@ -372,6 +372,12 @@
             -moz-border-radius: 3px;
         }
 
+        @media screen and (max-width: 1010px) {
+            .single-content {
+                width: 100% !important;
+            }
+        }
+
     </style>
     <script>
         $(document).ready(function () {
@@ -387,6 +393,7 @@
             });
         })
     </script>
+
 </head>
 <body class="single">
 
