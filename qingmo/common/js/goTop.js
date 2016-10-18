@@ -8,18 +8,18 @@ $(function(){
     window.onscroll = function() {
         var t = document.documentElement.scrollTop || document.body.scrollTop;
 //				console.log(t);
-        if (t >= 800 && !isTopBtnShow) {
+        if (t >= 300 && !isTopBtnShow) {
             $topBtn.css("display", "block");
             $cmtBtn.css("display", "block");
             $shareBtn.css("display", "block");
             isTopBtnShow = true;
-        } else if(t < 800 && isTopBtnShow) {
+        } else if(t < 300 && isTopBtnShow) {
             $topBtn.css("display", "none");
             $cmtBtn.css("display", "none");
             $shareBtn.css("display", "none");
             isTopBtnShow = false;
         }
-    }
+    };
     //点击id为gotop的元素时网页回到顶部
 
     $("#gotop").click(function(){

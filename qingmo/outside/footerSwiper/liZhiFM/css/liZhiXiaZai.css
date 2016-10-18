@@ -1,0 +1,200 @@
+#container {
+    width: 98%;
+    max-width: 1000px;
+    min-width: 300px;
+    padding-top: 50px;
+    margin: auto;
+}
+
+#container .single-content {
+    float: left;
+    margin: auto;
+    min-height: 500px;
+    width: 68% !important;
+}
+
+#content .main {
+    padding: 19px;
+    margin: 0 0 10px 0;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+#content #post-9441 h2,
+#container #post-9441 h2 a {
+    font-size: 1.25rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #000 !important;
+    word-break: break-all;
+    margin: 0;
+}
+
+#content h2 a:hover {
+    color: #39d;
+    text-decoration: none;
+}
+
+#content .iconfont {
+    color: #999;
+}
+
+#content .entry-title {
+    text-align: center;
+}
+
+#content .article-info {
+    float: left;
+    width: 100%;
+    font-size: .825rem;
+    color: #999;
+    text-align: center;
+}
+
+#content .article-info a {
+    color: #999;
+}
+
+#content .article-info a:hover {
+    color: #000;
+}
+
+#content .article-info .icon-suibadaohang {
+    font-size: 14px;
+}
+
+#content .article-info .icon-wodeshi01,
+#content .article-info .icon-time {
+    font-size: 10px;
+}
+
+#content .context blockquote {
+    padding: 20px 20px 20px 40px;
+    margin: 10px 0;
+    background-color: #f6f6f6;
+    overflow: hidden;
+    border-left: 5px solid #eee;
+}
+
+#content .context blockquote:before {
+    content: '”';
+    position: relative;
+    top: -10px;
+    left: -30px;
+    width: 0;
+    float: left;
+    font: 40px sans-serif;
+    color: rgb(221,221,221);
+}
+
+#content .context p {
+    margin-top: 10px;
+    line-height: 28px;
+    font-size: 16px;
+    color: #333;
+    letter-spacing: .25px;
+}
+
+#conten.context img {
+    max-width: 90%;
+    background-color: #f6f6f6;
+    padding: 6px;
+    border: 1px solid #e6e6e6;
+}
+
+#content .main #bdshare {
+    float: right;
+}
+
+#content #bdshare .shareCount {
+    color: #555;
+}
+
+#content .main #bdshare a {
+    width: 32px;
+    height: 32px;
+    background: url("http://www.semorn.com/wp-content/themes/Initial/images/bg_icon.png") no-repeat;
+    margin: 0 6px 0 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#content .main #bdshare a.bds_tqq {
+    background-position: -32px 0;
+}
+
+#content .main #bdshare a.bds_qzone {
+    background-position: -64px 0;
+}
+
+#content .main #bdshare a.bds_renren {
+    background-position: -96px 0;
+}
+
+#content .main #bdshare a.bds_fbook {
+    background-position: -128px 0;
+}
+
+#content .main #bdshare a.bds_twi {
+    background-position: -160px 0;
+}
+
+#content .main #bdshare a.bds_more {
+    background-position: -192px 0;
+}
+
+#content .main #bdshare a.shareCount {
+    width: 52px;
+    background-position: 0 -32px;
+
+}
+
+#content .tags {
+    float: left;
+    height: 26px;
+    margin-top: 5px;
+    overflow: hidden;
+    text-align: right;
+}
+
+#content .tags a {
+    padding: 3px 3px 3px 6px;
+    color: #fff;
+    font-size: .75rem;
+    margin-right: 4px;
+}
+
+#container .single_right {
+    float: right;
+    width: 300px;
+    border: 5px solid #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    background-color: #fff;
+}
+
+#container .single_right .post-info {
+    position: relative;
+    padding: 10px;
+    line-height: 20px;
+    background: #f6f6f6;
+    overflow: hidden;
+    border: 1px solid #e6e6e6;
+}
+
+.post-info .avatar img {
+    float: left;
+    margin-right: 25px;
+    padding: 3px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.2);
+    border-radius: 100px;
+}
+
+.post-info .post-author-name {
+    font-size: 1rem;
+    font-weight: 800;
+    color: #555;
+}
+
+.post-info a{
+    color: #555;
+}
