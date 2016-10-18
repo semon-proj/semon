@@ -159,7 +159,7 @@
 
     <!-- 音乐列表模板 -->
     <script type="text/html" id="music_list">
-        <li class="mus_item">
+        <li class="mus_item" data-src={{mp3}}>
             {{title}} - {{artist}}
             <span class="song_time">{{duration}}</span>
         </li>
@@ -167,6 +167,7 @@
 
     <!-- 音乐控制条 -->
     <div class="nmplaybar">
+        <audio src="" id="audio"></audio>
         <div class="nmplayer-prosess" style="width: 43.727%;"></div>
         <div class="nmplayer-wrap">
             <div class="nmplayer-info"><span class="nmplayer-title">In Love - July</span><span
