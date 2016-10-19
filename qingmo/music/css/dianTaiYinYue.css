@@ -14,8 +14,9 @@ body {
 }
 
 .album-list {
-    width: 100%;
-    height: 250px;
+    width: 1000px;
+    margin: 0 auto;
+    display: block;
 }
 
 .album-item {
