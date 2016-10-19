@@ -58,7 +58,6 @@ $(function () {
                 }
             }).toggle(function () {
                 $(".album-item .ctl").remove();
-
                 $(".album-item .pauseR").remove();
 
                 if(($(this).children("i").is(".playR"))){
@@ -70,8 +69,7 @@ $(function () {
                     $("#nmplayer-button").append($("<span class='icon iconfont'>&#xe609;</span>"));
 
                 }else {
-
-                    // $(".music_list").remove();
+                    $(".music_list").remove();
                     $('<i class="icon iconfont pauseR">&#xe607;</i>').appendTo(this).addClass("pasue_R");
                     // $(".music_list").css("display","block");
                     $(".nmplaybar").css("display","block");
@@ -85,7 +83,6 @@ $(function () {
                     musicList ((index_album_list)*5+(index+1));
                     $("#nmplayer-button span").remove();
                     $("#nmplayer-button").append($("<span class='icon iconfont'>&#xe609;</span>"));
-
                 }
                 $(".album-item .playR").remove();
             },
@@ -144,6 +141,12 @@ $(function () {
                     //下面字符串截取为什么是13和27，因为json数据里面取出来就是前后有空格，而且所有的都是这样，而前面有13个，后面有27个，所以这样截取
                     var mus_str1 = mus_str.substring(13,mus_str_length-27);
                     $(".nmplayer-title").text(mus_str1);
+
+                    window.clearInterval(timer1);
+                    var mus_url = $(this).attr("data-src");
+                    var mus_time = $(this).children("span").text();
+                    var mus_seconds = parseInt(mus_time.substring(0,2))*60+parseInt(mus_time.substring(3,5));
+                    playcontrol(mus_url,mus_seconds);
                 });
                 /*刚点开第一首播放时间*/
                 //清除上一首歌的定时器
@@ -152,13 +155,13 @@ $(function () {
                     window.clearInterval(timer1);
                     flag = false;
                 }
-                console.log(flag);
+                var first_mus_title = data[0].title+" - "+data[0].artist;
+                $(".nmplayer-title").text(first_mus_title);
                 var mus_Url = data[0].mp3;
                 //字符串时间格式转秒格式
                 var mus_seconds = parseInt(data[0].duration.substring(0,2))*60+parseInt(data[0].duration.substring(3,5));
                 // console.log(mus_seconds);
                 playcontrol(mus_Url,mus_seconds);
-
             },
             error: function () {
                 alert("请求数据出错！");
@@ -166,7 +169,46 @@ $(function () {
             }
         })
     }
+    
+    //点击切换上一首
+    $("#nmplayer-prev").click(function () {
+        var no = $(".mus_ul li").index($(".mus_currentplay"));
+        $(".mus_ul li").removeClass("mus_currentplay");
+        var numb = no - 1;
+        $(".mus_ul li").eq(numb).addClass("mus_currentplay");
 
+        window.clearInterval(timer1);
+        var mus_url = $(".mus_ul li").eq(numb).attr("data-src");
+        var mus_time = $(".mus_ul li").eq(numb).children("span").text();
+        var mus_seconds = parseInt(mus_time.substring(0,2))*60+parseInt(mus_time.substring(3,5));
+        playcontrol(mus_url,mus_seconds);
+        
+        var mus_string = $(".mus_ul li").eq(numb).text();
+        var mus_str_len = mus_string.length;
+        //下面字符串截取为什么是13和27，因为json数据里面取出来就是前后有空格，而且所有的都是这样，而前面有13个，后面有27个，所以这样截取
+        var mus_str2 =mus_string.substring(13,mus_str_len-27);
+        $(".nmplayer-title").text(mus_str2);
+    });
+
+    //点击切换下一首
+    $("#nmplayer-next").click(
+        function () {
+            nextsong();
+        }
+    );
+    
+    //点击暂停/播放
+    $("#nmplayer-button").toggle(function () {
+        $("#nmplayer-button span").remove();
+        $("#nmplayer-button").append($("<span class='icon iconfont'>&#xe60b;</span>"));
+        audio.pause();
+    },function () {
+        $("#nmplayer-button span").remove();
+        $("#nmplayer-button").append($("<span class='icon iconfont'>&#xe609;</span>"));
+        audio.play();
+    });
+
+    //播放控制
     function playcontrol(mus_url,mus_seconds) {
         // console.log(mus_url);
         flag = true;
@@ -182,6 +224,7 @@ $(function () {
             $(".nmplayer-prosess").css("width",(currentTime/mus_seconds)*100+'%');
             if(currentTime == mus_seconds){
                 window.clearInterval(timer1);
+                nextsong();
             }
             $(".nmplayer-time").html(timeChange(currentTime));
         }, 1000);
@@ -205,33 +248,26 @@ $(function () {
         var allTime = "" + minutes + "" + ":" + "" + seconds + "";
         return allTime;
     }
-    
-    //点击切换上一首
-    $("#nmplayer-prev").click(function () {
-        var no = $(".mus_ul li").index($(".mus_currentplay"));
-        $(".mus_ul li").removeClass("mus_currentplay");
-        var numb = no - 1;
-        $(".mus_ul li").eq(numb).addClass("mus_currentplay");
-    });
 
-    //点击切换下一首
-    $("#nmplayer-next").click(function () {
+    //下一首歌曲
+    function nextsong() {
         var no = $(".mus_ul li").index($(".mus_currentplay"));
         $(".mus_ul li").removeClass("mus_currentplay");
         var numb = no + 1;
         $(".mus_ul li").eq(numb).addClass("mus_currentplay");
-    });
 
-    //点击暂停/播放
-    $("#nmplayer-button").toggle(function () {
-        $("#nmplayer-button span").remove();
-        $("#nmplayer-button").append($("<span class='icon iconfont'>&#xe60b;</span>"));
-        audio.pause();
-    },function () {
-        $("#nmplayer-button span").remove();
-        $("#nmplayer-button").append($("<span class='icon iconfont'>&#xe609;</span>"));
-        audio.play();
-    });
+        window.clearInterval(timer1);
+        var mus_url = $(".mus_ul li").eq(numb).attr("data-src");
+        var mus_time = $(".mus_ul li").eq(numb).children("span").text();
+        var mus_seconds = parseInt(mus_time.substring(0,2))*60+parseInt(mus_time.substring(3,5));
+        playcontrol(mus_url,mus_seconds);
+
+        var mus_string = $(".mus_ul li").eq(numb).text();
+        var mus_str_len = mus_string.length;
+        //下面字符串截取为什么是13和27，因为json数据里面取出来就是前后有空格，而且所有的都是这样，而前面有13个，后面有27个，所以这样截取
+        var mus_str2 =mus_string.substring(13,mus_str_len-27);
+        $(".nmplayer-title").text(mus_str2);
+    }
 
     //点击加载更多
     var count = 0;
