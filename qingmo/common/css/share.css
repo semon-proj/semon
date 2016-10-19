@@ -342,8 +342,8 @@ a, a img, input, .slow, .download, .u-download {
     line-height: 16px;
     padding-left: 20px;
     display: block;
-    background: url("//static.duoshuo.com/images/service-icons-color.png?v=2") no-repeat;
-    _background-image: url("//static.duoshuo.com/images/service-icons-color.gif?v=2");
+    background: url("../img/service-icons-color.png") no-repeat;
+    _background-image: url("../img/service-icons-color.png");
     overflow: hidden;
 }
 #ds-reset .ds-weixin {
@@ -652,7 +652,7 @@ input, button, textarea {
     height: 19px;
     float: left;
     margin-right: 4px;
-    background: transparent url("//static.duoshuo.com/images/sprites.png") no-repeat;
+    background: transparent url("../img/sprites.png") no-repeat;
     _background-image: url("//static.duoshuo.com/images/sprites.gif");
     vertical-align: middle;
     opacity: .6;
@@ -736,7 +736,7 @@ input, button, textarea {
     cursor: pointer;
     width: 32px !important;
     height: 32px !important;
-    background: url("//static.duoshuo.com/images/icons_large.png") no-repeat !important;
+    background: url("../img/icons_large.png") no-repeat !important;
     overflow: hidden;
     text-indent: -9999px;
 }
@@ -773,7 +773,7 @@ input, button, textarea {
     width: 64px;
     height: 21px;
     margin-right: 10px;
-    background: url("//static.duoshuo.com/images/logo.png") 0 0 no-repeat;
+    background: url("../img/logo.png") 0 0 no-repeat;
 }
 #ds-wrapper #ds-reset .ds-dialog-footer span {
     color: #999;
@@ -788,7 +788,7 @@ input, button, textarea {
     width: 13px;
     height: 13px;
     overflow: hidden;
-    background: transparent url("//static.duoshuo.com/images/sprites.png") 0 -163px no-repeat;
+    background: transparent url("../img/sprites.png") 0 -163px no-repeat;
     _background-image: url("//static.duoshuo.com/images/sprites.gif");
 }
 

@@ -221,27 +221,6 @@
         }
 
 
-        #bdshare_l {
-            width: 212px;
-            position: absolute;
-            top: 0;
-            background: #fff;
-            text-align: left;
-            left: 745.5px;
-            top: 2889.5px;
-            display: none;
-        }
-        #bdshare_l {
-            -webkit-box-shadow: 0 0 7px #eee;
-            -moz-box-shadow: 0 0 7px #eee;
-            z-index: 99999;
-        }
-        #bdshare_l_c {
-            width: 210px;
-            float: left;
-            border: 1px solid #e9e9e9;
-            text-align: left;
-        }
         #bdshare h6, #bdshare_s h6 {
             width: 100%;
             font: 14px/22px '宋体';
@@ -316,50 +295,18 @@
             padding-left: 12px;
             color: #8c8c8c;
         }
-        .bds_mshare {
-            background-position: 0 -2070px !important;
-        }
+
         .bds_qzone {
             background-position: 0 -75px !important;
         }
         .bds_tsina {
             background-position: 0 -115px !important;
         }
-        .bds_bdysc {
-            background-position: 0 -2550px !important;
-        }
         .bds_renren {
             background-position: 0 -195px !important;
         }
         .bds_tqq {
             background-position: 0 -235px !important;
-        }
-        .bds_bdxc {
-            background-position: 0 -2190px !important;
-        }
-        .bds_kaixin001 {
-            background-position: 0 -275px !important;
-        }
-        .bds_tqf {
-            background-position: 0 -315px !important;
-        }
-        .bds_tieba {
-            background-position: 0 -595px !important;
-        }
-        .bds_douban {
-            background-position: 0 -395px !important;
-        }
-        .bds_tsohu {
-            background-position: 0 -435px !important;
-        }
-        .bds_bdhome {
-            background-position: 0 -155px !important;
-        }
-        .bds_sqq {
-            background-position: 0 -2230px !important;
-        }
-        .bds_thx {
-            background-position: 0 -1829px !important;
         }
         .bds_more {
             background-image: url(../img/is.png) !important;
@@ -584,14 +531,37 @@
                     </p>
                 </div>
                 <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
-                    <a class="bds_tsina" title="分享到新浪微博" href="#"></a>
-                    <a class="bds_tqq" title="分享到腾讯微博" href="#"></a>
-                    <a class="bds_qzone" title="分享到QQ空间" href="#"></a>
-                    <a class="bds_renren" title="分享到人人网" href="#"></a>
-                    <a class="bds_fbook" title="分享到Facebook" href="#"></a>
-                    <a class="bds_twi" title="分享到Twitter" href="#"></a>
-                    <span class="bds_more"></span>
-                    <a class="shareCount" title="累计分享8次" href="#">8</a>
+                    <div class="bdsharebuttonbox">
+                        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                        <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+                        <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                        <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+                        <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+                        <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+                        <a href="#" class="bds_more" data-cmd="more"></a>
+                        <a class="shareCount" title="累计分享8次" href="#" style="margin-top: 5px">8</a>
+                    </div>
+                    <script>
+                        window._bd_share_config = {
+                            "common": {
+                                "bdSnsKey": {},
+                                "bdText": "",
+                                "bdMini": "2",
+                                "bdMiniList": false,
+                                "bdPic": "",
+                                "bdStyle": "0",
+                                "bdSize": "32"
+                            },
+                            "share": {},
+                            "selectShare": {
+                                "bdContainerClass": null,
+                                "bdSelectMiniList": ["tsina", "tqq", "qzone", "renren", "fbook", "twi"]
+                            }
+                        };
+                        with (document)0[(getElementsByTagName('head')[0] || body)
+                                .appendChild(createElement('script'))
+                                .src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+                    </script>
                 </div>
                 <div class="tags" style="float:left;margin-top:15px">
                     <a class="bg" style="background:#B0D686" href="http://www.semorn.com/article/tag/%e6%83%85%e6%84%9f%e6%96%87%e5%ad%97">情感文字</a>
@@ -758,34 +728,6 @@
 </div>
 <div class="clear"></div>
 
-<div id="bdshare_s" style="display: block;">
-    <div id="bdshare_l">
-        <div id="bdshare_l_c">
-            <h6>分享到</h6>
-            <ul>
-                <li><a class="bds_mshare mshare" href="#">一键分享</a></li>
-                <li><a class="bds_qzone qqkj" href="#">QQ空间</a></li>
-                <li><a class="bds_tsina xlwb" href="#">新浪微博</a></li>
-                <li><a class="bds_bdysc bdysc" href="#">百度云收藏</a></li>
-                <li><a class="bds_renren rrw" href="#">人人网</a></li>
-                <li><a class="bds_tqq txwb" href="#">腾讯微博</a></li>
-                <li><a class="bds_bdxc bdxc" href="#">百度相册</a></li>
-                <li><a class="bds_kaixin001 kxw" href="#">开心网</a></li>
-                <li><a class="bds_tqf txpy" href="#">腾讯朋友</a></li>
-                <li><a class="bds_tieba bdtb" href="#">百度贴吧</a></li>
-                <li><a class="bds_douban db" href="#">豆瓣网</a></li>
-                <li><a class="bds_tsohu shwb" href="#">搜狐微博</a></li>
-                <li><a class="bds_bdhome bdhome" href="#">百度新首页</a></li>
-                <li><a class="bds_sqq sqq" href="#">QQ好友</a></li>
-                <li><a class="bds_thx thx" href="#">和讯微博</a></li>
-                <li><a class="bds_more" href="#">更多...</a></li>
-            </ul>
-            <p>
-                <a class="goWebsite" href="#">百度分享</a>
-            </p>
-        </div>
-    </div>
-</div>
 <div id="ds-wrapper">
     <div id="ds-reset" class="ds-dialog" style="width: 320px;">
         <div class="ds-dialog-inner ds-rounded">
