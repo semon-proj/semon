@@ -1,0 +1,217 @@
+#container {
+    width: 98%;
+    max-width: 1000px;
+    min-width: 300px;
+    min-height: 500px;
+    padding-top: 50px;
+    margin: auto;
+}
+
+#container * {
+    box-sizing: content-box;
+}
+
+#container h2,
+#container h2 a {
+    font-size: 1.25rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+}
+
+#container a:hover {
+    color: #39d;
+}
+
+#content {
+    float: left;
+    width: 100%;
+    min-height: 500px;
+    margin: auto;
+}
+
+.clear {
+    clear: both;
+}
+
+#content .main {
+    margin: 0 0 10px 0;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+
+#content p {
+    color: #333;
+    letter-spacing: .25px;
+    margin-top: 10px;
+    line-height: 28px;
+    font-size: 16px;
+}
+
+#content .icon-home,
+#content .icon-wodeshi01,
+#content .icon-suibadaohang,
+#content .icon-time {
+    color: #999;
+    font-size: 14px;
+}
+
+#content .icon-time,
+#content .icon-wodeshi01 {
+    font-size: 10px;
+}
+
+#content .single-listen-one {
+    float: left;
+    padding: 5px;
+}
+
+#content .single-listen-two {
+    width: 100%;
+    height: 230px;
+    border: 1px solid #fff;
+}
+
+#content .single-listen-san {
+    position: relative;
+    min-width: 280px;
+    padding: 10px;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+#content .single-listen-san .entry-title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: -4px;
+}
+
+#content .single-listen-san .post-author-desc {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 110px;
+    line-height: 18px;
+    font-family: 楷体;
+    overflow: hidden;
+}
+
+#content .single-listen-san .avatar img {
+    float: left;
+    margin-right: 10px;
+    padding: 3px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.2);
+    border-radius: 100px;
+}
+
+#content .single-listen-san .author-info {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #999;
+    font-size: .8125rem;
+}
+
+#content .single-listen-san .post-listen {
+    border: 2px solid #59d;
+    height: 24px;
+    color: #39d;
+    line-height: 18px;
+    overflow: hidden;
+}
+
+#content .single-listen-san .post-author-desc p {
+    font-size: 14px;
+    height: 45px;
+    line-height: 15px;
+    border: 1px solid #59d;
+    border-top: none;
+    margin: 0;
+}
+
+#content .single-listen-san .post-info-title {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0 10px;
+    background: #59d;
+    color: #fff;
+}
+
+#content .tags {
+    height: 26px;
+    overflow: hidden;
+    text-align: right;
+}
+
+#content .tags a {
+    padding: 3px 6px;
+    color: #fff;
+    font-size: .75rem;
+}
+
+#content .main #bdshare {
+    float: right;
+    padding-top: 12px;
+}
+
+#content #bdshare .shareCount {
+    color: #555;
+}
+
+#content .main #bdshare a {
+    width: 32px;
+    height: 32px;
+    background: url("http://www.semorn.com/wp-content/themes/Initial/images/bg_icon.png") no-repeat;
+    margin: 0 6px 0 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#content .main #bdshare a.bds_tqq {
+    background-position: -32px 0;
+}
+
+#content .main #bdshare a.bds_qzone {
+    background-position: -64px 0;
+}
+
+#content .main #bdshare a.bds_renren {
+    background-position: -96px 0;
+}
+
+#content .main #bdshare a.bds_fbook {
+    background-position: -128px 0;
+}
+
+#content .main #bdshare a.bds_twi {
+    background-position: -160px 0;
+}
+
+#content .main #bdshare a.bds_more {
+    background-position: -192px 0;
+}
+
+#content .main #bdshare .shareCount {
+    display: inline-block;
+    width: 52px;
+    height: 32px;
+    margin-right: 0;
+    background-position: 0 32px;
+    background-image: url("http://www.semorn.com/wp-content/themes/Initial/images/bg_icon.png");
+    text-align: center;
+    line-height: 32px;
+}
+
+#content .main .banquan {
+    border: 1px solid #35ac6b;
+    color: #35ac6b;
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+}
+
+#content .main .related-post a h2 {
+    font-size: 16px;
+}

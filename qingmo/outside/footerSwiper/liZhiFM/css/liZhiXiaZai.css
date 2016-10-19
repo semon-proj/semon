@@ -95,8 +95,8 @@
     letter-spacing: .25px;
 }
 
-#conten.context img {
-    max-width: 90%;
+#content .context img {
+    max-width: 92%;
     background-color: #f6f6f6;
     padding: 6px;
     border: 1px solid #e6e6e6;
@@ -143,10 +143,15 @@
     background-position: -192px 0;
 }
 
-#content .main #bdshare a.shareCount {
+#content .main #bdshare .shareCount {
+    display: inline-block;
     width: 52px;
-    background-position: 0 -32px;
-
+    height: 32px;
+    margin-right: 0;
+    background-position: 0 32px;
+    background-image: url("http://www.semorn.com/wp-content/themes/Initial/images/bg_icon.png");
+    text-align: center;
+    line-height: 32px;
 }
 
 #content .tags {
@@ -166,7 +171,7 @@
 
 #container .single_right {
     float: right;
-    width: 300px;
+    width: 310px;
     border: 5px solid #fff;
     box-shadow: 0 1px 3px rgba(0,0,0,.2);
     background-color: #fff;
