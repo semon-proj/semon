@@ -14,7 +14,7 @@ body {
 }
 
 #content #cont_wrapper {
-    margin-top: 65px;
+    margin-top: 50px;
 }
 
 .album-list {
@@ -25,12 +25,12 @@ body {
 }
 
 .album-item {
-    float: left;
-    width: 20%;
-    /*margin-top: 10px;*/
-    height: 250px;
+    width: 180px;
+    margin: 10px;
     position: relative;
     cursor:pointer;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .album-item img {
