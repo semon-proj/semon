@@ -59,7 +59,7 @@ $(function () {
             }).toggle(function () {
                 $(".album-item .ctl").remove();
                 $(".album-item .pauseR").remove();
-                $(this).css("height",250+'px');
+                $(".album-list").css("height",250+'px');
                 if(($(this).children("i").is(".playR"))){
                     audio.play();
                     $('<i class="icon iconfont pauseR">&#xe607;</i>').appendTo(this).addClass("pasue_R");
