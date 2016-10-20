@@ -13,10 +13,15 @@ body {
     margin-top: 40px;
 }
 
+#content #cont_wrapper {
+    margin-top: 65px;
+}
+
 .album-list {
     width: 1000px;
     margin: 0 auto;
     display: block;
+    overflow: hidden;
 }
 
 .album-item {
@@ -85,7 +90,6 @@ body {
 .mus_title {
     padding-bottom: 5px;
     border-bottom: 1px #ddd solid;
-    margin-bottom: 5px;
     max-width: 1000px;
     margin: 0 auto 15px;
 }
